@@ -94,6 +94,10 @@ git add -A && git commit -m "Update calendar" && git push
 
 The site updates within a minute or two. That's the whole workflow.
 
+The build only rewrites a file when the calendar actually changes — timestamps
+alone don't count. So if `git status` is empty after a rebuild, nothing about
+the schedule moved, and `git diff` always shows real changes rather than churn.
+
 ### URLs
 
 | | |

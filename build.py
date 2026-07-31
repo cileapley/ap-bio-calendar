@@ -45,6 +45,38 @@ class BuildError(Exception):
     """Fatal problem with the calendar source. Reported, never papered over."""
 
 
+# Substrings that change on every build without the calendar changing. They are
+# blanked before comparing old output to new, so a rebuild that produces the
+# same calendar leaves the files — and therefore `git status` — untouched.
+VOLATILE = [
+    re.compile(r"DTSTAMP:\d{8}T\d{6}Z"),
+    re.compile(r'"generated":\s*"[^"]*"'),
+    re.compile(r"Generated \d{4}-\d\d-\d\d \d\d:\d\d from calendar\.yaml"),
+]
+
+
+def write_if_changed(path: Path, content: str) -> bool:
+    """Write only when the substantive content differs. Returns True if written.
+
+    Everything is written as UTF-8 bytes with no newline translation, so the
+    .ics keeps the CRLF endings RFC 5545 requires and the rest stay LF.
+    """
+    def normalise(text: str) -> str:
+        for pattern in VOLATILE:
+            text = pattern.sub("<volatile>", text)
+        return text
+
+    if path.exists():
+        try:
+            existing = path.read_bytes().decode("utf-8")
+        except UnicodeDecodeError:
+            existing = None
+        if existing is not None and normalise(existing) == normalise(content):
+            return False
+    path.write_bytes(content.encode("utf-8"))
+    return True
+
+
 # ---------------------------------------------------------------------------
 # Load and normalise
 # ---------------------------------------------------------------------------
@@ -311,7 +343,7 @@ def iso(value):
     return value.isoformat() if value else None
 
 
-def write_json(data: dict, sched: dict, blocks: list[dict], summary: dict, stamp: str):
+def render_json(data: dict, sched: dict, blocks: list[dict], summary: dict, stamp: str) -> str:
     payload = {
         "generated": stamp,
         "source": "calendar.yaml",
@@ -351,9 +383,7 @@ def write_json(data: dict, sched: dict, blocks: list[dict], summary: dict, stamp
             for b in blocks
         ],
     }
-    (DIST / "calendar.json").write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
+    return json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
 
 
 # ---------------------------------------------------------------------------
@@ -391,7 +421,7 @@ def slug(*parts) -> str:
     return re.sub(r"-+", "-", re.sub(r"[^A-Za-z0-9]+", "-", joined)).strip("-").lower()
 
 
-def write_ics(data: dict, sched: dict, blocks: list[dict], stamp_utc: str):
+def render_ics(data: dict, sched: dict, blocks: list[dict], stamp_utc: str) -> str:
     course = data["course"]
     lines = [
         "BEGIN:VCALENDAR",
@@ -450,7 +480,7 @@ def write_ics(data: dict, sched: dict, blocks: list[dict], stamp_utc: str):
                 event(uid, start, end, label, description, entry["link"])
 
     lines.append("END:VCALENDAR")
-    (DIST / "calendar.ics").write_bytes(("\r\n".join(lines) + "\r\n").encode("utf-8"))
+    return "\r\n".join(lines) + "\r\n"
 
 
 def verify_ics(path: Path) -> list[str]:
@@ -625,7 +655,7 @@ def esc(value) -> str:
     return html.escape(str(value), quote=True)
 
 
-def write_html(data: dict, sched: dict, blocks: list[dict], summary: dict, stamp: str):
+def render_html(data: dict, sched: dict, blocks: list[dict], summary: dict, stamp: str) -> str:
     course = data["course"]
     exam = sched["exam_day"]
 
@@ -712,7 +742,7 @@ def write_html(data: dict, sched: dict, blocks: list[dict], summary: dict, stamp
     parts.append(f"<script>{JS}</script>")
     parts.append("</body></html>")
 
-    (DIST / "index.html").write_text("\n".join(parts) + "\n", encoding="utf-8")
+    return "\n".join(parts) + "\n"
 
 
 # ---------------------------------------------------------------------------
@@ -785,9 +815,17 @@ def main() -> int:
     stamp_local = datetime.now().strftime("%Y-%m-%d %H:%M")
     stamp_utc = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
-    write_json(data, sched, blocks, summary, stamp_local)
-    write_ics(data, sched, blocks, stamp_utc)
-    write_html(data, sched, blocks, summary, stamp_local)
+    written = {
+        "calendar.json": write_if_changed(
+            DIST / "calendar.json",
+            render_json(data, sched, blocks, summary, stamp_local)),
+        "calendar.ics": write_if_changed(
+            DIST / "calendar.ics",
+            render_ics(data, sched, blocks, stamp_utc)),
+        "index.html": write_if_changed(
+            DIST / "index.html",
+            render_html(data, sched, blocks, summary, stamp_local)),
+    }
 
     problems = verify_ics(DIST / "calendar.ics")
 
@@ -824,7 +862,11 @@ def main() -> int:
     if hidden:
         print(f"  teacher-only entries    {hidden} hidden from all published output "
               f"(days still consumed)")
-    print(f"  wrote                   docs/index.html, docs/calendar.ics, docs/calendar.json")
+    changed = [name for name, did in written.items() if did]
+    if changed:
+        print(f"  wrote                   {', '.join('docs/' + c for c in changed)}")
+    else:
+        print("  wrote                   nothing — output already matches the source")
 
     if problems:
         print("\n  ICS VALIDATION FAILED:", file=sys.stderr)
