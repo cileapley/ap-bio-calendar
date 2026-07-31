@@ -180,12 +180,12 @@ here you wouldn't want a student to find.
 ```
 instructional days      180  (161 before the exam, 18 after)
 content + assessment    110 periods
-labs scheduled          24 periods as dedicated blocks (15% of days; audit line is 25%)
-in-unit flex days       10 periods
-AP review before exam   14 periods
-lab prep                21 actions across 8 labs — 1 need attention
+labs scheduled          16 periods as dedicated blocks (10% of days; audit line is 25%)
+in-unit flex days       15 periods
+AP review before exam   17 periods
+lab prep                21 actions across 8 labs — 1 needs attention — 1 need attention
 phases                  fall:83  finals:3  spring:75  post:18
-content ends            2027-04-12  (exam 2027-05-03)
+content ends            2027-04-07  (exam 2027-05-03)
 ```
 
 Read `content ends` first. The gap between it and the exam is what you actually
@@ -229,11 +229,11 @@ Everything is **additive**, nothing is carved out of anything else:
 |---|---|---|
 | Course opening | 3 | editable default |
 | Topic instruction | 91 | CED × 0.83, research-adjusted per unit |
-| Lab program | 24 | 8 investigations × 3 |
+| Lab program | 16 | 8 investigations × 2 |
 | Assessment | 16 | 2 per unit |
 | Semester 1 finals | 3 | off limits |
-| Flex | 10 | 1 per unit, 2 in Units 2 and 3 |
-| AP review | 14 | whatever is left (`fill`) |
+| Flex | 15 | 1 per unit, plus one reserved per investigation in Units 2–4 |
+| AP review | 17 | whatever is left (`fill`) |
 | **Total to May 3** | **161** | |
 
 Assessment and flex days do **not** eat instructional time. Each unit gets its
@@ -279,7 +279,7 @@ Five are not scheduled — INV-10, INV-11, INV-12, INV-1 and INV-9. They sit
 commented at the bottom of `calendar.yaml` with the reason each was cut and
 where to paste it back.
 
-27 dedicated lab days is ~17% of the year. The rest of the 25% audit line is
+16 dedicated lab days is ~10% of the year. The rest of the 25% audit line is
 covered by hands-on work embedded inside topic days — data analysis, modeling,
 microscopy, simulations — which is how the requirement is normally satisfied in
 practice. The build reports the dedicated percentage for reference, not as a
@@ -314,7 +314,7 @@ reverse any of them individually.
 
 1. **`labs_additive: true`** — the CED never says whether unit period counts
    include lab time. This assumes they don't, which fails safe.
-2. **`default_lab_periods: 3`** — a chosen default, not CED guidance. The CED
+2. **`default_lab_periods: 2`** — a chosen default, not CED guidance. The CED
    declines to allocate at that granularity.
 3. **Science practice codes are complete and verified — flag 3 is closed.** All
    60 topic codes were extracted from the official [2025 CED][ced] (Effective
@@ -327,7 +327,7 @@ reverse any of them individually.
 5. **May 28, 2027** is not bracketed on the district PDF, but the 11th school month
    is labeled *(9 Days)* and the spring term ends May 27 — which forces it. It's
    after the exam, so it can't affect pacing. Marked as derived in `calendar.yaml`.
-6. **AP review is 14 days.** That is the cost of ending Unit 5 at the semester
+6. **AP review is 17 days.** That is the cost of ending Unit 5 at the semester
    break: the fall pool holds 83 days for units that need less, and the spring
    pool absorbs the difference.
 

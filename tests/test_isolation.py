@@ -1,7 +1,9 @@
 """Prep data must never reach student-facing output."""
+import json
 import subprocess
 import sys
 import unittest
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -35,9 +37,30 @@ class TestPrepIsolation(unittest.TestCase):
                     marker, text,
                     f"{marker!r} leaked into docs/{name}")
 
-    def test_student_ics_event_count_is_unchanged(self):
+    def test_student_ics_has_exactly_the_events_the_json_describes(self):
+        """The student feed must carry no event the published JSON lacks.
+
+        This was a hardcoded count, which broke on every legitimate calendar
+        edit and told you nothing about why. Deriving it instead makes it a
+        real invariant: a leak adds VEVENTs to the .ics without adding
+        entries to the .json, so the two stop agreeing.
+
+        One VEVENT per contiguous run of days within an entry — a run breaks
+        across a weekend or holiday — plus one for the AP exam anchor, which
+        is written from course config rather than from any block.
+        """
+        data = json.loads((DOCS / "calendar.json").read_text(encoding="utf-8"))
+
+        def runs(iso_dates):
+            days = [date.fromisoformat(d) for d in iso_dates]
+            return 1 + sum(1 for a, b in zip(days, days[1:])
+                           if (b - a).days != 1)
+
+        expected = 1 + sum(runs(e["dates"])
+                           for block in data["blocks"]
+                           for e in block["entries"] if e["dates"])
         text = (DOCS / "calendar.ics").read_text(encoding="utf-8")
-        self.assertEqual(text.count("BEGIN:VEVENT"), 102)
+        self.assertEqual(text.count("BEGIN:VEVENT"), expected)
 
     def test_prep_ics_is_structurally_valid(self):
         self.assertEqual(icsutil.verify_ics(DOCS / "prep.ics"), [])

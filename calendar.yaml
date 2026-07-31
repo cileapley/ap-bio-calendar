@@ -78,18 +78,29 @@ assumptions:
   # big idea" — i.e. 8 named investigations minimum, not all 13. Teachers may
   # substitute equivalent inquiry-based labs.
   #
-  # This calendar schedules 9 investigations as dedicated multi-day blocks
-  # covering 2+ per big idea. Those 27 days are ~17% of instructional time. The
-  # remaining ~8% MUST be met by hands-on work embedded inside topic days —
-  # data analysis, modeling, microscopy, simulations. The build reports the gap
-  # so it stays visible; it is a real audit obligation, not a rounding error.
+  # This calendar schedules 8 investigations as dedicated multi-day blocks.
+  # Those 16 days are ~10% of instructional time. The rest of the 25% line is
+  # covered by hands-on work embedded inside topic days — data analysis,
+  # modeling, microscopy, simulations — which is how the requirement is
+  # normally satisfied in practice. The build reports the dedicated percentage
+  # for reference, not as a warning.
   lab_fraction: 0.25
 
   # [DEFAULT] Periods per named investigation. The CED and the pacing file both
-  # decline to allocate at this granularity. 3 = setup/run, second run or data
-  # collection, analysis and write-up. 9 investigations x 3 = 27 dedicated lab
-  # days. Any individual lab can override with its own `periods:`.
-  default_lab_periods: 3
+  # decline to allocate at this granularity. 2 = run the investigation, then
+  # analysis and write-up. 8 investigations x 2 = 16 dedicated lab days.
+  #
+  # Was 3. Dropped to 2 on 2026-07-31 because three days per lab overstates how
+  # most of these run in a 60-minute period. The day each lab gave back stays in
+  # the unit that gave it, as flex — see the FLEX entries in Units 2, 3 and 4.
+  # That keeps every unit's total constant, so the Dec 15 semester anchor holds
+  # without any unit boundary moving, and an investigation that does overrun has
+  # somewhere in its own unit to go.
+  #
+  # Any individual lab can override with its own `periods:`. Good candidates:
+  # INV-8 (bacterial transformation, overnight growth) may want 3; INV-3 (BLAST,
+  # computer-only) and INV-2 (spreadsheet modelling) may only want 1.
+  default_lab_periods: 2
 
 
 # -----------------------------------------------------------------------------
@@ -220,7 +231,8 @@ blocks:
       - {id: "INV-4", title: "Investigation 4 — Diffusion and Osmosis", kind: lab, notes: "Big Idea 2: Energetics.", prep: {order: 21, arrive: 14, bench: 2}}
       - {id: "2.8", title: "Mechanisms of Transport", skill: "1.B", periods: 1, kind: topic}
       - {id: "2.9+2.10", title: "Cell Compartmentalization · Origins of Compartmentalization", skill: "6.E, 6.B", periods: 1, kind: topic}
-      - {id: "2.FLEX", title: "Flex days — catch-up, reteach, or lab overflow", periods: 2, kind: flex}
+      # 3 = 2 original + 1 reserved for INV-4 if it overruns its 2 days.
+      - {id: "2.FLEX", title: "Flex days — catch-up, reteach, or lab overflow", periods: 3, kind: flex}
       - {id: "2.PC", title: "Progress Check 2", periods: 1, kind: assessment}
       - {id: "2.TEST", title: "Unit 2 Assessment", periods: 1, kind: assessment}
 
@@ -245,7 +257,10 @@ blocks:
       - {id: "INV-5", title: "Investigation 5 — Photosynthesis", kind: lab, notes: "Big Idea 2: Energetics.", prep: {order: 21, arrive: 3, bench: 1}}
       - {id: "3.5", title: "Cellular Respiration", skill: "4.A", periods: 4, kind: topic}
       - {id: "INV-6", title: "Investigation 6 — Cellular Respiration", kind: lab, notes: "Big Idea 2: Energetics.", prep: {order: 21, arrive: 14, bench: 5}}
-      - {id: "3.FLEX", title: "Flex days — catch-up, reteach, or lab overflow", periods: 2, kind: flex}
+      # 5 = 2 original + 1 each reserved for INV-13, INV-5 and INV-6 if they
+      # overrun their 2 days. This unit carries three investigations, which is
+      # why its reserve is the largest in the course.
+      - {id: "3.FLEX", title: "Flex days — catch-up, reteach, or lab overflow", periods: 5, kind: flex}
       - {id: "3.PC", title: "Progress Check 3", periods: 1, kind: assessment}
       - {id: "3.TEST", title: "Unit 3 Assessment", periods: 1, kind: assessment}
 
@@ -266,7 +281,8 @@ blocks:
       - {id: "4.5", title: "Cell Cycle", skill: "4.B, 5.A", periods: 2, kind: topic}
       - {id: "INV-7", title: "Investigation 7 — Cell Division: Mitosis and Meiosis", kind: lab, notes: "Big Idea 3: Information Storage and Transmission.", prep: {order: 21, arrive: 14, bench: 5}}
       - {id: "4.6", title: "Regulation of Cell Cycle", skill: "6.E", periods: 1, kind: topic}
-      - {id: "4.FLEX", title: "Flex day — catch-up, reteach, or lab overflow", periods: 1, kind: flex}
+      # 2 = 1 original + 1 reserved for INV-7 if it overruns its 2 days.
+      - {id: "4.FLEX", title: "Flex days — catch-up, reteach, or lab overflow", periods: 2, kind: flex}
       - {id: "4.PC", title: "Progress Check 4", periods: 1, kind: assessment}
       - {id: "4.TEST", title: "Unit 4 Assessment", periods: 1, kind: assessment}
 
