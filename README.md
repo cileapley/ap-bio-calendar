@@ -194,6 +194,30 @@ This repo is public — that is what makes Pages free. Anyone can read
 feed and the JSON, but **not** out of the source file. Don't put anything in
 here you wouldn't want a student to find.
 
+## What changed?
+
+```
+python changes.py
+```
+
+Compares the working tree's `docs/calendar.json` against the last committed
+one and reports what moved. Run it after a rebuild and before committing.
+
+Prose goes to stdout, grouped most-consequential-first — removed, resized,
+moved, added, retitled:
+
+```
+RESIZED  8 entries
+  INV-4    Investigation 4 — Diffusion and Osmosis   3 days -> 2   orphans INV-4-d3
+```
+
+`changes.json` holds the same thing machine-readably, for the lesson-plan
+workspace, which keys its plans to entry ids and day indices. It is gitignored:
+committing it would make the next diff empty, changing the file again.
+
+The report is never a gate. A changed calendar is not an error — the only
+non-zero exit is a missing or unparseable `docs/calendar.json`.
+
 ## What the build reports
 
 ```

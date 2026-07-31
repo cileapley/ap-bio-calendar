@@ -11,7 +11,9 @@ day indices stopped existing, because its plans are keyed to them.
 from __future__ import annotations
 
 import json
+import subprocess
 from dataclasses import dataclass
+from pathlib import Path
 
 # Most consequential first. A removal loses written work; a retitle is cosmetic.
 SEVERITY = ("REMOVED", "RESIZED", "MOVED", "ADDED", "RETITLED")
@@ -180,3 +182,80 @@ def render_json(deltas: list[EntryDelta]) -> str:
         ],
     }
     return json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+
+
+ROOT = Path(__file__).resolve().parent
+CURRENT = ROOT / "docs" / "calendar.json"
+MACHINE = ROOT / "changes.json"   # gitignored: see the note in main()
+
+
+def git_baseline() -> dict | None:
+    """The last committed calendar, or None when there is nothing to compare.
+
+    Absence is normal — a fresh clone before the first build, or a repository
+    where docs/calendar.json has never been committed. Both report cleanly
+    rather than failing.
+    """
+    try:
+        result = subprocess.run(
+            ["git", "show", "HEAD:docs/calendar.json"],
+            cwd=ROOT, capture_output=True)
+    except FileNotFoundError:
+        return None
+    if result.returncode != 0:
+        return None
+    try:
+        # Decode explicitly as UTF-8 rather than passing text=True: that
+        # would let subprocess fall back to locale.getpreferredencoding(),
+        # which is cp1252 on Windows. docs/calendar.json is UTF-8 and its
+        # titles carry em dashes and curly quotes, so a cp1252 decode does
+        # not raise — it silently mangles every non-ASCII character into
+        # mojibake that then gets written into changes.json as "correct".
+        return json.loads(result.stdout.decode("utf-8"))
+    except json.JSONDecodeError as exc:
+        # A non-zero git exit means "not committed yet", which is normal and
+        # returns None above. Reaching here means git produced a file that is
+        # not valid JSON — a corrupt committed calendar, which is a real
+        # problem and must not be silently reported as "no baseline".
+        raise SystemExit(
+            f"HEAD:docs/calendar.json is not valid JSON: {exc}")
+
+
+def load_current() -> dict:
+    if not CURRENT.exists():
+        raise SystemExit(
+            f"{CURRENT.relative_to(ROOT)} not found. Run `python build.py` first.")
+    try:
+        return json.loads(CURRENT.read_bytes().decode("utf-8"))
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"{CURRENT.relative_to(ROOT)} is not valid JSON: {exc}")
+
+
+def report(old: dict | None, new: dict) -> tuple[str, int]:
+    """Render the comparison. Never returns a non-zero code for a change."""
+    if old is None:
+        return ("No git baseline to compare against — nothing committed yet.\n",
+                0)
+    return render_text(diff(old, new)), 0
+
+
+def main() -> int:
+    current = load_current()
+    baseline = git_baseline()
+    text, code = report(baseline, current)
+    print(text, end="")
+
+    if baseline is not None:
+        # Written to the repository root and gitignored, deliberately. In docs/
+        # and committed, the next build's diff against HEAD would be empty,
+        # which would change this file again — a loop that leaves the tree
+        # permanently dirty. docs/ is also what Pages publishes; this is
+        # working state, not published output.
+        MACHINE.write_bytes(
+            render_json(diff(baseline, current)).encode("utf-8"))
+        print(f"\nMachine-readable: {MACHINE.name}")
+    return code
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

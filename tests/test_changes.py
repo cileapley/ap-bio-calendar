@@ -259,5 +259,27 @@ class TestRenderJson(unittest.TestCase):
         self.assertEqual(len(payload["changes"]), 1)
 
 
+class TestBaseline(unittest.TestCase):
+    def test_missing_baseline_is_not_an_error(self):
+        # Before the first commit there is nothing to compare against. That is
+        # a fact about the repository, not a failure.
+        text, code = changes.report(None, {"blocks": []})
+        self.assertEqual(code, 0)
+        self.assertIn("No git baseline", text)
+
+    def test_present_baseline_produces_a_report(self):
+        old = calendar({"id": "2.7", "periods": 2, "end": "2026-09-16"})
+        new = calendar({"id": "2.7", "periods": 1, "end": "2026-09-15"})
+        text, code = changes.report(old, new)
+        self.assertEqual(code, 0)
+        self.assertIn("RESIZED", text)
+
+    def test_identical_calendars_exit_zero(self):
+        cal = calendar({"id": "2.7"})
+        text, code = changes.report(cal, cal)
+        self.assertEqual(code, 0)
+        self.assertIn("No changes", text)
+
+
 if __name__ == "__main__":
     unittest.main()

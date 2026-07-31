@@ -6,3 +6,6 @@ __pycache__/
 *.tmp
 .playwright-mcp/
 *.png
+
+# Working state from changes.py, never committed: see the note in its main()
+changes.json
