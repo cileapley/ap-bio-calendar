@@ -34,6 +34,7 @@ except ImportError:
     sys.exit("PyYAML is required.  pip install pyyaml")
 
 from icsutil import fold, ics_escape, slug, verify_ics
+import prep as prep_module
 
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / "calendar.yaml"
@@ -271,6 +272,7 @@ def schedule(data: dict, all_days: list[date], pools_src: dict):
                 "skill": entry.get("skill"),
                 "notes": entry.get("notes"),
                 "link": entry.get("link"),
+                "prep": entry.get("prep"),
                 "visibility": entry.get("visibility", "student"),
                 "periods": take,
                 "dates": days,
@@ -661,6 +663,23 @@ def main() -> int:
 
         sched = schedule(data, all_days, pools)
         blocks = publishable(sched)
+
+        try:
+            prep_actions = prep_module.derive(sched["blocks"], all_days)
+        except ValueError as exc:
+            # derive() raises ValueError on a malformed prep block. main()
+            # only catches BuildError, so translate it or it escapes as a
+            # traceback instead of the clean failure message.
+            raise BuildError(f"Bad prep block in calendar.yaml: {exc}") from exc
+
+        prep_warnings, prep_errors = prep_module.validate(
+            prep_actions, all_days[0], date.today())
+        if prep_errors:
+            raise BuildError(
+                "Lab prep lead times contradict each other:\n  - "
+                + "\n  - ".join(prep_errors)
+                + "\n\nFix the prep block in calendar.yaml."
+            )
     except BuildError as exc:
         print(f"\nBUILD FAILED\n{exc}\n", file=sys.stderr)
         return 1
@@ -723,9 +742,18 @@ def main() -> int:
         "index.html": write_if_changed(
             DIST / "index.html",
             render_html(data, sched, blocks, summary, stamp_local)),
+        "prep.ics": write_if_changed(
+            DIST / "prep.ics",
+            prep_module.render_ics(
+                prep_actions, course, stamp_utc, UID_DOMAIN)),
+        "prep.html": write_if_changed(
+            DIST / "prep.html",
+            prep_module.render_html(
+                prep_actions, course, stamp_local, date.today())),
     }
 
-    problems = verify_ics(DIST / "calendar.ics")
+    problems = (verify_ics(DIST / "calendar.ics")
+                + [f"prep.ics: {p}" for p in verify_ics(DIST / "prep.ics")])
 
     hidden = sum(
         1 for b in sched["blocks"] for e in b["entries"] if e["visibility"] == "teacher"
@@ -743,6 +771,11 @@ def main() -> int:
               f"take no dedicated days and are absent from published output.")
     print(f"  in-unit flex days       {flex_periods} periods")
     print(f"  AP review before exam   {review_periods} periods")
+    print(f"  lab prep                {len(prep_actions)} actions across "
+          f"{len({a.lab_id for a in prep_actions})} labs"
+          + (f" — {len(prep_warnings)} need attention" if prep_warnings else ""))
+    for warning in prep_warnings:
+        print(f"    ! {warning}", file=sys.stderr)
     print("  phases                  " + "  ".join(
         f"{k}:{v}" for k, v in by_phase.items()))
     for phase, left in sched["leftovers"].items():

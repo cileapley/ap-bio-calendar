@@ -82,6 +82,46 @@ whatever it reports *is* your true slack.
 | `link` | Makes the title a link |
 | `skill` | CED science practice code |
 
+## Lab prep lead times
+
+Each investigation declares how far ahead its purchase order, delivery and
+bench prep have to happen. Those dates are **derived from the lab's scheduled
+day**, so when a unit slips they slip with it.
+
+```yaml
+prep: {order: 21, arrive: 7, bench: 3}
+```
+
+| Key | Meaning | Counted in |
+|---|---|---|
+| `order` | Submit the purchase order by this date | calendar days — purchasing runs over breaks |
+| `arrive` | Materials must be in the building | calendar days — shipping runs on calendar time |
+| `bench` | Start hands-on prep | school days — prep happens at school |
+
+Calendar-basis dates snap **backward** to an instructional day, never forward,
+so a deadline is never moved later. When a snap crosses a recess by more than
+two days the build says so — that is the case where naive arithmetic gives a
+deadline later than the real one.
+
+**`order: 21` is confirmed** — verified against the district's actual
+purchase-order turnaround. **`arrive` and `bench` are still defaults from
+general lab practice, not vendor data.** Replace them with your supplier's
+real kit lead times. Each is one number on one line.
+
+### Where it goes
+
+| | |
+|---|---|
+| Prep schedule | `https://cileapley.github.io/ap-bio-calendar/prep.html` |
+| Prep feed | `https://cileapley.github.io/ap-bio-calendar/prep.ics` |
+
+Subscribe to `prep.ics` yourself; students subscribe to `calendar.ics`. Prep
+never appears in the student page, feed or JSON — there is a test for that.
+
+Both prep files are publicly reachable, because the repo is public and that is
+what makes Pages free. Nothing in them is sensitive — "order spinach" is not a
+secret — but a student could find them. Known property, not a surprise.
+
 ## Publishing
 
 `docs/` is served live by GitHub Pages from the `main` branch. There is no
@@ -105,6 +145,8 @@ the schedule moved, and `git diff` always shows real changes rather than churn.
 | Student page | `https://cileapley.github.io/ap-bio-calendar/` |
 | Subscribable feed | `https://cileapley.github.io/ap-bio-calendar/calendar.ics` |
 | Raw data | `https://cileapley.github.io/ap-bio-calendar/calendar.json` |
+| Prep schedule (teacher) | `https://cileapley.github.io/ap-bio-calendar/prep.html` |
+| Prep feed (teacher) | `https://cileapley.github.io/ap-bio-calendar/prep.ics` |
 
 ### Embedding
 
@@ -141,6 +183,7 @@ content + assessment    110 periods
 labs scheduled          24 periods as dedicated blocks (15% of days; audit line is 25%)
 in-unit flex days       10 periods
 AP review before exam   14 periods
+lab prep                21 actions across 8 labs
 phases                  fall:83  finals:3  spring:75  post:18
 content ends            2027-04-12  (exam 2027-05-03)
 ```

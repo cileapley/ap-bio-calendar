@@ -120,11 +120,16 @@ non_instructional_days:
 # SITE TESTING DAYS — days the section does not meet or loses the period
 # -----------------------------------------------------------------------------
 # [PACING §2] CAASPP, PSAT, benchmark windows, assemblies. NOT on the district
-# PDF — these are site-level and must be filled in by hand. Every day added here
-# comes straight out of the review slack. Same format as above.
+# PDF — these are site-level and must be filled in by hand.
+#
+# Genuinely empty right now, not just unfilled: CAASPP does not affect this
+# teacher's students, and PSAT falls on a Saturday this year, so neither one
+# costs an instructional day. Interim assessment dates and assemblies are not
+# yet decided — those are the expected future additions. Recorded here so a
+# future reader doesn't re-investigate a settled question. Same format as
+# non_instructional_days above.
 # -----------------------------------------------------------------------------
 site_testing_days: []
-  # - {date: 2026-10-14, reason: "PSAT"}
 
 
 # -----------------------------------------------------------------------------
@@ -144,6 +149,19 @@ site_testing_days: []
 #   link:        optional URL surfaced on the student page
 #
 # To reorder: move the line. To rebalance: change `periods`. Rebuild.
+# -----------------------------------------------------------------------------
+#   prep:        lead times for a lab, in days. Three keys, each with a fixed
+#                basis chosen to match how that step actually works:
+#                  order   calendar days — purchasing runs over breaks
+#                  arrive  calendar days — shipping runs on calendar time
+#                  bench   school days   — prep is work done at school
+#                Calendar-basis dates snap BACKWARD to an instructional day, so
+#                a deadline is never moved later. Any key may be omitted.
+#                `order: 21` is CONFIRMED — verified against the district's
+#                actual purchase-order turnaround, not a placeholder. `arrive`
+#                and `bench` values are still defaults from general lab
+#                practice, NOT vendor data — replace them with your real kit
+#                lead times when known.
 # -----------------------------------------------------------------------------
 blocks:
 
@@ -199,7 +217,7 @@ blocks:
       - {id: "2.5+2.6", title: "Membrane Transport · Facilitated Diffusion", skill: "3.D, 6.E", periods: 2, kind: topic}
       # 3 periods, not 2: water potential math is the reliable stumbling block.
       - {id: "2.7", title: "Tonicity and Osmoregulation", skill: "4.A", periods: 3, kind: topic, notes: "Water potential calculations."}
-      - {id: "INV-4", title: "Investigation 4 — Diffusion and Osmosis", kind: lab, notes: "Big Idea 2: Energetics."}
+      - {id: "INV-4", title: "Investigation 4 — Diffusion and Osmosis", kind: lab, notes: "Big Idea 2: Energetics.", prep: {order: 21, arrive: 14, bench: 2}}
       - {id: "2.8", title: "Mechanisms of Transport", skill: "1.B", periods: 1, kind: topic}
       - {id: "2.9+2.10", title: "Cell Compartmentalization · Origins of Compartmentalization", skill: "6.E, 6.B", periods: 1, kind: topic}
       - {id: "2.FLEX", title: "Flex days — catch-up, reteach, or lab overflow", periods: 2, kind: flex}
@@ -221,12 +239,12 @@ blocks:
       # and respiration each take the extra period.
       - {id: "3.1", title: "Enzymes", skill: "1.B, 3.C", periods: 3, kind: topic}
       - {id: "3.2", title: "Environmental Impacts on Enzyme Function", skill: "6.E", periods: 1, kind: topic}
-      - {id: "INV-13", title: "Investigation 13 — Enzyme Activity", kind: lab, notes: "Big Idea 4: System Interactions."}
+      - {id: "INV-13", title: "Investigation 13 — Enzyme Activity", kind: lab, notes: "Big Idea 4: System Interactions.", prep: {order: 21, arrive: 7, bench: 2}}
       - {id: "3.3", title: "Cellular Energy", skill: "6.C", periods: 1, kind: topic}
       - {id: "3.4", title: "Photosynthesis", skill: "6.B", periods: 4, kind: topic}
-      - {id: "INV-5", title: "Investigation 5 — Photosynthesis", kind: lab, notes: "Big Idea 2: Energetics."}
+      - {id: "INV-5", title: "Investigation 5 — Photosynthesis", kind: lab, notes: "Big Idea 2: Energetics.", prep: {order: 21, arrive: 3, bench: 1}}
       - {id: "3.5", title: "Cellular Respiration", skill: "4.A", periods: 4, kind: topic}
-      - {id: "INV-6", title: "Investigation 6 — Cellular Respiration", kind: lab, notes: "Big Idea 2: Energetics."}
+      - {id: "INV-6", title: "Investigation 6 — Cellular Respiration", kind: lab, notes: "Big Idea 2: Energetics.", prep: {order: 21, arrive: 14, bench: 5}}
       - {id: "3.FLEX", title: "Flex days — catch-up, reteach, or lab overflow", periods: 2, kind: flex}
       - {id: "3.PC", title: "Progress Check 3", periods: 1, kind: assessment}
       - {id: "3.TEST", title: "Unit 3 Assessment", periods: 1, kind: assessment}
@@ -246,7 +264,7 @@ blocks:
       - {id: "4.3", title: "Signal Transduction Pathways", skill: "6.C", periods: 3, kind: topic}
       - {id: "4.4", title: "Feedback", skill: "6.E", periods: 2, kind: topic}
       - {id: "4.5", title: "Cell Cycle", skill: "4.B, 5.A", periods: 2, kind: topic}
-      - {id: "INV-7", title: "Investigation 7 — Cell Division: Mitosis and Meiosis", kind: lab, notes: "Big Idea 3: Information Storage and Transmission."}
+      - {id: "INV-7", title: "Investigation 7 — Cell Division: Mitosis and Meiosis", kind: lab, notes: "Big Idea 3: Information Storage and Transmission.", prep: {order: 21, arrive: 14, bench: 5}}
       - {id: "4.6", title: "Regulation of Cell Cycle", skill: "6.E", periods: 1, kind: topic}
       - {id: "4.FLEX", title: "Flex day — catch-up, reteach, or lab overflow", periods: 1, kind: flex}
       - {id: "4.PC", title: "Progress Check 4", periods: 1, kind: assessment}
@@ -314,7 +332,7 @@ blocks:
       - {id: "6.6", title: "Gene Expression and Cell Specialization", skill: "6.B", periods: 1, kind: topic}
       - {id: "6.7", title: "Mutations", skill: "2.C", periods: 1, kind: topic}
       - {id: "6.8", title: "Biotechnology", skill: "6.D", periods: 2, kind: topic}
-      - {id: "INV-8", title: "Investigation 8 — Biotechnology: Bacterial Transformation", kind: lab, notes: "Big Idea 3: Information Storage and Transmission."}
+      - {id: "INV-8", title: "Investigation 8 — Biotechnology: Bacterial Transformation", kind: lab, notes: "Big Idea 3: Information Storage and Transmission.", prep: {order: 28, arrive: 7, bench: 3}}
       - {id: "6.FLEX", title: "Flex day — catch-up, reteach, or lab overflow", periods: 1, kind: flex}
       - {id: "6.PC", title: "Progress Check 6", periods: 1, kind: assessment}
       - {id: "6.TEST", title: "Unit 6 Assessment", periods: 1, kind: assessment}
@@ -331,14 +349,14 @@ blocks:
       - {id: "7.3", title: "Artificial Selection", skill: "4.B", periods: 1, kind: topic}
       - {id: "7.4", title: "Population Genetics", skill: "3.B", periods: 1, kind: topic}
       - {id: "7.5", title: "Hardy–Weinberg Equilibrium", skill: "1.C, 5.A", periods: 3, kind: topic}
-      - {id: "INV-2", title: "Investigation 2 — Mathematical Modeling: Hardy–Weinberg", kind: lab, notes: "Big Idea 1: Evolution."}
+      - {id: "INV-2", title: "Investigation 2 — Mathematical Modeling: Hardy–Weinberg", kind: lab, notes: "Big Idea 1: Evolution.", prep: {order: 14, bench: 1}}
       - {id: "7.6", title: "Evidence of Evolution", skill: "4.B", periods: 1, kind: topic}
       - {id: "7.7+7.8", title: "Common Ancestry · Continuing Evolution", skill: "6.E, 3.D", periods: 1, kind: topic}
       # 3 periods, not 2: highest exam weight in the course and the unit
       # practitioners flag as hardest because it requires applying several
       # concepts at once — phylogeny is where that stacking shows up.
       - {id: "7.9", title: "Phylogeny", skill: "2.D", periods: 3, kind: topic}
-      - {id: "INV-3", title: "Investigation 3 — Comparing DNA Sequences with BLAST", kind: lab, notes: "Big Idea 1: Evolution. Computer-based, no consumables."}
+      - {id: "INV-3", title: "Investigation 3 — Comparing DNA Sequences with BLAST", kind: lab, notes: "Big Idea 1: Evolution. Computer-based, no consumables.", prep: {bench: 1}}
       - {id: "7.10+7.11", title: "Speciation · Variations in Populations", skill: "2.B, 6.C", periods: 1, kind: topic}
       - {id: "7.12", title: "Origins of Life on Earth", skill: "3.B", periods: 1, kind: topic}
       - {id: "7.FLEX", title: "Flex day — catch-up, reteach, or lab overflow", periods: 1, kind: flex}
