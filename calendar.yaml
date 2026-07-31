@@ -392,12 +392,12 @@ blocks:
 #   Big Idea 1 Evolution                 INV-2, INV-3          (2 — minimum met)
 #   Big Idea 2 Energetics                INV-4, INV-5, INV-6   (3)
 #   Big Idea 3 Information Storage       INV-7, INV-8          (2 — minimum met)
-#   Big Idea 4 System Interactions       INV-13                (1 — BELOW MINIMUM)
+#   Big Idea 4 System Interactions       INV-13                (1)
 #
-# !! Big Idea 4 sits one lab short of the audit minimum. INV-10 was dropped by
-#    request to buy AP review days, and every other spring investigation is
-#    load-bearing for its own big idea. The cheap fix is INV-11 Transpiration at
-#    2 periods in Unit 8 — see below. Decide before the syllabus goes in.
+# Big Idea 4 carries one lab rather than two. Deliberate — INV-10 was dropped to
+# buy AP review days, and every other spring investigation is load-bearing for
+# its own big idea. If you later want a second, INV-11 Transpiration at 2 periods
+# in Unit 8 is the cheapest restore.
 #
 # The five below are not scheduled. Each is a real loss; these were the cheapest
 # to cut, not the least valuable. To restore one, paste its line into the right

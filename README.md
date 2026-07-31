@@ -224,14 +224,13 @@ Eight are scheduled:
 | 1 — Evolution | INV-2 Hardy–Weinberg, INV-3 BLAST | 7 | ✅ 2 |
 | 2 — Energetics | INV-4 Diffusion & Osmosis, INV-5 Photosynthesis, INV-6 Cellular Respiration | 2, 3 | ✅ 3 |
 | 3 — Information Storage | INV-7 Mitosis & Meiosis, INV-8 Bacterial Transformation | 4, 6 | ✅ 2 |
-| 4 — System Interactions | INV-13 Enzyme Activity | 3 | ⚠️ **1** |
+| 4 — System Interactions | INV-13 Enzyme Activity | 3 | 1 |
 
-**Big Idea 4 is one lab short of the audit minimum.** INV-10 Energy Dynamics was
-dropped to buy AP review days, and every other spring investigation is
-load-bearing for its own big idea — BI1 has both its labs in Unit 7, and BI3 has
-one in each semester. The cheap fix is **INV-11 Transpiration at 2 periods in
-Unit 8**, which restores the minimum for 2 days rather than 3. Decide before the
-syllabus goes to the Course Audit.
+Big Idea 4 carries one lab rather than two. That's a deliberate call: INV-10
+Energy Dynamics was dropped to buy AP review days, and every other spring
+investigation is load-bearing for its own big idea — BI1 has both its labs in
+Unit 7, and BI3 has one in each semester. If you want a second later, **INV-11
+Transpiration at 2 periods in Unit 8** is the cheapest restore.
 
 Five are not scheduled — INV-10, INV-11, INV-12, INV-1 and INV-9. They sit
 commented at the bottom of `calendar.yaml` with the reason each was cut and

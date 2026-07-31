@@ -17,16 +17,16 @@ The failure mode is not miscalculating a date. It is **not looking on the right
 day**. Any solution that requires remembering to check something has not solved
 the problem.
 
-Two windows are already compromised, which is what motivated this work:
+The motivating case is **INV-8 Bacterial Transformation** (lab Jan 26): its naive
+arrival date lands inside Christmas recess, so the real deadline is earlier than
+the arithmetic suggests. Naive date subtraction is wrong in ways that are easy to
+miss and expensive to get wrong.
 
-- **INV-4 Diffusion and Osmosis** (lab Sep 15) has a six-week order date of
-  **Aug 4** — four days from now, and eight days before the first day of school.
-- **INV-8 Bacterial Transformation** (lab Jan 26) has a naive order date of
-  Dec 15 and a naive arrival date inside Christmas recess. The real deadline is
-  earlier than the arithmetic suggests.
-
-The second case is the general argument: naive date subtraction is wrong in ways
-that are easy to miss and expensive to get wrong.
+An initial six-week purchase-order assumption also put INV-4's order date before
+the first day of school. The teacher has since confirmed the district turns
+purchase orders around **faster than six weeks**, which moves that date into term
+and removes the alarm. The exact cycle length is not yet known; see *Default lead
+times* below.
 
 ## Non-goals
 
@@ -164,16 +164,26 @@ expected to be overridden once real PO cycles and kit lead times are known.
 
 | Lab | Lab date | `order` | `arrive` | `bench` | Reasoning |
 |---|---|---|---|---|---|
-| INV-4 Diffusion & Osmosis | Sep 15 | 42 | 14 | 2 | Dialysis tubing and sucrose store well |
-| INV-13 Enzyme Activity | Oct 2 | 42 | 7 | 2 | H₂O₂ degrades; do not buy far ahead |
-| INV-5 Photosynthesis | Oct 14 | 42 | 3 | 1 | Spinach must be fresh — equipment early, produce late |
-| INV-6 Cellular Respiration | Oct 23 | 42 | 14 | 5 | Peas need soaking then germinating; longest bench |
-| INV-7 Mitosis & Meiosis | Nov 16 | 42 | 14 | 5 | Onion root tips take about a week to grow |
-| INV-8 Bacterial Transformation | Jan 26 | 42 | 7 | 3 | Competent cells are cold-chain and short-lived; plates poured ahead |
-| INV-2 Hardy–Weinberg | Feb 16 | 21 | — | 1 | Beads or a spreadsheet |
+| INV-4 Diffusion & Osmosis | Sep 15 | 21 | 14 | 2 | Dialysis tubing and sucrose store well |
+| INV-13 Enzyme Activity | Oct 2 | 21 | 7 | 2 | H₂O₂ degrades; do not buy far ahead |
+| INV-5 Photosynthesis | Oct 14 | 21 | 3 | 1 | Spinach must be fresh — equipment early, produce late |
+| INV-6 Cellular Respiration | Oct 23 | 21 | 14 | 5 | Peas need soaking then germinating; longest bench |
+| INV-7 Mitosis & Meiosis | Nov 16 | 21 | 14 | 5 | Onion root tips take about a week to grow |
+| INV-8 Bacterial Transformation | Jan 26 | 28 | 7 | 3 | Competent cells are cold-chain and short-lived; kit ordering is slower |
+| INV-2 Hardy–Weinberg | Feb 16 | 14 | — | 1 | Beads or a spreadsheet |
 | INV-3 BLAST | Feb 26 | — | — | 1 | Computers only; this one books the cart |
 
 21 prep actions total.
+
+`order` defaults to **21 days (three weeks)**, down from an initial 42. The
+teacher confirmed the district's purchase-order cycle is shorter than six weeks
+but has not yet supplied the exact figure; 21 is a deliberate placeholder that
+keeps every order date inside term. INV-8 keeps 28 because kit ordering with
+cold-chain shipping is slower than consumables.
+
+The single highest-value correction to this file is the real PO cycle length.
+Changing it is one number per lab, and the build reports immediately if a new
+value pushes a date into the past or before the first day of school.
 
 **This table is the largest source of error in the feature.** The mechanism will
 be correct; whether 42 days matches the district PO cycle, or 5 days is enough to
@@ -207,10 +217,11 @@ Following the patterns already in the repository.
 4. **Cascade test** — shift a unit by one week, confirm every prep date moves
    with it, revert, confirm output is byte-identical.
 5. **Known-case test** — INV-8's `arrive` snaps out of Christmas recess and
-   raises the break-crossing warning. INV-4's `order` date of Aug 4 raises the
-   before-term warning, and will additionally raise the past-date warning once
-   Aug 4 has passed; the test must pin a build date rather than use today's, so
-   it does not change behaviour over time.
+   raises the break-crossing warning. The past-date and before-term warnings are
+   tested by temporarily raising an `order` value rather than relying on the
+   current defaults, which no longer trigger them. All date-sensitive tests must
+   pin a build date rather than use today's, so they do not change behaviour as
+   the year progresses.
 
 **Non-regression**
 
@@ -237,6 +248,8 @@ None blocking. Two were raised during design and resolved:
   currently unused `link:` field.
 - Materials lists per investigation, if `prep.html` should become a shopping
   list rather than a schedule.
-- Restoring INV-11 Transpiration to bring Big Idea 4 back to the Course Audit's
-  two-labs-per-big-idea minimum. Tracked in the README; unrelated to this work
-  but it would add a ninth set of prep actions.
+- Restoring INV-11 Transpiration for Big Idea 4. **Decided against for now** —
+  the teacher is not treating the two-labs-per-big-idea line as binding, so the
+  warnings about it have been removed from the README and `calendar.yaml`. If it
+  is restored later it inherits prep actions automatically from its `prep:`
+  block, so nothing here needs to change to accommodate it.
