@@ -18,7 +18,7 @@
 - **Idempotent writes:** a rebuild that does not change the calendar must not rewrite any file. Timestamps alone do not count as a change.
 - **Warn vs fail:** structural contradictions exit non-zero. Judgment calls print to stderr and exit zero.
 - **Determinism:** `build.py` must not call `Date.now()`-equivalents inside pure functions. The build date is passed in as a parameter so tests can pin it.
-- **Run tests with:** `python -m unittest discover -s tests -t . -v` from the repo root.
+- **Run tests with:** `python -m unittest discover -s tests -t . -v` from the repo root. This requires an empty `tests/__init__.py`: `TestLoader.discover` raises `ImportError: Start directory is not importable` when `start_dir` differs from `top_level_dir` and the start directory is not a package. Verified on Python 3.13.14.
 
 ---
 
