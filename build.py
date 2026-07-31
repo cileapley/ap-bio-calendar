@@ -666,10 +666,11 @@ def main() -> int:
 
         try:
             prep_actions = prep_module.derive(sched["blocks"], all_days)
-        except ValueError as exc:
-            # derive() raises ValueError on a malformed prep block. main()
-            # only catches BuildError, so translate it or it escapes as a
-            # traceback instead of the clean failure message.
+        except (ValueError, TypeError, AttributeError) as exc:
+            # derive() raises ValueError on an unknown action key, TypeError on
+            # a non-numeric lead, and AttributeError when prep: is a scalar
+            # rather than a mapping. main() catches only BuildError, so all
+            # three must be translated or they escape as tracebacks.
             raise BuildError(f"Bad prep block in calendar.yaml: {exc}") from exc
 
         prep_warnings, prep_errors = prep_module.validate(

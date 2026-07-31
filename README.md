@@ -183,7 +183,7 @@ content + assessment    110 periods
 labs scheduled          24 periods as dedicated blocks (15% of days; audit line is 25%)
 in-unit flex days       10 periods
 AP review before exam   14 periods
-lab prep                21 actions across 8 labs
+lab prep                21 actions across 8 labs — 1 need attention
 phases                  fall:83  finals:3  spring:75  post:18
 content ends            2027-04-12  (exam 2027-05-03)
 ```

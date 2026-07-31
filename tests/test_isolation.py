@@ -7,9 +7,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 
+sys.path.insert(0, str(ROOT))
+import icsutil
+
 STUDENT_FILES = ["index.html", "calendar.ics", "calendar.json"]
 PREP_MARKERS = ["Prep starts", "Arrives", "prep-inv", "Lab Prep",
-                "Order: Investigation"]
+                "Order: Investigation", '"prep"', "prep:"]
 
 
 class TestPrepIsolation(unittest.TestCase):
@@ -37,15 +40,17 @@ class TestPrepIsolation(unittest.TestCase):
         self.assertEqual(text.count("BEGIN:VEVENT"), 102)
 
     def test_prep_ics_is_structurally_valid(self):
-        sys.path.insert(0, str(ROOT))
-        import icsutil
         self.assertEqual(icsutil.verify_ics(DOCS / "prep.ics"), [])
 
     def test_rebuild_is_idempotent(self):
         before = {n: (DOCS / n).read_bytes()
                   for n in STUDENT_FILES + ["prep.html", "prep.ics"]}
-        subprocess.run([sys.executable, "build.py"], cwd=ROOT,
-                       capture_output=True, text=True)
+        result = subprocess.run([sys.executable, "build.py"], cwd=ROOT,
+                                capture_output=True, text=True)
+        # Assert the rebuild actually succeeded. Without this the test passes
+        # when build.py crashes on startup: nothing gets rewritten, so every
+        # byte comparison below trivially holds.
+        self.assertEqual(result.returncode, 0, result.stderr)
         for name, content in before.items():
             self.assertEqual((DOCS / name).read_bytes(), content,
                              f"docs/{name} was rewritten with no change")
