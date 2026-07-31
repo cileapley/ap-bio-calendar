@@ -156,5 +156,66 @@ class TestOrdering(unittest.TestCase):
                                  "ADDED", "RETITLED"])
 
 
+class TestRenderText(unittest.TestCase):
+    def _deltas(self):
+        old = calendar({"id": "INV-4", "kind": "lab",
+                        "title": "Investigation 4", "periods": 3,
+                        "end": "2026-09-17"})
+        new = calendar({"id": "INV-4", "kind": "lab",
+                        "title": "Investigation 4", "periods": 2,
+                        "end": "2026-09-16"})
+        return changes.diff(old, new)
+
+    def test_empty_input_says_nothing_changed(self):
+        text = changes.render_text([])
+        self.assertIn("No changes", text)
+
+    def test_groups_under_a_severity_heading(self):
+        self.assertIn("RESIZED", changes.render_text(self._deltas()))
+
+    def test_shows_the_period_transition(self):
+        self.assertIn("3 days -> 2", changes.render_text(self._deltas()))
+
+    def test_names_the_orphaned_key_as_a_hint(self):
+        # The JSON stays convention-free; the human summary spells the key out
+        # because "orphans INV-4-d3" is what tells you which file to delete.
+        self.assertIn("INV-4-d3", changes.render_text(self._deltas()))
+
+    def test_reports_what_did_not_change(self):
+        text = changes.render_text(self._deltas())
+        self.assertIn("Nothing", text)
+
+
+class TestRenderJson(unittest.TestCase):
+    def _deltas(self):
+        old = calendar({"id": "INV-4", "periods": 3, "end": "2026-09-17"})
+        new = calendar({"id": "INV-4", "periods": 2, "end": "2026-09-16"})
+        return changes.diff(old, new)
+
+    def test_output_is_valid_json_with_a_stable_shape(self):
+        import json
+        payload = json.loads(changes.render_json(self._deltas()))
+        self.assertIn("changes", payload)
+        self.assertIn("counts", payload)
+        self.assertEqual(payload["counts"]["RESIZED"], 1)
+
+    def test_lost_days_are_raw_integers_not_formatted_keys(self):
+        # The {id}-d{n} format is this project's suggestion to the lesson-plan
+        # workspace, not their published contract. Baking a guess at another
+        # project's key format into this output would make the two disagree
+        # silently the moment they diverge.
+        import json
+        payload = json.loads(changes.render_json(self._deltas()))
+        entry = payload["changes"][0]
+        self.assertEqual(entry["lost_day_indices"], [3])
+        self.assertNotIn("INV-4-d3", changes.render_json(self._deltas()))
+
+    def test_empty_input_still_produces_a_valid_document(self):
+        import json
+        payload = json.loads(changes.render_json([]))
+        self.assertEqual(payload["changes"], [])
+        self.assertEqual(payload["counts"], {})
+
+
 if __name__ == "__main__":
     unittest.main()

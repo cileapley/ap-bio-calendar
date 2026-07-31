@@ -10,6 +10,7 @@ day indices stopped existing, because its plans are keyed to them.
 
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
 
 # Most consequential first. A removal loses written work; a retitle is cosmetic.
@@ -111,3 +112,70 @@ def diff(old: dict, new: dict) -> list[EntryDelta]:
 
     deltas.sort(key=lambda d: (SEVERITY.index(d.changes[0]), d.entry_id))
     return deltas
+
+
+def render_text(deltas: list[EntryDelta]) -> str:
+    """Prose for the teacher, grouped most consequential first."""
+    if not deltas:
+        return "No changes to the calendar since the last commit.\n"
+
+    lines = ["Calendar changes vs HEAD", ""]
+    seen: set[str] = set()
+
+    for heading in SEVERITY:
+        group = [d for d in deltas if heading in d.changes]
+        if not group:
+            continue
+        seen.add(heading)
+        lines.append(f"{heading}  {len(group)} "
+                     f"{'entry' if len(group) == 1 else 'entries'}")
+        for delta in group:
+            detail = ""
+            if heading == "RESIZED":
+                detail = (f"{delta.old['periods']} days -> "
+                          f"{delta.new['periods']}")
+                if delta.lost_day_indices:
+                    keys = ", ".join(f"{delta.entry_id}-d{n}"
+                                     for n in delta.lost_day_indices)
+                    detail += f"   orphans {keys}"
+            elif heading == "MOVED":
+                detail = (f"{delta.old['start']}..{delta.old['end']} -> "
+                          f"{delta.new['start']}..{delta.new['end']}")
+            elif heading == "RETITLED":
+                detail = f"{delta.old['title']!r} -> {delta.new['title']!r}"
+            elif heading == "ADDED":
+                detail = f"{delta.new['start']}, {delta.new['periods']} day(s)"
+            elif heading == "REMOVED":
+                detail = f"was {delta.old['start']}, {delta.old['periods']} day(s)"
+            lines.append(f"  {delta.entry_id:<12} {delta.title[:44]:<46}{detail}")
+        lines.append("")
+
+    quiet = [h for h in SEVERITY if h not in seen]
+    if quiet:
+        lines.append("Nothing " + ", ".join(h.lower() for h in quiet) + ".")
+    return "\n".join(lines) + "\n"
+
+
+def render_json(deltas: list[EntryDelta]) -> str:
+    """Machine-readable, for consumers keyed to entry ids and day indices."""
+    counts: dict[str, int] = {}
+    for delta in deltas:
+        for name in delta.changes:
+            counts[name] = counts.get(name, 0) + 1
+
+    payload = {
+        "counts": counts,
+        "changes": [
+            {
+                "entry_id": d.entry_id,
+                "kind": d.kind,
+                "title": d.title,
+                "changes": list(d.changes),
+                "old": d.old,
+                "new": d.new,
+                "lost_day_indices": list(d.lost_day_indices),
+            }
+            for d in deltas
+        ],
+    }
+    return json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
