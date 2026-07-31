@@ -185,6 +185,36 @@ class TestRenderText(unittest.TestCase):
         text = changes.render_text(self._deltas())
         self.assertIn("Nothing", text)
 
+    def test_added_and_removed_render_without_touching_the_missing_side(self):
+        # An ADDED delta has old=None and a REMOVED delta has new=None, so
+        # every branch must read only the side that exists. Structural safety
+        # today; this makes a regression fail instead of crashing on real data.
+        added = changes.diff(calendar(), calendar({"id": "2.7"}))
+        removed = changes.diff(calendar({"id": "2.7"}), calendar())
+        self.assertIn("ADDED", changes.render_text(added))
+        self.assertIn("REMOVED", changes.render_text(removed))
+
+    def test_groups_appear_in_severity_order(self):
+        # Headings must print most-consequential-first. Iterating in insertion
+        # order instead would pass every other test in this class.
+        old = calendar({"id": "gone"}, {"id": "rename", "title": "Old"})
+        new = calendar({"id": "rename", "title": "New"}, {"id": "fresh"})
+        text = changes.render_text(changes.diff(old, new))
+        self.assertLess(text.index("REMOVED"), text.index("ADDED"))
+        self.assertLess(text.index("ADDED"), text.index("RETITLED"))
+
+    def test_header_counts_distinct_entries_not_the_sum_of_groups(self):
+        # One entry that both moved and resized appears under two headings.
+        # The header states how many entries actually changed.
+        old = calendar({"id": "2.7", "periods": 3,
+                        "start": "2026-09-15", "end": "2026-09-17"})
+        new = calendar({"id": "2.7", "periods": 2,
+                        "start": "2026-09-21", "end": "2026-09-22"})
+        text = changes.render_text(changes.diff(old, new))
+        self.assertIn("1 entry changed", text)
+        self.assertIn("RESIZED", text)
+        self.assertIn("MOVED", text)
+
 
 class TestRenderJson(unittest.TestCase):
     def _deltas(self):
@@ -215,6 +245,18 @@ class TestRenderJson(unittest.TestCase):
         payload = json.loads(changes.render_json([]))
         self.assertEqual(payload["changes"], [])
         self.assertEqual(payload["counts"], {})
+
+    def test_counts_tally_change_types_not_entries(self):
+        # Deliberate: counts is a category tally, so a two-label delta
+        # increments two counters while `changes` holds one record.
+        import json
+        old = calendar({"id": "2.7", "periods": 3,
+                        "start": "2026-09-15", "end": "2026-09-17"})
+        new = calendar({"id": "2.7", "periods": 2,
+                        "start": "2026-09-21", "end": "2026-09-22"})
+        payload = json.loads(changes.render_json(changes.diff(old, new)))
+        self.assertEqual(payload["counts"], {"RESIZED": 1, "MOVED": 1})
+        self.assertEqual(len(payload["changes"]), 1)
 
 
 if __name__ == "__main__":

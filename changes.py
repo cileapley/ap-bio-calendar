@@ -119,7 +119,8 @@ def render_text(deltas: list[EntryDelta]) -> str:
     if not deltas:
         return "No changes to the calendar since the last commit.\n"
 
-    lines = ["Calendar changes vs HEAD", ""]
+    lines = [f"Calendar changes vs HEAD — {len(deltas)} "
+             f"{'entry' if len(deltas) == 1 else 'entries'} changed", ""]
     seen: set[str] = set()
 
     for heading in SEVERITY:
