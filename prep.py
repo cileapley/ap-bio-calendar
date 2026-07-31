@@ -14,6 +14,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date, timedelta
 
+from icsutil import fold, ics_escape, slug
+
 # Each action counts its lead time on the basis that matches how it works.
 # Purchasing and shipping run on calendar time and do not pause for holidays.
 # Bench prep is work a person does at school, so it counts school days.
@@ -177,3 +179,55 @@ def validate(actions, first_day: date, today: date):
             )
 
     return warnings, errors
+
+
+def _short(day: date) -> str:
+    return f"{day.strftime('%b')} {day.day}"
+
+
+def render_ics(actions, course: dict, stamp_utc: str, uid_domain: str) -> str:
+    """One all-day VEVENT per prep action.
+
+    UIDs are keyed on lab and action, never on the date, so a slipped unit
+    moves the event in a subscriber's calendar instead of duplicating it.
+    """
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        f"PRODID:-//{course['title']} {course['school_year']}//lab prep//EN",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        f"X-WR-CALNAME:{ics_escape(course['title'])} "
+        f"{ics_escape(course['school_year'])} Lab Prep",
+        "X-PUBLISHED-TTL:PT12H",
+    ]
+
+    for action in actions:
+        summary = (f"{LABEL[action.action]}: {action.lab_title} "
+                   f"(lab {_short(action.lab_date)})")
+        description = (
+            f"{action.lead_days} {action.basis} days before "
+            f"{action.lab_date.isoformat()}."
+        )
+        if action.snapped_days:
+            description += (
+                f" Moved back {action.snapped_days} day(s) from "
+                f"{action.raw_date.isoformat()} to land on a school day."
+            )
+        event = [
+            "BEGIN:VEVENT",
+            f"UID:prep-{slug(action.lab_id, action.action)}@{uid_domain}",
+            f"DTSTAMP:{stamp_utc}",
+            f"DTSTART;VALUE=DATE:{action.date.strftime('%Y%m%d')}",
+            f"DTEND;VALUE=DATE:"
+            f"{(action.date + timedelta(days=1)).strftime('%Y%m%d')}",
+            "TRANSP:TRANSPARENT",
+            f"SUMMARY:{ics_escape(summary)}",
+            f"DESCRIPTION:{ics_escape(description)}",
+            "END:VEVENT",
+        ]
+        for line in event:
+            lines.extend(fold(line))
+
+    lines.append("END:VCALENDAR")
+    return "\r\n".join(lines) + "\r\n"

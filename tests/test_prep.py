@@ -221,5 +221,76 @@ class TestValidate(unittest.TestCase):
         self.assertTrue(any("INV-9" in e for e in errors))
 
 
+class TestRenderIcs(unittest.TestCase):
+    def setUp(self):
+        self.days = instructional(date(2026, 8, 12), date(2026, 12, 18))
+        self.course = {"title": "AP Biology", "school_year": "2026-27"}
+        self.actions = prep.derive(
+            lab_block("INV-4", date(2026, 9, 15),
+                      {"order": 21, "arrive": 14, "bench": 2}),
+            self.days)
+
+    def _render(self):
+        return prep.render_ics(
+            self.actions, self.course, "20260731T120000Z", "apbio-2026-27")
+
+    def test_uses_crlf_line_endings(self):
+        text = self._render()
+        self.assertIn("\r\n", text)
+        # No bare LF: every newline must be preceded by a carriage return.
+        for position, char in enumerate(text):
+            if char == "\n":
+                self.assertEqual(text[position - 1], "\r")
+
+    def test_one_vevent_per_action(self):
+        self.assertEqual(self._render().count("BEGIN:VEVENT"), 3)
+
+    def test_summary_names_the_action_and_the_lab_date(self):
+        text = self._render()
+        self.assertIn("SUMMARY:Order: Investigation X — Test Lab", text)
+        self.assertIn("lab Sep 15", text)
+
+    def test_uids_are_stable_and_distinct(self):
+        first = self._render()
+        second = prep.render_ics(
+            self.actions, self.course, "20260801T090000Z", "apbio-2026-27")
+        uids = lambda t: sorted(
+            l for l in t.split("\r\n") if l.startswith("UID:"))
+        self.assertEqual(uids(first), uids(second))
+        self.assertEqual(len(set(uids(first))), 3)
+
+    def test_uid_is_independent_of_the_scheduled_date(self):
+        # The invariant that matters: when a unit slips, a subscriber's
+        # calendar must MOVE the existing event, not add a second one beside
+        # the stale copy. That holds only if the UID derives from lab and
+        # action and never from the date. Asserting the UID text merely
+        # lacks a year is no good — the uid_domain legitimately contains one.
+        later = prep.derive(
+            lab_block("INV-4", date(2026, 10, 20),
+                      {"order": 21, "arrive": 14, "bench": 2}),
+            self.days)
+
+        def uids(actions):
+            text = prep.render_ics(
+                actions, self.course, "20260731T120000Z", "apbio-2026-27")
+            return sorted(
+                line for line in text.split("\r\n") if line.startswith("UID:"))
+
+        # Guard the premise: the two renders must genuinely differ in date,
+        # or this test proves nothing.
+        self.assertNotEqual([a.date for a in self.actions],
+                            [a.date for a in later])
+        self.assertEqual(uids(self.actions), uids(later))
+
+    def test_all_day_events_end_the_following_day(self):
+        text = self._render()
+        self.assertIn("DTSTART;VALUE=DATE:20260825", text)
+        self.assertIn("DTEND;VALUE=DATE:20260826", text)
+
+    def test_calendar_name_marks_it_as_the_prep_feed(self):
+        self.assertIn("X-WR-CALNAME:AP Biology 2026-27 Lab Prep",
+                      self._render())
+
+
 if __name__ == "__main__":
     unittest.main()
