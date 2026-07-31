@@ -167,5 +167,59 @@ class TestDeriveShape(unittest.TestCase):
         self.assertEqual(actions[0].snapped_days, 0)
 
 
+class TestValidate(unittest.TestCase):
+    def setUp(self):
+        self.days = instructional(date(2026, 8, 12), date(2027, 2, 28))
+        self.first = date(2026, 8, 12)
+
+    def _actions(self, spec, lab_date=date(2026, 9, 15), lab_id="INV-4"):
+        return prep.derive(lab_block(lab_id, lab_date, spec), self.days)
+
+    def test_clean_actions_produce_nothing(self):
+        actions = self._actions({"order": 21, "arrive": 14, "bench": 2})
+        warnings, errors = prep.validate(actions, self.first, date(2026, 8, 1))
+        self.assertEqual(warnings, [])
+        self.assertEqual(errors, [])
+
+    def test_date_in_the_past_warns(self):
+        actions = self._actions({"order": 21})
+        warnings, errors = prep.validate(actions, self.first, date(2026, 9, 1))
+        self.assertEqual(errors, [])
+        self.assertTrue(any("past" in w.lower() for w in warnings))
+
+    def test_date_before_term_warns(self):
+        # 42-day lead on a Sep 15 lab lands Aug 4, before the Aug 12 start.
+        actions = self._actions({"order": 42})
+        warnings, errors = prep.validate(actions, self.first, date(2026, 7, 1))
+        self.assertEqual(errors, [])
+        self.assertTrue(any("before" in w.lower() for w in warnings))
+
+    def test_snapping_more_than_two_days_warns(self):
+        recess = {date(2026, 12, 21) + timedelta(days=n) for n in range(12)}
+        days = instructional(date(2026, 8, 12), date(2027, 2, 28), skip=recess)
+        actions = prep.derive(
+            lab_block("INV-8", date(2027, 1, 26), {"arrive": 33}), days)
+        warnings, errors = prep.validate(actions, self.first, date(2026, 8, 1))
+        self.assertEqual(errors, [])
+        self.assertTrue(any("break" in w.lower() for w in warnings))
+
+    def test_snapping_two_days_or_less_does_not_warn(self):
+        # A weekend snap of 1-2 days is routine, not worth a warning.
+        actions = self._actions({"arrive": 2})
+        warnings, errors = prep.validate(actions, self.first, date(2026, 8, 1))
+        self.assertEqual(errors, [])
+        self.assertFalse(any("break" in w.lower() for w in warnings))
+
+    def test_arrive_before_order_is_an_error(self):
+        actions = self._actions({"order": 7, "arrive": 21})
+        warnings, errors = prep.validate(actions, self.first, date(2026, 8, 1))
+        self.assertTrue(any("INV-4" in e for e in errors))
+
+    def test_errors_name_the_lab(self):
+        actions = self._actions({"order": 7, "arrive": 21}, lab_id="INV-9")
+        _, errors = prep.validate(actions, self.first, date(2026, 8, 1))
+        self.assertTrue(any("INV-9" in e for e in errors))
+
+
 if __name__ == "__main__":
     unittest.main()

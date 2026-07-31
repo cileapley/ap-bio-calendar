@@ -131,3 +131,49 @@ def derive(blocks: list[dict], instructional_days: list[date]) -> list[PrepActio
 
     actions.sort(key=lambda a: (a.date, ACTION_ORDER.index(a.action)))
     return actions
+
+
+# A snap of a day or two is a routine weekend adjustment. More than that means
+# the date crossed a recess and the effective deadline moved meaningfully.
+SNAP_WARNING_THRESHOLD = 2
+
+
+def validate(actions, first_day: date, today: date):
+    """Split prep problems into warnings and hard errors.
+
+    Warnings are facts about the world — a window that has closed, or one that
+    falls in the summer. Errors are contradictions in the source file.
+    """
+    warnings: list[str] = []
+    errors: list[str] = []
+
+    for action in actions:
+        where = f"{action.lab_id} {action.action}"
+        if action.date < today:
+            warnings.append(
+                f"{where}: {action.date} is in the past "
+                f"({(today - action.date).days} days ago)"
+            )
+        if action.raw_date < first_day:
+            warnings.append(
+                f"{where}: {action.raw_date} falls before the first day of "
+                f"school — this belongs to the summer"
+            )
+        if action.snapped_days > SNAP_WARNING_THRESHOLD:
+            warnings.append(
+                f"{where}: {action.raw_date} lands in a break and snapped back "
+                f"{action.snapped_days} days to {action.date}"
+            )
+
+    by_lab: dict[str, dict[str, PrepAction]] = {}
+    for action in actions:
+        by_lab.setdefault(action.lab_id, {})[action.action] = action
+    for lab_id, found in by_lab.items():
+        order, arrive = found.get("order"), found.get("arrive")
+        if order and arrive and arrive.date < order.date:
+            errors.append(
+                f"{lab_id}: arrive ({arrive.date}) is before order "
+                f"({order.date}) — the lead times contradict each other"
+            )
+
+    return warnings, errors
