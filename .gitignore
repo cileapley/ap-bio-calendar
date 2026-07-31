@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Scratch files from editing sessions
+*.tmp
+.playwright-mcp/
+*.png

@@ -1,0 +1,1469 @@
+{
+  "generated": "2026-07-31 09:25",
+  "source": "calendar.yaml",
+  "course": {
+    "title": "AP Biology",
+    "school_year": "2026-27",
+    "exam_date": "2027-05-03",
+    "exam_note": "Session 2 — afternoon, 12 p.m. local",
+    "period_minutes": 60
+  },
+  "summary": {
+    "instructional_days_total": 180,
+    "instructional_days_to_exam": 161,
+    "instructional_days_after_exam": 18,
+    "first_instructional_day": "2026-08-12",
+    "last_instructional_day": "2027-05-27",
+    "exam_date": "2027-05-03",
+    "content_periods": 110,
+    "lab_periods_scheduled": 24,
+    "flex_periods": 10,
+    "lab_periods_required": 40,
+    "review_periods": 14,
+    "conversion_factor": 0.83,
+    "labs_additive": true,
+    "published_entries": 85
+  },
+  "blocks": [
+    {
+      "id": "opening",
+      "unit": null,
+      "title": "Course Opening",
+      "weight": null,
+      "start": "2026-08-12",
+      "end": "2026-08-14",
+      "periods": 3,
+      "entries": [
+        {
+          "id": null,
+          "title": "Syllabus, lab safety, diagnostic",
+          "kind": "opening",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2026-08-12",
+          "end": "2026-08-14",
+          "dates": [
+            "2026-08-12",
+            "2026-08-13",
+            "2026-08-14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-1",
+      "unit": 1,
+      "title": "Chemistry of Life",
+      "weight": [
+        8,
+        11
+      ],
+      "start": "2026-08-17",
+      "end": "2026-08-27",
+      "periods": 9,
+      "entries": [
+        {
+          "id": "1.1+1.2",
+          "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
+          "kind": "topic",
+          "skill": "2.A",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-17",
+          "end": "2026-08-17",
+          "dates": [
+            "2026-08-17"
+          ]
+        },
+        {
+          "id": "1.3+1.4",
+          "title": "Introduction to Macromolecules · Carbohydrates",
+          "kind": "topic",
+          "skill": "2.A, 1.A",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-18",
+          "end": "2026-08-18",
+          "dates": [
+            "2026-08-18"
+          ]
+        },
+        {
+          "id": "1.5+1.6",
+          "title": "Lipids · Nucleic Acids",
+          "kind": "topic",
+          "skill": "6.E, 2.A",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-19",
+          "end": "2026-08-19",
+          "dates": [
+            "2026-08-19"
+          ]
+        },
+        {
+          "id": "1.7",
+          "title": "Proteins",
+          "kind": "topic",
+          "skill": "6.E",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2026-08-20",
+          "end": "2026-08-24",
+          "dates": [
+            "2026-08-20",
+            "2026-08-21",
+            "2026-08-24"
+          ]
+        },
+        {
+          "id": "1.FLEX",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-25",
+          "end": "2026-08-25",
+          "dates": [
+            "2026-08-25"
+          ]
+        },
+        {
+          "id": "1.PC",
+          "title": "Progress Check 1",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-26",
+          "end": "2026-08-26",
+          "dates": [
+            "2026-08-26"
+          ]
+        },
+        {
+          "id": "1.TEST",
+          "title": "Unit 1 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-27",
+          "end": "2026-08-27",
+          "dates": [
+            "2026-08-27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-2",
+      "unit": 2,
+      "title": "Cells",
+      "weight": [
+        10,
+        13
+      ],
+      "start": "2026-08-28",
+      "end": "2026-09-25",
+      "periods": 20,
+      "entries": [
+        {
+          "id": "2.1",
+          "title": "Cell Structure and Function",
+          "kind": "topic",
+          "skill": "1.A, 6.A",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2026-08-28",
+          "end": "2026-09-01",
+          "dates": [
+            "2026-08-28",
+            "2026-08-31",
+            "2026-09-01"
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Cell Size",
+          "kind": "topic",
+          "skill": "2.D, 5.A",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2026-09-02",
+          "end": "2026-09-03",
+          "dates": [
+            "2026-09-02",
+            "2026-09-03"
+          ]
+        },
+        {
+          "id": "2.3+2.4",
+          "title": "Plasma Membrane · Membrane Permeability",
+          "kind": "topic",
+          "skill": "2.A, 5.D",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-09-04",
+          "end": "2026-09-04",
+          "dates": [
+            "2026-09-04"
+          ]
+        },
+        {
+          "id": "2.5+2.6",
+          "title": "Membrane Transport · Facilitated Diffusion",
+          "kind": "topic",
+          "skill": "3.D, 6.E",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2026-09-08",
+          "end": "2026-09-09",
+          "dates": [
+            "2026-09-08",
+            "2026-09-09"
+          ]
+        },
+        {
+          "id": "2.7",
+          "title": "Tonicity and Osmoregulation",
+          "kind": "topic",
+          "skill": "4.A",
+          "notes": "Water potential calculations.",
+          "link": null,
+          "periods": 3,
+          "start": "2026-09-10",
+          "end": "2026-09-14",
+          "dates": [
+            "2026-09-10",
+            "2026-09-11",
+            "2026-09-14"
+          ]
+        },
+        {
+          "id": "INV-4",
+          "title": "Investigation 4 — Diffusion and Osmosis",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 2: Energetics.",
+          "link": null,
+          "periods": 3,
+          "start": "2026-09-15",
+          "end": "2026-09-17",
+          "dates": [
+            "2026-09-15",
+            "2026-09-16",
+            "2026-09-17"
+          ]
+        },
+        {
+          "id": "2.8",
+          "title": "Mechanisms of Transport",
+          "kind": "topic",
+          "skill": "1.B",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-09-18",
+          "end": "2026-09-18",
+          "dates": [
+            "2026-09-18"
+          ]
+        },
+        {
+          "id": "2.9+2.10",
+          "title": "Cell Compartmentalization · Origins of Compartmentalization",
+          "kind": "topic",
+          "skill": "6.E, 6.B",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-09-21",
+          "end": "2026-09-21",
+          "dates": [
+            "2026-09-21"
+          ]
+        },
+        {
+          "id": "2.FLEX",
+          "title": "Flex days — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2026-09-22",
+          "end": "2026-09-23",
+          "dates": [
+            "2026-09-22",
+            "2026-09-23"
+          ]
+        },
+        {
+          "id": "2.PC",
+          "title": "Progress Check 2",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-09-24",
+          "end": "2026-09-24",
+          "dates": [
+            "2026-09-24"
+          ]
+        },
+        {
+          "id": "2.TEST",
+          "title": "Unit 2 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-09-25",
+          "end": "2026-09-25",
+          "dates": [
+            "2026-09-25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-3",
+      "unit": 3,
+      "title": "Cellular Energetics",
+      "weight": [
+        12,
+        16
+      ],
+      "start": "2026-09-28",
+      "end": "2026-11-02",
+      "periods": 26,
+      "entries": [
+        {
+          "id": "3.1",
+          "title": "Enzymes",
+          "kind": "topic",
+          "skill": "1.B, 3.C",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2026-09-28",
+          "end": "2026-09-30",
+          "dates": [
+            "2026-09-28",
+            "2026-09-29",
+            "2026-09-30"
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Environmental Impacts on Enzyme Function",
+          "kind": "topic",
+          "skill": "6.E",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-10-01",
+          "end": "2026-10-01",
+          "dates": [
+            "2026-10-01"
+          ]
+        },
+        {
+          "id": "INV-13",
+          "title": "Investigation 13 — Enzyme Activity",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 4: System Interactions.",
+          "link": null,
+          "periods": 3,
+          "start": "2026-10-02",
+          "end": "2026-10-06",
+          "dates": [
+            "2026-10-02",
+            "2026-10-05",
+            "2026-10-06"
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": "Cellular Energy",
+          "kind": "topic",
+          "skill": "6.C",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-10-07",
+          "end": "2026-10-07",
+          "dates": [
+            "2026-10-07"
+          ]
+        },
+        {
+          "id": "3.4",
+          "title": "Photosynthesis",
+          "kind": "topic",
+          "skill": "6.B",
+          "notes": null,
+          "link": null,
+          "periods": 4,
+          "start": "2026-10-08",
+          "end": "2026-10-13",
+          "dates": [
+            "2026-10-08",
+            "2026-10-09",
+            "2026-10-12",
+            "2026-10-13"
+          ]
+        },
+        {
+          "id": "INV-5",
+          "title": "Investigation 5 — Photosynthesis",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 2: Energetics.",
+          "link": null,
+          "periods": 3,
+          "start": "2026-10-14",
+          "end": "2026-10-16",
+          "dates": [
+            "2026-10-14",
+            "2026-10-15",
+            "2026-10-16"
+          ]
+        },
+        {
+          "id": "3.5",
+          "title": "Cellular Respiration",
+          "kind": "topic",
+          "skill": "4.A",
+          "notes": null,
+          "link": null,
+          "periods": 4,
+          "start": "2026-10-19",
+          "end": "2026-10-22",
+          "dates": [
+            "2026-10-19",
+            "2026-10-20",
+            "2026-10-21",
+            "2026-10-22"
+          ]
+        },
+        {
+          "id": "INV-6",
+          "title": "Investigation 6 — Cellular Respiration",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 2: Energetics.",
+          "link": null,
+          "periods": 3,
+          "start": "2026-10-23",
+          "end": "2026-10-27",
+          "dates": [
+            "2026-10-23",
+            "2026-10-26",
+            "2026-10-27"
+          ]
+        },
+        {
+          "id": "3.FLEX",
+          "title": "Flex days — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2026-10-28",
+          "end": "2026-10-29",
+          "dates": [
+            "2026-10-28",
+            "2026-10-29"
+          ]
+        },
+        {
+          "id": "3.PC",
+          "title": "Progress Check 3",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "dates": [
+            "2026-10-30"
+          ]
+        },
+        {
+          "id": "3.TEST",
+          "title": "Unit 3 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-02",
+          "end": "2026-11-02",
+          "dates": [
+            "2026-11-02"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-4",
+      "unit": 4,
+      "title": "Cell Communication and Cell Cycle",
+      "weight": [
+        10,
+        15
+      ],
+      "start": "2026-11-03",
+      "end": "2026-12-01",
+      "periods": 15,
+      "entries": [
+        {
+          "id": "4.1+4.2",
+          "title": "Cell Communication · Introduction to Signal Transduction",
+          "kind": "topic",
+          "skill": "1.B, 1.A",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-03",
+          "end": "2026-11-03",
+          "dates": [
+            "2026-11-03"
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": "Signal Transduction Pathways",
+          "kind": "topic",
+          "skill": "6.C",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2026-11-04",
+          "end": "2026-11-06",
+          "dates": [
+            "2026-11-04",
+            "2026-11-05",
+            "2026-11-06"
+          ]
+        },
+        {
+          "id": "4.4",
+          "title": "Feedback",
+          "kind": "topic",
+          "skill": "6.E",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2026-11-09",
+          "end": "2026-11-10",
+          "dates": [
+            "2026-11-09",
+            "2026-11-10"
+          ]
+        },
+        {
+          "id": "4.5",
+          "title": "Cell Cycle",
+          "kind": "topic",
+          "skill": "4.B, 5.A",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2026-11-12",
+          "end": "2026-11-13",
+          "dates": [
+            "2026-11-12",
+            "2026-11-13"
+          ]
+        },
+        {
+          "id": "INV-7",
+          "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 3: Information Storage and Transmission.",
+          "link": null,
+          "periods": 3,
+          "start": "2026-11-16",
+          "end": "2026-11-18",
+          "dates": [
+            "2026-11-16",
+            "2026-11-17",
+            "2026-11-18"
+          ]
+        },
+        {
+          "id": "4.6",
+          "title": "Regulation of Cell Cycle",
+          "kind": "topic",
+          "skill": "6.E",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-19",
+          "end": "2026-11-19",
+          "dates": [
+            "2026-11-19"
+          ]
+        },
+        {
+          "id": "4.FLEX",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-20",
+          "end": "2026-11-20",
+          "dates": [
+            "2026-11-20"
+          ]
+        },
+        {
+          "id": "4.PC",
+          "title": "Progress Check 4",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-30",
+          "end": "2026-11-30",
+          "dates": [
+            "2026-11-30"
+          ]
+        },
+        {
+          "id": "4.TEST",
+          "title": "Unit 4 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-01",
+          "end": "2026-12-01",
+          "dates": [
+            "2026-12-01"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-5",
+      "unit": 5,
+      "title": "Heredity",
+      "weight": [
+        8,
+        11
+      ],
+      "start": "2026-12-02",
+      "end": "2026-12-15",
+      "periods": 10,
+      "entries": [
+        {
+          "id": "5.1+5.2",
+          "title": "Meiosis · Meiosis and Genetic Diversity",
+          "kind": "topic",
+          "skill": "1.B, 3.A",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-02",
+          "end": "2026-12-02",
+          "dates": [
+            "2026-12-02"
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": "Mendelian Genetics",
+          "kind": "topic",
+          "skill": "5.C, 6.E",
+          "notes": "Includes chi-square analysis.",
+          "link": null,
+          "periods": 3,
+          "start": "2026-12-03",
+          "end": "2026-12-07",
+          "dates": [
+            "2026-12-03",
+            "2026-12-04",
+            "2026-12-07"
+          ]
+        },
+        {
+          "id": "5.4",
+          "title": "Non-Mendelian Genetics",
+          "kind": "topic",
+          "skill": "5.A, 5.C",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2026-12-08",
+          "end": "2026-12-09",
+          "dates": [
+            "2026-12-08",
+            "2026-12-09"
+          ]
+        },
+        {
+          "id": "5.5",
+          "title": "Environmental Effects on Phenotype",
+          "kind": "topic",
+          "skill": "1.C",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-10",
+          "end": "2026-12-10",
+          "dates": [
+            "2026-12-10"
+          ]
+        },
+        {
+          "id": "5.FLEX",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-11",
+          "end": "2026-12-11",
+          "dates": [
+            "2026-12-11"
+          ]
+        },
+        {
+          "id": "5.PC",
+          "title": "Progress Check 5",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-14",
+          "end": "2026-12-14",
+          "dates": [
+            "2026-12-14"
+          ]
+        },
+        {
+          "id": "5.TEST",
+          "title": "Unit 5 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-15",
+          "end": "2026-12-15",
+          "dates": [
+            "2026-12-15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finals",
+      "unit": null,
+      "title": "Semester 1 Finals",
+      "weight": null,
+      "start": "2026-12-16",
+      "end": "2026-12-18",
+      "periods": 3,
+      "entries": [
+        {
+          "id": null,
+          "title": "Semester 1 final exam",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2026-12-16",
+          "end": "2026-12-18",
+          "dates": [
+            "2026-12-16",
+            "2026-12-17",
+            "2026-12-18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-6",
+      "unit": 6,
+      "title": "Gene Expression and Regulation",
+      "weight": [
+        12,
+        16
+      ],
+      "start": "2027-01-04",
+      "end": "2027-02-02",
+      "periods": 20,
+      "entries": [
+        {
+          "id": "6.1",
+          "title": "DNA and RNA Structure",
+          "kind": "topic",
+          "skill": "1.C",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-01-04",
+          "end": "2027-01-04",
+          "dates": [
+            "2027-01-04"
+          ]
+        },
+        {
+          "id": "6.2",
+          "title": "DNA Replication",
+          "kind": "topic",
+          "skill": "2.B",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2027-01-05",
+          "end": "2027-01-06",
+          "dates": [
+            "2027-01-05",
+            "2027-01-06"
+          ]
+        },
+        {
+          "id": "6.3",
+          "title": "Transcription and RNA Processing",
+          "kind": "topic",
+          "skill": "2.B",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2027-01-07",
+          "end": "2027-01-08",
+          "dates": [
+            "2027-01-07",
+            "2027-01-08"
+          ]
+        },
+        {
+          "id": "6.4",
+          "title": "Translation",
+          "kind": "topic",
+          "skill": "2.D, 6.E",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2027-01-11",
+          "end": "2027-01-13",
+          "dates": [
+            "2027-01-11",
+            "2027-01-12",
+            "2027-01-13"
+          ]
+        },
+        {
+          "id": "6.5",
+          "title": "Regulation of Gene Expression",
+          "kind": "topic",
+          "skill": "6.A",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2027-01-14",
+          "end": "2027-01-15",
+          "dates": [
+            "2027-01-14",
+            "2027-01-15"
+          ]
+        },
+        {
+          "id": "6.6",
+          "title": "Gene Expression and Cell Specialization",
+          "kind": "topic",
+          "skill": "6.B",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-01-19",
+          "end": "2027-01-19",
+          "dates": [
+            "2027-01-19"
+          ]
+        },
+        {
+          "id": "6.7",
+          "title": "Mutations",
+          "kind": "topic",
+          "skill": "2.C",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-01-20",
+          "end": "2027-01-20",
+          "dates": [
+            "2027-01-20"
+          ]
+        },
+        {
+          "id": "6.8",
+          "title": "Biotechnology",
+          "kind": "topic",
+          "skill": "6.D",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2027-01-21",
+          "end": "2027-01-25",
+          "dates": [
+            "2027-01-21",
+            "2027-01-25"
+          ]
+        },
+        {
+          "id": "INV-8",
+          "title": "Investigation 8 — Biotechnology: Bacterial Transformation",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 3: Information Storage and Transmission.",
+          "link": null,
+          "periods": 3,
+          "start": "2027-01-26",
+          "end": "2027-01-28",
+          "dates": [
+            "2027-01-26",
+            "2027-01-27",
+            "2027-01-28"
+          ]
+        },
+        {
+          "id": "6.FLEX",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-01-29",
+          "end": "2027-01-29",
+          "dates": [
+            "2027-01-29"
+          ]
+        },
+        {
+          "id": "6.PC",
+          "title": "Progress Check 6",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-02-01",
+          "end": "2027-02-01",
+          "dates": [
+            "2027-02-01"
+          ]
+        },
+        {
+          "id": "6.TEST",
+          "title": "Unit 6 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-02-02",
+          "end": "2027-02-02",
+          "dates": [
+            "2027-02-02"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-7",
+      "unit": 7,
+      "title": "Natural Selection",
+      "weight": [
+        13,
+        20
+      ],
+      "start": "2027-02-03",
+      "end": "2027-03-09",
+      "periods": 23,
+      "entries": [
+        {
+          "id": "7.1+7.2",
+          "title": "Introduction to Natural Selection · Natural Selection",
+          "kind": "topic",
+          "skill": "2.A, 1.B",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2027-02-03",
+          "end": "2027-02-04",
+          "dates": [
+            "2027-02-03",
+            "2027-02-04"
+          ]
+        },
+        {
+          "id": "7.3",
+          "title": "Artificial Selection",
+          "kind": "topic",
+          "skill": "4.B",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-02-05",
+          "end": "2027-02-05",
+          "dates": [
+            "2027-02-05"
+          ]
+        },
+        {
+          "id": "7.4",
+          "title": "Population Genetics",
+          "kind": "topic",
+          "skill": "3.B",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-02-09",
+          "end": "2027-02-09",
+          "dates": [
+            "2027-02-09"
+          ]
+        },
+        {
+          "id": "7.5",
+          "title": "Hardy–Weinberg Equilibrium",
+          "kind": "topic",
+          "skill": "1.C, 5.A",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2027-02-10",
+          "end": "2027-02-12",
+          "dates": [
+            "2027-02-10",
+            "2027-02-11",
+            "2027-02-12"
+          ]
+        },
+        {
+          "id": "INV-2",
+          "title": "Investigation 2 — Mathematical Modeling: Hardy–Weinberg",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 1: Evolution.",
+          "link": null,
+          "periods": 3,
+          "start": "2027-02-16",
+          "end": "2027-02-18",
+          "dates": [
+            "2027-02-16",
+            "2027-02-17",
+            "2027-02-18"
+          ]
+        },
+        {
+          "id": "7.6",
+          "title": "Evidence of Evolution",
+          "kind": "topic",
+          "skill": "4.B",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-02-19",
+          "end": "2027-02-19",
+          "dates": [
+            "2027-02-19"
+          ]
+        },
+        {
+          "id": "7.7+7.8",
+          "title": "Common Ancestry · Continuing Evolution",
+          "kind": "topic",
+          "skill": "6.E, 3.D",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-02-22",
+          "end": "2027-02-22",
+          "dates": [
+            "2027-02-22"
+          ]
+        },
+        {
+          "id": "7.9",
+          "title": "Phylogeny",
+          "kind": "topic",
+          "skill": "2.D",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2027-02-23",
+          "end": "2027-02-25",
+          "dates": [
+            "2027-02-23",
+            "2027-02-24",
+            "2027-02-25"
+          ]
+        },
+        {
+          "id": "INV-3",
+          "title": "Investigation 3 — Comparing DNA Sequences with BLAST",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 1: Evolution. Computer-based, no consumables.",
+          "link": null,
+          "periods": 3,
+          "start": "2027-02-26",
+          "end": "2027-03-02",
+          "dates": [
+            "2027-02-26",
+            "2027-03-01",
+            "2027-03-02"
+          ]
+        },
+        {
+          "id": "7.10+7.11",
+          "title": "Speciation · Variations in Populations",
+          "kind": "topic",
+          "skill": "2.B, 6.C",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-03-03",
+          "end": "2027-03-03",
+          "dates": [
+            "2027-03-03"
+          ]
+        },
+        {
+          "id": "7.12",
+          "title": "Origins of Life on Earth",
+          "kind": "topic",
+          "skill": "3.B",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-03-04",
+          "end": "2027-03-04",
+          "dates": [
+            "2027-03-04"
+          ]
+        },
+        {
+          "id": "7.FLEX",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-03-05",
+          "end": "2027-03-05",
+          "dates": [
+            "2027-03-05"
+          ]
+        },
+        {
+          "id": "7.PC",
+          "title": "Progress Check 7",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-03-08",
+          "end": "2027-03-08",
+          "dates": [
+            "2027-03-08"
+          ]
+        },
+        {
+          "id": "7.TEST",
+          "title": "Unit 7 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-03-09",
+          "end": "2027-03-09",
+          "dates": [
+            "2027-03-09"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-8",
+      "unit": 8,
+      "title": "Ecology",
+      "weight": [
+        10,
+        15
+      ],
+      "start": "2027-03-10",
+      "end": "2027-04-12",
+      "periods": 18,
+      "entries": [
+        {
+          "id": "8.1",
+          "title": "Responses to the Environment",
+          "kind": "topic",
+          "skill": "3.C",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-03-10",
+          "end": "2027-03-10",
+          "dates": [
+            "2027-03-10"
+          ]
+        },
+        {
+          "id": "8.2",
+          "title": "Energy Flow Through Ecosystems",
+          "kind": "topic",
+          "skill": "6.D",
+          "notes": "Biogeochemical cycles were added here in the 2025 CED.",
+          "link": null,
+          "periods": 4,
+          "start": "2027-03-11",
+          "end": "2027-03-16",
+          "dates": [
+            "2027-03-11",
+            "2027-03-12",
+            "2027-03-15",
+            "2027-03-16"
+          ]
+        },
+        {
+          "id": "8.3",
+          "title": "Population Ecology",
+          "kind": "topic",
+          "skill": "4.A",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2027-03-17",
+          "end": "2027-03-18",
+          "dates": [
+            "2027-03-17",
+            "2027-03-18"
+          ]
+        },
+        {
+          "id": "8.4",
+          "title": "Effect of Density on Populations",
+          "kind": "topic",
+          "skill": "5.A",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2027-03-19",
+          "end": "2027-03-30",
+          "dates": [
+            "2027-03-19",
+            "2027-03-30"
+          ]
+        },
+        {
+          "id": "8.5",
+          "title": "Community Ecology",
+          "kind": "topic",
+          "skill": "5.B",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2027-03-31",
+          "end": "2027-04-02",
+          "dates": [
+            "2027-03-31",
+            "2027-04-01",
+            "2027-04-02"
+          ]
+        },
+        {
+          "id": "8.6",
+          "title": "Biodiversity",
+          "kind": "topic",
+          "skill": "6.E",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2027-04-05",
+          "end": "2027-04-06",
+          "dates": [
+            "2027-04-05",
+            "2027-04-06"
+          ]
+        },
+        {
+          "id": "8.7",
+          "title": "Disruptions in Ecosystems",
+          "kind": "topic",
+          "skill": "5.D",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-04-07",
+          "end": "2027-04-07",
+          "dates": [
+            "2027-04-07"
+          ]
+        },
+        {
+          "id": "8.FLEX",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-04-08",
+          "end": "2027-04-08",
+          "dates": [
+            "2027-04-08"
+          ]
+        },
+        {
+          "id": "8.PC",
+          "title": "Progress Check 8",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-04-09",
+          "end": "2027-04-09",
+          "dates": [
+            "2027-04-09"
+          ]
+        },
+        {
+          "id": "8.TEST",
+          "title": "Unit 8 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-04-12",
+          "end": "2027-04-12",
+          "dates": [
+            "2027-04-12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "unit": null,
+      "title": "AP Exam Review",
+      "weight": null,
+      "start": "2027-04-13",
+      "end": "2027-04-30",
+      "periods": 14,
+      "entries": [
+        {
+          "id": null,
+          "title": "AP review — FRQ practice, reteaching, full-length mocks",
+          "kind": "review",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 14,
+          "start": "2027-04-13",
+          "end": "2027-04-30",
+          "dates": [
+            "2027-04-13",
+            "2027-04-14",
+            "2027-04-15",
+            "2027-04-16",
+            "2027-04-19",
+            "2027-04-20",
+            "2027-04-21",
+            "2027-04-22",
+            "2027-04-23",
+            "2027-04-26",
+            "2027-04-27",
+            "2027-04-28",
+            "2027-04-29",
+            "2027-04-30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-exam",
+      "unit": null,
+      "title": "After the AP Exam",
+      "weight": null,
+      "start": "2027-05-04",
+      "end": "2027-05-27",
+      "periods": 18,
+      "entries": [
+        {
+          "id": null,
+          "title": "Post-exam project",
+          "kind": "review",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 18,
+          "start": "2027-05-04",
+          "end": "2027-05-27",
+          "dates": [
+            "2027-05-04",
+            "2027-05-05",
+            "2027-05-06",
+            "2027-05-07",
+            "2027-05-10",
+            "2027-05-11",
+            "2027-05-12",
+            "2027-05-13",
+            "2027-05-14",
+            "2027-05-17",
+            "2027-05-18",
+            "2027-05-19",
+            "2027-05-20",
+            "2027-05-21",
+            "2027-05-24",
+            "2027-05-25",
+            "2027-05-26",
+            "2027-05-27"
+          ]
+        }
+      ]
+    }
+  ]
+}

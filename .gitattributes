@@ -1,0 +1,11 @@
+# iCalendar requires CRLF line endings (RFC 5545 §3.1). GitHub Pages serves the
+# stored blob verbatim, so git must NOT normalise this file or subscriptions
+# break for some clients. Treat it as binary.
+*.ics -text
+
+# Everything else: normalise to LF in the repo.
+*.py   text eol=lf
+*.yaml text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.html text eol=lf
