@@ -12,7 +12,9 @@ from __future__ import annotations
 
 import json
 import subprocess
+import sys
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 
 # Most consequential first. A removal loses written work; a retitle is cosmetic.
@@ -116,6 +118,13 @@ def diff(old: dict, new: dict) -> list[EntryDelta]:
     return deltas
 
 
+def _span(bounds: dict) -> str:
+    """One date when the entry is a single day, a range when it is not."""
+    if bounds["start"] == bounds["end"]:
+        return bounds["start"]
+    return f"{bounds['start']}..{bounds['end']}"
+
+
 def render_text(deltas: list[EntryDelta]) -> str:
     """Prose for the teacher, grouped most consequential first."""
     if not deltas:
@@ -142,8 +151,11 @@ def render_text(deltas: list[EntryDelta]) -> str:
                                      for n in delta.lost_day_indices)
                     detail += f"   orphans {keys}"
             elif heading == "MOVED":
-                detail = (f"{delta.old['start']}..{delta.old['end']} -> "
-                          f"{delta.new['start']}..{delta.new['end']}")
+                shift = (date.fromisoformat(delta.new["start"])
+                         - date.fromisoformat(delta.old["start"])).days
+                unit = "day" if abs(shift) == 1 else "days"
+                detail = (f"{_span(delta.old)} -> {_span(delta.new)}"
+                          f"  ({shift:+d} {unit})")
             elif heading == "RETITLED":
                 detail = f"{delta.old['title']!r} -> {delta.new['title']!r}"
             elif heading == "ADDED":
@@ -197,8 +209,11 @@ def git_baseline() -> dict | None:
     rather than failing.
     """
     try:
+        # The pathspec is repo-root-relative, not cwd-relative. "./" pins it
+        # to cwd=ROOT explicitly, so this still resolves correctly if this
+        # directory is ever nested inside an outer repository.
         result = subprocess.run(
-            ["git", "show", "HEAD:docs/calendar.json"],
+            ["git", "show", "HEAD:./docs/calendar.json"],
             cwd=ROOT, capture_output=True)
     except FileNotFoundError:
         return None
@@ -231,12 +246,18 @@ def load_current() -> dict:
 def report(old: dict | None, new: dict) -> tuple[str, int]:
     """Render the comparison. Never returns a non-zero code for a change."""
     if old is None:
-        return ("No git baseline to compare against — nothing committed yet.\n",
+        return ("No git baseline to compare against — git is missing, this is "
+                "not a repository, or docs/calendar.json is not committed yet.\n",
                 0)
     return render_text(diff(old, new)), 0
 
 
 def main() -> int:
+    # The report is full of em dashes and middle dots. Console and redirected
+    # output otherwise inherit the locale codepage (cp1252 here), which mangles
+    # them and raises UnicodeEncodeError outright on characters like α.
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     current = load_current()
     baseline = git_baseline()
     text, code = report(baseline, current)
@@ -251,6 +272,9 @@ def main() -> int:
         MACHINE.write_bytes(
             render_json(diff(baseline, current)).encode("utf-8"))
         print(f"\nMachine-readable: {MACHINE.name}")
+
+    print(f"\nCompared docs/calendar.json as built {current.get('generated', '?')}."
+          f" Run `python build.py` first if you have not.")
     return code
 
 

@@ -1,3 +1,7 @@
+import os
+import pathlib
+import shutil
+import subprocess
 import tempfile
 import types
 import unittest
@@ -300,7 +304,6 @@ class TestGitBaseline(unittest.TestCase):
             changes.git_baseline()
         kwargs = run.call_args.kwargs
         self.assertNotIn("text", kwargs)
-        self.assertNotIn("encoding", kwargs)
         self.assertTrue(kwargs.get("capture_output"))
 
     def test_parses_raw_utf8_bytes(self):
@@ -334,6 +337,31 @@ class TestGitBaseline(unittest.TestCase):
         with mock.patch.object(changes.subprocess, "run",
                                side_effect=FileNotFoundError):
             self.assertIsNone(changes.git_baseline())
+
+
+class TestGitBaselineIntegration(unittest.TestCase):
+    @unittest.skipIf(shutil.which("git") is None, "git not installed")
+    def test_real_git_round_trips_utf8(self):
+        # The mocked test asserts on the call; this asserts on reality. Under
+        # text=True this fails on a cp1252 machine, which is exactly the
+        # regression it exists to catch.
+        payload = '{"blocks": [{"id": "u1", "entries": [' \
+                  '{"id": "1.1", "title": "Water — Elements · Life"}]}]}'
+        with tempfile.TemporaryDirectory() as tmp:
+            root = pathlib.Path(tmp)
+            (root / "docs").mkdir()
+            (root / "docs" / "calendar.json").write_bytes(payload.encode("utf-8"))
+            env = {"GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t",
+                   "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@t",
+                   **os.environ}
+            for args in (["init", "-q"], ["add", "."],
+                         ["commit", "-qm", "x"]):
+                subprocess.run(["git", *args], cwd=root, check=True,
+                               capture_output=True, env=env)
+            with mock.patch.object(changes, "ROOT", root):
+                result = changes.git_baseline()
+        self.assertEqual(result["blocks"][0]["entries"][0]["title"],
+                         "Water — Elements · Life")
 
 
 class TestLoadCurrent(unittest.TestCase):
