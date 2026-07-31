@@ -137,8 +137,16 @@ class TestDeriveShape(unittest.TestCase):
         # Tue Sep 15 lab. A 1-school-day bench lead and a 1-calendar-day
         # arrive lead both land on Mon Sep 14, so only the tie-break can
         # order them.
+        #
+        # The keys are deliberately written bench-then-arrive: derive()
+        # iterates spec.items() in insertion order and list.sort() is stable,
+        # so if the ACTION_ORDER tie-break were removed from the sort key the
+        # actions would come back in insertion order — [bench, arrive] — and
+        # this assertion would fail. Writing them arrive-first would let a
+        # removed tie-break pass, because insertion order would already match
+        # the expected output.
         blocks = lab_block("INV-4", date(2026, 9, 15),
-                           {"arrive": 1, "bench": 1})
+                           {"bench": 1, "arrive": 1})
         actions = prep.derive(blocks, days)
         self.assertEqual([a.date for a in actions],
                          [date(2026, 9, 14), date(2026, 9, 14)])
