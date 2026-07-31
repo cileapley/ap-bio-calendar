@@ -1,4 +1,7 @@
+import tempfile
+import types
 import unittest
+from unittest import mock
 
 import changes
 
@@ -279,6 +282,64 @@ class TestBaseline(unittest.TestCase):
         text, code = changes.report(cal, cal)
         self.assertEqual(code, 0)
         self.assertIn("No changes", text)
+
+
+class TestGitBaseline(unittest.TestCase):
+    def test_decodes_utf8_regardless_of_locale(self):
+        # git emits UTF-8. text=True would decode with the locale codepage —
+        # cp1252 here — mangling every em dash and middle dot in the calendar.
+        # This pins the explicit decode: reverting to text=True makes stdout a
+        # str, and .decode() on it raises AttributeError right here.
+        payload = ('{"blocks": [{"id": "u1", "entries": ['
+                   '{"id": "1.1", "title": "Water \\u2014 Elements"}]}]}')
+        fake = types.SimpleNamespace(returncode=0, stdout=payload.encode("utf-8"))
+        with mock.patch.object(changes.subprocess, "run", return_value=fake):
+            result = changes.git_baseline()
+        self.assertEqual(
+            result["blocks"][0]["entries"][0]["title"], "Water — Elements")
+
+    def test_uncommitted_file_is_not_an_error(self):
+        # Non-zero git exit means the file was never committed — a fresh clone
+        # or a first build. Normal, not a failure.
+        fake = types.SimpleNamespace(returncode=128, stdout=b"")
+        with mock.patch.object(changes.subprocess, "run", return_value=fake):
+            self.assertIsNone(changes.git_baseline())
+
+    def test_corrupt_committed_calendar_raises(self):
+        # git succeeded but handed back non-JSON: a corrupt committed file.
+        # This must NOT be silently reported as "no baseline".
+        fake = types.SimpleNamespace(returncode=0, stdout=b"not json at all")
+        with mock.patch.object(changes.subprocess, "run", return_value=fake):
+            with self.assertRaises(SystemExit):
+                changes.git_baseline()
+
+    def test_git_not_installed_is_not_an_error(self):
+        with mock.patch.object(changes.subprocess, "run",
+                               side_effect=FileNotFoundError):
+            self.assertIsNone(changes.git_baseline())
+
+
+class TestLoadCurrent(unittest.TestCase):
+    def test_missing_file_says_how_to_fix_it(self):
+        missing = changes.ROOT / "no-such-calendar.json"
+        with mock.patch.object(changes, "CURRENT", missing):
+            with self.assertRaises(SystemExit) as caught:
+                changes.load_current()
+        self.assertIn("build.py", str(caught.exception))
+
+    def test_invalid_json_names_the_file(self):
+        # The scratch file must live inside ROOT: load_current()'s error
+        # messages call CURRENT.relative_to(ROOT), which raises ValueError for
+        # any path outside it.
+        scratch = changes.ROOT / ".test-scratch-calendar.json"
+        scratch.write_bytes(b"{ not json")
+        try:
+            with mock.patch.object(changes, "CURRENT", scratch):
+                with self.assertRaises(SystemExit) as caught:
+                    changes.load_current()
+            self.assertIn("not valid JSON", str(caught.exception))
+        finally:
+            scratch.unlink()
 
 
 if __name__ == "__main__":
