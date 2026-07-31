@@ -191,7 +191,7 @@ def render_ics(actions, course: dict, stamp_utc: str, uid_domain: str) -> str:
     UIDs are keyed on lab and action, never on the date, so a slipped unit
     moves the event in a subscriber's calendar instead of duplicating it.
     """
-    lines = [
+    header = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
         f"PRODID:-//{course['title']} {course['school_year']}//lab prep//EN",
@@ -201,6 +201,9 @@ def render_ics(actions, course: dict, stamp_utc: str, uid_domain: str) -> str:
         f"{ics_escape(course['school_year'])} Lab Prep",
         "X-PUBLISHED-TTL:PT12H",
     ]
+    lines: list[str] = []
+    for line in header:
+        lines.extend(fold(line))
 
     for action in actions:
         summary = (f"{LABEL[action.action]}: {action.lab_title} "

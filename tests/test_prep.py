@@ -1,3 +1,4 @@
+import dataclasses
 import unittest
 from datetime import date, timedelta
 
@@ -290,6 +291,31 @@ class TestRenderIcs(unittest.TestCase):
     def test_calendar_name_marks_it_as_the_prep_feed(self):
         self.assertIn("X-WR-CALNAME:AP Biology 2026-27 Lab Prep",
                       self._render())
+
+    def test_long_course_title_folds_every_header_line(self):
+        # PRODID and X-WR-CALNAME interpolate the course title straight from
+        # calendar.yaml. Nothing bounds its length, so the header must fold
+        # exactly like the event blocks do.
+        course = {"title": "AP Biology Honors — Periods 2, 3 and 5, Room 204",
+                  "school_year": "2026-27"}
+        text = prep.render_ics(
+            self.actions, course, "20260731T120000Z", "apbio-2026-27")
+        for line in text.split("\r\n"):
+            self.assertLessEqual(len(line.encode("utf-8")), 75)
+
+    def test_long_lab_title_folds_event_lines(self):
+        actions = prep.derive(
+            lab_block("INV-9",
+                      date(2026, 9, 15),
+                      {"order": 21}),
+            self.days)
+        long_title = "Investigation 9 — " + "Restriction Enzyme Analysis " * 3
+        actions = [dataclasses.replace(a, lab_title=long_title)
+                   for a in actions]
+        text = prep.render_ics(
+            actions, self.course, "20260731T120000Z", "apbio-2026-27")
+        for line in text.split("\r\n"):
+            self.assertLessEqual(len(line.encode("utf-8")), 75)
 
 
 if __name__ == "__main__":

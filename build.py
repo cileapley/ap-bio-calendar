@@ -394,7 +394,7 @@ def render_json(data: dict, sched: dict, blocks: list[dict], summary: dict, stam
 
 def render_ics(data: dict, sched: dict, blocks: list[dict], stamp_utc: str) -> str:
     course = data["course"]
-    lines = [
+    header = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
         f"PRODID:-//{course['title']} {course['school_year']}//calendar.yaml//EN",
@@ -403,6 +403,9 @@ def render_ics(data: dict, sched: dict, blocks: list[dict], stamp_utc: str) -> s
         f"X-WR-CALNAME:{ics_escape(course['title'])} {ics_escape(course['school_year'])}",
         "X-PUBLISHED-TTL:PT12H",
     ]
+    lines: list[str] = []
+    for line in header:
+        lines.extend(fold(line))
 
     def event(uid: str, start: date, end_inclusive: date, summary: str, description: str, url=None):
         block = [
