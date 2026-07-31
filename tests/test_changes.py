@@ -285,18 +285,35 @@ class TestBaseline(unittest.TestCase):
 
 
 class TestGitBaseline(unittest.TestCase):
-    def test_decodes_utf8_regardless_of_locale(self):
-        # git emits UTF-8. text=True would decode with the locale codepage —
-        # cp1252 here — mangling every em dash and middle dot in the calendar.
-        # This pins the explicit decode: reverting to text=True makes stdout a
-        # str, and .decode() on it raises AttributeError right here.
+    def test_does_not_ask_subprocess_to_decode(self):
+        # This is the actual guard. git emits UTF-8; text=True would make
+        # subprocess decode with the locale codepage (cp1252 here), mangling
+        # every em dash and middle dot in the calendar.
+        #
+        # It asserts on the CALL, not the return value, and that is deliberate:
+        # once subprocess.run is mocked, text= is inert, and json.loads accepts
+        # bytes with its own UTF-8 sniffer — so no assertion about what
+        # git_baseline() returns can tell the fixed version from the broken one.
+        fake = types.SimpleNamespace(returncode=0, stdout=b'{"blocks": []}')
+        with mock.patch.object(changes.subprocess, "run",
+                               return_value=fake) as run:
+            changes.git_baseline()
+        kwargs = run.call_args.kwargs
+        self.assertNotIn("text", kwargs)
+        self.assertNotIn("encoding", kwargs)
+        self.assertTrue(kwargs.get("capture_output"))
+
+    def test_parses_raw_utf8_bytes(self):
+        # A shape check, not a locale guard — see the test above for why no
+        # return-value assertion can catch the text=True regression. This one
+        # confirms a real multi-byte payload survives parsing at all.
         payload = ('{"blocks": [{"id": "u1", "entries": ['
-                   '{"id": "1.1", "title": "Water \\u2014 Elements"}]}]}')
+                   '{"id": "1.1", "title": "Water — Elements · Life"}]}]}')
         fake = types.SimpleNamespace(returncode=0, stdout=payload.encode("utf-8"))
         with mock.patch.object(changes.subprocess, "run", return_value=fake):
             result = changes.git_baseline()
-        self.assertEqual(
-            result["blocks"][0]["entries"][0]["title"], "Water — Elements")
+        self.assertEqual(result["blocks"][0]["entries"][0]["title"],
+                         "Water — Elements · Life")
 
     def test_uncommitted_file_is_not_an_error(self):
         # Non-zero git exit means the file was never committed — a fresh clone
