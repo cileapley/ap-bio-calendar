@@ -318,5 +318,58 @@ class TestRenderIcs(unittest.TestCase):
             self.assertLessEqual(len(line.encode("utf-8")), 75)
 
 
+class TestRenderHtml(unittest.TestCase):
+    def setUp(self):
+        self.days = instructional(date(2026, 8, 12), date(2026, 12, 18))
+        self.course = {"title": "AP Biology", "school_year": "2026-27"}
+        self.actions = prep.derive(
+            lab_block("INV-4", date(2026, 9, 15),
+                      {"order": 21, "arrive": 14, "bench": 2}),
+            self.days)
+
+    def _render(self, today=date(2026, 8, 1)):
+        return prep.render_html(self.actions, self.course,
+                                "2026-07-31 12:00", today)
+
+    def test_declares_charset_and_viewport(self):
+        html = self._render()
+        self.assertIn('<meta charset="utf-8">', html)
+        self.assertIn('name="viewport"', html)
+
+    def test_makes_no_network_requests(self):
+        import re as _re
+        html = self._render()
+        self.assertEqual(_re.findall(r'(?:src|href)\s*=', html), [])
+        self.assertNotIn("@import", html)
+        self.assertNotIn("url(", html)
+
+    def test_lists_every_action(self):
+        html = self._render()
+        for label in ("Order", "Arrives", "Prep starts"):
+            self.assertIn(label, html)
+
+    def test_groups_by_month(self):
+        self.assertIn("August 2026", self._render())
+
+    def test_marks_past_actions(self):
+        html = self._render(today=date(2026, 9, 20))
+        self.assertIn("overdue", html.lower())
+
+    def test_escapes_html_in_titles(self):
+        actions = prep.derive(
+            [{"unit": 2, "entries": [{
+                "id": "INV-X", "title": "Lab <script>alert(1)</script>",
+                "kind": "lab", "dates": [date(2026, 9, 15)],
+                "prep": {"bench": 1}}]}],
+            self.days)
+        html = prep.render_html(actions, self.course, "s", date(2026, 8, 1))
+        self.assertNotIn("<script>alert(1)</script>", html)
+        self.assertIn("&lt;script&gt;", html)
+
+    def test_empty_action_list_still_renders_a_page(self):
+        html = prep.render_html([], self.course, "s", date(2026, 8, 1))
+        self.assertIn("<title>", html)
+
+
 if __name__ == "__main__":
     unittest.main()

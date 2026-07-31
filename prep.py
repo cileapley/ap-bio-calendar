@@ -11,6 +11,7 @@ so tests can pin it.
 
 from __future__ import annotations
 
+import html as _html
 from dataclasses import dataclass
 from datetime import date, timedelta
 
@@ -234,3 +235,86 @@ def render_ics(actions, course: dict, stamp_utc: str, uid_domain: str) -> str:
 
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"
+
+
+PREP_CSS = """
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;padding:1.25rem;font:16px/1.55 -apple-system,BlinkMacSystemFont,
+"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1c2024;background:#fff}
+.wrap{max-width:52rem;margin:0 auto}
+h1{margin:0 0 .15rem;font-size:1.5rem;letter-spacing:-.01em}
+.sub{margin:0 0 1.25rem;color:#5b6470;font-size:.9rem}
+h2{margin:1.5rem 0 .5rem;font-size:1rem;color:#3d4650;
+border-bottom:1px solid #e4e8ec;padding-bottom:.3rem}
+.row{display:grid;grid-template-columns:5.5rem 6.5rem 1fr;gap:.15rem .8rem;
+padding:.5rem .2rem;border-bottom:1px solid #f1f4f7;align-items:baseline}
+.row.overdue{background:#fdf0f3}
+.when{color:#5b6470;font-size:.85rem;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;padding:.1rem .45rem;border-radius:999px;
+font-size:.7rem;font-weight:600;text-transform:uppercase;white-space:nowrap}
+.tag.order{background:#eaf1f8;color:#1c5d99}
+.tag.arrive{background:#e6f4ec;color:#1d6b42}
+.tag.bench{background:#fdefe6;color:#a2521a}
+.what .note{display:block;color:#5b6470;font-size:.8rem;margin-top:.1rem}
+.flag{color:#a03050;font-weight:600}
+footer{margin-top:2rem;padding-top:.8rem;border-top:1px solid #eef1f4;
+color:#8a939e;font-size:.75rem}
+@media (max-width:640px){
+body{padding:.85rem}
+.row{grid-template-columns:1fr;gap:.1rem}
+}
+"""
+
+
+def render_html(actions, course: dict, stamp: str, today: date) -> str:
+    """Teacher-facing prep schedule. Self-contained, no network requests."""
+    def esc(value):
+        return _html.escape(str(value), quote=True)
+
+    parts = [
+        "<!doctype html>",
+        '<html lang="en">',
+        "<head>",
+        '<meta charset="utf-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1">',
+        f"<title>{esc(course['title'])} Lab Prep "
+        f"{esc(course['school_year'])}</title>",
+        f"<style>{PREP_CSS}</style>",
+        "</head>",
+        "<body>",
+        '<div class="wrap">',
+        f"<h1>Lab Prep Schedule</h1>",
+        f'<p class="sub">{esc(course["title"])} '
+        f'{esc(course["school_year"])} &middot; {len(actions)} actions</p>',
+    ]
+
+    current_month = None
+    for action in actions:
+        month = action.date.strftime("%B %Y")
+        if month != current_month:
+            parts.append(f"<h2>{esc(month)}</h2>")
+            current_month = month
+
+        overdue = " overdue" if action.date < today else ""
+        note = esc(f"{action.lead_days} {action.basis} days before "
+                   f"{_short(action.lab_date)}")
+        if action.snapped_days:
+            # Integer interpolation only — no caller-supplied text in this span.
+            note += (' &middot; <span class="flag">moved back '
+                     f'{int(action.snapped_days)} day(s) out of a break</span>')
+
+        parts.append(
+            f'<div class="row{overdue}">'
+            f'<div class="when">{esc(_short(action.date))}</div>'
+            f'<div><span class="tag {esc(action.action)}">'
+            f'{esc(LABEL[action.action])}</span></div>'
+            f'<div class="what">{esc(action.lab_title)}'
+            f'<span class="note">{note}</span></div>'
+            "</div>"
+        )
+
+    parts.append(
+        f'<footer>Generated {esc(stamp)} from calendar.yaml. '
+        f'Teacher-facing — not linked from the student calendar.</footer>')
+    parts.append("</div></body></html>")
+    return "\n".join(parts) + "\n"
