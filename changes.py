@@ -205,12 +205,9 @@ def git_baseline() -> dict | None:
     if result.returncode != 0:
         return None
     try:
-        # Decode explicitly as UTF-8 rather than passing text=True: that
-        # would let subprocess fall back to locale.getpreferredencoding(),
-        # which is cp1252 on Windows. docs/calendar.json is UTF-8 and its
-        # titles carry em dashes and curly quotes, so a cp1252 decode does
-        # not raise — it silently mangles every non-ASCII character into
-        # mojibake that then gets written into changes.json as "correct".
+        # Decode explicitly rather than passing text=True: that decodes with
+        # the locale codepage (cp1252 on Windows) while git emits UTF-8, which
+        # silently mangles every em dash and middle dot in the calendar.
         return json.loads(result.stdout.decode("utf-8"))
     except json.JSONDecodeError as exc:
         # A non-zero git exit means "not committed yet", which is normal and
