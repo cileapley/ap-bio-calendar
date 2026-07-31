@@ -132,6 +132,32 @@ class TestDeriveShape(unittest.TestCase):
         with self.assertRaises(ValueError):
             prep.derive(blocks, days)
 
+    def test_same_date_actions_order_by_intent(self):
+        days = instructional(date(2026, 8, 12), date(2026, 12, 18))
+        # Tue Sep 15 lab. A 1-school-day bench lead and a 1-calendar-day
+        # arrive lead both land on Mon Sep 14, so only the tie-break can
+        # order them.
+        blocks = lab_block("INV-4", date(2026, 9, 15),
+                           {"arrive": 1, "bench": 1})
+        actions = prep.derive(blocks, days)
+        self.assertEqual([a.date for a in actions],
+                         [date(2026, 9, 14), date(2026, 9, 14)])
+        self.assertEqual([a.action for a in actions], ["arrive", "bench"])
+
+    def test_school_lead_reaching_past_the_start_keeps_a_real_raw_date(self):
+        days = instructional(date(2026, 8, 12), date(2026, 12, 18))
+        # Only 3 school days exist before Mon Aug 17, so a 10-day bench lead
+        # overshoots the start of the year. The usable date clamps forward to
+        # day one — but raw_date must stay genuinely out of range, because
+        # that is what validate() keys its before-term warning on.
+        blocks = lab_block("INV-4", date(2026, 8, 17), {"bench": 10})
+        actions = prep.derive(blocks, days)
+        self.assertEqual(actions[0].date, date(2026, 8, 12))
+        self.assertLess(actions[0].raw_date, date(2026, 8, 12))
+        # Not a backward snap: the clamp moved the date LATER, so the
+        # backward-snap magnitude is zero and the renderers stay quiet.
+        self.assertEqual(actions[0].snapped_days, 0)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -90,8 +90,18 @@ def derive(blocks: list[dict], instructional_days: list[date]) -> list[PrepActio
                             f"instructional day"
                         )
                     target = position - lead
-                    raw = ordered[target] if target >= 0 else ordered[0]
-                    snapped = raw if target >= 0 else None
+                    if target >= 0:
+                        raw = ordered[target]
+                        snapped = raw
+                    else:
+                        # The lead reaches back past the start of the year.
+                        # Clamp the usable date to day one, but keep a real
+                        # out-of-range raw_date so validate() can see it and
+                        # fire its before-term warning. Silently clamping both
+                        # makes a typo'd lead indistinguishable from a correct
+                        # one that happens to land on day one.
+                        raw = ordered[0] - timedelta(days=-target)
+                        snapped = ordered[0]
 
                 final = snapped if snapped is not None else raw
                 actions.append(PrepAction(
@@ -104,7 +114,19 @@ def derive(blocks: list[dict], instructional_days: list[date]) -> list[PrepActio
                     date=final,
                     lead_days=lead,
                     basis=basis,
-                    snapped_days=(raw - final).days,
+                    # snapped_days means one thing everywhere: how many days
+                    # earlier the usable date sits than the computed one,
+                    # from an ordinary backward snap. The start-of-year clamp
+                    # above is a different event — it pushes the date LATER,
+                    # to the floor — so (raw - final) goes negative there.
+                    # clamp to 0 rather than let that negative leak out:
+                    # validate()/render_ics/render_html all read this field
+                    # as "days moved back" and would render a negative as
+                    # nonsense like "Moved back -7 days". The real signal for
+                    # the overshoot case is that raw_date stays genuinely
+                    # out of range; validate() keys its before-term warning
+                    # on that instead.
+                    snapped_days=max(0, (raw - final).days),
                 ))
 
     actions.sort(key=lambda a: (a.date, ACTION_ORDER.index(a.action)))
