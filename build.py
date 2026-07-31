@@ -33,7 +33,7 @@ try:
 except ImportError:
     sys.exit("PyYAML is required.  pip install pyyaml")
 
-from icsutil import fold, ics_escape, slug, verify_ics
+from icsutil import calendar_header, fold, ics_escape, slug, verify_ics
 import prep as prep_module
 
 ROOT = Path(__file__).resolve().parent
@@ -396,18 +396,8 @@ def render_json(data: dict, sched: dict, blocks: list[dict], summary: dict, stam
 
 def render_ics(data: dict, sched: dict, blocks: list[dict], stamp_utc: str) -> str:
     course = data["course"]
-    header = [
-        "BEGIN:VCALENDAR",
-        "VERSION:2.0",
-        f"PRODID:-//{course['title']} {course['school_year']}//calendar.yaml//EN",
-        "CALSCALE:GREGORIAN",
-        "METHOD:PUBLISH",
-        f"X-WR-CALNAME:{ics_escape(course['title'])} {ics_escape(course['school_year'])}",
-        "X-PUBLISHED-TTL:PT12H",
-    ]
-    lines: list[str] = []
-    for line in header:
-        lines.extend(fold(line))
+    lines = calendar_header(
+        f"{course['title']} {course['school_year']}", "calendar.yaml")
 
     def event(uid: str, start: date, end_inclusive: date, summary: str, description: str, url=None):
         block = [
@@ -650,6 +640,9 @@ def render_html(data: dict, sched: dict, blocks: list[dict], summary: dict, stam
 # ---------------------------------------------------------------------------
 
 def main() -> int:
+    # Read the clock once. A build straddling midnight must not disagree with
+    # itself between the prep validation pass and the rendered prep page.
+    today_local = date.today()
     try:
         data = load_source()
         course = data["course"]
@@ -667,14 +660,17 @@ def main() -> int:
         try:
             prep_actions = prep_module.derive(sched["blocks"], all_days)
         except (ValueError, TypeError, AttributeError) as exc:
-            # derive() raises ValueError on an unknown action key, TypeError on
-            # a non-numeric lead, and AttributeError when prep: is a scalar
-            # rather than a mapping. main() catches only BuildError, so all
-            # three must be translated or they escape as tracebacks.
+            # derive() raises ValueError for every malformed prep block it
+            # detects itself (unknown action key, non-numeric lead, a scalar
+            # prep: instead of a mapping). TypeError/AttributeError are kept
+            # here defensively in case some other malformed shape of
+            # calendar.yaml reaches derive() and fails in a way it doesn't
+            # name explicitly. main() catches only BuildError, so all three
+            # must be translated or they escape as tracebacks.
             raise BuildError(f"Bad prep block in calendar.yaml: {exc}") from exc
 
         prep_warnings, prep_errors = prep_module.validate(
-            prep_actions, all_days[0], date.today())
+            prep_actions, all_days[0], today_local)
         if prep_errors:
             raise BuildError(
                 "Lab prep lead times contradict each other:\n  - "
@@ -750,7 +746,7 @@ def main() -> int:
         "prep.html": write_if_changed(
             DIST / "prep.html",
             prep_module.render_html(
-                prep_actions, course, stamp_local, date.today())),
+                prep_actions, course, stamp_local, today_local)),
     }
 
     problems = (verify_ics(DIST / "calendar.ics")
@@ -774,7 +770,9 @@ def main() -> int:
     print(f"  AP review before exam   {review_periods} periods")
     print(f"  lab prep                {len(prep_actions)} actions across "
           f"{len({a.lab_id for a in prep_actions})} labs"
-          + (f" — {len(prep_warnings)} need attention" if prep_warnings else ""))
+          + (f" — {len(prep_warnings)} "
+             f"{'needs' if len(prep_warnings) == 1 else 'need'} attention"
+             if prep_warnings else ""))
     for warning in prep_warnings:
         print(f"    ! {warning}", file=sys.stderr)
     print("  phases                  " + "  ".join(

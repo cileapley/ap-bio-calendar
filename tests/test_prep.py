@@ -153,6 +153,24 @@ class TestDeriveShape(unittest.TestCase):
                          [date(2026, 9, 14), date(2026, 9, 14)])
         self.assertEqual([a.action for a in actions], ["arrive", "bench"])
 
+    def test_non_numeric_lead_names_the_lab_and_the_key(self):
+        days = instructional(date(2026, 8, 12), date(2026, 12, 18))
+        blocks = lab_block("INV-4", date(2026, 9, 15), {"order": "three weeks"})
+        with self.assertRaises(ValueError) as caught:
+            prep.derive(blocks, days)
+        self.assertIn("INV-4", str(caught.exception))
+        self.assertIn("order", str(caught.exception))
+
+    def test_scalar_prep_block_names_the_lab(self):
+        days = instructional(date(2026, 8, 12), date(2026, 12, 18))
+        blocks = [{"unit": 2, "entries": [{
+            "id": "INV-4", "title": "T", "kind": "lab",
+            "dates": [date(2026, 9, 15)], "prep": 21}]}]
+        with self.assertRaises(ValueError) as caught:
+            prep.derive(blocks, days)
+        self.assertIn("INV-4", str(caught.exception))
+        self.assertIn("mapping", str(caught.exception))
+
     def test_school_lead_reaching_past_the_start_keeps_a_real_raw_date(self):
         days = instructional(date(2026, 8, 12), date(2026, 12, 18))
         # Only 3 school days exist before Mon Aug 17, so a 10-day bench lead
@@ -378,6 +396,12 @@ class TestRenderHtml(unittest.TestCase):
         html = prep.render_html(actions, self.course, "s", date(2026, 8, 1))
         self.assertNotIn("<script>alert(1)</script>", html)
         self.assertIn("&lt;script&gt;", html)
+
+    def test_points_at_the_subscribable_feed(self):
+        html = self._render()
+        self.assertIn("prep.ics", html)
+        # Must be plain text: the page makes zero network requests.
+        self.assertNotIn("href", html)
 
     def test_empty_action_list_still_renders_a_page(self):
         html = prep.render_html([], self.course, "s", date(2026, 8, 1))

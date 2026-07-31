@@ -15,7 +15,7 @@ import html as _html
 from dataclasses import dataclass
 from datetime import date, timedelta
 
-from icsutil import fold, ics_escape, slug
+from icsutil import calendar_header, fold, ics_escape, slug
 
 # Each action counts its lead time on the basis that matches how it works.
 # Purchasing and shipping run on calendar time and do not pause for holidays.
@@ -68,6 +68,11 @@ def derive(blocks: list[dict], instructional_days: list[date]) -> list[PrepActio
             spec = entry.get("prep") or {}
             if not spec:
                 continue
+            if not isinstance(spec, dict):
+                raise ValueError(
+                    f"{entry.get('id')}: prep must be a mapping like "
+                    f"{{order: 21, bench: 3}}, got {type(spec).__name__}"
+                )
             dates = entry.get("dates") or []
             if not dates:
                 continue
@@ -79,7 +84,13 @@ def derive(blocks: list[dict], instructional_days: list[date]) -> list[PrepActio
                         f"{entry.get('id')}: unknown prep action {action!r} — "
                         f"expected one of {sorted(BASIS)}"
                     )
-                lead = int(lead)
+                try:
+                    lead = int(lead)
+                except (TypeError, ValueError):
+                    raise ValueError(
+                        f"{entry.get('id')}: prep {action} must be a whole "
+                        f"number of days, got {lead!r}"
+                    ) from None
                 basis = BASIS[action]
 
                 if basis == "calendar":
@@ -192,19 +203,8 @@ def render_ics(actions, course: dict, stamp_utc: str, uid_domain: str) -> str:
     UIDs are keyed on lab and action, never on the date, so a slipped unit
     moves the event in a subscriber's calendar instead of duplicating it.
     """
-    header = [
-        "BEGIN:VCALENDAR",
-        "VERSION:2.0",
-        f"PRODID:-//{course['title']} {course['school_year']}//lab prep//EN",
-        "CALSCALE:GREGORIAN",
-        "METHOD:PUBLISH",
-        f"X-WR-CALNAME:{ics_escape(course['title'])} "
-        f"{ics_escape(course['school_year'])} Lab Prep",
-        "X-PUBLISHED-TTL:PT12H",
-    ]
-    lines: list[str] = []
-    for line in header:
-        lines.extend(fold(line))
+    lines = calendar_header(
+        f"{course['title']} {course['school_year']} Lab Prep", "lab prep")
 
     for action in actions:
         summary = (f"{LABEL[action.action]}: {action.lab_title} "
@@ -257,6 +257,8 @@ font-size:.7rem;font-weight:600;text-transform:uppercase;white-space:nowrap}
 .tag.bench{background:#fdefe6;color:#a2521a}
 .what .note{display:block;color:#5b6470;font-size:.8rem;margin-top:.1rem}
 .flag{color:#a03050;font-weight:600}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;
+background:#f1f4f7;padding:.05rem .3rem;border-radius:3px}
 footer{margin-top:2rem;padding-top:.8rem;border-top:1px solid #eef1f4;
 color:#8a939e;font-size:.75rem}
 @media (max-width:640px){
@@ -286,6 +288,10 @@ def render_html(actions, course: dict, stamp: str, today: date) -> str:
         f"<h1>Lab Prep Schedule</h1>",
         f'<p class="sub">{esc(course["title"])} '
         f'{esc(course["school_year"])} &middot; {len(actions)} actions</p>',
+        '<p class="sub">Subscribe to these dates: '
+        '<code>calendar.ics</code> is the student feed &mdash; '
+        '<code>prep.ics</code>, in this same folder, is this list. '
+        'Add it via Google Calendar &rarr; Other calendars &rarr; From URL.</p>',
     ]
 
     current_month = None

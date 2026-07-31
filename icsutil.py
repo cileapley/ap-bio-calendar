@@ -39,6 +39,31 @@ def fold(line: str) -> list[str]:
     return [out[0]] + [" " + part for part in out[1:]]
 
 
+def calendar_header(name: str, prodid_tag: str) -> list[str]:
+    """The VCALENDAR preamble, folded and escaped.
+
+    Both feeds build the same seven lines. Keeping one copy is not tidiness:
+    the duplicated version has already produced two defects in these exact
+    lines — unfolded output, then unescaped PRODID.
+
+    `name` becomes X-WR-CALNAME. `prodid_tag` distinguishes the feeds inside
+    PRODID. Both are escaped; every line is folded.
+    """
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        f"PRODID:-//{ics_escape(name)}//{ics_escape(prodid_tag)}//EN",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        f"X-WR-CALNAME:{ics_escape(name)}",
+        "X-PUBLISHED-TTL:PT12H",
+    ]
+    out: list[str] = []
+    for line in lines:
+        out.extend(fold(line))
+    return out
+
+
 def slug(*parts) -> str:
     joined = "-".join(str(p) for p in parts if p)
     return re.sub(r"-+", "-", re.sub(r"[^A-Za-z0-9]+", "-", joined)).strip("-").lower()

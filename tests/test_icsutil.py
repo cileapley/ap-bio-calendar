@@ -41,6 +41,24 @@ class TestSlug(unittest.TestCase):
         self.assertEqual(icsutil.slug("unit-2", None, "2.7"), "unit-2-2-7")
 
 
+class TestCalendarHeader(unittest.TestCase):
+    def test_escapes_delimiters_in_both_name_fields(self):
+        out = icsutil.calendar_header("AP Biology, Honors; P3", "lab prep")
+        joined = "\n".join(out)
+        self.assertIn("AP Biology\\, Honors\\; P3", joined)
+        self.assertNotIn("AP Biology, Honors; P3", joined)
+
+    def test_folds_a_long_name(self):
+        out = icsutil.calendar_header("X" * 200, "lab prep")
+        for line in out:
+            self.assertLessEqual(len(line.encode("utf-8")), 75)
+
+    def test_starts_with_begin_and_version(self):
+        out = icsutil.calendar_header("AP Biology", "lab prep")
+        self.assertEqual(out[0], "BEGIN:VCALENDAR")
+        self.assertEqual(out[1], "VERSION:2.0")
+
+
 class TestVerifyIcs(unittest.TestCase):
     def _write(self, text):
         handle = tempfile.NamedTemporaryFile(
