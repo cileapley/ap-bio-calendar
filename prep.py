@@ -31,6 +31,26 @@ LABEL = {
     "bench": "Prep starts",
 }
 
+# How many days ahead each action should warn. A reminder that arrives on the
+# day a deadline falls is not a warning, and these deadlines differ in how
+# recoverable they are: a missed purchase order cannot be fixed after the fact
+# and the lab simply does not happen, while a late start on bench prep can
+# usually be absorbed by the flex day sitting in the same unit.
+ALARM_DAYS = {"order": 7, "arrive": 3, "bench": 1}
+
+
+def alarm_trigger(days_before: int) -> str:
+    """An RFC 5545 TRIGGER firing at 09:00, `days_before` days ahead.
+
+    All-day events start at 00:00, so a whole-day offset like `-P7D` fires at
+    midnight seven days out — technically correct and practically useless.
+    Backing off to 09:00 means subtracting one fewer whole day and 15 hours.
+    """
+    if days_before < 1:
+        return "-PT15H"
+    whole = days_before - 1
+    return f"-P{whole}DT15H" if whole else "-PT15H"
+
 
 @dataclass(frozen=True)
 class PrepAction:
@@ -228,6 +248,13 @@ def render_ics(actions, course: dict, stamp_utc: str, uid_domain: str) -> str:
             "TRANSP:TRANSPARENT",
             f"SUMMARY:{ics_escape(summary)}",
             f"DESCRIPTION:{ics_escape(description)}",
+            # The alarm is the point of this feed. The failure mode is not
+            # miscomputing the date, it is not looking on the right day.
+            "BEGIN:VALARM",
+            "ACTION:DISPLAY",
+            f"TRIGGER:{alarm_trigger(ALARM_DAYS[action.action])}",
+            f"DESCRIPTION:{ics_escape(summary)}",
+            "END:VALARM",
             "END:VEVENT",
         ]
         for line in event:

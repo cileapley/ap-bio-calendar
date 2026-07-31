@@ -118,6 +118,25 @@ real kit lead times. Each is one number on one line.
 Subscribe to `prep.ics` yourself; students subscribe to `calendar.ics`. Prep
 never appears in the student page, feed or JSON — there is a test for that.
 
+### Reminders
+
+Every prep event carries an alarm, because a notification that arrives on the
+day a deadline falls is not a warning. How far ahead depends on how recoverable
+the deadline is:
+
+| Action | Warns | Why |
+|---|---|---|
+| `order` | 7 days | A missed purchase order cannot be fixed afterwards — the lab does not happen |
+| `arrive` | 3 days | Enough to chase a late delivery |
+| `bench` | 1 day | A late start is usually absorbed by the unit's flex day |
+
+Alarms fire at **09:00**, not midnight. All-day events start at 00:00, so a
+plain `-P7D` offset would fire in the middle of the night; the trigger backs
+off to the morning instead. Set in `prep.py` via `ALARM_DAYS`.
+
+Only the prep feed carries alarms. The student feed has none — nobody wants a
+7am push about tomorrow's topic.
+
 Both prep files are publicly reachable, because the repo is public and that is
 what makes Pages free. Nothing in them is sensitive — "order spinach" is not a
 secret — but a student could find them. Known property, not a surprise.

@@ -336,6 +336,67 @@ class TestRenderIcs(unittest.TestCase):
             self.assertLessEqual(len(line.encode("utf-8")), 75)
 
 
+class TestAlarms(unittest.TestCase):
+    """A deadline that arrives on the day it is due is not a warning."""
+
+    def setUp(self):
+        self.days = instructional(date(2026, 8, 12), date(2026, 12, 18))
+        self.course = {"title": "AP Biology", "school_year": "2026-27"}
+        self.actions = prep.derive(
+            lab_block("INV-4", date(2026, 9, 15),
+                      {"order": 21, "arrive": 14, "bench": 2}),
+            self.days)
+
+    def _render(self):
+        return prep.render_ics(
+            self.actions, self.course, "20260731T120000Z", "apbio-2026-27")
+
+    def test_every_event_carries_exactly_one_alarm(self):
+        text = self._render()
+        self.assertEqual(text.count("BEGIN:VALARM"), len(self.actions))
+        self.assertEqual(text.count("END:VALARM"), len(self.actions))
+
+    def test_alarm_sits_inside_the_event(self):
+        # A VALARM outside its VEVENT is not a reminder, it is a parse error.
+        text = self._render()
+        first_event = text.index("BEGIN:VEVENT")
+        first_alarm = text.index("BEGIN:VALARM")
+        first_end = text.index("END:VEVENT")
+        self.assertLess(first_event, first_alarm)
+        self.assertLess(first_alarm, first_end)
+
+    def test_display_alarms_carry_the_properties_rfc_requires(self):
+        text = self._render()
+        self.assertIn("ACTION:DISPLAY", text)
+        self.assertIn("TRIGGER:", text)
+        # RFC 5545: a DISPLAY alarm MUST have a DESCRIPTION.
+        alarm = text.split("BEGIN:VALARM")[1].split("END:VALARM")[0]
+        self.assertIn("DESCRIPTION:", alarm)
+
+    def test_order_is_warned_about_earlier_than_bench(self):
+        # Missing a PO deadline cannot be recovered from; missing the start of
+        # bench prep usually can. The lead times should reflect that.
+        self.assertGreater(prep.ALARM_DAYS["order"], prep.ALARM_DAYS["arrive"])
+        self.assertGreater(prep.ALARM_DAYS["arrive"], prep.ALARM_DAYS["bench"])
+
+    def test_trigger_fires_in_the_morning_not_at_midnight(self):
+        # An all-day VEVENT starts at 00:00, so a whole-day trigger fires at
+        # midnight, which no one sees. Every trigger must carry an hour part.
+        text = self._render()
+        triggers = [line for line in text.split("\r\n")
+                    if line.startswith("TRIGGER:")]
+        self.assertEqual(len(triggers), len(self.actions))
+        for line in triggers:
+            self.assertIn("T15H", line, f"{line} would fire at midnight")
+
+    def test_trigger_arithmetic_lands_on_the_intended_morning(self):
+        # 7 days before at 09:00 = subtract 6 days and 15 hours from 00:00.
+        self.assertEqual(prep.alarm_trigger(7), "-P6DT15H")
+        self.assertEqual(prep.alarm_trigger(3), "-P2DT15H")
+        self.assertEqual(prep.alarm_trigger(1), "-PT15H")
+
+
+
 class TestRenderHtml(unittest.TestCase):
     def setUp(self):
         self.days = instructional(date(2026, 8, 12), date(2026, 12, 18))
