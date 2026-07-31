@@ -945,12 +945,12 @@ def render_html(actions, course: dict, stamp: str, today: date) -> str:
             current_month = month
 
         overdue = " overdue" if action.date < today else ""
-        note_bits = [f"{action.lead_days} {action.basis} days before "
-                     f"{_short(action.lab_date)}"]
+        note = esc(f"{action.lead_days} {action.basis} days before "
+                   f"{_short(action.lab_date)}")
         if action.snapped_days:
-            note_bits.append(
-                f'<span class="flag">moved back {action.snapped_days} '
-                f'day(s) out of a break</span>')
+            # Integer interpolation only — no caller-supplied text in this span.
+            note += (' &middot; <span class="flag">moved back '
+                     f'{int(action.snapped_days)} day(s) out of a break</span>')
 
         parts.append(
             f'<div class="row{overdue}">'
@@ -958,7 +958,7 @@ def render_html(actions, course: dict, stamp: str, today: date) -> str:
             f'<div><span class="tag {esc(action.action)}">'
             f'{esc(LABEL[action.action])}</span></div>'
             f'<div class="what">{esc(action.lab_title)}'
-            f'<span class="note">{" &middot; ".join(note_bits)}</span></div>'
+            f'<span class="note">{note}</span></div>'
             "</div>"
         )
 
@@ -969,7 +969,7 @@ def render_html(actions, course: dict, stamp: str, today: date) -> str:
     return "\n".join(parts) + "\n"
 ```
 
-Note: `note_bits` deliberately contains pre-escaped markup for the flag span, so it is joined without further escaping. The lab title and every other interpolated value goes through `esc`.
+Note: every caller-supplied value goes through `esc`. The one raw-markup branch interpolates `int(action.snapped_days)` and nothing else, so no untrusted text reaches the page unescaped.
 
 - [ ] **Step 4: Run test to verify it passes**
 
@@ -1117,7 +1117,14 @@ import prep as prep_module
 In `main()`, immediately after the `blocks = publishable(sched)` line inside the `try` block, add:
 
 ```python
-        prep_actions = prep_module.derive(sched["blocks"], all_days)
+        try:
+            prep_actions = prep_module.derive(sched["blocks"], all_days)
+        except ValueError as exc:
+            # derive() raises ValueError on a malformed prep block. main()
+            # only catches BuildError, so translate it or it escapes as a
+            # traceback instead of the clean failure message.
+            raise BuildError(f"Bad prep block in calendar.yaml: {exc}") from exc
+
         prep_warnings, prep_errors = prep_module.validate(
             prep_actions, all_days[0], date.today())
         if prep_errors:
@@ -1141,7 +1148,7 @@ Then, alongside the existing three `write_if_changed` calls, add two more entrie
                 prep_actions, course, stamp_local, date.today())),
 ```
 
-Add `"prep.ics"` to the volatile-pattern coverage by extending `VOLATILE` in `build.py` — the existing `DTSTAMP` and `Generated ...` patterns already cover both feeds, so no change is needed there. Confirm this by running the build twice.
+**Do not change `VOLATILE`.** Its existing patterns already cover both new files: `prep.ics` carries `DTSTAMP:` lines, and `prep.html`'s footer matches the `Generated \d{4}-\d\d-\d\d \d\d:\d\d from calendar\.yaml` pattern because `render_html` receives `stamp_local`, which uses that exact format. Confirm by running the build twice and checking the second run reports writing nothing.
 
 After the `review before exam` print line, add:
 
