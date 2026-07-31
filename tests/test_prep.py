@@ -352,8 +352,21 @@ class TestRenderHtml(unittest.TestCase):
         self.assertIn("August 2026", self._render())
 
     def test_marks_past_actions(self):
+        # today is after all three actions (Aug 25, Sep 1, Sep 11), so every
+        # row carries the overdue class.
+        #
+        # Assert on the row markup, not a bare "overdue" substring: PREP_CSS
+        # inlines a .row.overdue rule into every render, so a substring search
+        # passes even when no row is marked.
         html = self._render(today=date(2026, 9, 20))
-        self.assertIn("overdue", html.lower())
+        self.assertEqual(html.count('class="row overdue"'), len(self.actions))
+
+    def test_does_not_mark_future_actions(self):
+        # today precedes every action, so no row is overdue and every row
+        # carries the bare class.
+        html = self._render(today=date(2026, 8, 1))
+        self.assertNotIn('class="row overdue"', html)
+        self.assertEqual(html.count('class="row"'), len(self.actions))
 
     def test_escapes_html_in_titles(self):
         actions = prep.derive(
