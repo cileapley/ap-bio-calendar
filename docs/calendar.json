@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31 12:08",
+  "generated": "2026-08-03 09:07",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -35,8 +35,8 @@
       "periods": 3,
       "entries": [
         {
-          "id": null,
-          "title": "Syllabus, lab safety, diagnostic",
+          "id": "WOW",
+          "title": "WOW Week — syllabus, lab safety, diagnostic",
           "kind": "opening",
           "skill": null,
           "notes": null,
