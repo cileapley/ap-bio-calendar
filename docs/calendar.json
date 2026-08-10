@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-03 09:07",
+  "generated": "2026-08-10 13:07",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -7,6 +7,119 @@
     "exam_date": "2027-05-03",
     "exam_note": "Session 2 — afternoon, 12 p.m. local",
     "period_minutes": 60
+  },
+  "district": {
+    "name": "Kern High School District",
+    "school_year": "2026-27",
+    "non_instructional_days": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-11",
+        "reason": "Teacher orientation (inservice)"
+      },
+      {
+        "start": "2026-09-07",
+        "end": "2026-09-07",
+        "reason": "Labor Day"
+      },
+      {
+        "start": "2026-11-11",
+        "end": "2026-11-11",
+        "reason": "Veterans Day"
+      },
+      {
+        "start": "2026-11-23",
+        "end": "2026-11-27",
+        "reason": "Thanksgiving holidays"
+      },
+      {
+        "start": "2026-12-21",
+        "end": "2027-01-01",
+        "reason": "Christmas recess"
+      },
+      {
+        "start": "2027-01-18",
+        "end": "2027-01-18",
+        "reason": "Dr. Martin L. King, Jr. Day"
+      },
+      {
+        "start": "2027-01-22",
+        "end": "2027-01-22",
+        "reason": "Non-student inservice day"
+      },
+      {
+        "start": "2027-02-08",
+        "end": "2027-02-08",
+        "reason": "Lincoln's Day"
+      },
+      {
+        "start": "2027-02-15",
+        "end": "2027-02-15",
+        "reason": "Washington's Day"
+      },
+      {
+        "start": "2027-03-22",
+        "end": "2027-03-26",
+        "reason": "Easter recess"
+      },
+      {
+        "start": "2027-03-29",
+        "end": "2027-03-29",
+        "reason": "District closed"
+      },
+      {
+        "start": "2027-05-28",
+        "end": "2027-05-28",
+        "reason": "After spring term ends"
+      },
+      {
+        "start": "2027-05-31",
+        "end": "2027-05-31",
+        "reason": "Memorial Day"
+      }
+    ],
+    "terms": [
+      {
+        "term": "fall",
+        "start": "2026-08-12",
+        "end": "2026-12-18",
+        "instructional_days": 86,
+        "quarters": [
+          {
+            "quarter": "Q1",
+            "start": "2026-08-12",
+            "end": "2026-10-09",
+            "instructional_days": 42
+          },
+          {
+            "quarter": "Q2",
+            "start": "2026-10-12",
+            "end": "2026-12-18",
+            "instructional_days": 44
+          }
+        ]
+      },
+      {
+        "term": "spring",
+        "start": "2027-01-04",
+        "end": "2027-05-27",
+        "instructional_days": 94,
+        "quarters": [
+          {
+            "quarter": "Q3",
+            "start": "2027-01-04",
+            "end": "2027-03-12",
+            "instructional_days": 46
+          },
+          {
+            "quarter": "Q4",
+            "start": "2027-03-15",
+            "end": "2027-05-27",
+            "instructional_days": 48
+          }
+        ]
+      }
+    ]
   },
   "summary": {
     "instructional_days_total": 180,
