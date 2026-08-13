@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-10 13:07",
+  "generated": "2026-08-13 12:48",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -128,14 +128,14 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 110,
-    "lab_periods_scheduled": 16,
-    "flex_periods": 15,
+    "content_periods": 111,
+    "lab_periods_scheduled": 17,
+    "flex_periods": 13,
     "lab_periods_required": 40,
     "review_periods": 17,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 85
+    "published_entries": 83
   },
   "blocks": [
     {
@@ -166,106 +166,77 @@
       ]
     },
     {
-      "id": "unit-1",
-      "unit": 1,
-      "title": "Chemistry of Life",
-      "weight": [
-        8,
-        11
-      ],
+      "id": "unit-0",
+      "unit": null,
+      "title": "Unit 0 — Scientific Method and Statistics",
+      "weight": null,
       "start": "2026-08-17",
       "end": "2026-08-27",
       "periods": 9,
       "entries": [
         {
-          "id": "1.1+1.2",
-          "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
+          "id": "0.METHOD",
+          "title": "Scientific method — hypotheses, variables, experimental controls",
           "kind": "topic",
-          "skill": "2.A",
+          "skill": null,
           "notes": null,
           "link": null,
-          "periods": 1,
+          "periods": 3,
           "start": "2026-08-17",
-          "end": "2026-08-17",
-          "dates": [
-            "2026-08-17"
-          ]
-        },
-        {
-          "id": "1.3+1.4",
-          "title": "Introduction to Macromolecules · Carbohydrates",
-          "kind": "topic",
-          "skill": "2.A, 1.A",
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-08-18",
-          "end": "2026-08-18",
-          "dates": [
-            "2026-08-18"
-          ]
-        },
-        {
-          "id": "1.5+1.6",
-          "title": "Lipids · Nucleic Acids",
-          "kind": "topic",
-          "skill": "6.E, 2.A",
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-08-19",
           "end": "2026-08-19",
           "dates": [
+            "2026-08-17",
+            "2026-08-18",
             "2026-08-19"
           ]
         },
         {
-          "id": "1.7",
-          "title": "Proteins",
-          "kind": "topic",
-          "skill": "6.E",
-          "notes": null,
+          "id": "0.OREO",
+          "title": "Oreo Lab — measurement, graphing, class data",
+          "kind": "lab",
+          "skill": null,
+          "notes": "First lab. Error bars return after statistics.",
           "link": null,
-          "periods": 3,
+          "periods": 1,
           "start": "2026-08-20",
+          "end": "2026-08-20",
+          "dates": [
+            "2026-08-20"
+          ]
+        },
+        {
+          "id": "0.DYOE",
+          "title": "Design Your Own Experiment — plan and run",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Statistical analysis returns in the post-lab.",
+          "link": null,
+          "periods": 2,
+          "start": "2026-08-21",
           "end": "2026-08-24",
           "dates": [
-            "2026-08-20",
             "2026-08-21",
             "2026-08-24"
           ]
         },
         {
-          "id": "1.FLEX",
-          "title": "Flex day — catch-up, reteach, or lab overflow",
-          "kind": "flex",
+          "id": "0.STATS",
+          "title": "Statistics — central tendency, standard deviation, standard error, error bars",
+          "kind": "topic",
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 1,
+          "periods": 2,
           "start": "2026-08-25",
-          "end": "2026-08-25",
-          "dates": [
-            "2026-08-25"
-          ]
-        },
-        {
-          "id": "1.PC",
-          "title": "Progress Check 1",
-          "kind": "assessment",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-08-26",
           "end": "2026-08-26",
           "dates": [
+            "2026-08-25",
             "2026-08-26"
           ]
         },
         {
-          "id": "1.TEST",
-          "title": "Unit 1 Assessment",
+          "id": "0.QUIZ",
+          "title": "Scientific Method and Statistics Quiz",
           "kind": "assessment",
           "skill": null,
           "notes": null,
@@ -280,6 +251,92 @@
       ]
     },
     {
+      "id": "unit-1",
+      "unit": 1,
+      "title": "Chemistry of Life",
+      "weight": [
+        8,
+        11
+      ],
+      "start": "2026-08-28",
+      "end": "2026-09-08",
+      "periods": 7,
+      "entries": [
+        {
+          "id": "1.1+1.2",
+          "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
+          "kind": "topic",
+          "skill": "2.A",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-28",
+          "end": "2026-08-28",
+          "dates": [
+            "2026-08-28"
+          ]
+        },
+        {
+          "id": "1.3+1.4",
+          "title": "Introduction to Macromolecules · Carbohydrates",
+          "kind": "topic",
+          "skill": "2.A, 1.A",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-31",
+          "end": "2026-08-31",
+          "dates": [
+            "2026-08-31"
+          ]
+        },
+        {
+          "id": "1.5+1.6",
+          "title": "Lipids · Nucleic Acids",
+          "kind": "topic",
+          "skill": "6.E, 2.A",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-09-01",
+          "end": "2026-09-01",
+          "dates": [
+            "2026-09-01"
+          ]
+        },
+        {
+          "id": "1.7",
+          "title": "Proteins",
+          "kind": "topic",
+          "skill": "6.E",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2026-09-02",
+          "end": "2026-09-04",
+          "dates": [
+            "2026-09-02",
+            "2026-09-03",
+            "2026-09-04"
+          ]
+        },
+        {
+          "id": "1.TEST",
+          "title": "Unit 1 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": "Progress Check 1 is take-home, due before this test.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-09-08",
+          "end": "2026-09-08",
+          "dates": [
+            "2026-09-08"
+          ]
+        }
+      ]
+    },
+    {
       "id": "unit-2",
       "unit": 2,
       "title": "Cells",
@@ -287,9 +344,9 @@
         10,
         13
       ],
-      "start": "2026-08-28",
-      "end": "2026-09-25",
-      "periods": 20,
+      "start": "2026-09-09",
+      "end": "2026-09-30",
+      "periods": 16,
       "entries": [
         {
           "id": "2.1",
@@ -299,12 +356,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-08-28",
-          "end": "2026-09-01",
+          "start": "2026-09-09",
+          "end": "2026-09-11",
           "dates": [
-            "2026-08-28",
-            "2026-08-31",
-            "2026-09-01"
+            "2026-09-09",
+            "2026-09-10",
+            "2026-09-11"
           ]
         },
         {
@@ -315,11 +372,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-09-02",
-          "end": "2026-09-03",
+          "start": "2026-09-14",
+          "end": "2026-09-15",
           "dates": [
-            "2026-09-02",
-            "2026-09-03"
+            "2026-09-14",
+            "2026-09-15"
           ]
         },
         {
@@ -330,10 +387,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-09-04",
-          "end": "2026-09-04",
+          "start": "2026-09-16",
+          "end": "2026-09-16",
           "dates": [
-            "2026-09-04"
+            "2026-09-16"
           ]
         },
         {
@@ -344,11 +401,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-09-08",
-          "end": "2026-09-09",
+          "start": "2026-09-17",
+          "end": "2026-09-18",
           "dates": [
-            "2026-09-08",
-            "2026-09-09"
+            "2026-09-17",
+            "2026-09-18"
           ]
         },
         {
@@ -357,65 +414,6 @@
           "kind": "topic",
           "skill": "4.A",
           "notes": "Water potential calculations.",
-          "link": null,
-          "periods": 3,
-          "start": "2026-09-10",
-          "end": "2026-09-14",
-          "dates": [
-            "2026-09-10",
-            "2026-09-11",
-            "2026-09-14"
-          ]
-        },
-        {
-          "id": "INV-4",
-          "title": "Investigation 4 — Diffusion and Osmosis",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 2: Energetics.",
-          "link": null,
-          "periods": 2,
-          "start": "2026-09-15",
-          "end": "2026-09-16",
-          "dates": [
-            "2026-09-15",
-            "2026-09-16"
-          ]
-        },
-        {
-          "id": "2.8",
-          "title": "Mechanisms of Transport",
-          "kind": "topic",
-          "skill": "1.B",
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-09-17",
-          "end": "2026-09-17",
-          "dates": [
-            "2026-09-17"
-          ]
-        },
-        {
-          "id": "2.9+2.10",
-          "title": "Cell Compartmentalization · Origins of Compartmentalization",
-          "kind": "topic",
-          "skill": "6.E, 6.B",
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-09-18",
-          "end": "2026-09-18",
-          "dates": [
-            "2026-09-18"
-          ]
-        },
-        {
-          "id": "2.FLEX",
-          "title": "Flex days — catch-up, reteach, or lab overflow",
-          "kind": "flex",
-          "skill": null,
-          "notes": null,
           "link": null,
           "periods": 3,
           "start": "2026-09-21",
@@ -427,10 +425,10 @@
           ]
         },
         {
-          "id": "2.PC",
-          "title": "Progress Check 2",
-          "kind": "assessment",
-          "skill": null,
+          "id": "2.8",
+          "title": "Mechanisms of Transport",
+          "kind": "topic",
+          "skill": "1.B",
           "notes": null,
           "link": null,
           "periods": 1,
@@ -441,10 +439,10 @@
           ]
         },
         {
-          "id": "2.TEST",
-          "title": "Unit 2 Assessment",
-          "kind": "assessment",
-          "skill": null,
+          "id": "2.9+2.10",
+          "title": "Cell Compartmentalization · Origins of Compartmentalization",
+          "kind": "topic",
+          "skill": "6.E, 6.B",
           "notes": null,
           "link": null,
           "periods": 1,
@@ -452,6 +450,35 @@
           "end": "2026-09-25",
           "dates": [
             "2026-09-25"
+          ]
+        },
+        {
+          "id": "2.FLEX",
+          "title": "Flex days — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2026-09-28",
+          "end": "2026-09-29",
+          "dates": [
+            "2026-09-28",
+            "2026-09-29"
+          ]
+        },
+        {
+          "id": "2.TEST",
+          "title": "Unit 2 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": "Progress Check 2 is take-home, due before this test.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-09-30",
+          "end": "2026-09-30",
+          "dates": [
+            "2026-09-30"
           ]
         }
       ]
@@ -464,9 +491,9 @@
         12,
         16
       ],
-      "start": "2026-09-28",
-      "end": "2026-11-02",
-      "periods": 26,
+      "start": "2026-10-01",
+      "end": "2026-11-04",
+      "periods": 25,
       "entries": [
         {
           "id": "3.1",
@@ -476,12 +503,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-09-28",
-          "end": "2026-09-30",
+          "start": "2026-10-01",
+          "end": "2026-10-05",
           "dates": [
-            "2026-09-28",
-            "2026-09-29",
-            "2026-09-30"
+            "2026-10-01",
+            "2026-10-02",
+            "2026-10-05"
           ]
         },
         {
@@ -492,10 +519,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-10-01",
-          "end": "2026-10-01",
+          "start": "2026-10-06",
+          "end": "2026-10-06",
           "dates": [
-            "2026-10-01"
+            "2026-10-06"
           ]
         },
         {
@@ -506,11 +533,11 @@
           "notes": "Big Idea 4: System Interactions.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-02",
-          "end": "2026-10-05",
+          "start": "2026-10-07",
+          "end": "2026-10-08",
           "dates": [
-            "2026-10-02",
-            "2026-10-05"
+            "2026-10-07",
+            "2026-10-08"
           ]
         },
         {
@@ -521,10 +548,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-10-06",
-          "end": "2026-10-06",
+          "start": "2026-10-09",
+          "end": "2026-10-09",
           "dates": [
-            "2026-10-06"
+            "2026-10-09"
           ]
         },
         {
@@ -535,13 +562,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-07",
-          "end": "2026-10-12",
+          "start": "2026-10-12",
+          "end": "2026-10-15",
           "dates": [
-            "2026-10-07",
-            "2026-10-08",
-            "2026-10-09",
-            "2026-10-12"
+            "2026-10-12",
+            "2026-10-13",
+            "2026-10-14",
+            "2026-10-15"
           ]
         },
         {
@@ -552,11 +579,11 @@
           "notes": "Big Idea 2: Energetics.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-13",
-          "end": "2026-10-14",
+          "start": "2026-10-16",
+          "end": "2026-10-19",
           "dates": [
-            "2026-10-13",
-            "2026-10-14"
+            "2026-10-16",
+            "2026-10-19"
           ]
         },
         {
@@ -567,13 +594,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-15",
-          "end": "2026-10-20",
+          "start": "2026-10-20",
+          "end": "2026-10-23",
           "dates": [
-            "2026-10-15",
-            "2026-10-16",
-            "2026-10-19",
-            "2026-10-20"
+            "2026-10-20",
+            "2026-10-21",
+            "2026-10-22",
+            "2026-10-23"
           ]
         },
         {
@@ -584,11 +611,11 @@
           "notes": "Big Idea 2: Energetics.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-21",
-          "end": "2026-10-22",
+          "start": "2026-10-26",
+          "end": "2026-10-27",
           "dates": [
-            "2026-10-21",
-            "2026-10-22"
+            "2026-10-26",
+            "2026-10-27"
           ]
         },
         {
@@ -599,28 +626,14 @@
           "notes": null,
           "link": null,
           "periods": 5,
-          "start": "2026-10-23",
-          "end": "2026-10-29",
+          "start": "2026-10-28",
+          "end": "2026-11-03",
           "dates": [
-            "2026-10-23",
-            "2026-10-26",
-            "2026-10-27",
             "2026-10-28",
-            "2026-10-29"
-          ]
-        },
-        {
-          "id": "3.PC",
-          "title": "Progress Check 3",
-          "kind": "assessment",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-10-30",
-          "end": "2026-10-30",
-          "dates": [
-            "2026-10-30"
+            "2026-10-29",
+            "2026-10-30",
+            "2026-11-02",
+            "2026-11-03"
           ]
         },
         {
@@ -628,13 +641,13 @@
           "title": "Unit 3 Assessment",
           "kind": "assessment",
           "skill": null,
-          "notes": null,
+          "notes": "Progress Check 3 is take-home, due before this test.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-02",
-          "end": "2026-11-02",
+          "start": "2026-11-04",
+          "end": "2026-11-04",
           "dates": [
-            "2026-11-02"
+            "2026-11-04"
           ]
         }
       ]
@@ -647,9 +660,9 @@
         10,
         15
       ],
-      "start": "2026-11-03",
-      "end": "2026-12-01",
-      "periods": 15,
+      "start": "2026-11-05",
+      "end": "2026-12-02",
+      "periods": 14,
       "entries": [
         {
           "id": "4.1+4.2",
@@ -659,10 +672,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-03",
-          "end": "2026-11-03",
+          "start": "2026-11-05",
+          "end": "2026-11-05",
           "dates": [
-            "2026-11-03"
+            "2026-11-05"
           ]
         },
         {
@@ -673,12 +686,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-04",
-          "end": "2026-11-06",
+          "start": "2026-11-06",
+          "end": "2026-11-10",
           "dates": [
-            "2026-11-04",
-            "2026-11-05",
-            "2026-11-06"
+            "2026-11-06",
+            "2026-11-09",
+            "2026-11-10"
           ]
         },
         {
@@ -686,21 +699,6 @@
           "title": "Feedback",
           "kind": "topic",
           "skill": "6.E",
-          "notes": null,
-          "link": null,
-          "periods": 2,
-          "start": "2026-11-09",
-          "end": "2026-11-10",
-          "dates": [
-            "2026-11-09",
-            "2026-11-10"
-          ]
-        },
-        {
-          "id": "4.5",
-          "title": "Cell Cycle",
-          "kind": "topic",
-          "skill": "4.B, 5.A",
           "notes": null,
           "link": null,
           "periods": 2,
@@ -712,11 +710,11 @@
           ]
         },
         {
-          "id": "INV-7",
-          "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 3: Information Storage and Transmission.",
+          "id": "4.5",
+          "title": "Cell Cycle",
+          "kind": "topic",
+          "skill": "4.B, 5.A",
+          "notes": null,
           "link": null,
           "periods": 2,
           "start": "2026-11-16",
@@ -727,6 +725,21 @@
           ]
         },
         {
+          "id": "INV-7",
+          "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 3: Information Storage and Transmission.",
+          "link": null,
+          "periods": 2,
+          "start": "2026-11-18",
+          "end": "2026-11-19",
+          "dates": [
+            "2026-11-18",
+            "2026-11-19"
+          ]
+        },
+        {
           "id": "4.6",
           "title": "Regulation of Cell Cycle",
           "kind": "topic",
@@ -734,10 +747,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-18",
-          "end": "2026-11-18",
+          "start": "2026-11-20",
+          "end": "2026-11-20",
           "dates": [
-            "2026-11-18"
+            "2026-11-20"
           ]
         },
         {
@@ -748,25 +761,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-19",
-          "end": "2026-11-20",
-          "dates": [
-            "2026-11-19",
-            "2026-11-20"
-          ]
-        },
-        {
-          "id": "4.PC",
-          "title": "Progress Check 4",
-          "kind": "assessment",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
           "start": "2026-11-30",
-          "end": "2026-11-30",
+          "end": "2026-12-01",
           "dates": [
-            "2026-11-30"
+            "2026-11-30",
+            "2026-12-01"
           ]
         },
         {
@@ -774,13 +773,13 @@
           "title": "Unit 4 Assessment",
           "kind": "assessment",
           "skill": null,
-          "notes": null,
+          "notes": "Progress Check 4 is take-home, due before this test.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-01",
-          "end": "2026-12-01",
+          "start": "2026-12-02",
+          "end": "2026-12-02",
           "dates": [
-            "2026-12-01"
+            "2026-12-02"
           ]
         }
       ]
@@ -793,9 +792,9 @@
         8,
         11
       ],
-      "start": "2026-12-02",
+      "start": "2026-12-03",
       "end": "2026-12-15",
-      "periods": 10,
+      "periods": 9,
       "entries": [
         {
           "id": "5.1+5.2",
@@ -805,10 +804,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-02",
-          "end": "2026-12-02",
+          "start": "2026-12-03",
+          "end": "2026-12-03",
           "dates": [
-            "2026-12-02"
+            "2026-12-03"
           ]
         },
         {
@@ -819,12 +818,12 @@
           "notes": "Includes chi-square analysis.",
           "link": null,
           "periods": 3,
-          "start": "2026-12-03",
-          "end": "2026-12-07",
+          "start": "2026-12-04",
+          "end": "2026-12-08",
           "dates": [
-            "2026-12-03",
             "2026-12-04",
-            "2026-12-07"
+            "2026-12-07",
+            "2026-12-08"
           ]
         },
         {
@@ -835,11 +834,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-12-08",
-          "end": "2026-12-09",
+          "start": "2026-12-09",
+          "end": "2026-12-10",
           "dates": [
-            "2026-12-08",
-            "2026-12-09"
+            "2026-12-09",
+            "2026-12-10"
           ]
         },
         {
@@ -850,20 +849,6 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-10",
-          "end": "2026-12-10",
-          "dates": [
-            "2026-12-10"
-          ]
-        },
-        {
-          "id": "5.FLEX",
-          "title": "Flex day — catch-up, reteach, or lab overflow",
-          "kind": "flex",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
           "start": "2026-12-11",
           "end": "2026-12-11",
           "dates": [
@@ -871,9 +856,9 @@
           ]
         },
         {
-          "id": "5.PC",
-          "title": "Progress Check 5",
-          "kind": "assessment",
+          "id": "5.FLEX",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
+          "kind": "flex",
           "skill": null,
           "notes": null,
           "link": null,
@@ -889,7 +874,7 @@
           "title": "Unit 5 Assessment",
           "kind": "assessment",
           "skill": null,
-          "notes": null,
+          "notes": "Progress Check 5 is take-home, due before this test.",
           "link": null,
           "periods": 1,
           "start": "2026-12-15",
