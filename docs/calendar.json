@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16 07:20",
+  "generated": "2026-08-18 08:27",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -129,13 +129,13 @@
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
     "content_periods": 111,
-    "lab_periods_scheduled": 17,
+    "lab_periods_scheduled": 16,
     "flex_periods": 13,
     "lab_periods_required": 40,
     "review_periods": 17,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 84
+    "published_entries": 88
   },
   "blocks": [
     {
@@ -175,27 +175,53 @@
       "periods": 10,
       "entries": [
         {
+          "id": "0.DIAG",
+          "title": "AP Classroom login and pre-assessment diagnostic",
+          "kind": "opening",
+          "skill": null,
+          "notes": "Join codes issued; diagnostic runs to the bell.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-17",
+          "end": "2026-08-17",
+          "dates": [
+            "2026-08-17"
+          ]
+        },
+        {
           "id": "0.METHOD",
-          "title": "Scientific method — hypotheses, variables, experimental controls",
+          "title": "Scientific method — observations, reasoning, hypotheses",
           "kind": "topic",
           "skill": null,
-          "notes": null,
+          "notes": "Notebook pages 3-10.",
           "link": null,
-          "periods": 3,
-          "start": "2026-08-17",
+          "periods": 1,
+          "start": "2026-08-18",
+          "end": "2026-08-18",
+          "dates": [
+            "2026-08-18"
+          ]
+        },
+        {
+          "id": "0.CONTROLS",
+          "title": "Experimental controls, and planning the DYOE",
+          "kind": "topic",
+          "skill": null,
+          "notes": "Notebook pages 11-14. Controls practice, then the DYOE plan and pre-lab.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-19",
           "end": "2026-08-19",
           "dates": [
-            "2026-08-17",
-            "2026-08-18",
             "2026-08-19"
           ]
         },
         {
-          "id": "0.OREO",
-          "title": "Oreo Lab — measurement, graphing, class data",
+          "id": "0.DYOE",
+          "title": "Design Your Own Experiment — run and collect data",
           "kind": "lab",
           "skill": null,
-          "notes": "First lab. Error bars return after statistics.",
+          "notes": "Notebook page 15. The post-lab waits for statistics.",
           "link": null,
           "periods": 1,
           "start": "2026-08-20",
@@ -205,41 +231,67 @@
           ]
         },
         {
-          "id": "0.DYOE",
-          "title": "Design Your Own Experiment — plan and run",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Statistical analysis returns in the post-lab.",
-          "link": null,
-          "periods": 2,
-          "start": "2026-08-21",
-          "end": "2026-08-24",
-          "dates": [
-            "2026-08-21",
-            "2026-08-24"
-          ]
-        },
-        {
           "id": "0.STATS",
           "title": "Statistics — central tendency, standard deviation, standard error, error bars",
           "kind": "topic",
           "skill": null,
-          "notes": null,
+          "notes": "Notebook pages 17-24. Whatever is unfinished is homework.",
           "link": null,
-          "periods": 2,
+          "periods": 1,
+          "start": "2026-08-21",
+          "end": "2026-08-21",
+          "dates": [
+            "2026-08-21"
+          ]
+        },
+        {
+          "id": "0.STATS1",
+          "title": "Statistics practice, part 1",
+          "kind": "topic",
+          "skill": null,
+          "notes": "Notebook pages 29-30. Page 31 is claimed by no assignment [check: homework, or dropped].",
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-24",
+          "end": "2026-08-24",
+          "dates": [
+            "2026-08-24"
+          ]
+        },
+        {
+          "id": "0.OREO",
+          "title": "Oreo Lab — measurement, class data, error bars",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Notebook pages 25-28. Runs AFTER statistics: the conclusion needs the class SD and 2 SEM error bars.",
+          "link": null,
+          "periods": 1,
           "start": "2026-08-25",
+          "end": "2026-08-25",
+          "dates": [
+            "2026-08-25"
+          ]
+        },
+        {
+          "id": "0.STATS2",
+          "title": "Statistics practice, part 2 — Herceptin capstone",
+          "kind": "topic",
+          "skill": null,
+          "notes": "Notebook pages 32-34. The strongest item in the unit.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-08-26",
           "end": "2026-08-26",
           "dates": [
-            "2026-08-25",
             "2026-08-26"
           ]
         },
         {
           "id": "0.QUIZ",
-          "title": "Scientific Method and Statistics Quiz",
+          "title": "Statistics EK Quiz and Unit 0 AP Test",
           "kind": "assessment",
           "skill": null,
-          "notes": null,
+          "notes": "Both on the same day; each is short. Flash cards due this morning.",
           "link": null,
           "periods": 1,
           "start": "2026-08-27",
