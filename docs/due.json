@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-22T22:24:20+00:00",
+ "fetched_at": "2026-08-22T22:46:15+00:00",
  "course_id": 342945,
  "assignments": [
   {
@@ -116,16 +116,16 @@
   },
   {
    "name": "Statistics Essential Knowledge Quiz",
-   "due_at": "2026-08-28T06:59:59Z",
+   "due_at": "2026-08-31T06:59:59Z",
    "points": 10.0,
-   "published": false,
+   "published": true,
    "url": "https://kernhigh.instructure.com/courses/342945/assignments/13741055"
   },
   {
    "name": "Unit 0 AP Test (MCQ + FRQ)",
-   "due_at": "2026-08-28T06:59:59Z",
+   "due_at": "2026-08-31T06:59:59Z",
    "points": 20.0,
-   "published": false,
+   "published": true,
    "url": "https://kernhigh.instructure.com/courses/342945/assignments/13741058"
   },
   {
