@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-18 08:27",
+  "generated": "2026-08-22 10:12",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -232,10 +232,10 @@
         },
         {
           "id": "0.STATS",
-          "title": "Statistics — central tendency, standard deviation, standard error, error bars",
+          "title": "Statistics notes, part 1",
           "kind": "topic",
           "skill": null,
-          "notes": "Notebook pages 17-24. Whatever is unfinished is homework.",
+          "notes": "Notebook pages 17-21.",
           "link": null,
           "periods": 1,
           "start": "2026-08-21",
@@ -245,11 +245,11 @@
           ]
         },
         {
-          "id": "0.STATS1",
-          "title": "Statistics practice, part 1",
+          "id": "0.STATSB",
+          "title": "Statistics notes, part 2",
           "kind": "topic",
           "skill": null,
-          "notes": "Notebook pages 29-30. Page 31 is claimed by no assignment [check: homework, or dropped].",
+          "notes": "Notebook pages 22-24. Homework: the DYOE post-lab and conclusion, and statistics practice part 1, pages 29-31.",
           "link": null,
           "periods": 1,
           "start": "2026-08-24",
