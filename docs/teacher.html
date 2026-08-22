@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AP Biology — Teacher View</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #ffffff; color: #191d2b; font-family: 'Sora', Helvetica, Arial, sans-serif; }
+  a { color: #2b50c8; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 24px 48px 24px; }
+  header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; border-bottom: 2px solid #191d2b; padding-bottom: 10px; }
+  h1 { margin: 0; font-size: 22px; font-weight: 800; letter-spacing: -0.3px; }
+  .links { font-size: 13px; display: flex; gap: 16px; flex-wrap: wrap; }
+  .stamps { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #5b6070; margin: 10px 0 4px 0; display: flex; gap: 18px; flex-wrap: wrap; }
+  .stale { color: #a2521a; font-weight: 600; }
+  h2 { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; color: #5b6070; font-family: 'IBM Plex Mono', monospace; margin: 26px 0 8px 0; }
+  .ahead { display: flex; gap: 10px; flex-wrap: wrap; }
+  .ahead .a { border: 1px solid #f0c94e; background: #fffdf3; border-radius: 8px; padding: 8px 12px; font-size: 13px; }
+  .ahead .a .d { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #a2521a; font-weight: 600; }
+  .week { display: flex; flex-direction: column; gap: 8px; }
+  .day { border: 1px solid #e6e8f0; border-radius: 10px; padding: 10px 14px; }
+  .day.today { border-color: #2b50c8; box-shadow: inset 3px 0 0 #2b50c8; }
+  .dh { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .dh .d { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; color: #191d2b; }
+  .dh .today-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 700; color: #2b50c8; letter-spacing: 0.12em; }
+  .row { display: flex; gap: 8px; align-items: baseline; margin: 5px 0; font-size: 13.5px; line-height: 1.45; flex-wrap: wrap; }
+  .tag { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 0.06em; padding: 1px 6px; border-radius: 999px; flex: none; text-transform: uppercase; }
+  .tag.topic { background: #eaf1f8; color: #1c5d99; }
+  .tag.lab { background: #e6f4ec; color: #1d6b42; }
+  .tag.assessment { background: #fdefe6; color: #a2521a; }
+  .tag.flex { background: #fdf0f3; color: #a03050; }
+  .tag.opening, .tag.review { background: #eef0f2; color: #4a5560; }
+  .tag.teacher { background: #191d2b; color: #ffffff; }
+  .tag.prep { background: #e6f4ec; color: #1d6b42; border: 1px solid #bfe0cd; }
+  .tag.due { background: #eef2fd; color: #2b50c8; }
+  .tag.ret { background: #f4f0fa; color: #5a3fa0; }
+  .tag.pair { background: #5a3fa0; color: #ffffff; }
+  .t { font-weight: 600; }
+  .note { color: #5b6070; font-weight: 400; }
+  .skill { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #8a90a3; }
+  .sub { color: #5b6070; font-size: 13px; }
+  .none { color: #a7adbd; font-size: 13px; margin: 4px 0; }
+  .missing { border: 1px dashed #d8dde3; border-radius: 8px; padding: 8px 12px; color: #a2521a; font-size: 12.5px; margin: 8px 0; font-family: 'IBM Plex Mono', monospace; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AP Biology — Teacher View</h1>
+    <div class="links">
+      <a href="./" target="_blank" rel="noopener">Student calendar</a>
+      <a href="prep.html" target="_blank" rel="noopener">Prep schedule</a>
+      <a href="https://kernhigh.instructure.com/courses/342945" target="_blank" rel="noopener">Canvas course</a>
+    </div>
+  </header>
+  <div class="stamps" id="stamps"></div>
+  <div id="ahead-wrap">
+    <h2>AHEAD</h2>
+    <div class="ahead" id="ahead"></div>
+  </div>
+  <div id="weeks"></div>
+</div>
+
+<script>
+(function () {
+  function iso(d) {
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+  function parse(s) { var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function label(d) {
+    return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][d.getDay()].toUpperCase() +
+      " " + (d.getMonth() + 1) + "/" + d.getDate();
+  }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+  function chip(cls, text) { return el("span", "tag " + cls, text); }
+
+  var now = new Date();
+  var today = iso(now);
+  var dow = now.getDay();
+  var shift = (dow === 0) ? 1 : (dow === 6) ? 2 : 1 - dow;
+  var monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() + shift);
+
+  function getJSON(url) {
+    return fetch(url).then(function (r) {
+      if (!r.ok) throw new Error(url);
+      return r.json();
+    });
+  }
+
+  Promise.allSettled([
+    getJSON("./teacher.json"),
+    getJSON("./review.json"),
+    getJSON("./due.json")
+  ]).then(function (results) {
+    var teacher = results[0].status === "fulfilled" ? results[0].value : null;
+    var review = results[1].status === "fulfilled" ? results[1].value : null;
+    var due = results[2].status === "fulfilled" ? results[2].value : null;
+
+    var stamps = document.getElementById("stamps");
+    if (teacher) stamps.appendChild(el("span", "", "calendar built " + teacher.generated));
+    if (due) {
+      var fetched = new Date(due.fetched_at);
+      var ageDays = (now - fetched) / 86400000;
+      var s = el("span", ageDays > 7 ? "stale" : "",
+        "due dates fetched " + due.fetched_at.slice(0, 16).replace("T", " ") + " UTC" +
+        (ageDays > 7 ? " — stale, run canvas_due.py" : ""));
+      stamps.appendChild(s);
+    } else {
+      stamps.appendChild(el("span", "stale", "no due.json — run canvas_due.py"));
+    }
+    if (!review) stamps.appendChild(el("span", "stale", "no review.json — run review.py"));
+
+    if (!teacher) {
+      document.getElementById("weeks").appendChild(
+        el("div", "missing", "teacher.json failed to load — run build.py and publish."));
+      return;
+    }
+
+    var reviewByDay = {};
+    if (review) review.days.forEach(function (d) { reviewByDay[d.date] = d; });
+
+    var dueByDay = {};
+    if (due) due.assignments.forEach(function (a) {
+      if (!a.due_at) return;
+      var local = new Date(a.due_at);
+      var key = iso(local);
+      (dueByDay[key] = dueByDay[key] || []).push({
+        name: a.name, points: a.points, url: a.url, published: a.published,
+        time: local.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })
+      });
+    });
+
+    var ahead = document.getElementById("ahead");
+    var tests = teacher.entries.filter(function (e) {
+      return e.kind === "assessment" && e.end >= today;
+    }).sort(function (a, b) { return a.start < b.start ? -1 : 1; }).slice(0, 4);
+    if (tests.length) {
+      tests.forEach(function (t) {
+        var a = el("div", "a");
+        a.appendChild(el("div", "d", label(parse(t.start))));
+        a.appendChild(el("div", "", t.title));
+        ahead.appendChild(a);
+      });
+    } else {
+      document.getElementById("ahead-wrap").style.display = "none";
+    }
+
+    var weeks = document.getElementById("weeks");
+    for (var w = 0; w < 2; w++) {
+      var start = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + w * 7);
+      var h = el("h2", "", (w === 0 ? "WEEK OF " : "FOLLOWING WEEK — ") + (start.getMonth() + 1) + "/" + start.getDate());
+      weeks.appendChild(h);
+      var weekBox = el("div", "week");
+      for (var i = 0; i < 5; i++) {
+        var d = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+        var key = iso(d);
+        var box = el("div", "day" + (key === today ? " today" : ""));
+        var dh = el("div", "dh");
+        dh.appendChild(el("span", "d", label(d)));
+        if (key === today) dh.appendChild(el("span", "today-tag", "TODAY"));
+        box.appendChild(dh);
+
+        var hits = teacher.entries.filter(function (e) { return e.dates.indexOf(key) !== -1; });
+        var any = false;
+        hits.forEach(function (e) {
+          any = true;
+          var row = el("div", "row");
+          row.appendChild(chip(e.kind, e.kind));
+          if (e.visibility === "teacher") row.appendChild(chip("teacher", "teacher-only"));
+          var t = el("span", "t", e.title);
+          row.appendChild(t);
+          if (e.skill) row.appendChild(el("span", "skill", "SP " + e.skill));
+          if (e.notes) row.appendChild(el("span", "note", e.notes));
+          box.appendChild(row);
+        });
+
+        if (teacher.prep) teacher.prep.forEach(function (p) {
+          if (p.due !== key) return;
+          any = true;
+          var row = el("div", "row");
+          row.appendChild(chip("prep", "prep"));
+          row.appendChild(el("span", "t", p.lab_id + " " + p.action));
+          row.appendChild(el("span", "note",
+            "for " + p.lab_title + " on " + label(parse(p.lab_date)) + " (" + p.lead_days + "-day lead, " + p.basis + ")"));
+          box.appendChild(row);
+        });
+
+        var r = reviewByDay[key];
+        if (r && r.topics.length) {
+          any = true;
+          var row = el("div", "row");
+          row.appendChild(chip("ret", "warmup returns"));
+          if (r.pair) row.appendChild(chip("pair", "PAIR"));
+          row.appendChild(el("span", "sub", r.topics.map(function (t) {
+            return t.id + " " + t.title;
+          }).join(" · ")));
+          box.appendChild(row);
+        }
+
+        (dueByDay[key] || []).forEach(function (a) {
+          any = true;
+          var row = el("div", "row");
+          row.appendChild(chip("due", "due " + a.time));
+          var link = el("a", "t", a.name + (a.points != null ? " (" + a.points + " pts)" : ""));
+          link.href = a.url; link.target = "_blank"; link.rel = "noopener";
+          row.appendChild(link);
+          if (a.published === false) row.appendChild(el("span", "note", "unpublished"));
+          box.appendChild(row);
+        });
+
+        if (!any) box.appendChild(el("div", "none", "—"));
+        weekBox.appendChild(box);
+      }
+      weeks.appendChild(weekBox);
+    }
+  });
+})();
+</script>
+</body>
+</html>

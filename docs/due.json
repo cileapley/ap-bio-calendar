@@ -1,0 +1,139 @@
+{
+ "fetched_at": "2026-08-22T22:24:20+00:00",
+ "course_id": 342945,
+ "assignments": [
+  {
+   "name": "KHSD Lab Safety Mastery Paths Test ",
+   "due_at": "2026-08-14T22:53:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13601417"
+  },
+  {
+   "name": "Safety Agreement Signed",
+   "due_at": "2026-08-18T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13657106"
+  },
+  {
+   "name": "Biology Review Notes",
+   "due_at": "2026-08-19T19:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700456"
+  },
+  {
+   "name": "Practice and Putting It All Together",
+   "due_at": "2026-08-20T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700465"
+  },
+  {
+   "name": "DYOE: Planning and Pre-Lab",
+   "due_at": "2026-08-20T19:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700460"
+  },
+  {
+   "name": "DYOE: Data Chart and Observations",
+   "due_at": "2026-08-21T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700458"
+  },
+  {
+   "name": "AP Biology Diagnostic",
+   "due_at": "2026-08-22T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700453"
+  },
+  {
+   "name": "Upload Practice: Multiple Pages",
+   "due_at": "2026-08-22T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13728930"
+  },
+  {
+   "name": "Upload Practice: One Page",
+   "due_at": "2026-08-22T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13728929"
+  },
+  {
+   "name": "Intro. to Statistics Notes Pt. 1",
+   "due_at": "2026-08-24T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700462"
+  },
+  {
+   "name": "DYOE: Post-Lab and Conclusion",
+   "due_at": "2026-08-25T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13739844"
+  },
+  {
+   "name": "Intro. to Statistics Notes Pt. 2",
+   "due_at": "2026-08-25T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13743915"
+  },
+  {
+   "name": "Statistics Practice Problems Pt. 1",
+   "due_at": "2026-08-25T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700467"
+  },
+  {
+   "name": "Oreo Lab",
+   "due_at": "2026-08-26T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700463"
+  },
+  {
+   "name": "Statistics Practice Problems Pt. 2",
+   "due_at": "2026-08-27T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700469"
+  },
+  {
+   "name": "Unit 0 Flash Cards",
+   "due_at": "2026-08-27T16:00:00Z",
+   "points": 30.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700470"
+  },
+  {
+   "name": "Statistics Essential Knowledge Quiz",
+   "due_at": "2026-08-28T06:59:59Z",
+   "points": 10.0,
+   "published": false,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13741055"
+  },
+  {
+   "name": "Unit 0 AP Test (MCQ + FRQ)",
+   "due_at": "2026-08-28T06:59:59Z",
+   "points": 20.0,
+   "published": false,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13741058"
+  },
+  {
+   "name": "AP Biology Unit Explorer",
+   "due_at": null,
+   "points": null,
+   "published": false,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13652971"
+  }
+ ]
+}
