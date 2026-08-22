@@ -17,23 +17,16 @@
   a { text-decoration: none; }
   .mono { font-family: 'IBM Plex Mono', monospace; }
 
-  @keyframes floatA { 0% { transform: translate(0,0); } 50% { transform: translate(-30px,18px); } 100% { transform: translate(0,0); } }
-  @keyframes floatB { 0% { transform: translate(0,0); } 50% { transform: translate(24px,-20px); } 100% { transform: translate(0,0); } }
   @keyframes lift { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
   .lift1 { animation: lift 0.6s ease-out 0.05s both; }
   .lift2 { animation: lift 0.6s ease-out 0.2s both; }
   .lift3 { animation: lift 0.6s ease-out 0.35s both; }
   .lift4 { animation: lift 0.6s ease-out 0.5s both; }
   .lift5 { animation: lift 0.6s ease-out 0.65s both; }
-  .blobA { animation: floatA 16s ease-in-out infinite; }
-  .blobB { animation: floatB 20s ease-in-out infinite; }
   @media (prefers-reduced-motion: reduce) {
     .lift1, .lift2, .lift3, .lift4, .lift5 { animation: none; }
-    .blobA, .blobB { animation: none; }
     .card { transition: none; }
   }
-
-  .blob { position: absolute; border-radius: 50%; pointer-events: none; }
 
   .wrap { position: relative; max-width: 1240px; margin: 0 auto; padding: 40px 28px 48px 28px; display: flex; flex-direction: column; gap: 26px; }
 
@@ -109,9 +102,6 @@
 </style>
 </head>
 <body>
-<div class="blob blobA" style="left: 48%; top: -220px; width: 560px; height: 560px; background: radial-gradient(circle, rgba(43, 80, 200, 0.10) 0%, rgba(43, 80, 200, 0) 55%);"></div>
-<div class="blob blobB" style="left: 6%; top: 500px; width: 480px; height: 480px; background: radial-gradient(circle, rgba(46, 139, 61, 0.09) 0%, rgba(46, 139, 61, 0) 55%);"></div>
-
 <svg class="clado" width="300" height="219" viewBox="0 0 330 240" fill="none" aria-hidden="true">
   <path d="M12,175 H24" stroke="#2b50c8" stroke-width="1.8" opacity="0.6"></path>
   <path d="M24,140 V210" stroke="#2b50c8" stroke-width="1.8" opacity="0.5"></path>
