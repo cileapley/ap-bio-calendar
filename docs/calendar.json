@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22 10:12",
+  "generated": "2026-08-26 10:10",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -129,13 +129,13 @@
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
     "content_periods": 111,
-    "lab_periods_scheduled": 16,
-    "flex_periods": 13,
+    "lab_periods_scheduled": 19,
+    "flex_periods": 11,
     "lab_periods_required": 40,
-    "review_periods": 17,
+    "review_periods": 16,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 88
+    "published_entries": 91
   },
   "blocks": [
     {
@@ -491,11 +491,11 @@
           ]
         },
         {
-          "id": "2.8",
-          "title": "Mechanisms of Transport",
-          "kind": "topic",
-          "skill": "1.B",
-          "notes": null,
+          "id": "INV-4",
+          "title": "Investigation 4 — Diffusion and Osmosis",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 2: Energetics. Single-period run — bags set up in advance.",
           "link": null,
           "periods": 1,
           "start": "2026-09-25",
@@ -505,10 +505,10 @@
           ]
         },
         {
-          "id": "2.9+2.10",
-          "title": "Cell Compartmentalization · Origins of Compartmentalization",
+          "id": "2.8",
+          "title": "Mechanisms of Transport",
           "kind": "topic",
-          "skill": "6.E, 6.B",
+          "skill": "1.B",
           "notes": null,
           "link": null,
           "periods": 1,
@@ -519,17 +519,30 @@
           ]
         },
         {
+          "id": "2.9+2.10",
+          "title": "Cell Compartmentalization · Origins of Compartmentalization",
+          "kind": "topic",
+          "skill": "6.E, 6.B",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-09-29",
+          "end": "2026-09-29",
+          "dates": [
+            "2026-09-29"
+          ]
+        },
+        {
           "id": "2.FLEX",
-          "title": "Flex days — catch-up, reteach, or lab overflow",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
           "kind": "flex",
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 2,
-          "start": "2026-09-29",
+          "periods": 1,
+          "start": "2026-09-30",
           "end": "2026-09-30",
           "dates": [
-            "2026-09-29",
             "2026-09-30"
           ]
         },
@@ -558,8 +571,8 @@
         16
       ],
       "start": "2026-10-02",
-      "end": "2026-11-04",
-      "periods": 24,
+      "end": "2026-11-03",
+      "periods": 23,
       "entries": [
         {
           "id": "3.1",
@@ -691,14 +704,13 @@
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 4,
+          "periods": 3,
           "start": "2026-10-29",
-          "end": "2026-11-03",
+          "end": "2026-11-02",
           "dates": [
             "2026-10-29",
             "2026-10-30",
-            "2026-11-02",
-            "2026-11-03"
+            "2026-11-02"
           ]
         },
         {
@@ -709,10 +721,10 @@
           "notes": "Progress Check 3 is take-home, due before this test.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-04",
-          "end": "2026-11-04",
+          "start": "2026-11-03",
+          "end": "2026-11-03",
           "dates": [
-            "2026-11-04"
+            "2026-11-03"
           ]
         }
       ]
@@ -725,8 +737,8 @@
         10,
         15
       ],
-      "start": "2026-11-05",
-      "end": "2026-12-02",
+      "start": "2026-11-04",
+      "end": "2026-12-01",
       "periods": 14,
       "entries": [
         {
@@ -737,10 +749,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-05",
-          "end": "2026-11-05",
+          "start": "2026-11-04",
+          "end": "2026-11-04",
           "dates": [
-            "2026-11-05"
+            "2026-11-04"
           ]
         },
         {
@@ -751,12 +763,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-06",
-          "end": "2026-11-10",
+          "start": "2026-11-05",
+          "end": "2026-11-09",
           "dates": [
+            "2026-11-05",
             "2026-11-06",
-            "2026-11-09",
-            "2026-11-10"
+            "2026-11-09"
           ]
         },
         {
@@ -767,11 +779,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-12",
-          "end": "2026-11-13",
+          "start": "2026-11-10",
+          "end": "2026-11-12",
           "dates": [
-            "2026-11-12",
-            "2026-11-13"
+            "2026-11-10",
+            "2026-11-12"
           ]
         },
         {
@@ -782,11 +794,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-16",
-          "end": "2026-11-17",
+          "start": "2026-11-13",
+          "end": "2026-11-16",
           "dates": [
-            "2026-11-16",
-            "2026-11-17"
+            "2026-11-13",
+            "2026-11-16"
           ]
         },
         {
@@ -797,11 +809,11 @@
           "notes": "Big Idea 3: Information Storage and Transmission.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-18",
-          "end": "2026-11-19",
+          "start": "2026-11-17",
+          "end": "2026-11-18",
           "dates": [
-            "2026-11-18",
-            "2026-11-19"
+            "2026-11-17",
+            "2026-11-18"
           ]
         },
         {
@@ -812,10 +824,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-20",
-          "end": "2026-11-20",
+          "start": "2026-11-19",
+          "end": "2026-11-19",
           "dates": [
-            "2026-11-20"
+            "2026-11-19"
           ]
         },
         {
@@ -826,11 +838,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-30",
-          "end": "2026-12-01",
+          "start": "2026-11-20",
+          "end": "2026-11-30",
           "dates": [
-            "2026-11-30",
-            "2026-12-01"
+            "2026-11-20",
+            "2026-11-30"
           ]
         },
         {
@@ -841,10 +853,10 @@
           "notes": "Progress Check 4 is take-home, due before this test.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-02",
-          "end": "2026-12-02",
+          "start": "2026-12-01",
+          "end": "2026-12-01",
           "dates": [
-            "2026-12-02"
+            "2026-12-01"
           ]
         }
       ]
@@ -857,9 +869,9 @@
         8,
         11
       ],
-      "start": "2026-12-03",
+      "start": "2026-12-02",
       "end": "2026-12-15",
-      "periods": 9,
+      "periods": 10,
       "entries": [
         {
           "id": "5.1+5.2",
@@ -869,10 +881,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-03",
-          "end": "2026-12-03",
+          "start": "2026-12-02",
+          "end": "2026-12-02",
           "dates": [
-            "2026-12-03"
+            "2026-12-02"
           ]
         },
         {
@@ -883,11 +895,25 @@
           "notes": "Includes chi-square analysis.",
           "link": null,
           "periods": 3,
-          "start": "2026-12-04",
+          "start": "2026-12-03",
+          "end": "2026-12-07",
+          "dates": [
+            "2026-12-03",
+            "2026-12-04",
+            "2026-12-07"
+          ]
+        },
+        {
+          "id": "5.CORN",
+          "title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 3: Information Storage and Transmission. Substitute inquiry lab — counts toward the 25% inquiry-time line, not the per-big-idea minimum.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-08",
           "end": "2026-12-08",
           "dates": [
-            "2026-12-04",
-            "2026-12-07",
             "2026-12-08"
           ]
         },
@@ -1392,8 +1418,8 @@
         15
       ],
       "start": "2027-03-05",
-      "end": "2027-04-07",
-      "periods": 18,
+      "end": "2027-04-08",
+      "periods": 19,
       "entries": [
         {
           "id": "8.1",
@@ -1410,6 +1436,20 @@
           ]
         },
         {
+          "id": "INV-12",
+          "title": "Investigation 12 — Animal Behavior (pillbug choice chambers)",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 4: System Interactions. Brings Big Idea 4 to the 2-lab minimum.",
+          "link": null,
+          "periods": 1,
+          "start": "2027-03-08",
+          "end": "2027-03-08",
+          "dates": [
+            "2027-03-08"
+          ]
+        },
+        {
           "id": "8.2",
           "title": "Energy Flow Through Ecosystems",
           "kind": "topic",
@@ -1417,13 +1457,13 @@
           "notes": "Biogeochemical cycles were added here in the 2025 CED.",
           "link": null,
           "periods": 4,
-          "start": "2027-03-08",
-          "end": "2027-03-11",
+          "start": "2027-03-09",
+          "end": "2027-03-12",
           "dates": [
-            "2027-03-08",
             "2027-03-09",
             "2027-03-10",
-            "2027-03-11"
+            "2027-03-11",
+            "2027-03-12"
           ]
         },
         {
@@ -1434,11 +1474,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-03-12",
-          "end": "2027-03-15",
+          "start": "2027-03-15",
+          "end": "2027-03-16",
           "dates": [
-            "2027-03-12",
-            "2027-03-15"
+            "2027-03-15",
+            "2027-03-16"
           ]
         },
         {
@@ -1449,11 +1489,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-03-16",
-          "end": "2027-03-17",
+          "start": "2027-03-17",
+          "end": "2027-03-18",
           "dates": [
-            "2027-03-16",
-            "2027-03-17"
+            "2027-03-17",
+            "2027-03-18"
           ]
         },
         {
@@ -1464,12 +1504,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2027-03-18",
-          "end": "2027-03-30",
+          "start": "2027-03-19",
+          "end": "2027-03-31",
           "dates": [
-            "2027-03-18",
             "2027-03-19",
-            "2027-03-30"
+            "2027-03-30",
+            "2027-03-31"
           ]
         },
         {
@@ -1480,11 +1520,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-03-31",
-          "end": "2027-04-01",
+          "start": "2027-04-01",
+          "end": "2027-04-02",
           "dates": [
-            "2027-03-31",
-            "2027-04-01"
+            "2027-04-01",
+            "2027-04-02"
           ]
         },
         {
@@ -1495,20 +1535,6 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-04-02",
-          "end": "2027-04-02",
-          "dates": [
-            "2027-04-02"
-          ]
-        },
-        {
-          "id": "8.FLEX",
-          "title": "Flex day — catch-up, reteach, or lab overflow",
-          "kind": "flex",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
           "start": "2027-04-05",
           "end": "2027-04-05",
           "dates": [
@@ -1516,9 +1542,9 @@
           ]
         },
         {
-          "id": "8.PC",
-          "title": "Progress Check 8",
-          "kind": "assessment",
+          "id": "8.FLEX",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
+          "kind": "flex",
           "skill": null,
           "notes": null,
           "link": null,
@@ -1530,8 +1556,8 @@
           ]
         },
         {
-          "id": "8.TEST",
-          "title": "Unit 8 Assessment",
+          "id": "8.PC",
+          "title": "Progress Check 8",
           "kind": "assessment",
           "skill": null,
           "notes": null,
@@ -1542,6 +1568,20 @@
           "dates": [
             "2027-04-07"
           ]
+        },
+        {
+          "id": "8.TEST",
+          "title": "Unit 8 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-04-08",
+          "end": "2027-04-08",
+          "dates": [
+            "2027-04-08"
+          ]
         }
       ]
     },
@@ -1550,9 +1590,9 @@
       "unit": null,
       "title": "AP Exam Review",
       "weight": null,
-      "start": "2027-04-08",
+      "start": "2027-04-09",
       "end": "2027-04-30",
-      "periods": 17,
+      "periods": 16,
       "entries": [
         {
           "id": null,
@@ -1561,11 +1601,10 @@
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 17,
-          "start": "2027-04-08",
+          "periods": 16,
+          "start": "2027-04-09",
           "end": "2027-04-30",
           "dates": [
-            "2027-04-08",
             "2027-04-09",
             "2027-04-12",
             "2027-04-13",

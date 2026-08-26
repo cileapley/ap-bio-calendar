@@ -214,11 +214,6 @@
    ]
   },
   {
-   "date": "2026-09-25",
-   "pair": false,
-   "topics": []
-  },
-  {
    "date": "2026-09-28",
    "pair": true,
    "topics": [
@@ -235,6 +230,11 @@
    ]
   },
   {
+   "date": "2026-09-29",
+   "pair": false,
+   "topics": []
+  },
+  {
    "date": "2026-10-02",
    "pair": true,
    "topics": [
@@ -244,8 +244,8 @@
      "unit": 2
     },
     {
-     "id": "2.8",
-     "title": "Mechanisms of Transport",
+     "id": "INV-4",
+     "title": "Investigation 4 — Diffusion and Osmosis",
      "unit": 2
     },
     {
@@ -265,8 +265,8 @@
    "pair": true,
    "topics": [
     {
-     "id": "2.9+2.10",
-     "title": "Cell Compartmentalization · Origins of Compartmentalization",
+     "id": "2.8",
+     "title": "Mechanisms of Transport",
      "unit": 2
     },
     {
@@ -284,7 +284,13 @@
   {
    "date": "2026-10-06",
    "pair": false,
-   "topics": []
+   "topics": [
+    {
+     "id": "2.9+2.10",
+     "title": "Cell Compartmentalization · Origins of Compartmentalization",
+     "unit": 2
+    }
+   ]
   },
   {
    "date": "2026-10-07",
@@ -441,7 +447,7 @@
    "topics": []
   },
   {
-   "date": "2026-11-05",
+   "date": "2026-11-04",
    "pair": true,
    "topics": [
     {
@@ -467,12 +473,12 @@
    ]
   },
   {
-   "date": "2026-11-06",
+   "date": "2026-11-05",
    "pair": true,
    "topics": [
     {
-     "id": "2.8",
-     "title": "Mechanisms of Transport",
+     "id": "INV-4",
+     "title": "Investigation 4 — Diffusion and Osmosis",
      "unit": 2
     },
     {
@@ -486,19 +492,24 @@
      "unit": 3
     },
     {
-     "id": "2.9+2.10",
-     "title": "Cell Compartmentalization · Origins of Compartmentalization",
+     "id": "2.2",
+     "title": "Cell Size",
      "unit": 2
     }
    ]
   },
   {
-   "date": "2026-11-09",
-   "pair": true,
+   "date": "2026-11-06",
+   "pair": false,
    "topics": [
     {
-     "id": "2.2",
-     "title": "Cell Size",
+     "id": "2.8",
+     "title": "Mechanisms of Transport",
+     "unit": 2
+    },
+    {
+     "id": "2.9+2.10",
+     "title": "Cell Compartmentalization · Origins of Compartmentalization",
      "unit": 2
     },
     {
@@ -510,18 +521,18 @@
      "id": "3.1",
      "title": "Enzymes",
      "unit": 3
-    },
-    {
-     "id": "3.2",
-     "title": "Environmental Impacts on Enzyme Function",
-     "unit": 3
     }
    ]
   },
   {
-   "date": "2026-11-10",
-   "pair": false,
+   "date": "2026-11-09",
+   "pair": true,
    "topics": [
+    {
+     "id": "3.2",
+     "title": "Environmental Impacts on Enzyme Function",
+     "unit": 3
+    },
     {
      "id": "INV-13",
      "title": "Investigation 13 — Enzyme Activity",
@@ -536,27 +547,38 @@
      "id": "0.DYOE",
      "title": "Design Your Own Experiment — run and collect data",
      "unit": null
-    },
-    {
-     "id": "0.STATS",
-     "title": "Statistics notes, part 1",
-     "unit": null
     }
    ]
   },
   {
-   "date": "2026-11-12",
+   "date": "2026-11-10",
    "pair": true,
    "topics": [
     {
-     "id": "4.1+4.2",
-     "title": "Cell Communication · Introduction to Signal Transduction",
-     "unit": 4
+     "id": "0.STATS",
+     "title": "Statistics notes, part 1",
+     "unit": null
     },
     {
      "id": "0.STATSB",
      "title": "Statistics notes, part 2",
      "unit": null
+    },
+    {
+     "id": "2.1",
+     "title": "Cell Structure and Function",
+     "unit": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "pair": false,
+   "topics": [
+    {
+     "id": "4.1+4.2",
+     "title": "Cell Communication · Introduction to Signal Transduction",
+     "unit": 4
     },
     {
      "id": "0.OREO",
@@ -567,6 +589,11 @@
      "id": "0.STATS2",
      "title": "Statistics practice, part 2 — Herceptin capstone",
      "unit": null
+    },
+    {
+     "id": "0.METHOD",
+     "title": "Scientific method — observations, reasoning, hypotheses",
+     "unit": null
     }
    ]
   },
@@ -574,16 +601,6 @@
    "date": "2026-11-13",
    "pair": false,
    "topics": [
-    {
-     "id": "2.1",
-     "title": "Cell Structure and Function",
-     "unit": 2
-    },
-    {
-     "id": "0.METHOD",
-     "title": "Scientific method — observations, reasoning, hypotheses",
-     "unit": null
-    },
     {
      "id": "0.CONTROLS",
      "title": "Experimental controls, and planning the DYOE",
@@ -593,8 +610,13 @@
   },
   {
    "date": "2026-11-16",
-   "pair": false,
+   "pair": true,
    "topics": [
+    {
+     "id": "4.3",
+     "title": "Signal Transduction Pathways",
+     "unit": 4
+    },
     {
      "id": "1.5+1.6",
      "title": "Lipids · Nucleic Acids",
@@ -603,18 +625,7 @@
    ]
   },
   {
-   "date": "2026-11-17",
-   "pair": false,
-   "topics": [
-    {
-     "id": "4.3",
-     "title": "Signal Transduction Pathways",
-     "unit": 4
-    }
-   ]
-  },
-  {
-   "date": "2026-11-20",
+   "date": "2026-11-19",
    "pair": true,
    "topics": [
     {
@@ -631,16 +642,11 @@
      "id": "1.7",
      "title": "Proteins",
      "unit": 1
-    },
-    {
-     "id": "1.1+1.2",
-     "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
-     "unit": 1
     }
    ]
   },
   {
-   "date": "2026-12-03",
+   "date": "2026-12-02",
    "pair": true,
    "topics": [
     {
@@ -666,7 +672,7 @@
    ]
   },
   {
-   "date": "2026-12-04",
+   "date": "2026-12-03",
    "pair": true,
    "topics": [
     {
@@ -692,13 +698,39 @@
    ]
   },
   {
-   "date": "2026-12-07",
-   "pair": true,
+   "date": "2026-12-04",
+   "pair": false,
    "topics": [
     {
      "id": "2.7",
      "title": "Tonicity and Osmoregulation",
      "unit": 2
+    },
+    {
+     "id": "INV-4",
+     "title": "Investigation 4 — Diffusion and Osmosis",
+     "unit": 2
+    },
+    {
+     "id": "3.3",
+     "title": "Cellular Energy",
+     "unit": 3
+    },
+    {
+     "id": "3.4",
+     "title": "Photosynthesis",
+     "unit": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-12-07",
+   "pair": true,
+   "topics": [
+    {
+     "id": "4.1+4.2",
+     "title": "Cell Communication · Introduction to Signal Transduction",
+     "unit": 4
     },
     {
      "id": "2.8",
@@ -711,46 +743,25 @@
      "unit": 2
     },
     {
-     "id": "3.3",
-     "title": "Cellular Energy",
-     "unit": 3
-    }
-   ]
-  },
-  {
-   "date": "2026-12-08",
-   "pair": false,
-   "topics": [
-    {
-     "id": "3.4",
-     "title": "Photosynthesis",
-     "unit": 3
-    },
-    {
-     "id": "4.1+4.2",
-     "title": "Cell Communication · Introduction to Signal Transduction",
-     "unit": 4
-    },
-    {
-     "id": "1.3+1.4",
-     "title": "Introduction to Macromolecules · Carbohydrates",
+     "id": "1.1+1.2",
+     "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
      "unit": 1
-    },
-    {
-     "id": "0.DYOE",
-     "title": "Design Your Own Experiment — run and collect data",
-     "unit": null
     }
    ]
   },
   {
    "date": "2026-12-09",
-   "pair": true,
+   "pair": false,
    "topics": [
     {
-     "id": "0.STATS",
-     "title": "Statistics notes, part 1",
-     "unit": null
+     "id": "5.1+5.2",
+     "title": "Meiosis · Meiosis and Genetic Diversity",
+     "unit": 5
+    },
+    {
+     "id": "1.3+1.4",
+     "title": "Introduction to Macromolecules · Carbohydrates",
+     "unit": 1
     },
     {
      "id": "2.2",
@@ -761,27 +772,43 @@
      "id": "2.3+2.4",
      "title": "Plasma Membrane · Membrane Permeability",
      "unit": 2
-    },
-    {
-     "id": "2.5+2.6",
-     "title": "Membrane Transport · Facilitated Diffusion",
-     "unit": 2
     }
    ]
   },
   {
    "date": "2026-12-10",
-   "pair": false,
+   "pair": true,
    "topics": [
-    {
-     "id": "5.1+5.2",
-     "title": "Meiosis · Meiosis and Genetic Diversity",
-     "unit": 5
-    },
     {
      "id": "3.1",
      "title": "Enzymes",
      "unit": 3
+    },
+    {
+     "id": "0.DYOE",
+     "title": "Design Your Own Experiment — run and collect data",
+     "unit": null
+    },
+    {
+     "id": "0.STATS",
+     "title": "Statistics notes, part 1",
+     "unit": null
+    },
+    {
+     "id": "0.STATSB",
+     "title": "Statistics notes, part 2",
+     "unit": null
+    }
+   ]
+  },
+  {
+   "date": "2026-12-11",
+   "pair": false,
+   "topics": [
+    {
+     "id": "2.5+2.6",
+     "title": "Membrane Transport · Facilitated Diffusion",
+     "unit": 2
     },
     {
      "id": "3.2",
@@ -792,32 +819,11 @@
      "id": "INV-13",
      "title": "Investigation 13 — Enzyme Activity",
      "unit": 3
-    }
-   ]
-  },
-  {
-   "date": "2026-12-11",
-   "pair": false,
-   "topics": [
-    {
-     "id": "0.STATSB",
-     "title": "Statistics notes, part 2",
-     "unit": null
     },
     {
      "id": "0.OREO",
      "title": "Oreo Lab — measurement, class data, error bars",
      "unit": null
-    },
-    {
-     "id": "0.STATS2",
-     "title": "Statistics practice, part 2 — Herceptin capstone",
-     "unit": null
-    },
-    {
-     "id": "1.5+1.6",
-     "title": "Lipids · Nucleic Acids",
-     "unit": 1
     }
    ]
   },
@@ -831,6 +837,11 @@
      "unit": 5
     },
     {
+     "id": "5.CORN",
+     "title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
+     "unit": 5
+    },
+    {
      "id": "5.4",
      "title": "Non-Mendelian Genetics",
      "unit": 5
@@ -839,11 +850,6 @@
      "id": "5.5",
      "title": "Environmental Effects on Phenotype",
      "unit": 5
-    },
-    {
-     "id": "4.5",
-     "title": "Cell Cycle",
-     "unit": 4
     }
    ]
   },
@@ -851,6 +857,11 @@
    "date": "2027-01-05",
    "pair": false,
    "topics": [
+    {
+     "id": "4.5",
+     "title": "Cell Cycle",
+     "unit": 4
+    },
     {
      "id": "INV-7",
      "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
@@ -865,11 +876,6 @@
      "id": "5.1+5.2",
      "title": "Meiosis · Meiosis and Genetic Diversity",
      "unit": 5
-    },
-    {
-     "id": "INV-5",
-     "title": "Investigation 5 — Photosynthesis",
-     "unit": 3
     }
    ]
   },
@@ -877,6 +883,11 @@
    "date": "2027-01-06",
    "pair": true,
    "topics": [
+    {
+     "id": "INV-5",
+     "title": "Investigation 5 — Photosynthesis",
+     "unit": 3
+    },
     {
      "id": "3.5",
      "title": "Cellular Respiration",
@@ -891,11 +902,6 @@
      "id": "4.3",
      "title": "Signal Transduction Pathways",
      "unit": 4
-    },
-    {
-     "id": "4.4",
-     "title": "Feedback",
-     "unit": 4
     }
    ]
   },
@@ -904,13 +910,39 @@
    "pair": false,
    "topics": [
     {
-     "id": "1.7",
-     "title": "Proteins",
+     "id": "4.4",
+     "title": "Feedback",
+     "unit": 4
+    },
+    {
+     "id": "0.STATS2",
+     "title": "Statistics practice, part 2 — Herceptin capstone",
+     "unit": null
+    },
+    {
+     "id": "1.5+1.6",
+     "title": "Lipids · Nucleic Acids",
      "unit": 1
     },
     {
+     "id": "1.7",
+     "title": "Proteins",
+     "unit": 1
+    }
+   ]
+  },
+  {
+   "date": "2027-01-08",
+   "pair": false,
+   "topics": [
+    {
      "id": "2.7",
      "title": "Tonicity and Osmoregulation",
+     "unit": 2
+    },
+    {
+     "id": "INV-4",
+     "title": "Investigation 4 — Diffusion and Osmosis",
      "unit": 2
     },
     {
@@ -926,9 +958,14 @@
    ]
   },
   {
-   "date": "2027-01-08",
-   "pair": false,
+   "date": "2027-01-11",
+   "pair": true,
    "topics": [
+    {
+     "id": "6.1",
+     "title": "DNA and RNA Structure",
+     "unit": 6
+    },
     {
      "id": "3.3",
      "title": "Cellular Energy",
@@ -943,37 +980,6 @@
      "id": "4.1+4.2",
      "title": "Cell Communication · Introduction to Signal Transduction",
      "unit": 4
-    },
-    {
-     "id": "0.METHOD",
-     "title": "Scientific method — observations, reasoning, hypotheses",
-     "unit": null
-    }
-   ]
-  },
-  {
-   "date": "2027-01-11",
-   "pair": true,
-   "topics": [
-    {
-     "id": "6.1",
-     "title": "DNA and RNA Structure",
-     "unit": 6
-    },
-    {
-     "id": "0.CONTROLS",
-     "title": "Experimental controls, and planning the DYOE",
-     "unit": null
-    },
-    {
-     "id": "2.1",
-     "title": "Cell Structure and Function",
-     "unit": 2
-    },
-    {
-     "id": "0.DYOE",
-     "title": "Design Your Own Experiment — run and collect data",
-     "unit": null
     }
    ]
   },
@@ -982,23 +988,23 @@
    "pair": false,
    "topics": [
     {
-     "id": "0.STATS",
-     "title": "Statistics notes, part 1",
+     "id": "2.1",
+     "title": "Cell Structure and Function",
+     "unit": 2
+    },
+    {
+     "id": "0.METHOD",
+     "title": "Scientific method — observations, reasoning, hypotheses",
      "unit": null
     },
     {
-     "id": "0.STATSB",
-     "title": "Statistics notes, part 2",
+     "id": "0.CONTROLS",
+     "title": "Experimental controls, and planning the DYOE",
      "unit": null
     },
     {
-     "id": "0.OREO",
-     "title": "Oreo Lab — measurement, class data, error bars",
-     "unit": null
-    },
-    {
-     "id": "0.STATS2",
-     "title": "Statistics practice, part 2 — Herceptin capstone",
+     "id": "0.DYOE",
+     "title": "Design Your Own Experiment — run and collect data",
      "unit": null
     }
    ]
@@ -1013,6 +1019,27 @@
      "unit": 6
     },
     {
+     "id": "0.STATS",
+     "title": "Statistics notes, part 1",
+     "unit": null
+    },
+    {
+     "id": "0.STATSB",
+     "title": "Statistics notes, part 2",
+     "unit": null
+    },
+    {
+     "id": "0.OREO",
+     "title": "Oreo Lab — measurement, class data, error bars",
+     "unit": null
+    }
+   ]
+  },
+  {
+   "date": "2027-01-14",
+   "pair": false,
+   "topics": [
+    {
      "id": "1.1+1.2",
      "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
      "unit": 1
@@ -1023,17 +1050,6 @@
      "unit": 1
     },
     {
-     "id": "1.5+1.6",
-     "title": "Lipids · Nucleic Acids",
-     "unit": 1
-    }
-   ]
-  },
-  {
-   "date": "2027-01-14",
-   "pair": false,
-   "topics": [
-    {
      "id": "2.2",
      "title": "Cell Size",
      "unit": 2
@@ -1042,16 +1058,6 @@
      "id": "2.3+2.4",
      "title": "Plasma Membrane · Membrane Permeability",
      "unit": 2
-    },
-    {
-     "id": "2.5+2.6",
-     "title": "Membrane Transport · Facilitated Diffusion",
-     "unit": 2
-    },
-    {
-     "id": "3.1",
-     "title": "Enzymes",
-     "unit": 3
     }
    ]
   },
@@ -1065,25 +1071,35 @@
      "unit": 6
     },
     {
-     "id": "3.2",
-     "title": "Environmental Impacts on Enzyme Function",
+     "id": "2.5+2.6",
+     "title": "Membrane Transport · Facilitated Diffusion",
+     "unit": 2
+    },
+    {
+     "id": "3.1",
+     "title": "Enzymes",
      "unit": 3
     },
     {
-     "id": "INV-13",
-     "title": "Investigation 13 — Enzyme Activity",
+     "id": "3.2",
+     "title": "Environmental Impacts on Enzyme Function",
      "unit": 3
     }
    ]
   },
   {
    "date": "2027-01-19",
-   "pair": false,
+   "pair": true,
    "topics": [
     {
      "id": "6.1",
      "title": "DNA and RNA Structure",
      "unit": 6
+    },
+    {
+     "id": "INV-13",
+     "title": "Investigation 13 — Enzyme Activity",
+     "unit": 3
     }
    ]
   },
@@ -1123,13 +1139,13 @@
      "unit": 5
     },
     {
-     "id": "5.4",
-     "title": "Non-Mendelian Genetics",
+     "id": "5.CORN",
+     "title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
      "unit": 5
     },
     {
-     "id": "5.5",
-     "title": "Environmental Effects on Phenotype",
+     "id": "5.4",
+     "title": "Non-Mendelian Genetics",
      "unit": 5
     }
    ]
@@ -1154,9 +1170,9 @@
      "unit": 6
     },
     {
-     "id": "6.3",
-     "title": "Transcription and RNA Processing",
-     "unit": 6
+     "id": "5.5",
+     "title": "Environmental Effects on Phenotype",
+     "unit": 5
     }
    ]
   },
@@ -1170,6 +1186,11 @@
      "unit": 6
     },
     {
+     "id": "6.3",
+     "title": "Transcription and RNA Processing",
+     "unit": 6
+    },
+    {
      "id": "6.4",
      "title": "Translation",
      "unit": 6
@@ -1178,11 +1199,6 @@
      "id": "6.5",
      "title": "Regulation of Gene Expression",
      "unit": 6
-    },
-    {
-     "id": "4.5",
-     "title": "Cell Cycle",
-     "unit": 4
     }
    ]
   },
@@ -1190,6 +1206,11 @@
    "date": "2027-02-04",
    "pair": true,
    "topics": [
+    {
+     "id": "4.5",
+     "title": "Cell Cycle",
+     "unit": 4
+    },
     {
      "id": "INV-7",
      "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
@@ -1204,11 +1225,6 @@
      "id": "5.1+5.2",
      "title": "Meiosis · Meiosis and Genetic Diversity",
      "unit": 5
-    },
-    {
-     "id": "6.1",
-     "title": "DNA and RNA Structure",
-     "unit": 6
     }
    ]
   },
@@ -1216,6 +1232,11 @@
    "date": "2027-02-05",
    "pair": false,
    "topics": [
+    {
+     "id": "6.1",
+     "title": "DNA and RNA Structure",
+     "unit": 6
+    },
     {
      "id": "6.2",
      "title": "DNA Replication",
@@ -1230,11 +1251,6 @@
      "id": "3.5",
      "title": "Cellular Respiration",
      "unit": 3
-    },
-    {
-     "id": "INV-6",
-     "title": "Investigation 6 — Cellular Respiration",
-     "unit": 3
     }
    ]
   },
@@ -1248,19 +1264,19 @@
      "unit": 5
     },
     {
+     "id": "5.CORN",
+     "title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
+     "unit": 5
+    },
+    {
      "id": "5.4",
      "title": "Non-Mendelian Genetics",
      "unit": 5
     },
     {
-     "id": "5.5",
-     "title": "Environmental Effects on Phenotype",
-     "unit": 5
-    },
-    {
-     "id": "4.3",
-     "title": "Signal Transduction Pathways",
-     "unit": 4
+     "id": "INV-6",
+     "title": "Investigation 6 — Cellular Respiration",
+     "unit": 3
     }
    ]
   },
@@ -1274,19 +1290,19 @@
      "unit": 7
     },
     {
+     "id": "4.3",
+     "title": "Signal Transduction Pathways",
+     "unit": 4
+    },
+    {
      "id": "4.4",
      "title": "Feedback",
      "unit": 4
     },
     {
-     "id": "1.7",
-     "title": "Proteins",
-     "unit": 1
-    },
-    {
-     "id": "2.7",
-     "title": "Tonicity and Osmoregulation",
-     "unit": 2
+     "id": "0.STATS2",
+     "title": "Statistics practice, part 2 — Herceptin capstone",
+     "unit": null
     }
    ]
   },
@@ -1300,19 +1316,19 @@
      "unit": 7
     },
     {
-     "id": "2.8",
-     "title": "Mechanisms of Transport",
-     "unit": 2
+     "id": "1.5+1.6",
+     "title": "Lipids · Nucleic Acids",
+     "unit": 1
     },
     {
-     "id": "2.9+2.10",
-     "title": "Cell Compartmentalization · Origins of Compartmentalization",
-     "unit": 2
+     "id": "1.7",
+     "title": "Proteins",
+     "unit": 1
     },
     {
-     "id": "3.3",
-     "title": "Cellular Energy",
-     "unit": 3
+     "id": "2.7",
+     "title": "Tonicity and Osmoregulation",
+     "unit": 2
     }
    ]
   },
@@ -1373,6 +1389,11 @@
    "pair": false,
    "topics": [
     {
+     "id": "5.5",
+     "title": "Environmental Effects on Phenotype",
+     "unit": 5
+    },
+    {
      "id": "6.3",
      "title": "Transcription and RNA Processing",
      "unit": 6
@@ -1386,11 +1407,6 @@
      "id": "6.5",
      "title": "Regulation of Gene Expression",
      "unit": 6
-    },
-    {
-     "id": "4.5",
-     "title": "Cell Cycle",
-     "unit": 4
     }
    ]
   },
@@ -1398,6 +1414,11 @@
    "date": "2027-02-22",
    "pair": true,
    "topics": [
+    {
+     "id": "4.5",
+     "title": "Cell Cycle",
+     "unit": 4
+    },
     {
      "id": "INV-7",
      "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
@@ -1412,11 +1433,6 @@
      "id": "5.1+5.2",
      "title": "Meiosis · Meiosis and Genetic Diversity",
      "unit": 5
-    },
-    {
-     "id": "6.1",
-     "title": "DNA and RNA Structure",
-     "unit": 6
     }
    ]
   },
@@ -1430,6 +1446,11 @@
      "unit": 7
     },
     {
+     "id": "6.1",
+     "title": "DNA and RNA Structure",
+     "unit": 6
+    },
+    {
      "id": "6.2",
      "title": "DNA Replication",
      "unit": 6
@@ -1437,11 +1458,6 @@
     {
      "id": "5.3",
      "title": "Mendelian Genetics",
-     "unit": 5
-    },
-    {
-     "id": "5.4",
-     "title": "Non-Mendelian Genetics",
      "unit": 5
     }
    ]
@@ -1525,7 +1541,7 @@
    ]
   },
   {
-   "date": "2027-03-08",
+   "date": "2027-03-09",
    "pair": true,
    "topics": [
     {
@@ -1551,7 +1567,7 @@
    ]
   },
   {
-   "date": "2027-03-09",
+   "date": "2027-03-10",
    "pair": false,
    "topics": [
     {
@@ -1570,16 +1586,26 @@
      "unit": 7
     },
     {
-     "id": "5.5",
-     "title": "Environmental Effects on Phenotype",
+     "id": "5.CORN",
+     "title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
      "unit": 5
     }
    ]
   },
   {
-   "date": "2027-03-10",
+   "date": "2027-03-11",
    "pair": true,
    "topics": [
+    {
+     "id": "5.4",
+     "title": "Non-Mendelian Genetics",
+     "unit": 5
+    },
+    {
+     "id": "5.5",
+     "title": "Environmental Effects on Phenotype",
+     "unit": 5
+    },
     {
      "id": "6.3",
      "title": "Transcription and RNA Processing",
@@ -1589,6 +1615,17 @@
      "id": "6.4",
      "title": "Translation",
      "unit": 6
+    }
+   ]
+  },
+  {
+   "date": "2027-03-12",
+   "pair": false,
+   "topics": [
+    {
+     "id": "8.1",
+     "title": "Responses to the Environment",
+     "unit": 8
     },
     {
      "id": "6.5",
@@ -1599,16 +1636,47 @@
      "id": "7.1+7.2",
      "title": "Introduction to Natural Selection · Natural Selection",
      "unit": 7
+    },
+    {
+     "id": "7.3",
+     "title": "Artificial Selection",
+     "unit": 7
     }
    ]
   },
   {
-   "date": "2027-03-11",
+   "date": "2027-03-15",
+   "pair": true,
+   "topics": [
+    {
+     "id": "INV-12",
+     "title": "Investigation 12 — Animal Behavior (pillbug choice chambers)",
+     "unit": 8
+    },
+    {
+     "id": "7.9",
+     "title": "Phylogeny",
+     "unit": 7
+    },
+    {
+     "id": "INV-3",
+     "title": "Investigation 3 — Comparing DNA Sequences with BLAST",
+     "unit": 7
+    },
+    {
+     "id": "7.10+7.11",
+     "title": "Speciation · Variations in Populations",
+     "unit": 7
+    }
+   ]
+  },
+  {
+   "date": "2027-03-16",
    "pair": false,
    "topics": [
     {
-     "id": "7.3",
-     "title": "Artificial Selection",
+     "id": "INV-2",
+     "title": "Investigation 2 — Mathematical Modeling: Hardy–Weinberg",
      "unit": 7
     },
     {
@@ -1622,20 +1690,176 @@
      "unit": 6
     },
     {
-     "id": "3.4",
-     "title": "Photosynthesis",
+     "id": "INV-4",
+     "title": "Investigation 4 — Diffusion and Osmosis",
+     "unit": 2
+    }
+   ]
+  },
+  {
+   "date": "2027-03-17",
+   "pair": true,
+   "topics": [
+    {
+     "id": "7.12",
+     "title": "Origins of Life on Earth",
+     "unit": 7
+    },
+    {
+     "id": "7.6",
+     "title": "Evidence of Evolution",
+     "unit": 7
+    },
+    {
+     "id": "7.7+7.8",
+     "title": "Common Ancestry · Continuing Evolution",
+     "unit": 7
+    },
+    {
+     "id": "6.8",
+     "title": "Biotechnology",
+     "unit": 6
+    }
+   ]
+  },
+  {
+   "date": "2027-03-18",
+   "pair": false,
+   "topics": [
+    {
+     "id": "INV-8",
+     "title": "Investigation 8 — Biotechnology: Bacterial Transformation",
+     "unit": 6
+    },
+    {
+     "id": "7.4",
+     "title": "Population Genetics",
+     "unit": 7
+    },
+    {
+     "id": "7.5",
+     "title": "Hardy–Weinberg Equilibrium",
+     "unit": 7
+    },
+    {
+     "id": "2.8",
+     "title": "Mechanisms of Transport",
+     "unit": 2
+    }
+   ]
+  },
+  {
+   "date": "2027-03-19",
+   "pair": false,
+   "topics": [
+    {
+     "id": "8.2",
+     "title": "Energy Flow Through Ecosystems",
+     "unit": 8
+    },
+    {
+     "id": "8.1",
+     "title": "Responses to the Environment",
+     "unit": 8
+    },
+    {
+     "id": "2.9+2.10",
+     "title": "Cell Compartmentalization · Origins of Compartmentalization",
+     "unit": 2
+    },
+    {
+     "id": "3.3",
+     "title": "Cellular Energy",
      "unit": 3
     }
    ]
   },
   {
-   "date": "2027-03-12",
+   "date": "2027-03-30",
+   "pair": true,
+   "topics": [
+    {
+     "id": "8.3",
+     "title": "Population Ecology",
+     "unit": 8
+    },
+    {
+     "id": "8.4",
+     "title": "Effect of Density on Populations",
+     "unit": 8
+    },
+    {
+     "id": "INV-12",
+     "title": "Investigation 12 — Animal Behavior (pillbug choice chambers)",
+     "unit": 8
+    },
+    {
+     "id": "8.2",
+     "title": "Energy Flow Through Ecosystems",
+     "unit": 8
+    }
+   ]
+  },
+  {
+   "date": "2027-03-31",
    "pair": false,
+   "topics": [
+    {
+     "id": "7.9",
+     "title": "Phylogeny",
+     "unit": 7
+    },
+    {
+     "id": "INV-3",
+     "title": "Investigation 3 — Comparing DNA Sequences with BLAST",
+     "unit": 7
+    },
+    {
+     "id": "7.10+7.11",
+     "title": "Speciation · Variations in Populations",
+     "unit": 7
+    },
+    {
+     "id": "7.12",
+     "title": "Origins of Life on Earth",
+     "unit": 7
+    }
+   ]
+  },
+  {
+   "date": "2027-04-01",
+   "pair": true,
    "topics": [
     {
      "id": "8.1",
      "title": "Responses to the Environment",
      "unit": 8
+    },
+    {
+     "id": "INV-2",
+     "title": "Investigation 2 — Mathematical Modeling: Hardy–Weinberg",
+     "unit": 7
+    },
+    {
+     "id": "7.6",
+     "title": "Evidence of Evolution",
+     "unit": 7
+    },
+    {
+     "id": "7.7+7.8",
+     "title": "Common Ancestry · Continuing Evolution",
+     "unit": 7
+    }
+   ]
+  },
+  {
+   "date": "2027-04-02",
+   "pair": false,
+   "topics": [
+    {
+     "id": "3.4",
+     "title": "Photosynthesis",
+     "unit": 3
     },
     {
      "id": "4.1+4.2",
@@ -1655,7 +1879,7 @@
    ]
   },
   {
-   "date": "2027-03-15",
+   "date": "2027-04-05",
    "pair": true,
    "topics": [
     {
@@ -1674,217 +1898,9 @@
      "unit": 7
     },
     {
-     "id": "INV-2",
-     "title": "Investigation 2 — Mathematical Modeling: Hardy–Weinberg",
-     "unit": 7
-    }
-   ]
-  },
-  {
-   "date": "2027-03-16",
-   "pair": false,
-   "topics": [
-    {
      "id": "7.12",
      "title": "Origins of Life on Earth",
      "unit": 7
-    },
-    {
-     "id": "7.6",
-     "title": "Evidence of Evolution",
-     "unit": 7
-    },
-    {
-     "id": "7.7+7.8",
-     "title": "Common Ancestry · Continuing Evolution",
-     "unit": 7
-    },
-    {
-     "id": "6.8",
-     "title": "Biotechnology",
-     "unit": 6
-    }
-   ]
-  },
-  {
-   "date": "2027-03-17",
-   "pair": true,
-   "topics": [
-    {
-     "id": "INV-8",
-     "title": "Investigation 8 — Biotechnology: Bacterial Transformation",
-     "unit": 6
-    },
-    {
-     "id": "7.4",
-     "title": "Population Genetics",
-     "unit": 7
-    },
-    {
-     "id": "7.5",
-     "title": "Hardy–Weinberg Equilibrium",
-     "unit": 7
-    },
-    {
-     "id": "INV-6",
-     "title": "Investigation 6 — Cellular Respiration",
-     "unit": 3
-    }
-   ]
-  },
-  {
-   "date": "2027-03-18",
-   "pair": false,
-   "topics": [
-    {
-     "id": "8.2",
-     "title": "Energy Flow Through Ecosystems",
-     "unit": 8
-    },
-    {
-     "id": "4.3",
-     "title": "Signal Transduction Pathways",
-     "unit": 4
-    },
-    {
-     "id": "4.4",
-     "title": "Feedback",
-     "unit": 4
-    },
-    {
-     "id": "4.5",
-     "title": "Cell Cycle",
-     "unit": 4
-    }
-   ]
-  },
-  {
-   "date": "2027-03-19",
-   "pair": false,
-   "topics": [
-    {
-     "id": "8.1",
-     "title": "Responses to the Environment",
-     "unit": 8
-    },
-    {
-     "id": "INV-7",
-     "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
-     "unit": 4
-    },
-    {
-     "id": "4.6",
-     "title": "Regulation of Cell Cycle",
-     "unit": 4
-    },
-    {
-     "id": "5.1+5.2",
-     "title": "Meiosis · Meiosis and Genetic Diversity",
-     "unit": 5
-    }
-   ]
-  },
-  {
-   "date": "2027-03-30",
-   "pair": true,
-   "topics": [
-    {
-     "id": "8.3",
-     "title": "Population Ecology",
-     "unit": 8
-    },
-    {
-     "id": "8.4",
-     "title": "Effect of Density on Populations",
-     "unit": 8
-    },
-    {
-     "id": "8.2",
-     "title": "Energy Flow Through Ecosystems",
-     "unit": 8
-    },
-    {
-     "id": "7.9",
-     "title": "Phylogeny",
-     "unit": 7
-    }
-   ]
-  },
-  {
-   "date": "2027-03-31",
-   "pair": false,
-   "topics": [
-    {
-     "id": "INV-3",
-     "title": "Investigation 3 — Comparing DNA Sequences with BLAST",
-     "unit": 7
-    },
-    {
-     "id": "7.10+7.11",
-     "title": "Speciation · Variations in Populations",
-     "unit": 7
-    },
-    {
-     "id": "7.12",
-     "title": "Origins of Life on Earth",
-     "unit": 7
-    },
-    {
-     "id": "8.1",
-     "title": "Responses to the Environment",
-     "unit": 8
-    }
-   ]
-  },
-  {
-   "date": "2027-04-01",
-   "pair": true,
-   "topics": [
-    {
-     "id": "INV-2",
-     "title": "Investigation 2 — Mathematical Modeling: Hardy–Weinberg",
-     "unit": 7
-    },
-    {
-     "id": "7.6",
-     "title": "Evidence of Evolution",
-     "unit": 7
-    },
-    {
-     "id": "7.7+7.8",
-     "title": "Common Ancestry · Continuing Evolution",
-     "unit": 7
-    },
-    {
-     "id": "5.3",
-     "title": "Mendelian Genetics",
-     "unit": 5
-    }
-   ]
-  },
-  {
-   "date": "2027-04-02",
-   "pair": false,
-   "topics": [
-    {
-     "id": "5.4",
-     "title": "Non-Mendelian Genetics",
-     "unit": 5
-    },
-    {
-     "id": "6.1",
-     "title": "DNA and RNA Structure",
-     "unit": 6
-    },
-    {
-     "id": "6.2",
-     "title": "DNA Replication",
-     "unit": 6
-    },
-    {
-     "id": "5.5",
-     "title": "Environmental Effects on Phenotype",
-     "unit": 5
     }
    ]
   }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-22 15:24",
+ "generated": "2026-08-26 10:10",
  "exam": "2027-05-03",
  "entries": [
   {
@@ -328,11 +328,11 @@
    ]
   },
   {
-   "id": "2.8",
-   "title": "Mechanisms of Transport",
-   "kind": "topic",
-   "skill": "1.B",
-   "notes": null,
+   "id": "INV-4",
+   "title": "Investigation 4 — Diffusion and Osmosis",
+   "kind": "lab",
+   "skill": null,
+   "notes": "Big Idea 2: Energetics. Single-period run — bags set up in advance.",
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
@@ -343,10 +343,10 @@
    ]
   },
   {
-   "id": "2.9+2.10",
-   "title": "Cell Compartmentalization · Origins of Compartmentalization",
+   "id": "2.8",
+   "title": "Mechanisms of Transport",
    "kind": "topic",
-   "skill": "6.E, 6.B",
+   "skill": "1.B",
    "notes": null,
    "visibility": "student",
    "unit": 2,
@@ -358,18 +358,32 @@
    ]
   },
   {
+   "id": "2.9+2.10",
+   "title": "Cell Compartmentalization · Origins of Compartmentalization",
+   "kind": "topic",
+   "skill": "6.E, 6.B",
+   "notes": null,
+   "visibility": "student",
+   "unit": 2,
+   "block": "Cells",
+   "start": "2026-09-29",
+   "end": "2026-09-29",
+   "dates": [
+    "2026-09-29"
+   ]
+  },
+  {
    "id": "2.FLEX",
-   "title": "Flex days — catch-up, reteach, or lab overflow",
+   "title": "Flex day — catch-up, reteach, or lab overflow",
    "kind": "flex",
    "skill": null,
    "notes": null,
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-09-29",
+   "start": "2026-09-30",
    "end": "2026-09-30",
    "dates": [
-    "2026-09-29",
     "2026-09-30"
    ]
   },
@@ -529,12 +543,11 @@
    "unit": 3,
    "block": "Cellular Energetics",
    "start": "2026-10-29",
-   "end": "2026-11-03",
+   "end": "2026-11-02",
    "dates": [
     "2026-10-29",
     "2026-10-30",
-    "2026-11-02",
-    "2026-11-03"
+    "2026-11-02"
    ]
   },
   {
@@ -546,10 +559,10 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-11-04",
-   "end": "2026-11-04",
+   "start": "2026-11-03",
+   "end": "2026-11-03",
    "dates": [
-    "2026-11-04"
+    "2026-11-03"
    ]
   },
   {
@@ -561,10 +574,10 @@
    "visibility": "student",
    "unit": 4,
    "block": "Cell Communication and Cell Cycle",
-   "start": "2026-11-05",
-   "end": "2026-11-05",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
    "dates": [
-    "2026-11-05"
+    "2026-11-04"
    ]
   },
   {
@@ -576,12 +589,12 @@
    "visibility": "student",
    "unit": 4,
    "block": "Cell Communication and Cell Cycle",
-   "start": "2026-11-06",
-   "end": "2026-11-10",
+   "start": "2026-11-05",
+   "end": "2026-11-09",
    "dates": [
+    "2026-11-05",
     "2026-11-06",
-    "2026-11-09",
-    "2026-11-10"
+    "2026-11-09"
    ]
   },
   {
@@ -593,11 +606,11 @@
    "visibility": "student",
    "unit": 4,
    "block": "Cell Communication and Cell Cycle",
-   "start": "2026-11-12",
-   "end": "2026-11-13",
+   "start": "2026-11-10",
+   "end": "2026-11-12",
    "dates": [
-    "2026-11-12",
-    "2026-11-13"
+    "2026-11-10",
+    "2026-11-12"
    ]
   },
   {
@@ -609,11 +622,11 @@
    "visibility": "student",
    "unit": 4,
    "block": "Cell Communication and Cell Cycle",
-   "start": "2026-11-16",
-   "end": "2026-11-17",
+   "start": "2026-11-13",
+   "end": "2026-11-16",
    "dates": [
-    "2026-11-16",
-    "2026-11-17"
+    "2026-11-13",
+    "2026-11-16"
    ]
   },
   {
@@ -625,11 +638,11 @@
    "visibility": "student",
    "unit": 4,
    "block": "Cell Communication and Cell Cycle",
-   "start": "2026-11-18",
-   "end": "2026-11-19",
+   "start": "2026-11-17",
+   "end": "2026-11-18",
    "dates": [
-    "2026-11-18",
-    "2026-11-19"
+    "2026-11-17",
+    "2026-11-18"
    ]
   },
   {
@@ -641,10 +654,10 @@
    "visibility": "student",
    "unit": 4,
    "block": "Cell Communication and Cell Cycle",
-   "start": "2026-11-20",
-   "end": "2026-11-20",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
    "dates": [
-    "2026-11-20"
+    "2026-11-19"
    ]
   },
   {
@@ -656,11 +669,11 @@
    "visibility": "student",
    "unit": 4,
    "block": "Cell Communication and Cell Cycle",
-   "start": "2026-11-30",
-   "end": "2026-12-01",
+   "start": "2026-11-20",
+   "end": "2026-11-30",
    "dates": [
-    "2026-11-30",
-    "2026-12-01"
+    "2026-11-20",
+    "2026-11-30"
    ]
   },
   {
@@ -672,10 +685,10 @@
    "visibility": "student",
    "unit": 4,
    "block": "Cell Communication and Cell Cycle",
-   "start": "2026-12-02",
-   "end": "2026-12-02",
+   "start": "2026-12-01",
+   "end": "2026-12-01",
    "dates": [
-    "2026-12-02"
+    "2026-12-01"
    ]
   },
   {
@@ -687,10 +700,10 @@
    "visibility": "student",
    "unit": 5,
    "block": "Heredity",
-   "start": "2026-12-03",
-   "end": "2026-12-03",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
    "dates": [
-    "2026-12-03"
+    "2026-12-02"
    ]
   },
   {
@@ -702,11 +715,26 @@
    "visibility": "student",
    "unit": 5,
    "block": "Heredity",
-   "start": "2026-12-04",
+   "start": "2026-12-03",
+   "end": "2026-12-07",
+   "dates": [
+    "2026-12-03",
+    "2026-12-04",
+    "2026-12-07"
+   ]
+  },
+  {
+   "id": "5.CORN",
+   "title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
+   "kind": "lab",
+   "skill": null,
+   "notes": "Big Idea 3: Information Storage and Transmission. Substitute inquiry lab — counts toward the 25% inquiry-time line, not the per-big-idea minimum.",
+   "visibility": "student",
+   "unit": 5,
+   "block": "Heredity",
+   "start": "2026-12-08",
    "end": "2026-12-08",
    "dates": [
-    "2026-12-04",
-    "2026-12-07",
     "2026-12-08"
    ]
   },
@@ -1208,6 +1236,21 @@
    ]
   },
   {
+   "id": "INV-12",
+   "title": "Investigation 12 — Animal Behavior (pillbug choice chambers)",
+   "kind": "lab",
+   "skill": null,
+   "notes": "Big Idea 4: System Interactions. Brings Big Idea 4 to the 2-lab minimum.",
+   "visibility": "student",
+   "unit": 8,
+   "block": "Ecology",
+   "start": "2027-03-08",
+   "end": "2027-03-08",
+   "dates": [
+    "2027-03-08"
+   ]
+  },
+  {
    "id": "8.2",
    "title": "Energy Flow Through Ecosystems",
    "kind": "topic",
@@ -1216,13 +1259,13 @@
    "visibility": "student",
    "unit": 8,
    "block": "Ecology",
-   "start": "2027-03-08",
-   "end": "2027-03-11",
+   "start": "2027-03-09",
+   "end": "2027-03-12",
    "dates": [
-    "2027-03-08",
     "2027-03-09",
     "2027-03-10",
-    "2027-03-11"
+    "2027-03-11",
+    "2027-03-12"
    ]
   },
   {
@@ -1234,11 +1277,11 @@
    "visibility": "student",
    "unit": 8,
    "block": "Ecology",
-   "start": "2027-03-12",
-   "end": "2027-03-15",
+   "start": "2027-03-15",
+   "end": "2027-03-16",
    "dates": [
-    "2027-03-12",
-    "2027-03-15"
+    "2027-03-15",
+    "2027-03-16"
    ]
   },
   {
@@ -1250,11 +1293,11 @@
    "visibility": "student",
    "unit": 8,
    "block": "Ecology",
-   "start": "2027-03-16",
-   "end": "2027-03-17",
+   "start": "2027-03-17",
+   "end": "2027-03-18",
    "dates": [
-    "2027-03-16",
-    "2027-03-17"
+    "2027-03-17",
+    "2027-03-18"
    ]
   },
   {
@@ -1266,12 +1309,12 @@
    "visibility": "student",
    "unit": 8,
    "block": "Ecology",
-   "start": "2027-03-18",
-   "end": "2027-03-30",
+   "start": "2027-03-19",
+   "end": "2027-03-31",
    "dates": [
-    "2027-03-18",
     "2027-03-19",
-    "2027-03-30"
+    "2027-03-30",
+    "2027-03-31"
    ]
   },
   {
@@ -1283,11 +1326,11 @@
    "visibility": "student",
    "unit": 8,
    "block": "Ecology",
-   "start": "2027-03-31",
-   "end": "2027-04-01",
+   "start": "2027-04-01",
+   "end": "2027-04-02",
    "dates": [
-    "2027-03-31",
-    "2027-04-01"
+    "2027-04-01",
+    "2027-04-02"
    ]
   },
   {
@@ -1299,21 +1342,6 @@
    "visibility": "student",
    "unit": 8,
    "block": "Ecology",
-   "start": "2027-04-02",
-   "end": "2027-04-02",
-   "dates": [
-    "2027-04-02"
-   ]
-  },
-  {
-   "id": "8.FLEX",
-   "title": "Flex day — catch-up, reteach, or lab overflow",
-   "kind": "flex",
-   "skill": null,
-   "notes": null,
-   "visibility": "student",
-   "unit": 8,
-   "block": "Ecology",
    "start": "2027-04-05",
    "end": "2027-04-05",
    "dates": [
@@ -1321,9 +1349,9 @@
    ]
   },
   {
-   "id": "8.PC",
-   "title": "Progress Check 8",
-   "kind": "assessment",
+   "id": "8.FLEX",
+   "title": "Flex day — catch-up, reteach, or lab overflow",
+   "kind": "flex",
    "skill": null,
    "notes": null,
    "visibility": "student",
@@ -1336,8 +1364,8 @@
    ]
   },
   {
-   "id": "8.TEST",
-   "title": "Unit 8 Assessment",
+   "id": "8.PC",
+   "title": "Progress Check 8",
    "kind": "assessment",
    "skill": null,
    "notes": null,
@@ -1351,6 +1379,21 @@
    ]
   },
   {
+   "id": "8.TEST",
+   "title": "Unit 8 Assessment",
+   "kind": "assessment",
+   "skill": null,
+   "notes": null,
+   "visibility": "student",
+   "unit": 8,
+   "block": "Ecology",
+   "start": "2027-04-08",
+   "end": "2027-04-08",
+   "dates": [
+    "2027-04-08"
+   ]
+  },
+  {
    "id": null,
    "title": "AP review — FRQ practice, reteaching, full-length mocks",
    "kind": "review",
@@ -1359,10 +1402,9 @@
    "visibility": "student",
    "unit": null,
    "block": "AP Exam Review",
-   "start": "2027-04-08",
+   "start": "2027-04-09",
    "end": "2027-04-30",
    "dates": [
-    "2027-04-08",
     "2027-04-09",
     "2027-04-12",
     "2027-04-13",
@@ -1425,6 +1467,24 @@
    "basis": "calendar"
   },
   {
+   "lab_id": "INV-4",
+   "lab_title": "Investigation 4 — Diffusion and Osmosis",
+   "action": "order",
+   "due": "2026-09-04",
+   "lab_date": "2026-09-25",
+   "lead_days": 21,
+   "basis": "calendar"
+  },
+  {
+   "lab_id": "INV-4",
+   "lab_title": "Investigation 4 — Diffusion and Osmosis",
+   "action": "arrive",
+   "due": "2026-09-11",
+   "lab_date": "2026-09-25",
+   "lead_days": 14,
+   "basis": "calendar"
+  },
+  {
    "lab_id": "INV-13",
    "lab_title": "Investigation 13 — Enzyme Activity",
    "action": "order",
@@ -1432,6 +1492,15 @@
    "lab_date": "2026-10-08",
    "lead_days": 21,
    "basis": "calendar"
+  },
+  {
+   "lab_id": "INV-4",
+   "lab_title": "Investigation 4 — Diffusion and Osmosis",
+   "action": "bench",
+   "due": "2026-09-23",
+   "lab_date": "2026-09-25",
+   "lead_days": 2,
+   "basis": "school"
   },
   {
    "lab_id": "INV-5",
@@ -1509,8 +1578,8 @@
    "lab_id": "INV-7",
    "lab_title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
    "action": "order",
-   "due": "2026-10-28",
-   "lab_date": "2026-11-18",
+   "due": "2026-10-27",
+   "lab_date": "2026-11-17",
    "lead_days": 21,
    "basis": "calendar"
   },
@@ -1518,8 +1587,8 @@
    "lab_id": "INV-7",
    "lab_title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
    "action": "arrive",
-   "due": "2026-11-04",
-   "lab_date": "2026-11-18",
+   "due": "2026-11-03",
+   "lab_date": "2026-11-17",
    "lead_days": 14,
    "basis": "calendar"
   },
@@ -1527,9 +1596,36 @@
    "lab_id": "INV-7",
    "lab_title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
    "action": "bench",
-   "due": "2026-11-10",
-   "lab_date": "2026-11-18",
+   "due": "2026-11-09",
+   "lab_date": "2026-11-17",
    "lead_days": 5,
+   "basis": "school"
+  },
+  {
+   "lab_id": "5.CORN",
+   "lab_title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
+   "action": "order",
+   "due": "2026-11-17",
+   "lab_date": "2026-12-08",
+   "lead_days": 21,
+   "basis": "calendar"
+  },
+  {
+   "lab_id": "5.CORN",
+   "lab_title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
+   "action": "arrive",
+   "due": "2026-12-01",
+   "lab_date": "2026-12-08",
+   "lead_days": 7,
+   "basis": "calendar"
+  },
+  {
+   "lab_id": "5.CORN",
+   "lab_title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
+   "action": "bench",
+   "due": "2026-12-07",
+   "lab_date": "2026-12-08",
+   "lead_days": 1,
    "basis": "school"
   },
   {
@@ -1578,11 +1674,38 @@
    "basis": "school"
   },
   {
+   "lab_id": "INV-12",
+   "lab_title": "Investigation 12 — Animal Behavior (pillbug choice chambers)",
+   "action": "order",
+   "due": "2027-02-22",
+   "lab_date": "2027-03-08",
+   "lead_days": 14,
+   "basis": "calendar"
+  },
+  {
    "lab_id": "INV-3",
    "lab_title": "Investigation 3 — Comparing DNA Sequences with BLAST",
    "action": "bench",
    "due": "2027-02-23",
    "lab_date": "2027-02-24",
+   "lead_days": 1,
+   "basis": "school"
+  },
+  {
+   "lab_id": "INV-12",
+   "lab_title": "Investigation 12 — Animal Behavior (pillbug choice chambers)",
+   "action": "arrive",
+   "due": "2027-03-05",
+   "lab_date": "2027-03-08",
+   "lead_days": 3,
+   "basis": "calendar"
+  },
+  {
+   "lab_id": "INV-12",
+   "lab_title": "Investigation 12 — Animal Behavior (pillbug choice chambers)",
+   "action": "bench",
+   "due": "2027-03-05",
+   "lab_date": "2027-03-08",
    "lead_days": 1,
    "basis": "school"
   }
