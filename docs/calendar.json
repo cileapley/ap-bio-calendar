@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26 10:10",
+  "generated": "2026-09-02 08:25",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -128,9 +128,9 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 111,
+    "content_periods": 113,
     "lab_periods_scheduled": 19,
-    "flex_periods": 11,
+    "flex_periods": 9,
     "lab_periods_required": 40,
     "review_periods": 16,
     "conversion_factor": 0.83,
@@ -325,8 +325,8 @@
         11
       ],
       "start": "2026-08-31",
-      "end": "2026-09-09",
-      "periods": 7,
+      "end": "2026-09-11",
+      "periods": 9,
       "entries": [
         {
           "id": "1.1+1.2",
@@ -387,17 +387,32 @@
           ]
         },
         {
-          "id": "1.TEST",
-          "title": "Unit 1 Assessment",
-          "kind": "assessment",
-          "skill": null,
-          "notes": "Progress Check 1 is take-home, due before this test.",
+          "id": "1.REVIEW",
+          "title": "Unit 1 Review",
+          "kind": "topic",
+          "skill": "1.A",
+          "notes": "Essential knowledge quiz, self-scored by section, then one-pager B built in class.",
           "link": null,
           "periods": 1,
           "start": "2026-09-09",
           "end": "2026-09-09",
           "dates": [
             "2026-09-09"
+          ]
+        },
+        {
+          "id": "1.TEST",
+          "title": "Unit 1 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": "Two days: multiple choice, then free response. Progress Check 1 is take-home, due before day one.",
+          "link": null,
+          "periods": 2,
+          "start": "2026-09-10",
+          "end": "2026-09-11",
+          "dates": [
+            "2026-09-10",
+            "2026-09-11"
           ]
         }
       ]
@@ -410,9 +425,9 @@
         10,
         13
       ],
-      "start": "2026-09-10",
-      "end": "2026-10-01",
-      "periods": 16,
+      "start": "2026-09-14",
+      "end": "2026-10-02",
+      "periods": 15,
       "entries": [
         {
           "id": "2.1",
@@ -422,12 +437,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-09-10",
-          "end": "2026-09-14",
+          "start": "2026-09-14",
+          "end": "2026-09-16",
           "dates": [
-            "2026-09-10",
-            "2026-09-11",
-            "2026-09-14"
+            "2026-09-14",
+            "2026-09-15",
+            "2026-09-16"
           ]
         },
         {
@@ -438,11 +453,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-09-15",
-          "end": "2026-09-16",
+          "start": "2026-09-17",
+          "end": "2026-09-18",
           "dates": [
-            "2026-09-15",
-            "2026-09-16"
+            "2026-09-17",
+            "2026-09-18"
           ]
         },
         {
@@ -453,10 +468,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-09-17",
-          "end": "2026-09-17",
+          "start": "2026-09-21",
+          "end": "2026-09-21",
           "dates": [
-            "2026-09-17"
+            "2026-09-21"
           ]
         },
         {
@@ -467,11 +482,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-09-18",
-          "end": "2026-09-21",
+          "start": "2026-09-22",
+          "end": "2026-09-23",
           "dates": [
-            "2026-09-18",
-            "2026-09-21"
+            "2026-09-22",
+            "2026-09-23"
           ]
         },
         {
@@ -482,12 +497,12 @@
           "notes": "Water potential calculations.",
           "link": null,
           "periods": 3,
-          "start": "2026-09-22",
-          "end": "2026-09-24",
+          "start": "2026-09-24",
+          "end": "2026-09-28",
           "dates": [
-            "2026-09-22",
-            "2026-09-23",
-            "2026-09-24"
+            "2026-09-24",
+            "2026-09-25",
+            "2026-09-28"
           ]
         },
         {
@@ -498,10 +513,10 @@
           "notes": "Big Idea 2: Energetics. Single-period run — bags set up in advance.",
           "link": null,
           "periods": 1,
-          "start": "2026-09-25",
-          "end": "2026-09-25",
+          "start": "2026-09-29",
+          "end": "2026-09-29",
           "dates": [
-            "2026-09-25"
+            "2026-09-29"
           ]
         },
         {
@@ -512,10 +527,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-09-28",
-          "end": "2026-09-28",
+          "start": "2026-09-30",
+          "end": "2026-09-30",
           "dates": [
-            "2026-09-28"
+            "2026-09-30"
           ]
         },
         {
@@ -526,24 +541,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-09-29",
-          "end": "2026-09-29",
+          "start": "2026-10-01",
+          "end": "2026-10-01",
           "dates": [
-            "2026-09-29"
-          ]
-        },
-        {
-          "id": "2.FLEX",
-          "title": "Flex day — catch-up, reteach, or lab overflow",
-          "kind": "flex",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-09-30",
-          "end": "2026-09-30",
-          "dates": [
-            "2026-09-30"
+            "2026-10-01"
           ]
         },
         {
@@ -554,10 +555,10 @@
           "notes": "Progress Check 2 is take-home, due before this test.",
           "link": null,
           "periods": 1,
-          "start": "2026-10-01",
-          "end": "2026-10-01",
+          "start": "2026-10-02",
+          "end": "2026-10-02",
           "dates": [
-            "2026-10-01"
+            "2026-10-02"
           ]
         }
       ]
@@ -570,9 +571,9 @@
         12,
         16
       ],
-      "start": "2026-10-02",
+      "start": "2026-10-05",
       "end": "2026-11-03",
-      "periods": 23,
+      "periods": 22,
       "entries": [
         {
           "id": "3.1",
@@ -582,12 +583,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-10-02",
-          "end": "2026-10-06",
+          "start": "2026-10-05",
+          "end": "2026-10-07",
           "dates": [
-            "2026-10-02",
             "2026-10-05",
-            "2026-10-06"
+            "2026-10-06",
+            "2026-10-07"
           ]
         },
         {
@@ -598,10 +599,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-10-07",
-          "end": "2026-10-07",
+          "start": "2026-10-08",
+          "end": "2026-10-08",
           "dates": [
-            "2026-10-07"
+            "2026-10-08"
           ]
         },
         {
@@ -612,11 +613,11 @@
           "notes": "Big Idea 4: System Interactions.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-08",
-          "end": "2026-10-09",
+          "start": "2026-10-09",
+          "end": "2026-10-12",
           "dates": [
-            "2026-10-08",
-            "2026-10-09"
+            "2026-10-09",
+            "2026-10-12"
           ]
         },
         {
@@ -627,10 +628,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-10-12",
-          "end": "2026-10-12",
+          "start": "2026-10-13",
+          "end": "2026-10-13",
           "dates": [
-            "2026-10-12"
+            "2026-10-13"
           ]
         },
         {
@@ -641,13 +642,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-13",
-          "end": "2026-10-16",
+          "start": "2026-10-14",
+          "end": "2026-10-19",
           "dates": [
-            "2026-10-13",
             "2026-10-14",
             "2026-10-15",
-            "2026-10-16"
+            "2026-10-16",
+            "2026-10-19"
           ]
         },
         {
@@ -658,11 +659,11 @@
           "notes": "Big Idea 2: Energetics.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-19",
-          "end": "2026-10-20",
+          "start": "2026-10-20",
+          "end": "2026-10-21",
           "dates": [
-            "2026-10-19",
-            "2026-10-20"
+            "2026-10-20",
+            "2026-10-21"
           ]
         },
         {
@@ -673,13 +674,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-21",
-          "end": "2026-10-26",
+          "start": "2026-10-22",
+          "end": "2026-10-27",
           "dates": [
-            "2026-10-21",
             "2026-10-22",
             "2026-10-23",
-            "2026-10-26"
+            "2026-10-26",
+            "2026-10-27"
           ]
         },
         {
@@ -690,11 +691,11 @@
           "notes": "Big Idea 2: Energetics.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-27",
-          "end": "2026-10-28",
+          "start": "2026-10-28",
+          "end": "2026-10-29",
           "dates": [
-            "2026-10-27",
-            "2026-10-28"
+            "2026-10-28",
+            "2026-10-29"
           ]
         },
         {
@@ -704,11 +705,10 @@
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 3,
-          "start": "2026-10-29",
+          "periods": 2,
+          "start": "2026-10-30",
           "end": "2026-11-02",
           "dates": [
-            "2026-10-29",
             "2026-10-30",
             "2026-11-02"
           ]

@@ -119,7 +119,7 @@
    ]
   },
   {
-   "date": "2026-09-10",
+   "date": "2026-09-09",
    "pair": false,
    "topics": [
     {
@@ -128,11 +128,6 @@
      "unit": 1
     }
    ]
-  },
-  {
-   "date": "2026-09-11",
-   "pair": false,
-   "topics": []
   },
   {
    "date": "2026-09-14",
@@ -162,8 +157,19 @@
   },
   {
    "date": "2026-09-16",
-   "pair": false,
-   "topics": []
+   "pair": true,
+   "topics": [
+    {
+     "id": "1.REVIEW",
+     "title": "Unit 1 Review",
+     "unit": 1
+    },
+    {
+     "id": "1.5+1.6",
+     "title": "Lipids · Nucleic Acids",
+     "unit": 1
+    }
+   ]
   },
   {
    "date": "2026-09-17",
@@ -178,13 +184,7 @@
   {
    "date": "2026-09-21",
    "pair": false,
-   "topics": [
-    {
-     "id": "2.1",
-     "title": "Cell Structure and Function",
-     "unit": 2
-    }
-   ]
+   "topics": []
   },
   {
    "date": "2026-09-22",
@@ -196,6 +196,22 @@
    "pair": false,
    "topics": [
     {
+     "id": "2.1",
+     "title": "Cell Structure and Function",
+     "unit": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-24",
+   "pair": false,
+   "topics": []
+  },
+  {
+   "date": "2026-09-25",
+   "pair": false,
+   "topics": [
+    {
      "id": "2.2",
      "title": "Cell Size",
      "unit": 2
@@ -203,7 +219,7 @@
    ]
   },
   {
-   "date": "2026-09-24",
+   "date": "2026-09-28",
    "pair": false,
    "topics": [
     {
@@ -214,7 +230,7 @@
    ]
   },
   {
-   "date": "2026-09-28",
+   "date": "2026-09-30",
    "pair": true,
    "topics": [
     {
@@ -230,12 +246,12 @@
    ]
   },
   {
-   "date": "2026-09-29",
+   "date": "2026-10-01",
    "pair": false,
    "topics": []
   },
   {
-   "date": "2026-10-02",
+   "date": "2026-10-05",
    "pair": true,
    "topics": [
     {
@@ -244,11 +260,6 @@
      "unit": 2
     },
     {
-     "id": "INV-4",
-     "title": "Investigation 4 — Diffusion and Osmosis",
-     "unit": 2
-    },
-    {
      "id": "2.2",
      "title": "Cell Size",
      "unit": 2
@@ -256,27 +267,6 @@
     {
      "id": "2.3+2.4",
      "title": "Plasma Membrane · Membrane Permeability",
-     "unit": 2
-    }
-   ]
-  },
-  {
-   "date": "2026-10-05",
-   "pair": true,
-   "topics": [
-    {
-     "id": "2.8",
-     "title": "Mechanisms of Transport",
-     "unit": 2
-    },
-    {
-     "id": "2.5+2.6",
-     "title": "Membrane Transport · Facilitated Diffusion",
-     "unit": 2
-    },
-    {
-     "id": "2.1",
-     "title": "Cell Structure and Function",
      "unit": 2
     }
    ]
@@ -286,8 +276,8 @@
    "pair": false,
    "topics": [
     {
-     "id": "2.9+2.10",
-     "title": "Cell Compartmentalization · Origins of Compartmentalization",
+     "id": "INV-4",
+     "title": "Investigation 4 — Diffusion and Osmosis",
      "unit": 2
     }
    ]
@@ -296,6 +286,11 @@
    "date": "2026-10-07",
    "pair": true,
    "topics": [
+    {
+     "id": "2.8",
+     "title": "Mechanisms of Transport",
+     "unit": 2
+    },
     {
      "id": "0.DYOE",
      "title": "Design Your Own Experiment — run and collect data",
@@ -314,9 +309,19 @@
    ]
   },
   {
-   "date": "2026-10-12",
-   "pair": true,
+   "date": "2026-10-08",
+   "pair": false,
    "topics": [
+    {
+     "id": "2.9+2.10",
+     "title": "Cell Compartmentalization · Origins of Compartmentalization",
+     "unit": 2
+    },
+    {
+     "id": "2.5+2.6",
+     "title": "Membrane Transport · Facilitated Diffusion",
+     "unit": 2
+    },
     {
      "id": "0.OREO",
      "title": "Oreo Lab — measurement, class data, error bars",
@@ -326,6 +331,17 @@
      "id": "0.STATS2",
      "title": "Statistics practice, part 2 — Herceptin capstone",
      "unit": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "pair": true,
+   "topics": [
+    {
+     "id": "2.1",
+     "title": "Cell Structure and Function",
+     "unit": 2
     },
     {
      "id": "0.METHOD",
@@ -340,23 +356,12 @@
    ]
   },
   {
-   "date": "2026-10-13",
+   "date": "2026-10-14",
    "pair": false,
    "topics": [
     {
      "id": "3.1",
      "title": "Enzymes",
-     "unit": 3
-    }
-   ]
-  },
-  {
-   "date": "2026-10-14",
-   "pair": false,
-   "topics": [
-    {
-     "id": "3.2",
-     "title": "Environmental Impacts on Enzyme Function",
      "unit": 3
     }
    ]
@@ -366,43 +371,6 @@
    "pair": false,
    "topics": [
     {
-     "id": "1.5+1.6",
-     "title": "Lipids · Nucleic Acids",
-     "unit": 1
-    }
-   ]
-  },
-  {
-   "date": "2026-10-16",
-   "pair": false,
-   "topics": [
-    {
-     "id": "INV-13",
-     "title": "Investigation 13 — Enzyme Activity",
-     "unit": 3
-    }
-   ]
-  },
-  {
-   "date": "2026-10-21",
-   "pair": true,
-   "topics": [
-    {
-     "id": "3.3",
-     "title": "Cellular Energy",
-     "unit": 3
-    },
-    {
-     "id": "1.7",
-     "title": "Proteins",
-     "unit": 1
-    },
-    {
-     "id": "3.1",
-     "title": "Enzymes",
-     "unit": 3
-    },
-    {
      "id": "3.2",
      "title": "Environmental Impacts on Enzyme Function",
      "unit": 3
@@ -410,9 +378,24 @@
    ]
   },
   {
-   "date": "2026-10-22",
+   "date": "2026-10-16",
+   "pair": false,
+   "topics": []
+  },
+  {
+   "date": "2026-10-19",
    "pair": true,
    "topics": [
+    {
+     "id": "INV-13",
+     "title": "Investigation 13 — Enzyme Activity",
+     "unit": 3
+    },
+    {
+     "id": "1.7",
+     "title": "Proteins",
+     "unit": 1
+    },
     {
      "id": "1.1+1.2",
      "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
@@ -426,8 +409,45 @@
    ]
   },
   {
+   "date": "2026-10-22",
+   "pair": true,
+   "topics": [
+    {
+     "id": "3.3",
+     "title": "Cellular Energy",
+     "unit": 3
+    },
+    {
+     "id": "1.REVIEW",
+     "title": "Unit 1 Review",
+     "unit": 1
+    },
+    {
+     "id": "3.1",
+     "title": "Enzymes",
+     "unit": 3
+    },
+    {
+     "id": "3.2",
+     "title": "Environmental Impacts on Enzyme Function",
+     "unit": 3
+    }
+   ]
+  },
+  {
    "date": "2026-10-23",
    "pair": false,
+   "topics": [
+    {
+     "id": "1.5+1.6",
+     "title": "Lipids · Nucleic Acids",
+     "unit": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "pair": true,
    "topics": [
     {
      "id": "3.4",
@@ -442,7 +462,7 @@
    ]
   },
   {
-   "date": "2026-10-26",
+   "date": "2026-10-27",
    "pair": false,
    "topics": []
   },
@@ -461,27 +481,6 @@
      "unit": 3
     },
     {
-     "id": "INV-6",
-     "title": "Investigation 6 — Cellular Respiration",
-     "unit": 3
-    },
-    {
-     "id": "2.7",
-     "title": "Tonicity and Osmoregulation",
-     "unit": 2
-    }
-   ]
-  },
-  {
-   "date": "2026-11-05",
-   "pair": true,
-   "topics": [
-    {
-     "id": "INV-4",
-     "title": "Investigation 4 — Diffusion and Osmosis",
-     "unit": 2
-    },
-    {
      "id": "3.3",
      "title": "Cellular Energy",
      "unit": 3
@@ -490,17 +489,64 @@
      "id": "3.4",
      "title": "Photosynthesis",
      "unit": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "pair": true,
+   "topics": [
+    {
+     "id": "INV-6",
+     "title": "Investigation 6 — Cellular Respiration",
+     "unit": 3
     },
     {
-     "id": "2.2",
-     "title": "Cell Size",
-     "unit": 2
+     "id": "3.1",
+     "title": "Enzymes",
+     "unit": 3
+    },
+    {
+     "id": "3.2",
+     "title": "Environmental Impacts on Enzyme Function",
+     "unit": 3
+    },
+    {
+     "id": "INV-13",
+     "title": "Investigation 13 — Enzyme Activity",
+     "unit": 3
     }
    ]
   },
   {
    "date": "2026-11-06",
    "pair": false,
+   "topics": [
+    {
+     "id": "2.7",
+     "title": "Tonicity and Osmoregulation",
+     "unit": 2
+    },
+    {
+     "id": "INV-4",
+     "title": "Investigation 4 — Diffusion and Osmosis",
+     "unit": 2
+    },
+    {
+     "id": "2.2",
+     "title": "Cell Size",
+     "unit": 2
+    },
+    {
+     "id": "2.3+2.4",
+     "title": "Plasma Membrane · Membrane Permeability",
+     "unit": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "pair": true,
    "topics": [
     {
      "id": "2.8",
@@ -513,39 +559,13 @@
      "unit": 2
     },
     {
-     "id": "2.3+2.4",
-     "title": "Plasma Membrane · Membrane Permeability",
-     "unit": 2
-    },
-    {
-     "id": "3.1",
-     "title": "Enzymes",
-     "unit": 3
-    }
-   ]
-  },
-  {
-   "date": "2026-11-09",
-   "pair": true,
-   "topics": [
-    {
-     "id": "3.2",
-     "title": "Environmental Impacts on Enzyme Function",
-     "unit": 3
-    },
-    {
-     "id": "INV-13",
-     "title": "Investigation 13 — Enzyme Activity",
-     "unit": 3
-    },
-    {
-     "id": "2.5+2.6",
-     "title": "Membrane Transport · Facilitated Diffusion",
-     "unit": 2
-    },
-    {
      "id": "0.DYOE",
      "title": "Design Your Own Experiment — run and collect data",
+     "unit": null
+    },
+    {
+     "id": "0.STATS",
+     "title": "Statistics notes, part 1",
      "unit": null
     }
    ]
@@ -555,18 +575,23 @@
    "pair": true,
    "topics": [
     {
-     "id": "0.STATS",
-     "title": "Statistics notes, part 1",
-     "unit": null
-    },
-    {
      "id": "0.STATSB",
      "title": "Statistics notes, part 2",
      "unit": null
     },
     {
-     "id": "2.1",
-     "title": "Cell Structure and Function",
+     "id": "0.OREO",
+     "title": "Oreo Lab — measurement, class data, error bars",
+     "unit": null
+    },
+    {
+     "id": "0.STATS2",
+     "title": "Statistics practice, part 2 — Herceptin capstone",
+     "unit": null
+    },
+    {
+     "id": "2.5+2.6",
+     "title": "Membrane Transport · Facilitated Diffusion",
      "unit": 2
     }
    ]
@@ -581,46 +606,35 @@
      "unit": 4
     },
     {
-     "id": "0.OREO",
-     "title": "Oreo Lab — measurement, class data, error bars",
-     "unit": null
-    },
-    {
-     "id": "0.STATS2",
-     "title": "Statistics practice, part 2 — Herceptin capstone",
-     "unit": null
-    },
-    {
      "id": "0.METHOD",
      "title": "Scientific method — observations, reasoning, hypotheses",
      "unit": null
+    },
+    {
+     "id": "0.CONTROLS",
+     "title": "Experimental controls, and planning the DYOE",
+     "unit": null
+    },
+    {
+     "id": "2.1",
+     "title": "Cell Structure and Function",
+     "unit": 2
     }
    ]
   },
   {
    "date": "2026-11-13",
    "pair": false,
-   "topics": [
-    {
-     "id": "0.CONTROLS",
-     "title": "Experimental controls, and planning the DYOE",
-     "unit": null
-    }
-   ]
+   "topics": []
   },
   {
    "date": "2026-11-16",
-   "pair": true,
+   "pair": false,
    "topics": [
     {
      "id": "4.3",
      "title": "Signal Transduction Pathways",
      "unit": 4
-    },
-    {
-     "id": "1.5+1.6",
-     "title": "Lipids · Nucleic Acids",
-     "unit": 1
     }
    ]
   },
@@ -641,6 +655,11 @@
     {
      "id": "1.7",
      "title": "Proteins",
+     "unit": 1
+    },
+    {
+     "id": "1.1+1.2",
+     "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
      "unit": 1
     }
    ]
@@ -702,14 +721,9 @@
    "pair": false,
    "topics": [
     {
-     "id": "2.7",
-     "title": "Tonicity and Osmoregulation",
-     "unit": 2
-    },
-    {
-     "id": "INV-4",
-     "title": "Investigation 4 — Diffusion and Osmosis",
-     "unit": 2
+     "id": "1.REVIEW",
+     "title": "Unit 1 Review",
+     "unit": 1
     },
     {
      "id": "3.3",
@@ -720,6 +734,11 @@
      "id": "3.4",
      "title": "Photosynthesis",
      "unit": 3
+    },
+    {
+     "id": "4.1+4.2",
+     "title": "Cell Communication · Introduction to Signal Transduction",
+     "unit": 4
     }
    ]
   },
@@ -728,9 +747,14 @@
    "pair": true,
    "topics": [
     {
-     "id": "4.1+4.2",
-     "title": "Cell Communication · Introduction to Signal Transduction",
-     "unit": 4
+     "id": "2.7",
+     "title": "Tonicity and Osmoregulation",
+     "unit": 2
+    },
+    {
+     "id": "INV-4",
+     "title": "Investigation 4 — Diffusion and Osmosis",
+     "unit": 2
     },
     {
      "id": "2.8",
@@ -741,11 +765,6 @@
      "id": "2.9+2.10",
      "title": "Cell Compartmentalization · Origins of Compartmentalization",
      "unit": 2
-    },
-    {
-     "id": "1.1+1.2",
-     "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
-     "unit": 1
     }
    ]
   },
@@ -764,6 +783,32 @@
      "unit": 1
     },
     {
+     "id": "1.5+1.6",
+     "title": "Lipids · Nucleic Acids",
+     "unit": 1
+    },
+    {
+     "id": "3.1",
+     "title": "Enzymes",
+     "unit": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-12-10",
+   "pair": true,
+   "topics": [
+    {
+     "id": "3.2",
+     "title": "Environmental Impacts on Enzyme Function",
+     "unit": 3
+    },
+    {
+     "id": "INV-13",
+     "title": "Investigation 13 — Enzyme Activity",
+     "unit": 3
+    },
+    {
      "id": "2.2",
      "title": "Cell Size",
      "unit": 2
@@ -776,14 +821,9 @@
    ]
   },
   {
-   "date": "2026-12-10",
-   "pair": true,
+   "date": "2026-12-11",
+   "pair": false,
    "topics": [
-    {
-     "id": "3.1",
-     "title": "Enzymes",
-     "unit": 3
-    },
     {
      "id": "0.DYOE",
      "title": "Design Your Own Experiment — run and collect data",
@@ -798,27 +838,6 @@
      "id": "0.STATSB",
      "title": "Statistics notes, part 2",
      "unit": null
-    }
-   ]
-  },
-  {
-   "date": "2026-12-11",
-   "pair": false,
-   "topics": [
-    {
-     "id": "2.5+2.6",
-     "title": "Membrane Transport · Facilitated Diffusion",
-     "unit": 2
-    },
-    {
-     "id": "3.2",
-     "title": "Environmental Impacts on Enzyme Function",
-     "unit": 3
-    },
-    {
-     "id": "INV-13",
-     "title": "Investigation 13 — Enzyme Activity",
-     "unit": 3
     },
     {
      "id": "0.OREO",
@@ -920,9 +939,9 @@
      "unit": null
     },
     {
-     "id": "1.5+1.6",
-     "title": "Lipids · Nucleic Acids",
-     "unit": 1
+     "id": "2.5+2.6",
+     "title": "Membrane Transport · Facilitated Diffusion",
+     "unit": 2
     },
     {
      "id": "1.7",
@@ -935,6 +954,11 @@
    "date": "2027-01-08",
    "pair": false,
    "topics": [
+    {
+     "id": "1.REVIEW",
+     "title": "Unit 1 Review",
+     "unit": 1
+    },
     {
      "id": "2.7",
      "title": "Tonicity and Osmoregulation",
@@ -949,11 +973,6 @@
      "id": "2.8",
      "title": "Mechanisms of Transport",
      "unit": 2
-    },
-    {
-     "id": "2.9+2.10",
-     "title": "Cell Compartmentalization · Origins of Compartmentalization",
-     "unit": 2
     }
    ]
   },
@@ -967,6 +986,11 @@
      "unit": 6
     },
     {
+     "id": "2.9+2.10",
+     "title": "Cell Compartmentalization · Origins of Compartmentalization",
+     "unit": 2
+    },
+    {
      "id": "3.3",
      "title": "Cellular Energy",
      "unit": 3
@@ -975,11 +999,6 @@
      "id": "3.4",
      "title": "Photosynthesis",
      "unit": 3
-    },
-    {
-     "id": "4.1+4.2",
-     "title": "Cell Communication · Introduction to Signal Transduction",
-     "unit": 4
     }
    ]
   },
@@ -988,9 +1007,9 @@
    "pair": false,
    "topics": [
     {
-     "id": "2.1",
-     "title": "Cell Structure and Function",
-     "unit": 2
+     "id": "4.1+4.2",
+     "title": "Cell Communication · Introduction to Signal Transduction",
+     "unit": 4
     },
     {
      "id": "0.METHOD",
@@ -1003,9 +1022,9 @@
      "unit": null
     },
     {
-     "id": "0.DYOE",
-     "title": "Design Your Own Experiment — run and collect data",
-     "unit": null
+     "id": "2.1",
+     "title": "Cell Structure and Function",
+     "unit": 2
     }
    ]
   },
@@ -1019,6 +1038,11 @@
      "unit": 6
     },
     {
+     "id": "0.DYOE",
+     "title": "Design Your Own Experiment — run and collect data",
+     "unit": null
+    },
+    {
      "id": "0.STATS",
      "title": "Statistics notes, part 1",
      "unit": null
@@ -1027,11 +1051,6 @@
      "id": "0.STATSB",
      "title": "Statistics notes, part 2",
      "unit": null
-    },
-    {
-     "id": "0.OREO",
-     "title": "Oreo Lab — measurement, class data, error bars",
-     "unit": null
     }
    ]
   },
@@ -1039,6 +1058,11 @@
    "date": "2027-01-14",
    "pair": false,
    "topics": [
+    {
+     "id": "0.OREO",
+     "title": "Oreo Lab — measurement, class data, error bars",
+     "unit": null
+    },
     {
      "id": "1.1+1.2",
      "title": "Structure of Water and Hydrogen Bonding · Elements of Life",
@@ -1050,14 +1074,9 @@
      "unit": 1
     },
     {
-     "id": "2.2",
-     "title": "Cell Size",
-     "unit": 2
-    },
-    {
-     "id": "2.3+2.4",
-     "title": "Plasma Membrane · Membrane Permeability",
-     "unit": 2
+     "id": "1.5+1.6",
+     "title": "Lipids · Nucleic Acids",
+     "unit": 1
     }
    ]
   },
@@ -1071,18 +1090,18 @@
      "unit": 6
     },
     {
-     "id": "2.5+2.6",
-     "title": "Membrane Transport · Facilitated Diffusion",
+     "id": "2.2",
+     "title": "Cell Size",
+     "unit": 2
+    },
+    {
+     "id": "2.3+2.4",
+     "title": "Plasma Membrane · Membrane Permeability",
      "unit": 2
     },
     {
      "id": "3.1",
      "title": "Enzymes",
-     "unit": 3
-    },
-    {
-     "id": "3.2",
-     "title": "Environmental Impacts on Enzyme Function",
      "unit": 3
     }
    ]
@@ -1095,6 +1114,11 @@
      "id": "6.1",
      "title": "DNA and RNA Structure",
      "unit": 6
+    },
+    {
+     "id": "3.2",
+     "title": "Environmental Impacts on Enzyme Function",
+     "unit": 3
     },
     {
      "id": "INV-13",
@@ -1316,18 +1340,18 @@
      "unit": 7
     },
     {
-     "id": "1.5+1.6",
-     "title": "Lipids · Nucleic Acids",
-     "unit": 1
-    },
-    {
      "id": "1.7",
      "title": "Proteins",
      "unit": 1
     },
     {
-     "id": "2.7",
-     "title": "Tonicity and Osmoregulation",
+     "id": "1.REVIEW",
+     "title": "Unit 1 Review",
+     "unit": 1
+    },
+    {
+     "id": "2.5+2.6",
+     "title": "Membrane Transport · Facilitated Diffusion",
      "unit": 2
     }
    ]
@@ -1690,8 +1714,8 @@
      "unit": 6
     },
     {
-     "id": "INV-4",
-     "title": "Investigation 4 — Diffusion and Osmosis",
+     "id": "2.7",
+     "title": "Tonicity and Osmoregulation",
      "unit": 2
     }
    ]
@@ -1742,8 +1766,8 @@
      "unit": 7
     },
     {
-     "id": "2.8",
-     "title": "Mechanisms of Transport",
+     "id": "INV-4",
+     "title": "Investigation 4 — Diffusion and Osmosis",
      "unit": 2
     }
    ]
@@ -1763,14 +1787,14 @@
      "unit": 8
     },
     {
-     "id": "2.9+2.10",
-     "title": "Cell Compartmentalization · Origins of Compartmentalization",
+     "id": "2.8",
+     "title": "Mechanisms of Transport",
      "unit": 2
     },
     {
-     "id": "3.3",
-     "title": "Cellular Energy",
-     "unit": 3
+     "id": "2.9+2.10",
+     "title": "Cell Compartmentalization · Origins of Compartmentalization",
+     "unit": 2
     }
    ]
   },
@@ -1857,6 +1881,11 @@
    "pair": false,
    "topics": [
     {
+     "id": "3.3",
+     "title": "Cellular Energy",
+     "unit": 3
+    },
+    {
      "id": "3.4",
      "title": "Photosynthesis",
      "unit": 3
@@ -1869,11 +1898,6 @@
     {
      "id": "INV-5",
      "title": "Investigation 5 — Photosynthesis",
-     "unit": 3
-    },
-    {
-     "id": "3.5",
-     "title": "Cellular Respiration",
      "unit": 3
     }
    ]

@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-26 10:10",
+ "generated": "2026-09-02 08:25",
  "exam": "2027-05-03",
  "entries": [
   {
@@ -232,11 +232,11 @@
    ]
   },
   {
-   "id": "1.TEST",
-   "title": "Unit 1 Assessment",
-   "kind": "assessment",
-   "skill": null,
-   "notes": "Progress Check 1 is take-home, due before this test.",
+   "id": "1.REVIEW",
+   "title": "Unit 1 Review",
+   "kind": "topic",
+   "skill": "1.A",
+   "notes": "Essential knowledge quiz, self-scored by section, then one-pager B built in class.",
    "visibility": "student",
    "unit": 1,
    "block": "Chemistry of Life",
@@ -244,6 +244,22 @@
    "end": "2026-09-09",
    "dates": [
     "2026-09-09"
+   ]
+  },
+  {
+   "id": "1.TEST",
+   "title": "Unit 1 Assessment",
+   "kind": "assessment",
+   "skill": null,
+   "notes": "Two days: multiple choice, then free response. Progress Check 1 is take-home, due before day one.",
+   "visibility": "student",
+   "unit": 1,
+   "block": "Chemistry of Life",
+   "start": "2026-09-10",
+   "end": "2026-09-11",
+   "dates": [
+    "2026-09-10",
+    "2026-09-11"
    ]
   },
   {
@@ -255,12 +271,12 @@
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-09-10",
-   "end": "2026-09-14",
+   "start": "2026-09-14",
+   "end": "2026-09-16",
    "dates": [
-    "2026-09-10",
-    "2026-09-11",
-    "2026-09-14"
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16"
    ]
   },
   {
@@ -272,11 +288,11 @@
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-09-15",
-   "end": "2026-09-16",
+   "start": "2026-09-17",
+   "end": "2026-09-18",
    "dates": [
-    "2026-09-15",
-    "2026-09-16"
+    "2026-09-17",
+    "2026-09-18"
    ]
   },
   {
@@ -288,10 +304,10 @@
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-09-17",
-   "end": "2026-09-17",
+   "start": "2026-09-21",
+   "end": "2026-09-21",
    "dates": [
-    "2026-09-17"
+    "2026-09-21"
    ]
   },
   {
@@ -303,11 +319,11 @@
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-09-18",
-   "end": "2026-09-21",
+   "start": "2026-09-22",
+   "end": "2026-09-23",
    "dates": [
-    "2026-09-18",
-    "2026-09-21"
+    "2026-09-22",
+    "2026-09-23"
    ]
   },
   {
@@ -319,12 +335,12 @@
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-09-22",
-   "end": "2026-09-24",
+   "start": "2026-09-24",
+   "end": "2026-09-28",
    "dates": [
-    "2026-09-22",
-    "2026-09-23",
-    "2026-09-24"
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-28"
    ]
   },
   {
@@ -336,10 +352,10 @@
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-09-25",
-   "end": "2026-09-25",
+   "start": "2026-09-29",
+   "end": "2026-09-29",
    "dates": [
-    "2026-09-25"
+    "2026-09-29"
    ]
   },
   {
@@ -351,10 +367,10 @@
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-09-28",
-   "end": "2026-09-28",
+   "start": "2026-09-30",
+   "end": "2026-09-30",
    "dates": [
-    "2026-09-28"
+    "2026-09-30"
    ]
   },
   {
@@ -366,25 +382,10 @@
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-09-29",
-   "end": "2026-09-29",
+   "start": "2026-10-01",
+   "end": "2026-10-01",
    "dates": [
-    "2026-09-29"
-   ]
-  },
-  {
-   "id": "2.FLEX",
-   "title": "Flex day — catch-up, reteach, or lab overflow",
-   "kind": "flex",
-   "skill": null,
-   "notes": null,
-   "visibility": "student",
-   "unit": 2,
-   "block": "Cells",
-   "start": "2026-09-30",
-   "end": "2026-09-30",
-   "dates": [
-    "2026-09-30"
+    "2026-10-01"
    ]
   },
   {
@@ -396,10 +397,10 @@
    "visibility": "student",
    "unit": 2,
    "block": "Cells",
-   "start": "2026-10-01",
-   "end": "2026-10-01",
+   "start": "2026-10-02",
+   "end": "2026-10-02",
    "dates": [
-    "2026-10-01"
+    "2026-10-02"
    ]
   },
   {
@@ -411,12 +412,12 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-10-02",
-   "end": "2026-10-06",
+   "start": "2026-10-05",
+   "end": "2026-10-07",
    "dates": [
-    "2026-10-02",
     "2026-10-05",
-    "2026-10-06"
+    "2026-10-06",
+    "2026-10-07"
    ]
   },
   {
@@ -428,10 +429,10 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-10-07",
-   "end": "2026-10-07",
+   "start": "2026-10-08",
+   "end": "2026-10-08",
    "dates": [
-    "2026-10-07"
+    "2026-10-08"
    ]
   },
   {
@@ -443,11 +444,11 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-10-08",
-   "end": "2026-10-09",
+   "start": "2026-10-09",
+   "end": "2026-10-12",
    "dates": [
-    "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-12"
    ]
   },
   {
@@ -459,10 +460,10 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-10-12",
-   "end": "2026-10-12",
+   "start": "2026-10-13",
+   "end": "2026-10-13",
    "dates": [
-    "2026-10-12"
+    "2026-10-13"
    ]
   },
   {
@@ -474,13 +475,13 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-10-13",
-   "end": "2026-10-16",
+   "start": "2026-10-14",
+   "end": "2026-10-19",
    "dates": [
-    "2026-10-13",
     "2026-10-14",
     "2026-10-15",
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-19"
    ]
   },
   {
@@ -492,11 +493,11 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-10-19",
-   "end": "2026-10-20",
+   "start": "2026-10-20",
+   "end": "2026-10-21",
    "dates": [
-    "2026-10-19",
-    "2026-10-20"
+    "2026-10-20",
+    "2026-10-21"
    ]
   },
   {
@@ -508,13 +509,13 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-10-21",
-   "end": "2026-10-26",
+   "start": "2026-10-22",
+   "end": "2026-10-27",
    "dates": [
-    "2026-10-21",
     "2026-10-22",
     "2026-10-23",
-    "2026-10-26"
+    "2026-10-26",
+    "2026-10-27"
    ]
   },
   {
@@ -526,11 +527,11 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-10-27",
-   "end": "2026-10-28",
+   "start": "2026-10-28",
+   "end": "2026-10-29",
    "dates": [
-    "2026-10-27",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
    ]
   },
   {
@@ -542,10 +543,9 @@
    "visibility": "student",
    "unit": 3,
    "block": "Cellular Energetics",
-   "start": "2026-10-29",
+   "start": "2026-10-30",
    "end": "2026-11-02",
    "dates": [
-    "2026-10-29",
     "2026-10-30",
     "2026-11-02"
    ]
@@ -1470,8 +1470,8 @@
    "lab_id": "INV-4",
    "lab_title": "Investigation 4 — Diffusion and Osmosis",
    "action": "order",
-   "due": "2026-09-04",
-   "lab_date": "2026-09-25",
+   "due": "2026-09-08",
+   "lab_date": "2026-09-29",
    "lead_days": 21,
    "basis": "calendar"
   },
@@ -1479,8 +1479,8 @@
    "lab_id": "INV-4",
    "lab_title": "Investigation 4 — Diffusion and Osmosis",
    "action": "arrive",
-   "due": "2026-09-11",
-   "lab_date": "2026-09-25",
+   "due": "2026-09-15",
+   "lab_date": "2026-09-29",
    "lead_days": 14,
    "basis": "calendar"
   },
@@ -1488,8 +1488,8 @@
    "lab_id": "INV-13",
    "lab_title": "Investigation 13 — Enzyme Activity",
    "action": "order",
-   "due": "2026-09-17",
-   "lab_date": "2026-10-08",
+   "due": "2026-09-18",
+   "lab_date": "2026-10-09",
    "lead_days": 21,
    "basis": "calendar"
   },
@@ -1497,8 +1497,8 @@
    "lab_id": "INV-4",
    "lab_title": "Investigation 4 — Diffusion and Osmosis",
    "action": "bench",
-   "due": "2026-09-23",
-   "lab_date": "2026-09-25",
+   "due": "2026-09-25",
+   "lab_date": "2026-09-29",
    "lead_days": 2,
    "basis": "school"
   },
@@ -1506,8 +1506,8 @@
    "lab_id": "INV-5",
    "lab_title": "Investigation 5 — Photosynthesis",
    "action": "order",
-   "due": "2026-09-28",
-   "lab_date": "2026-10-19",
+   "due": "2026-09-29",
+   "lab_date": "2026-10-20",
    "lead_days": 21,
    "basis": "calendar"
   },
@@ -1515,8 +1515,8 @@
    "lab_id": "INV-13",
    "lab_title": "Investigation 13 — Enzyme Activity",
    "action": "arrive",
-   "due": "2026-10-01",
-   "lab_date": "2026-10-08",
+   "due": "2026-10-02",
+   "lab_date": "2026-10-09",
    "lead_days": 7,
    "basis": "calendar"
   },
@@ -1524,8 +1524,8 @@
    "lab_id": "INV-6",
    "lab_title": "Investigation 6 — Cellular Respiration",
    "action": "order",
-   "due": "2026-10-06",
-   "lab_date": "2026-10-27",
+   "due": "2026-10-07",
+   "lab_date": "2026-10-28",
    "lead_days": 21,
    "basis": "calendar"
   },
@@ -1533,8 +1533,8 @@
    "lab_id": "INV-13",
    "lab_title": "Investigation 13 — Enzyme Activity",
    "action": "bench",
-   "due": "2026-10-06",
-   "lab_date": "2026-10-08",
+   "due": "2026-10-07",
+   "lab_date": "2026-10-09",
    "lead_days": 2,
    "basis": "school"
   },
@@ -1542,8 +1542,8 @@
    "lab_id": "INV-6",
    "lab_title": "Investigation 6 — Cellular Respiration",
    "action": "arrive",
-   "due": "2026-10-13",
-   "lab_date": "2026-10-27",
+   "due": "2026-10-14",
+   "lab_date": "2026-10-28",
    "lead_days": 14,
    "basis": "calendar"
   },
@@ -1552,7 +1552,7 @@
    "lab_title": "Investigation 5 — Photosynthesis",
    "action": "arrive",
    "due": "2026-10-16",
-   "lab_date": "2026-10-19",
+   "lab_date": "2026-10-20",
    "lead_days": 3,
    "basis": "calendar"
   },
@@ -1560,8 +1560,8 @@
    "lab_id": "INV-5",
    "lab_title": "Investigation 5 — Photosynthesis",
    "action": "bench",
-   "due": "2026-10-16",
-   "lab_date": "2026-10-19",
+   "due": "2026-10-19",
+   "lab_date": "2026-10-20",
    "lead_days": 1,
    "basis": "school"
   },
@@ -1569,8 +1569,8 @@
    "lab_id": "INV-6",
    "lab_title": "Investigation 6 — Cellular Respiration",
    "action": "bench",
-   "due": "2026-10-20",
-   "lab_date": "2026-10-27",
+   "due": "2026-10-21",
+   "lab_date": "2026-10-28",
    "lead_days": 5,
    "basis": "school"
   },
