@@ -7,7 +7,6 @@ This repository publishes the calendar. It does not build it.
 | Student page | https://cileapley.github.io/ap-bio-calendar/ |
 | Subscribable feed | https://cileapley.github.io/ap-bio-calendar/calendar.ics |
 | Raw data | https://cileapley.github.io/ap-bio-calendar/calendar.json |
-| Lab prep schedule | https://cileapley.github.io/ap-bio-calendar/prep.html |
 | Lab prep feed | https://cileapley.github.io/ap-bio-calendar/prep.ics |
 
 Everything in `docs/` is generated output, pushed here by `publish.py` in the
