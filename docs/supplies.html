@@ -1,0 +1,190 @@
+<!doctype html><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='robots' content='noindex, nofollow'>
+<title>Supply lookahead</title>
+<style>
+body { font-family: Georgia, serif; margin: 1rem auto; max-width: 42rem;
+       padding: 0 0.75rem; color: #1a1a1a; background: #fdfdfb; }
+h1 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+h2 { font-size: 1.1rem; margin-top: 1.6rem; }
+.row { display: flex; gap: 0.5rem; align-items: flex-start;
+       padding: 0.45rem 0.6rem; border-left: 4px solid #2b50c8;
+       margin: 0.4rem 0; background: #fff; }
+.row.overdue { border-left-color: #c0472e; background: #fdf1ee; }
+.row.arrive { border-left-color: #2e8b3d; }
+.row.copy { border-left-color: #6b4fbb; }
+.row.done { opacity: 0.45; }
+.row input { margin-top: 0.35rem; flex: none; }
+.date { font-weight: bold; }
+.chip { font-size: 0.8rem; color: #555; border: 1px solid #bbb;
+        border-radius: 0.6rem; padding: 0 0.45rem; margin-left: 0.4rem;
+        white-space: nowrap; }
+.details { font-size: 0.9rem; color: #444; margin-top: 0.15rem; }
+.stamp { color: #777; font-size: 0.85rem; margin-top: 0; }
+.stale { background: #fdf1ee; border: 1px solid #c0472e; color: #7a2a18;
+         padding: 0.5rem 0.7rem; margin: 0.8rem 0; }
+.controls { font-size: 0.85rem; color: #555; margin-top: 0.6rem; }
+.empty { color: #777; font-style: italic; }
+</style>
+<h1>Supply lookahead</h1>
+<p class='stamp'>Data built 2026-09-04 · the window below is computed when you open this page. Overdue means no TickTick task should exist unfinished — check before panicking.</p>
+<p class='controls'><label><input type='checkbox' id='show-dismissed'> show what I have checked off</label></p>
+<div id='lists'></div>
+<script>const PAYLOAD = {"built": "2026-09-04", "window": 14, "copyWindow": 42, "staleAfter": 10, "rows": [{"id": "copy:gle:2026-09-07", "date": "2026-09-01", "title": "Copies for the week of Sep 07 — Organization in Organisms", "chip": "copy-room · gle", "details": "Blank model scaffold - 1 per student", "kind": "copy"}, {"id": "copy:apb:2026-09-07", "date": "2026-09-01", "title": "Copies for the week of Sep 07 — Proteins, Unit 1 Review, Unit 1 Assessment", "chip": "copy-room · apb", "details": "Weekly warmup and exit sheet - 1 per student; preview papers - 1 per student; Unit 1 Essential Knowledge Quiz, front and back - 1 per student plus spares", "kind": "copy"}, {"id": "agar-cube-chemistry", "date": "2026-09-08", "title": "Agar (about 100 g jar), NaOH, phenolphthalein (1% ethanolic), nitrile gloves (1 box)", "chip": "online · apb", "details": "For Cell Size on 2026-09-18. Quantities and the revised 0.04 M recipe ride labs/05-agar-cube-lab.md's Preparation section.", "kind": "hand"}, {"id": "copy:apb:2026-09-14", "date": "2026-09-08", "title": "Copies for the week of Sep 14 — Cell Structure and Function, Cell Size", "chip": "copy-room · apb", "details": "Unit 2a notebook packet - 1 per student; weekly warmup and exit sheet - 1 per student; Organelle card sort - 9 sets on card stock; card sort record sheet - 1 per student", "kind": "copy"}, {"id": "copy:gle:2026-09-14", "date": "2026-09-08", "title": "Copies for the week of Sep 14 — Organization in Organisms", "chip": "copy-room · gle", "details": "", "kind": "copy"}, {"id": "prep:order:2026-09-08", "date": "2026-09-08", "title": "Order: Investigation 4 — Diffusion and Osmosis (lab Sep 29)", "chip": "po (kit)", "details": "", "kind": "hand"}, {"id": "copy:gle:2026-09-21", "date": "2026-09-15", "title": "Copies for the week of Sep 21 — Organization in Organisms, Energy Through Carbon", "chip": "copy-room · gle", "details": "", "kind": "copy"}, {"id": "copy:apb:2026-09-21", "date": "2026-09-15", "title": "Copies for the week of Sep 21 — Plasma Membrane · Membrane Permeability, Membrane Transport · Facilitated Diffusion, Tonicity and Osmoregulation", "chip": "copy-room · apb", "details": "", "kind": "copy"}, {"id": "tonicity-week-groceries", "date": "2026-09-16", "title": "4 eggs + 2 spares, 2 large jars, two gallons 5% distilled white vinegar, corn syrup, gummy bears", "chip": "store · apb", "details": "For Cell Size on 2026-09-18. Eggs jar per section at the lab close; vinegar covers 16 baths across two sections plus both jars — 5% specifically.", "kind": "hand"}, {"id": "prep:order:2026-09-18", "date": "2026-09-18", "title": "Order: Investigation 13 — Enzyme Activity (lab Oct 9)", "chip": "po (kit)", "details": "", "kind": "hand"}, {"id": "bilayer-bead-build", "date": "2026-09-19", "title": "Beads and pipe cleaners, class set for 8 tables (about $20-30)", "chip": "store · apb", "details": "For Plasma Membrane · Membrane Permeability on 2026-09-21. The bilayer build's materials list is owed to the teacher with the lesson; buy after it lands.", "kind": "hand"}, {"id": "red-rover-placards", "date": "2026-09-21", "title": "Red Rover particle placard set, class set", "chip": "copy-room · apb", "details": "For Tonicity and Osmoregulation on 2026-09-25. Placard set authored with the water-potential lesson; kinesthetic closer.", "kind": "hand"}, {"id": "copy:gle:2026-09-28", "date": "2026-09-22", "title": "Copies for the week of Sep 28 — Energy Through Carbon", "chip": "copy-room · gle", "details": "", "kind": "copy"}, {"id": "copy:apb:2026-09-28", "date": "2026-09-22", "title": "Copies for the week of Sep 28 — Tonicity and Osmoregulation, Investigation 4 — Diffusion and Osmosis, Mechanisms of Transport, Cell Compartmentalization · Origins of Compartmentalization, Unit 2 Assessment", "chip": "copy-room · apb", "details": "", "kind": "copy"}, {"id": "tonicity-scenario-sort-print", "date": "2026-09-22", "title": "Tonicity scenario sort card sets, 9 sets on card stock + record sheets", "chip": "copy-room · apb", "details": "For Tonicity and Osmoregulation on 2026-09-28. The activity is authored the week before; this is its print clock.", "kind": "hand"}, {"id": "prep:bench:2026-09-25", "date": "2026-09-25", "title": "Prep starts: Investigation 4 — Diffusion and Osmosis (lab Sep 29)", "chip": "bench-prep", "details": "", "kind": "hand"}, {"id": "copy:gle:2026-10-05", "date": "2026-09-29", "title": "Copies for the week of Oct 05 — Energy Through Carbon, Sugar to Structures", "chip": "copy-room · gle", "details": "Weekly warmup and exit sheets - 1 per student; Unit 1.3 notebook packet - 1 per student, duplex", "kind": "copy"}, {"id": "copy:apb:2026-10-05", "date": "2026-09-29", "title": "Copies for the week of Oct 05 — Enzymes, Environmental Impacts on Enzyme Function, Investigation 13 — Enzyme Activity", "chip": "copy-room · apb", "details": "Energy-diagram handout - 1 per student; Rate-versus-substrate-concentration curve handout - 1 per student; Practice set, six items - 1 per student; transfer problem handout - 1 per student", "kind": "copy"}, {"id": "prep:order:2026-09-29", "date": "2026-09-29", "title": "Order: Investigation 5 — Photosynthesis (lab Oct 20)", "chip": "po (kit)", "details": "", "kind": "hand"}, {"id": "copy:apb:2026-10-12", "date": "2026-10-06", "title": "Copies for the week of Oct 12 — Investigation 13 — Enzyme Activity, Cellular Energy, Photosynthesis", "chip": "copy-room · apb", "details": "", "kind": "copy"}, {"id": "copy:gle:2026-10-12", "date": "2026-10-06", "title": "Copies for the week of Oct 12 — Sugar to Structures", "chip": "copy-room · gle", "details": "Class sort-card sets, 24 cards on card stock - 1 set per table of 4; Nutrition labels for the doc camera - 2; Savvas PBL worksheet, printed from Realize - 1 per pair; Savvas 'Gold Rush for Algae' reading, printed from Realize - 1 per student", "kind": "copy"}, {"id": "gle-1-3-food-test-reagents", "date": "2026-10-07", "title": "Benedict's solution (500 mL), iodine/Lugol's solution (250 mL), PREMIXED biuret reagent (500 mL), spot plates x8, brown kraft paper, dropper bottles if short", "chip": "online · gle", "details": "For Sugar to Structures on 2026-10-14. Order fires ONLY if the chem closet check (lab's Open items) comes up short — check a week before the deadline so the lead holds. Premixed biuret specifically: no NaOH mixing on site. Quantities serve 8 groups x 2 sections.", "kind": "hand"}, {"id": "prep:order:2026-10-07", "date": "2026-10-07", "title": "Order: Investigation 6 — Cellular Respiration (lab Oct 28)", "chip": "po (kit)", "details": "", "kind": "hand"}, {"id": "prep:bench:2026-10-07", "date": "2026-10-07", "title": "Prep starts: Investigation 13 — Enzyme Activity (lab Oct 9)", "chip": "bench-prep", "details": "", "kind": "hand"}, {"id": "gle-1-3-food-test-groceries", "date": "2026-10-12", "title": "Glucose (or dextrose powder), cornstarch, 1 dozen eggs, vegetable oil, whole milk, mystery-tray foods (honey, crackers, gelatin, apple juice)", "chip": "store · gle", "details": "For Sugar to Structures on 2026-10-14. Solutions mixed per the lab's Preparation section the day before; egg-white solution morning-of. Keyed to the lab day (unit day 5), so it moves when 1.3 moves.", "kind": "hand"}, {"id": "buy:gle:1.3-d9:1", "date": "2026-10-18", "title": "sticky notes, 2 per student for the gallery walk", "chip": "store · gle", "details": "For Sugar to Structures on 2026-10-20 (gle/unit-1-3-sugar-to-structures/lessons/09-board-meeting-lesson-plan.md).", "kind": "buy"}, {"id": "prep:bench:2026-10-19", "date": "2026-10-19", "title": "Prep starts: Investigation 5 — Photosynthesis (lab Oct 20)", "chip": "bench-prep", "details": "", "kind": "hand"}, {"id": "prep:bench:2026-10-21", "date": "2026-10-21", "title": "Prep starts: Investigation 6 — Cellular Respiration (lab Oct 28)", "chip": "bench-prep", "details": "", "kind": "hand"}, {"id": "prep:order:2026-10-27", "date": "2026-10-27", "title": "Order: Investigation 7 — Cell Division: Mitosis and Meiosis (lab Nov 17)", "chip": "po (kit)", "details": "", "kind": "hand"}, {"id": "prep:bench:2026-11-09", "date": "2026-11-09", "title": "Prep starts: Investigation 7 — Cell Division: Mitosis and Meiosis (lab Nov 17)", "chip": "bench-prep", "details": "", "kind": "hand"}, {"id": "prep:order:2026-11-17", "date": "2026-11-17", "title": "Order: Chi-square corn genetics — monohybrid and dihybrid ear counts (lab Dec 8)", "chip": "po (kit)", "details": "", "kind": "hand"}, {"id": "prep:bench:2026-12-07", "date": "2026-12-07", "title": "Prep starts: Chi-square corn genetics — monohybrid and dihybrid ear counts (lab Dec 8)", "chip": "bench-prep", "details": "", "kind": "hand"}, {"id": "prep:order:2026-12-18", "date": "2026-12-18", "title": "Order: Investigation 8 — Biotechnology: Bacterial Transformation (lab Jan 26)", "chip": "po (kit)", "details": "", "kind": "hand"}, {"id": "prep:bench:2027-01-20", "date": "2027-01-20", "title": "Prep starts: Investigation 8 — Biotechnology: Bacterial Transformation (lab Jan 26)", "chip": "bench-prep", "details": "", "kind": "hand"}, {"id": "prep:order:2027-01-29", "date": "2027-01-29", "title": "Order: Investigation 2 — Mathematical Modeling: Hardy–Weinberg (lab Feb 12)", "chip": "po (kit)", "details": "", "kind": "hand"}, {"id": "prep:bench:2027-02-11", "date": "2027-02-11", "title": "Prep starts: Investigation 2 — Mathematical Modeling: Hardy–Weinberg (lab Feb 12)", "chip": "bench-prep", "details": "", "kind": "hand"}, {"id": "prep:order:2027-02-22", "date": "2027-02-22", "title": "Order: Investigation 12 — Animal Behavior (pillbug choice chambers) (lab Mar 8)", "chip": "po (kit)", "details": "", "kind": "hand"}, {"id": "prep:bench:2027-02-23", "date": "2027-02-23", "title": "Prep starts: Investigation 3 — Comparing DNA Sequences with BLAST (lab Feb 24)", "chip": "bench-prep", "details": "", "kind": "hand"}, {"id": "prep:bench:2027-03-05", "date": "2027-03-05", "title": "Prep starts: Investigation 12 — Animal Behavior (pillbug choice chambers) (lab Mar 8)", "chip": "bench-prep", "details": "", "kind": "hand"}], "arrivals": [{"id": "arrive:2026-08-21:Arrives: Oreo Lab — meas", "date": "2026-08-21", "title": "Arrives: Oreo Lab — measurement, class data, error bars (lab Aug 25)", "chip": "kit arrival", "details": "", "kind": "arrive"}, {"id": "arrive:2026-09-15:Arrives: Investigation 4", "date": "2026-09-15", "title": "Arrives: Investigation 4 — Diffusion and Osmosis (lab Sep 29)", "chip": "kit arrival", "details": "", "kind": "arrive"}, {"id": "arrive:2026-10-02:Arrives: Investigation 1", "date": "2026-10-02", "title": "Arrives: Investigation 13 — Enzyme Activity (lab Oct 9)", "chip": "kit arrival", "details": "", "kind": "arrive"}, {"id": "arrive:2026-10-14:Arrives: Investigation 6", "date": "2026-10-14", "title": "Arrives: Investigation 6 — Cellular Respiration (lab Oct 28)", "chip": "kit arrival", "details": "", "kind": "arrive"}, {"id": "arrive:2026-10-16:Arrives: Investigation 5", "date": "2026-10-16", "title": "Arrives: Investigation 5 — Photosynthesis (lab Oct 20)", "chip": "kit arrival", "details": "", "kind": "arrive"}, {"id": "arrive:2026-11-03:Arrives: Investigation 7", "date": "2026-11-03", "title": "Arrives: Investigation 7 — Cell Division: Mitosis and Meiosis (lab Nov 17)", "chip": "kit arrival", "details": "", "kind": "arrive"}, {"id": "arrive:2026-12-01:Arrives: Chi-square corn", "date": "2026-12-01", "title": "Arrives: Chi-square corn genetics — monohybrid and dihybrid ear counts (lab Dec 8)", "chip": "kit arrival", "details": "", "kind": "arrive"}, {"id": "arrive:2027-01-19:Arrives: Investigation 8", "date": "2027-01-19", "title": "Arrives: Investigation 8 — Biotechnology: Bacterial Transformation (lab Jan 26)", "chip": "kit arrival", "details": "", "kind": "arrive"}, {"id": "arrive:2027-03-05:Arrives: Investigation 1", "date": "2027-03-05", "title": "Arrives: Investigation 12 — Animal Behavior (pillbug choice chambers) (lab Mar 8)", "chip": "kit arrival", "details": "", "kind": "arrive"}]};
+
+const KEY = 'supplies-dismissed-v1';
+
+function midnight(value) {
+  const parts = value.split('-').map(Number);
+  return new Date(parts[0], parts[1] - 1, parts[2]);
+}
+function today() {
+  const now = new Date();
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate());
+}
+function days(from, count) {
+  const out = new Date(from.getTime());
+  out.setDate(out.getDate() + count);
+  return out;
+}
+function label(date) {
+  return date.toDateString().slice(0, 10);
+}
+
+// Dismissals are garbage-collected well after their deadline, not at it: a
+// row you have handled must stay handled once it goes overdue, which is
+// precisely when you least want it back. Row ids are unique per week and per
+// need, so an old click cannot leak into a later instance. Storage is per
+// browser and per machine by design: this is a scratch layer over a generated
+// list, not a done-record.
+const KEEP_DISMISSED_DAYS = 45;
+function loadDismissed() {
+  const now = today();
+  let stored = {};
+  try { stored = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { stored = {}; }
+  const live = {};
+  for (const id in stored) {
+    if (days(midnight(stored[id]), KEEP_DISMISSED_DAYS) >= now) { live[id] = stored[id]; }
+  }
+  saveDismissed(live);
+  return live;
+}
+function saveDismissed(map) {
+  try { localStorage.setItem(KEY, JSON.stringify(map)); } catch (e) { /* private mode */ }
+}
+
+function rowNode(row, dismissed, state) {
+  const node = document.createElement('div');
+  const classes = ['row', row.kind === 'arrive' ? 'arrive' : ''];
+  if (row.overdue) { classes.push('overdue'); }
+  if (row.kind === 'copy') { classes.push('copy'); }
+  if (dismissed[row.id]) { classes.push('done'); }
+  node.className = classes.filter(Boolean).join(' ');
+
+  if (row.kind !== 'arrive') {
+    const box = document.createElement('input');
+    box.type = 'checkbox';
+    box.checked = Boolean(dismissed[row.id]);
+    box.title = 'Handled — hide until this deadline passes';
+    box.addEventListener('change', () => {
+      if (box.checked) { dismissed[row.id] = row.date; } else { delete dismissed[row.id]; }
+      saveDismissed(dismissed);
+      render(state);
+    });
+    node.appendChild(box);
+  }
+
+  const body = document.createElement('div');
+  const head = document.createElement('div');
+  const when = document.createElement('span');
+  when.className = 'date';
+  when.textContent = label(midnight(row.date));
+  head.appendChild(when);
+  head.appendChild(document.createTextNode(' — ' + row.title));
+  const chip = document.createElement('span');
+  chip.className = 'chip';
+  chip.textContent = row.chip;
+  head.appendChild(chip);
+  body.appendChild(head);
+  if (row.details) {
+    const details = document.createElement('div');
+    details.className = 'details';
+    details.textContent = row.details;
+    body.appendChild(details);
+  }
+  node.appendChild(body);
+  return node;
+}
+
+function section(title, rows, dismissed, state, emptyText) {
+  const out = document.createDocumentFragment();
+  const visible = rows.filter(row => state.showDismissed || !dismissed[row.id]);
+  if (!visible.length && !emptyText) { return out; }
+  const heading = document.createElement('h2');
+  heading.textContent = title;
+  out.appendChild(heading);
+  if (!visible.length) {
+    const empty = document.createElement('p');
+    empty.className = 'empty';
+    empty.textContent = emptyText;
+    out.appendChild(empty);
+    return out;
+  }
+  visible.forEach(row => out.appendChild(rowNode(row, dismissed, state)));
+  return out;
+}
+
+function render(state) {
+  const now = today();
+  const horizon = days(now, PAYLOAD.window);
+  const copyHorizon = days(now, PAYLOAD.copyWindow);
+  const dismissed = loadDismissed();
+  const rows = PAYLOAD.rows.map(row => Object.assign({}, row, {
+    overdue: midnight(row.date) < now,
+  }));
+
+  const overdue = rows.filter(row => midnight(row.date) < now);
+  const window_ = rows.filter(row => midnight(row.date) >= now && midnight(row.date) <= horizon);
+  const strip = rows.filter(row => row.kind === 'copy'
+    && midnight(row.date) > horizon && midnight(row.date) <= copyHorizon);
+  const stripIds = new Set(strip.map(row => row.id));
+  const later = rows.filter(row => midnight(row.date) > horizon && !stripIds.has(row.id));
+  const arriving = PAYLOAD.arrivals
+    .map(row => Object.assign({}, row, { overdue: false }))
+    .filter(row => midnight(row.date) >= now && midnight(row.date) <= days(now, PAYLOAD.window + 7));
+
+  const main = document.getElementById('lists');
+  main.textContent = '';
+  const age = Math.round((now - midnight(PAYLOAD.built)) / 86400000);
+  if (age > PAYLOAD.staleAfter) {
+    const warn = document.createElement('div');
+    warn.className = 'stale';
+    warn.textContent = 'This page was built ' + age + ' days ago. The dates below are '
+      + 'computed fresh, but nothing added since then is here — run '
+      + 'tools/build_supplies.py and publish.';
+    main.appendChild(warn);
+  }
+  if (overdue.length) {
+    main.appendChild(section('Overdue — settle or dismiss', overdue, dismissed, state));
+  }
+  main.appendChild(section('Next ' + PAYLOAD.window + ' days', window_, dismissed, state,
+    'Nothing due.'));
+  main.appendChild(section('Copy room — coming up', strip, dismissed, state,
+    'Nothing further out.'));
+  if (arriving.length) {
+    main.appendChild(section('On order — should be arriving', arriving, dismissed, state));
+  }
+  main.appendChild(section('Later this year', later, dismissed, state));
+}
+
+const state = { showDismissed: false };
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('show-dismissed');
+  toggle.addEventListener('change', () => {
+    state.showDismissed = toggle.checked;
+    render(state);
+  });
+  render(state);
+});
+
+</script>
