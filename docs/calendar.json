@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05 13:04",
+  "generated": "2026-09-23 09:37",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -510,7 +510,7 @@
           "title": "Investigation 4 — Diffusion and Osmosis",
           "kind": "lab",
           "skill": null,
-          "notes": "Big Idea 2: Energetics. Single-period run — bags set up in advance.",
+          "notes": "Big Idea 2: Energetics. Single-period run — bags set up in advance. Run from DIY components, not a vendor kit (ruled 2026-09-09) — see supplies.json inv-4-diy-components.",
           "link": null,
           "periods": 1,
           "start": "2026-09-29",
@@ -621,21 +621,6 @@
           ]
         },
         {
-          "id": "INV-13",
-          "title": "Investigation 13 — Enzyme Activity",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 4: System Interactions.",
-          "link": null,
-          "periods": 2,
-          "start": "2026-10-13",
-          "end": "2026-10-14",
-          "dates": [
-            "2026-10-13",
-            "2026-10-14"
-          ]
-        },
-        {
           "id": "3.3",
           "title": "Cellular Energy",
           "kind": "topic",
@@ -643,9 +628,24 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-10-15",
+          "start": "2026-10-13",
+          "end": "2026-10-13",
+          "dates": [
+            "2026-10-13"
+          ]
+        },
+        {
+          "id": "INV-13",
+          "title": "Investigation 13 — Enzyme Activity",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 4: System Interactions.",
+          "link": null,
+          "periods": 2,
+          "start": "2026-10-14",
           "end": "2026-10-15",
           "dates": [
+            "2026-10-14",
             "2026-10-15"
           ]
         },
