@@ -1,12 +1,17 @@
 {
-  "generated": "2026-09-23 09:40",
+  "generated": "2026-09-23 11:38",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
     "school_year": "2026-27",
     "exam_date": "2027-05-03",
     "exam_note": "Session 2 — afternoon, 12 p.m. local",
-    "period_minutes": 60
+    "period_minutes": 57,
+    "bell_minutes": {
+      "default": 57,
+      "monday": 47,
+      "minimum_day": 37
+    }
   },
   "district": {
     "name": "Kern High School District",
@@ -128,14 +133,14 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 115,
+    "content_periods": 116,
     "lab_periods_scheduled": 19,
-    "flex_periods": 7,
+    "flex_periods": 6,
     "lab_periods_required": 40,
     "review_periods": 16,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 92
+    "published_entries": 91
   },
   "blocks": [
     {
@@ -587,8 +592,8 @@
         16
       ],
       "start": "2026-10-07",
-      "end": "2026-11-04",
-      "periods": 21,
+      "end": "2026-11-05",
+      "periods": 22,
       "entries": [
         {
           "id": "3.1",
@@ -732,13 +737,14 @@
           "title": "Unit 3 Assessment",
           "kind": "assessment",
           "skill": null,
-          "notes": "Progress Check 3 is take-home, due before this test.",
+          "notes": "Two days: multiple choice, then free response. Progress Check 3 is take-home, due before day one.",
           "link": null,
-          "periods": 1,
+          "periods": 2,
           "start": "2026-11-04",
-          "end": "2026-11-04",
+          "end": "2026-11-05",
           "dates": [
-            "2026-11-04"
+            "2026-11-04",
+            "2026-11-05"
           ]
         }
       ]
@@ -751,9 +757,9 @@
         10,
         15
       ],
-      "start": "2026-11-05",
+      "start": "2026-11-06",
       "end": "2026-12-01",
-      "periods": 13,
+      "periods": 12,
       "entries": [
         {
           "id": "4.1+4.2",
@@ -763,10 +769,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-05",
-          "end": "2026-11-05",
+          "start": "2026-11-06",
+          "end": "2026-11-06",
           "dates": [
-            "2026-11-05"
+            "2026-11-06"
           ]
         },
         {
@@ -777,12 +783,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-06",
-          "end": "2026-11-10",
+          "start": "2026-11-09",
+          "end": "2026-11-12",
           "dates": [
-            "2026-11-06",
             "2026-11-09",
-            "2026-11-10"
+            "2026-11-10",
+            "2026-11-12"
           ]
         },
         {
@@ -793,11 +799,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-12",
-          "end": "2026-11-13",
+          "start": "2026-11-13",
+          "end": "2026-11-16",
           "dates": [
-            "2026-11-12",
-            "2026-11-13"
+            "2026-11-13",
+            "2026-11-16"
           ]
         },
         {
@@ -808,11 +814,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-16",
-          "end": "2026-11-17",
+          "start": "2026-11-17",
+          "end": "2026-11-18",
           "dates": [
-            "2026-11-16",
-            "2026-11-17"
+            "2026-11-17",
+            "2026-11-18"
           ]
         },
         {
@@ -823,11 +829,11 @@
           "notes": "Big Idea 3: Information Storage and Transmission.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-18",
-          "end": "2026-11-19",
+          "start": "2026-11-19",
+          "end": "2026-11-20",
           "dates": [
-            "2026-11-18",
-            "2026-11-19"
+            "2026-11-19",
+            "2026-11-20"
           ]
         },
         {
@@ -835,20 +841,6 @@
           "title": "Regulation of Cell Cycle",
           "kind": "topic",
           "skill": "6.E",
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-11-20",
-          "end": "2026-11-20",
-          "dates": [
-            "2026-11-20"
-          ]
-        },
-        {
-          "id": "4.FLEX",
-          "title": "Flex day — catch-up, reteach, or lab overflow",
-          "kind": "flex",
-          "skill": null,
           "notes": null,
           "link": null,
           "periods": 1,
