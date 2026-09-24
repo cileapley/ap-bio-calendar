@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23 13:09",
+  "generated": "2026-09-24 05:01",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,14 +133,14 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 118,
+    "content_periods": 117,
     "lab_periods_scheduled": 19,
-    "flex_periods": 4,
+    "flex_periods": 5,
     "lab_periods_required": 40,
     "review_periods": 16,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 86
+    "published_entries": 87
   },
   "blocks": [
     {
@@ -592,8 +592,8 @@
         16
       ],
       "start": "2026-10-07",
-      "end": "2026-11-04",
-      "periods": 21,
+      "end": "2026-11-05",
+      "periods": 22,
       "entries": [
         {
           "id": "3.1",
@@ -719,6 +719,20 @@
           ]
         },
         {
+          "id": "3.FLEX",
+          "title": "Flex day — catch-up, reteach, or lab overflow",
+          "kind": "flex",
+          "skill": null,
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-03",
+          "end": "2026-11-03",
+          "dates": [
+            "2026-11-03"
+          ]
+        },
+        {
           "id": "3.TEST",
           "title": "Unit 3 Assessment",
           "kind": "assessment",
@@ -726,11 +740,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 3 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-03",
-          "end": "2026-11-04",
+          "start": "2026-11-04",
+          "end": "2026-11-05",
           "dates": [
-            "2026-11-03",
-            "2026-11-04"
+            "2026-11-04",
+            "2026-11-05"
           ]
         }
       ]
@@ -743,8 +757,8 @@
         10,
         15
       ],
-      "start": "2026-11-05",
-      "end": "2026-12-01",
+      "start": "2026-11-06",
+      "end": "2026-12-02",
       "periods": 13,
       "entries": [
         {
@@ -755,10 +769,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-05",
-          "end": "2026-11-05",
+          "start": "2026-11-06",
+          "end": "2026-11-06",
           "dates": [
-            "2026-11-05"
+            "2026-11-06"
           ]
         },
         {
@@ -769,12 +783,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-06",
-          "end": "2026-11-10",
+          "start": "2026-11-09",
+          "end": "2026-11-12",
           "dates": [
-            "2026-11-06",
             "2026-11-09",
-            "2026-11-10"
+            "2026-11-10",
+            "2026-11-12"
           ]
         },
         {
@@ -785,11 +799,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-12",
-          "end": "2026-11-13",
+          "start": "2026-11-13",
+          "end": "2026-11-16",
           "dates": [
-            "2026-11-12",
-            "2026-11-13"
+            "2026-11-13",
+            "2026-11-16"
           ]
         },
         {
@@ -800,11 +814,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-16",
-          "end": "2026-11-17",
+          "start": "2026-11-17",
+          "end": "2026-11-18",
           "dates": [
-            "2026-11-16",
-            "2026-11-17"
+            "2026-11-17",
+            "2026-11-18"
           ]
         },
         {
@@ -815,11 +829,11 @@
           "notes": "Big Idea 3: Information Storage and Transmission.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-18",
-          "end": "2026-11-19",
+          "start": "2026-11-19",
+          "end": "2026-11-20",
           "dates": [
-            "2026-11-18",
-            "2026-11-19"
+            "2026-11-19",
+            "2026-11-20"
           ]
         },
         {
@@ -830,10 +844,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-20",
-          "end": "2026-11-20",
+          "start": "2026-11-30",
+          "end": "2026-11-30",
           "dates": [
-            "2026-11-20"
+            "2026-11-30"
           ]
         },
         {
@@ -844,11 +858,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 4 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-30",
-          "end": "2026-12-01",
+          "start": "2026-12-01",
+          "end": "2026-12-02",
           "dates": [
-            "2026-11-30",
-            "2026-12-01"
+            "2026-12-01",
+            "2026-12-02"
           ]
         }
       ]
@@ -861,9 +875,9 @@
         8,
         11
       ],
-      "start": "2026-12-02",
+      "start": "2026-12-03",
       "end": "2026-12-15",
-      "periods": 10,
+      "periods": 9,
       "entries": [
         {
           "id": "5.1+5.2",
@@ -873,10 +887,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-02",
-          "end": "2026-12-02",
+          "start": "2026-12-03",
+          "end": "2026-12-03",
           "dates": [
-            "2026-12-02"
+            "2026-12-03"
           ]
         },
         {
@@ -887,12 +901,12 @@
           "notes": "Includes chi-square analysis.",
           "link": null,
           "periods": 3,
-          "start": "2026-12-03",
-          "end": "2026-12-07",
+          "start": "2026-12-04",
+          "end": "2026-12-08",
           "dates": [
-            "2026-12-03",
             "2026-12-04",
-            "2026-12-07"
+            "2026-12-07",
+            "2026-12-08"
           ]
         },
         {
@@ -903,10 +917,10 @@
           "notes": "Big Idea 3: Information Storage and Transmission. Substitute inquiry lab — counts toward the 25% inquiry-time line, not the per-big-idea minimum.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-08",
-          "end": "2026-12-08",
+          "start": "2026-12-09",
+          "end": "2026-12-09",
           "dates": [
-            "2026-12-08"
+            "2026-12-09"
           ]
         },
         {
@@ -917,11 +931,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-12-09",
-          "end": "2026-12-10",
+          "start": "2026-12-10",
+          "end": "2026-12-11",
           "dates": [
-            "2026-12-09",
-            "2026-12-10"
+            "2026-12-10",
+            "2026-12-11"
           ]
         },
         {
@@ -932,10 +946,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-11",
-          "end": "2026-12-11",
+          "start": "2026-12-14",
+          "end": "2026-12-14",
           "dates": [
-            "2026-12-11"
+            "2026-12-14"
           ]
         },
         {
@@ -943,13 +957,12 @@
           "title": "Unit 5 Assessment",
           "kind": "assessment",
           "skill": null,
-          "notes": "Two days: multiple choice, then free response. Progress Check 5 is take-home, due before day one.",
+          "notes": "One day (ruled 2026-09-24, review row 11: the second day went back to Unit 3 as flex). Progress Check 5 is take-home, due before the test. [check: the one-day shape, MCQ only or MCQ plus a short FRQ, is decided at the Unit 5 spine]",
           "link": null,
-          "periods": 2,
-          "start": "2026-12-14",
+          "periods": 1,
+          "start": "2026-12-15",
           "end": "2026-12-15",
           "dates": [
-            "2026-12-14",
             "2026-12-15"
           ]
         }
