@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24 05:21",
+  "generated": "2026-09-27 09:49",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -525,11 +525,11 @@
           ]
         },
         {
-          "id": "2.8",
-          "title": "Mechanisms of Transport",
+          "id": "2.FRQ",
+          "title": "Guided FRQ Practice",
           "kind": "topic",
-          "skill": "1.B",
-          "notes": null,
+          "skill": "4.A",
+          "notes": "Self-guided on Chromebooks: a Unit 2 long FRQ on the Investigation 4 data, a short FRQ on tonicity, then the Unit 1 FRQ rewrite.",
           "link": null,
           "periods": 1,
           "start": "2026-09-30",
@@ -539,10 +539,10 @@
           ]
         },
         {
-          "id": "2.9+2.10",
-          "title": "Cell Compartmentalization · Origins of Compartmentalization",
+          "id": "2.8",
+          "title": "Mechanisms of Transport",
           "kind": "topic",
-          "skill": "6.E, 6.B",
+          "skill": "1.B",
           "notes": null,
           "link": null,
           "periods": 1,
@@ -553,11 +553,11 @@
           ]
         },
         {
-          "id": "2.REVIEW",
-          "title": "Unit 2 Review",
+          "id": "2.9+2.10",
+          "title": "Cell Compartmentalization · Origins of Compartmentalization",
           "kind": "topic",
-          "skill": "1.A",
-          "notes": "Essential knowledge quiz, self-scored by section; preview paper goes home the night before.",
+          "skill": "6.E, 6.B",
+          "notes": "Essential knowledge quiz 2 on paper, self-scored; preview paper goes home the night before.",
           "link": null,
           "periods": 1,
           "start": "2026-10-02",
