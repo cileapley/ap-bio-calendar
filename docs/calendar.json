@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27 09:49",
+  "generated": "2026-10-01 11:47",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,9 +133,9 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 119,
+    "content_periods": 120,
     "lab_periods_scheduled": 19,
-    "flex_periods": 5,
+    "flex_periods": 4,
     "lab_periods_required": 40,
     "review_periods": 14,
     "conversion_factor": 0.83,
@@ -431,8 +431,8 @@
         13
       ],
       "start": "2026-09-14",
-      "end": "2026-10-06",
-      "periods": 17,
+      "end": "2026-10-07",
+      "periods": 18,
       "entries": [
         {
           "id": "2.1",
@@ -515,7 +515,7 @@
           "title": "Investigation 4 — Diffusion and Osmosis",
           "kind": "lab",
           "skill": null,
-          "notes": "Big Idea 2: Energetics. Single-period run — bags set up in advance. Run from DIY components, not a vendor kit (ruled 2026-09-09) — see supplies.json inv-4-diy-components.",
+          "notes": "Big Idea 2: Energetics. Single-period run — one bag per table and a class data table (ruled 2026-09-28), bags set up in advance. Run from DIY components, not a vendor kit (ruled 2026-09-09) — see supplies.json inv-4-diy-components.",
           "link": null,
           "periods": 1,
           "start": "2026-09-29",
@@ -557,13 +557,27 @@
           "title": "Cell Compartmentalization · Origins of Compartmentalization",
           "kind": "topic",
           "skill": "6.E, 6.B",
-          "notes": "Essential knowledge quiz 2 on paper, self-scored; preview paper goes home the night before.",
+          "notes": "Full notes day; the EK Quiz 2 preview went home at 2.8's close, so the weekend is for studying it (quiz on 2.REVIEW).",
           "link": null,
           "periods": 1,
           "start": "2026-10-02",
           "end": "2026-10-02",
           "dates": [
             "2026-10-02"
+          ]
+        },
+        {
+          "id": "2.REVIEW",
+          "title": "Unit 2 Review",
+          "kind": "topic",
+          "skill": "1.A",
+          "notes": "Essential knowledge quiz 2 on paper, self-scored by section, then the repair page and the one-page rebuild in class. Progress Check 2 is take-home, due before the MCQ.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-10-05",
+          "end": "2026-10-05",
+          "dates": [
+            "2026-10-05"
           ]
         },
         {
@@ -574,11 +588,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 2 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-05",
-          "end": "2026-10-06",
+          "start": "2026-10-06",
+          "end": "2026-10-07",
           "dates": [
-            "2026-10-05",
-            "2026-10-06"
+            "2026-10-06",
+            "2026-10-07"
           ]
         }
       ]
@@ -591,9 +605,9 @@
         12,
         16
       ],
-      "start": "2026-10-07",
+      "start": "2026-10-08",
       "end": "2026-11-05",
-      "periods": 22,
+      "periods": 21,
       "entries": [
         {
           "id": "3.1",
@@ -603,12 +617,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-10-07",
-          "end": "2026-10-09",
+          "start": "2026-10-08",
+          "end": "2026-10-12",
           "dates": [
-            "2026-10-07",
             "2026-10-08",
-            "2026-10-09"
+            "2026-10-09",
+            "2026-10-12"
           ]
         },
         {
@@ -619,10 +633,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-10-12",
-          "end": "2026-10-12",
+          "start": "2026-10-13",
+          "end": "2026-10-13",
           "dates": [
-            "2026-10-12"
+            "2026-10-13"
           ]
         },
         {
@@ -633,10 +647,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-10-13",
-          "end": "2026-10-13",
+          "start": "2026-10-14",
+          "end": "2026-10-14",
           "dates": [
-            "2026-10-13"
+            "2026-10-14"
           ]
         },
         {
@@ -647,11 +661,11 @@
           "notes": "Big Idea 4: System Interactions. DIY floating-disk catalase (yeast and hydrogen peroxide), not a vendor kit (ruled 2026-09-23) — see supplies.json inv-13-diy-online and inv-13-diy-groceries.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-14",
-          "end": "2026-10-15",
+          "start": "2026-10-15",
+          "end": "2026-10-16",
           "dates": [
-            "2026-10-14",
-            "2026-10-15"
+            "2026-10-15",
+            "2026-10-16"
           ]
         },
         {
@@ -662,13 +676,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-16",
-          "end": "2026-10-21",
+          "start": "2026-10-19",
+          "end": "2026-10-22",
           "dates": [
-            "2026-10-16",
             "2026-10-19",
             "2026-10-20",
-            "2026-10-21"
+            "2026-10-21",
+            "2026-10-22"
           ]
         },
         {
@@ -679,11 +693,11 @@
           "notes": "Big Idea 2: Energetics.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-22",
-          "end": "2026-10-23",
+          "start": "2026-10-23",
+          "end": "2026-10-26",
           "dates": [
-            "2026-10-22",
-            "2026-10-23"
+            "2026-10-23",
+            "2026-10-26"
           ]
         },
         {
@@ -694,13 +708,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-26",
-          "end": "2026-10-29",
+          "start": "2026-10-27",
+          "end": "2026-10-30",
           "dates": [
-            "2026-10-26",
             "2026-10-27",
             "2026-10-28",
-            "2026-10-29"
+            "2026-10-29",
+            "2026-10-30"
           ]
         },
         {
@@ -711,24 +725,10 @@
           "notes": "Big Idea 2: Energetics.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-30",
-          "end": "2026-11-02",
-          "dates": [
-            "2026-10-30",
-            "2026-11-02"
-          ]
-        },
-        {
-          "id": "3.FLEX",
-          "title": "Flex day — catch-up, reteach, or lab overflow",
-          "kind": "flex",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-11-03",
+          "start": "2026-11-02",
           "end": "2026-11-03",
           "dates": [
+            "2026-11-02",
             "2026-11-03"
           ]
         },

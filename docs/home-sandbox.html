@@ -252,7 +252,28 @@
       var dt = parse(t.start);
       var wd = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][dt.getDay()];
       var mo = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][dt.getMonth()];
-      document.getElementById("next-test").textContent = t.title + " — " + wd + ", " + mo + " " + dt.getDate();
+      var text = t.title + " — " + wd + ", " + mo + " " + dt.getDate();
+
+      // A two-day test reads as its parts: the review day's quiz, then MCQ, then FRQ.
+      var unit = String(t.id || "").split(".")[0];
+      var parts = [];
+      function day(s) {
+        var d = parse(s);
+        return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][d.getDay()] + " " + (d.getMonth() + 1) + "/" + d.getDate();
+      }
+      if ((t.dates || []).length === 2) {
+        entries.forEach(function (e) {
+          if (e.id === unit + ".REVIEW" && e.start && e.start >= today) {
+            var m = /quiz (\d+)/i.exec(e.notes || "");
+            parts.push("EK Quiz" + (m ? " " + m[1] : "") + " " + day(e.start));
+          }
+        });
+        ["MCQ", "FRQ"].forEach(function (name, i) {
+          if (t.dates[i] >= today) { parts.push(name + " " + day(t.dates[i])); }
+        });
+        text = "Unit " + unit + ": " + parts.join(", ");
+      }
+      document.getElementById("next-test").textContent = text;
     }
   }).catch(function () {
     for (var i = 0; i < 5; i++) {
