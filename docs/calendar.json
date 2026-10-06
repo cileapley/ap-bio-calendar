@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01 11:47",
+  "generated": "2026-10-06 09:19",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,14 +133,14 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 120,
-    "lab_periods_scheduled": 19,
+    "content_periods": 121,
+    "lab_periods_scheduled": 18,
     "flex_periods": 4,
     "lab_periods_required": 40,
     "review_periods": 14,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 89
+    "published_entries": 90
   },
   "blocks": [
     {
@@ -792,6 +792,20 @@
           ]
         },
         {
+          "id": "EK.RETAKE-U4",
+          "title": "EK quiz retake day — choose two (Units 0–3)",
+          "kind": "assessment",
+          "skill": null,
+          "notes": "Each student retakes two EK quizzes of their choice from Units 0-3, online on /ek, 25 minutes each; highest score stands per quiz. Announced 2026-10-12 with every preview paper. Lunch and before-school walk-ins are unchanged.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-13",
+          "end": "2026-11-13",
+          "dates": [
+            "2026-11-13"
+          ]
+        },
+        {
           "id": "4.4",
           "title": "Feedback",
           "kind": "topic",
@@ -799,11 +813,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-13",
-          "end": "2026-11-16",
+          "start": "2026-11-16",
+          "end": "2026-11-17",
           "dates": [
-            "2026-11-13",
-            "2026-11-16"
+            "2026-11-16",
+            "2026-11-17"
           ]
         },
         {
@@ -814,11 +828,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-17",
-          "end": "2026-11-18",
+          "start": "2026-11-18",
+          "end": "2026-11-19",
           "dates": [
-            "2026-11-17",
-            "2026-11-18"
+            "2026-11-18",
+            "2026-11-19"
           ]
         },
         {
@@ -826,13 +840,12 @@
           "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
           "kind": "lab",
           "skill": null,
-          "notes": "Big Idea 3: Information Storage and Transmission.",
+          "notes": "Big Idea 3: Information Storage and Transmission. Single-period run (ruled 2026-10-06; the second day funds the EK retake day).",
           "link": null,
-          "periods": 2,
-          "start": "2026-11-19",
+          "periods": 1,
+          "start": "2026-11-20",
           "end": "2026-11-20",
           "dates": [
-            "2026-11-19",
             "2026-11-20"
           ]
         },
