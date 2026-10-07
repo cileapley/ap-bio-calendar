@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06 09:19",
+  "generated": "2026-10-07 09:13",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -134,13 +134,13 @@
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
     "content_periods": 121,
-    "lab_periods_scheduled": 18,
+    "lab_periods_scheduled": 17,
     "flex_periods": 4,
     "lab_periods_required": 40,
     "review_periods": 14,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 90
+    "published_entries": 91
   },
   "blocks": [
     {
@@ -431,8 +431,8 @@
         13
       ],
       "start": "2026-09-14",
-      "end": "2026-10-07",
-      "periods": 18,
+      "end": "2026-10-09",
+      "periods": 20,
       "entries": [
         {
           "id": "2.1",
@@ -594,6 +594,34 @@
             "2026-10-06",
             "2026-10-07"
           ]
+        },
+        {
+          "id": "2.CATCHUP",
+          "title": "Review and catch-up day",
+          "kind": "review",
+          "skill": null,
+          "notes": "Chromebook work day: the Unit 1 or Unit 2 study guide (earns Friday's MCQ retake), the EK quiz previews, missing work.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-10-08",
+          "end": "2026-10-08",
+          "dates": [
+            "2026-10-08"
+          ]
+        },
+        {
+          "id": "MCQ.RETAKE-Q1",
+          "title": "Retake day — one MCQ (Units 0–2) and EK quizzes",
+          "kind": "assessment",
+          "skill": null,
+          "notes": "One MCQ retake per student, online, gated on that unit's study guide (Unit 0 open to all); EK quizzes on /ek, two at most, 25 minutes each. Higher scores stand and count for Q1.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-10-09",
+          "end": "2026-10-09",
+          "dates": [
+            "2026-10-09"
+          ]
         }
       ]
     },
@@ -605,9 +633,9 @@
         12,
         16
       ],
-      "start": "2026-10-08",
-      "end": "2026-11-05",
-      "periods": 21,
+      "start": "2026-10-12",
+      "end": "2026-11-06",
+      "periods": 20,
       "entries": [
         {
           "id": "3.1",
@@ -617,12 +645,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-10-08",
-          "end": "2026-10-12",
+          "start": "2026-10-12",
+          "end": "2026-10-14",
           "dates": [
-            "2026-10-08",
-            "2026-10-09",
-            "2026-10-12"
+            "2026-10-12",
+            "2026-10-13",
+            "2026-10-14"
           ]
         },
         {
@@ -633,10 +661,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-10-13",
-          "end": "2026-10-13",
+          "start": "2026-10-15",
+          "end": "2026-10-15",
           "dates": [
-            "2026-10-13"
+            "2026-10-15"
           ]
         },
         {
@@ -647,10 +675,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-10-14",
-          "end": "2026-10-14",
+          "start": "2026-10-16",
+          "end": "2026-10-16",
           "dates": [
-            "2026-10-14"
+            "2026-10-16"
           ]
         },
         {
@@ -661,11 +689,11 @@
           "notes": "Big Idea 4: System Interactions. DIY floating-disk catalase (yeast and hydrogen peroxide), not a vendor kit (ruled 2026-09-23) — see supplies.json inv-13-diy-online and inv-13-diy-groceries.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-15",
-          "end": "2026-10-16",
+          "start": "2026-10-19",
+          "end": "2026-10-20",
           "dates": [
-            "2026-10-15",
-            "2026-10-16"
+            "2026-10-19",
+            "2026-10-20"
           ]
         },
         {
@@ -676,13 +704,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-19",
-          "end": "2026-10-22",
+          "start": "2026-10-21",
+          "end": "2026-10-26",
           "dates": [
-            "2026-10-19",
-            "2026-10-20",
             "2026-10-21",
-            "2026-10-22"
+            "2026-10-22",
+            "2026-10-23",
+            "2026-10-26"
           ]
         },
         {
@@ -693,11 +721,11 @@
           "notes": "Big Idea 2: Energetics.",
           "link": null,
           "periods": 2,
-          "start": "2026-10-23",
-          "end": "2026-10-26",
+          "start": "2026-10-27",
+          "end": "2026-10-28",
           "dates": [
-            "2026-10-23",
-            "2026-10-26"
+            "2026-10-27",
+            "2026-10-28"
           ]
         },
         {
@@ -708,13 +736,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-27",
-          "end": "2026-10-30",
+          "start": "2026-10-29",
+          "end": "2026-11-03",
           "dates": [
-            "2026-10-27",
-            "2026-10-28",
             "2026-10-29",
-            "2026-10-30"
+            "2026-10-30",
+            "2026-11-02",
+            "2026-11-03"
           ]
         },
         {
@@ -722,14 +750,13 @@
           "title": "Investigation 6 — Cellular Respiration",
           "kind": "lab",
           "skill": null,
-          "notes": "Big Idea 2: Energetics.",
+          "notes": "Big Idea 2: Energetics. Single-period run (ruled 2026-10-07; the second day funds the 10/9 retake day).",
           "link": null,
-          "periods": 2,
-          "start": "2026-11-02",
-          "end": "2026-11-03",
+          "periods": 1,
+          "start": "2026-11-04",
+          "end": "2026-11-04",
           "dates": [
-            "2026-11-02",
-            "2026-11-03"
+            "2026-11-04"
           ]
         },
         {
@@ -740,11 +767,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 3 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-04",
-          "end": "2026-11-05",
+          "start": "2026-11-05",
+          "end": "2026-11-06",
           "dates": [
-            "2026-11-04",
-            "2026-11-05"
+            "2026-11-05",
+            "2026-11-06"
           ]
         }
       ]
@@ -757,9 +784,9 @@
         10,
         15
       ],
-      "start": "2026-11-06",
+      "start": "2026-11-09",
       "end": "2026-12-02",
-      "periods": 13,
+      "periods": 12,
       "entries": [
         {
           "id": "4.1+4.2",
@@ -769,10 +796,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-06",
-          "end": "2026-11-06",
+          "start": "2026-11-09",
+          "end": "2026-11-09",
           "dates": [
-            "2026-11-06"
+            "2026-11-09"
           ]
         },
         {
@@ -783,25 +810,11 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-09",
-          "end": "2026-11-12",
-          "dates": [
-            "2026-11-09",
-            "2026-11-10",
-            "2026-11-12"
-          ]
-        },
-        {
-          "id": "EK.RETAKE-U4",
-          "title": "EK quiz retake day — choose two (Units 0–3)",
-          "kind": "assessment",
-          "skill": null,
-          "notes": "Each student retakes two EK quizzes of their choice from Units 0-3, online on /ek, 25 minutes each; highest score stands per quiz. Announced 2026-10-12 with every preview paper. Lunch and before-school walk-ins are unchanged.",
-          "link": null,
-          "periods": 1,
-          "start": "2026-11-13",
+          "start": "2026-11-10",
           "end": "2026-11-13",
           "dates": [
+            "2026-11-10",
+            "2026-11-12",
             "2026-11-13"
           ]
         },
@@ -840,7 +853,7 @@
           "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
           "kind": "lab",
           "skill": null,
-          "notes": "Big Idea 3: Information Storage and Transmission. Single-period run (ruled 2026-10-06; the second day funds the EK retake day).",
+          "notes": "Big Idea 3: Information Storage and Transmission. Single-period run (ruled 2026-10-06, kept 2026-10-07).",
           "link": null,
           "periods": 1,
           "start": "2026-11-20",
