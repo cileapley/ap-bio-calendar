@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07 09:13",
+  "generated": "2026-10-07 10:29",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,14 +133,14 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 121,
-    "lab_periods_scheduled": 17,
+    "content_periods": 122,
+    "lab_periods_scheduled": 15,
     "flex_periods": 4,
     "lab_periods_required": 40,
     "review_periods": 14,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 91
+    "published_entries": 92
   },
   "blocks": [
     {
@@ -634,8 +634,8 @@
         16
       ],
       "start": "2026-10-12",
-      "end": "2026-11-06",
-      "periods": 20,
+      "end": "2026-11-05",
+      "periods": 19,
       "entries": [
         {
           "id": "3.1",
@@ -714,21 +714,6 @@
           ]
         },
         {
-          "id": "INV-5",
-          "title": "Investigation 5 — Photosynthesis",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 2: Energetics.",
-          "link": null,
-          "periods": 2,
-          "start": "2026-10-27",
-          "end": "2026-10-28",
-          "dates": [
-            "2026-10-27",
-            "2026-10-28"
-          ]
-        },
-        {
           "id": "3.5",
           "title": "Cellular Respiration",
           "kind": "topic",
@@ -736,13 +721,27 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-29",
-          "end": "2026-11-03",
+          "start": "2026-10-27",
+          "end": "2026-10-30",
           "dates": [
+            "2026-10-27",
+            "2026-10-28",
             "2026-10-29",
-            "2026-10-30",
-            "2026-11-02",
-            "2026-11-03"
+            "2026-10-30"
+          ]
+        },
+        {
+          "id": "3.REVIEW",
+          "title": "Unit 3 Review",
+          "kind": "topic",
+          "skill": "1.A",
+          "notes": "Review day before the lab and the two-day test. Progress Check 3 is take-home, due before the MCQ.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-02",
+          "end": "2026-11-02",
+          "dates": [
+            "2026-11-02"
           ]
         },
         {
@@ -753,10 +752,10 @@
           "notes": "Big Idea 2: Energetics. Single-period run (ruled 2026-10-07; the second day funds the 10/9 retake day).",
           "link": null,
           "periods": 1,
-          "start": "2026-11-04",
-          "end": "2026-11-04",
+          "start": "2026-11-03",
+          "end": "2026-11-03",
           "dates": [
-            "2026-11-04"
+            "2026-11-03"
           ]
         },
         {
@@ -767,11 +766,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 3 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-05",
-          "end": "2026-11-06",
+          "start": "2026-11-04",
+          "end": "2026-11-05",
           "dates": [
-            "2026-11-05",
-            "2026-11-06"
+            "2026-11-04",
+            "2026-11-05"
           ]
         }
       ]
@@ -784,8 +783,8 @@
         10,
         15
       ],
-      "start": "2026-11-09",
-      "end": "2026-12-02",
+      "start": "2026-11-06",
+      "end": "2026-12-01",
       "periods": 12,
       "entries": [
         {
@@ -796,10 +795,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-09",
-          "end": "2026-11-09",
+          "start": "2026-11-06",
+          "end": "2026-11-06",
           "dates": [
-            "2026-11-09"
+            "2026-11-06"
           ]
         },
         {
@@ -810,12 +809,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-10",
-          "end": "2026-11-13",
+          "start": "2026-11-09",
+          "end": "2026-11-12",
           "dates": [
+            "2026-11-09",
             "2026-11-10",
-            "2026-11-12",
-            "2026-11-13"
+            "2026-11-12"
           ]
         },
         {
@@ -826,11 +825,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-16",
-          "end": "2026-11-17",
+          "start": "2026-11-13",
+          "end": "2026-11-16",
           "dates": [
-            "2026-11-16",
-            "2026-11-17"
+            "2026-11-13",
+            "2026-11-16"
           ]
         },
         {
@@ -841,11 +840,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-18",
-          "end": "2026-11-19",
+          "start": "2026-11-17",
+          "end": "2026-11-18",
           "dates": [
-            "2026-11-18",
-            "2026-11-19"
+            "2026-11-17",
+            "2026-11-18"
           ]
         },
         {
@@ -856,10 +855,10 @@
           "notes": "Big Idea 3: Information Storage and Transmission. Single-period run (ruled 2026-10-06, kept 2026-10-07).",
           "link": null,
           "periods": 1,
-          "start": "2026-11-20",
-          "end": "2026-11-20",
+          "start": "2026-11-19",
+          "end": "2026-11-19",
           "dates": [
-            "2026-11-20"
+            "2026-11-19"
           ]
         },
         {
@@ -870,10 +869,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-30",
-          "end": "2026-11-30",
+          "start": "2026-11-20",
+          "end": "2026-11-20",
           "dates": [
-            "2026-11-30"
+            "2026-11-20"
           ]
         },
         {
@@ -884,11 +883,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 4 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-12-01",
-          "end": "2026-12-02",
+          "start": "2026-11-30",
+          "end": "2026-12-01",
           "dates": [
-            "2026-12-01",
-            "2026-12-02"
+            "2026-11-30",
+            "2026-12-01"
           ]
         }
       ]
@@ -901,8 +900,8 @@
         8,
         11
       ],
-      "start": "2026-12-03",
-      "end": "2026-12-15",
+      "start": "2026-12-02",
+      "end": "2026-12-14",
       "periods": 9,
       "entries": [
         {
@@ -913,10 +912,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-03",
-          "end": "2026-12-03",
+          "start": "2026-12-02",
+          "end": "2026-12-02",
           "dates": [
-            "2026-12-03"
+            "2026-12-02"
           ]
         },
         {
@@ -927,12 +926,12 @@
           "notes": "Includes chi-square analysis.",
           "link": null,
           "periods": 3,
-          "start": "2026-12-04",
-          "end": "2026-12-08",
+          "start": "2026-12-03",
+          "end": "2026-12-07",
           "dates": [
+            "2026-12-03",
             "2026-12-04",
-            "2026-12-07",
-            "2026-12-08"
+            "2026-12-07"
           ]
         },
         {
@@ -943,10 +942,10 @@
           "notes": "Big Idea 3: Information Storage and Transmission. Substitute inquiry lab — counts toward the 25% inquiry-time line, not the per-big-idea minimum.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-09",
-          "end": "2026-12-09",
+          "start": "2026-12-08",
+          "end": "2026-12-08",
           "dates": [
-            "2026-12-09"
+            "2026-12-08"
           ]
         },
         {
@@ -957,11 +956,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-12-10",
-          "end": "2026-12-11",
+          "start": "2026-12-09",
+          "end": "2026-12-10",
           "dates": [
-            "2026-12-10",
-            "2026-12-11"
+            "2026-12-09",
+            "2026-12-10"
           ]
         },
         {
@@ -972,10 +971,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-14",
-          "end": "2026-12-14",
+          "start": "2026-12-11",
+          "end": "2026-12-11",
           "dates": [
-            "2026-12-14"
+            "2026-12-11"
           ]
         },
         {
@@ -984,6 +983,31 @@
           "kind": "assessment",
           "skill": null,
           "notes": "One day (ruled 2026-09-24, review row 11: the second day went back to Unit 3 as flex). Progress Check 5 is take-home, due before the test. [check: the one-day shape, MCQ only or MCQ plus a short FRQ, is decided at the Unit 5 spine]",
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-14",
+          "end": "2026-12-14",
+          "dates": [
+            "2026-12-14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semester-1-review",
+      "unit": null,
+      "title": "Semester 1 Review",
+      "weight": null,
+      "start": "2026-12-15",
+      "end": "2026-12-15",
+      "periods": 1,
+      "entries": [
+        {
+          "id": null,
+          "title": "Semester 1 review — cumulative practice before finals",
+          "kind": "review",
+          "skill": null,
+          "notes": null,
           "link": null,
           "periods": 1,
           "start": "2026-12-15",
