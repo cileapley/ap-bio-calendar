@@ -7,7 +7,7 @@ X-WR-CALNAME:AP Biology 2026-27 Lab Prep
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:prep-0-oreo-arrive@apbio-2026-27
-DTSTAMP:20261007T172910Z
+DTSTAMP:20261012T144414Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 TRANSP:TRANSPARENT
@@ -24,7 +24,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-inv-4-order@apbio-2026-27
-DTSTAMP:20261007T172910Z
+DTSTAMP:20261012T144414Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 TRANSP:TRANSPARENT
@@ -38,7 +38,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-inv-4-arrive@apbio-2026-27
-DTSTAMP:20261007T172910Z
+DTSTAMP:20261012T144414Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 TRANSP:TRANSPARENT
@@ -53,7 +53,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-inv-4-bench@apbio-2026-27
-DTSTAMP:20261007T172910Z
+DTSTAMP:20261012T144414Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 TRANSP:TRANSPARENT
@@ -69,7 +69,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-inv-13-order@apbio-2026-27
-DTSTAMP:20261007T172910Z
+DTSTAMP:20261012T144414Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 TRANSP:TRANSPARENT
@@ -82,22 +82,8 @@ DESCRIPTION:Order: Investigation 13 — Enzyme Activity (lab Oct 19)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:prep-inv-6-order@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-TRANSP:TRANSPARENT
-SUMMARY:Order: Investigation 6 — Cellular Respiration (lab Nov 3)
-DESCRIPTION:21 calendar days before 2026-11-03.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P6DT15H
-DESCRIPTION:Order: Investigation 6 — Cellular Respiration (lab Nov 3)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:prep-inv-13-arrive@apbio-2026-27
-DTSTAMP:20261007T172910Z
+DTSTAMP:20261012T144414Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 TRANSP:TRANSPARENT
@@ -111,7 +97,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-inv-13-bench@apbio-2026-27
-DTSTAMP:20261007T172910Z
+DTSTAMP:20261012T144414Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 TRANSP:TRANSPARENT
@@ -125,274 +111,378 @@ DESCRIPTION:Prep starts: Investigation 13 — Enzyme Activity (lab Oct 19
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:prep-inv-6-arrive@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
-TRANSP:TRANSPARENT
-SUMMARY:Arrives: Investigation 6 — Cellular Respiration (lab Nov 3)
-DESCRIPTION:14 calendar days before 2026-11-03.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P2DT15H
-DESCRIPTION:Arrives: Investigation 6 — Cellular Respiration (lab Nov 3)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-inv-6-bench@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
-TRANSP:TRANSPARENT
-SUMMARY:Prep starts: Investigation 6 — Cellular Respiration (lab Nov 3)
-DESCRIPTION:5 school days before 2026-11-03.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15H
-DESCRIPTION:Prep starts: Investigation 6 — Cellular Respiration (lab No
- v 3)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-inv-7-order@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
-TRANSP:TRANSPARENT
-SUMMARY:Order: Investigation 7 — Cell Division: Mitosis and Meiosis (la
- b Nov 19)
-DESCRIPTION:21 calendar days before 2026-11-19.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P6DT15H
-DESCRIPTION:Order: Investigation 7 — Cell Division: Mitosis and Meiosis
-  (lab Nov 19)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-inv-7-arrive@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-TRANSP:TRANSPARENT
-SUMMARY:Arrives: Investigation 7 — Cell Division: Mitosis and Meiosis (
- lab Nov 19)
-DESCRIPTION:14 calendar days before 2026-11-19.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P2DT15H
-DESCRIPTION:Arrives: Investigation 7 — Cell Division: Mitosis and Meios
- is (lab Nov 19)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-inv-7-bench@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-TRANSP:TRANSPARENT
-SUMMARY:Prep starts: Investigation 7 — Cell Division: Mitosis and Meios
- is (lab Nov 19)
-DESCRIPTION:5 school days before 2026-11-19.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15H
-DESCRIPTION:Prep starts: Investigation 7 — Cell Division: Mitosis and M
- eiosis (lab Nov 19)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-5-corn-order@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
-TRANSP:TRANSPARENT
-SUMMARY:Order: Chi-square corn genetics — monohybrid and dihybrid ear c
- ounts (lab Dec 8)
-DESCRIPTION:21 calendar days before 2026-12-08.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P6DT15H
-DESCRIPTION:Order: Chi-square corn genetics — monohybrid and dihybrid e
- ar counts (lab Dec 8)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-5-corn-arrive@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261202
-TRANSP:TRANSPARENT
-SUMMARY:Arrives: Chi-square corn genetics — monohybrid and dihybrid ear
-  counts (lab Dec 8)
-DESCRIPTION:7 calendar days before 2026-12-08.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P2DT15H
-DESCRIPTION:Arrives: Chi-square corn genetics — monohybrid and dihybrid
-  ear counts (lab Dec 8)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-5-corn-bench@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261207
-DTEND;VALUE=DATE:20261208
-TRANSP:TRANSPARENT
-SUMMARY:Prep starts: Chi-square corn genetics — monohybrid and dihybrid
-  ear counts (lab Dec 8)
-DESCRIPTION:1 school days before 2026-12-08.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15H
-DESCRIPTION:Prep starts: Chi-square corn genetics — monohybrid and dihy
- brid ear counts (lab Dec 8)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-inv-8-order@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261219
-TRANSP:TRANSPARENT
-SUMMARY:Order: Investigation 8 — Biotechnology: Bacterial Transformatio
- n (lab Jan 27)
-DESCRIPTION:28 calendar days before 2027-01-27. Moved back 12 day(s) from
-  2026-12-30 to land on a school day.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P6DT15H
-DESCRIPTION:Order: Investigation 8 — Biotechnology: Bacterial Transform
- ation (lab Jan 27)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-inv-8-arrive@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20270120
-DTEND;VALUE=DATE:20270121
-TRANSP:TRANSPARENT
-SUMMARY:Arrives: Investigation 8 — Biotechnology: Bacterial Transformat
- ion (lab Jan 27)
-DESCRIPTION:7 calendar days before 2027-01-27.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P2DT15H
-DESCRIPTION:Arrives: Investigation 8 — Biotechnology: Bacterial Transfo
- rmation (lab Jan 27)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-inv-8-bench@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20270121
-DTEND;VALUE=DATE:20270122
-TRANSP:TRANSPARENT
-SUMMARY:Prep starts: Investigation 8 — Biotechnology: Bacterial Transfo
- rmation (lab Jan 27)
-DESCRIPTION:3 school days before 2027-01-27.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15H
-DESCRIPTION:Prep starts: Investigation 8 — Biotechnology: Bacterial Tra
- nsformation (lab Jan 27)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:prep-inv-2-order@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20270202
-DTEND;VALUE=DATE:20270203
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
 TRANSP:TRANSPARENT
 SUMMARY:Order: Investigation 2 — Mathematical Modeling: Hardy–Weinber
- g (lab Feb 16)
-DESCRIPTION:14 calendar days before 2027-02-16.
+ g (lab Feb 11)
+DESCRIPTION:14 calendar days before 2027-02-11.
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P6DT15H
 DESCRIPTION:Order: Investigation 2 — Mathematical Modeling: Hardy–Wei
- nberg (lab Feb 16)
+ nberg (lab Feb 11)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-inv-2-bench@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20270212
-DTEND;VALUE=DATE:20270213
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
 TRANSP:TRANSPARENT
 SUMMARY:Prep starts: Investigation 2 — Mathematical Modeling: Hardy–W
- einberg (lab Feb 16)
-DESCRIPTION:1 school days before 2027-02-16.
+ einberg (lab Feb 11)
+DESCRIPTION:1 school days before 2027-02-11.
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT15H
 DESCRIPTION:Prep starts: Investigation 2 — Mathematical Modeling: Hardy
- –Weinberg (lab Feb 16)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:prep-inv-12-order@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20270223
-DTEND;VALUE=DATE:20270224
-TRANSP:TRANSPARENT
-SUMMARY:Order: Investigation 12 — Animal Behavior (pillbug choice chamb
- ers) (lab Mar 9)
-DESCRIPTION:14 calendar days before 2027-03-09.
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P6DT15H
-DESCRIPTION:Order: Investigation 12 — Animal Behavior (pillbug choice c
- hambers) (lab Mar 9)
+ –Weinberg (lab Feb 11)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-inv-3-bench@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20270224
-DTEND;VALUE=DATE:20270225
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
 TRANSP:TRANSPARENT
 SUMMARY:Prep starts: Investigation 3 — Comparing DNA Sequences with BLA
- ST (lab Feb 25)
-DESCRIPTION:1 school days before 2027-02-25.
+ ST (lab Feb 23)
+DESCRIPTION:1 school days before 2027-02-23.
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT15H
 DESCRIPTION:Prep starts: Investigation 3 — Comparing DNA Sequences with
-  BLAST (lab Feb 25)
+  BLAST (lab Feb 23)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-5-order@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+TRANSP:TRANSPARENT
+SUMMARY:Order: Investigation 5 — Photosynthesis (lab May 5)
+DESCRIPTION:21 calendar days before 2027-05-05.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P6DT15H
+DESCRIPTION:Order: Investigation 5 — Photosynthesis (lab May 5)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-6-order@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+TRANSP:TRANSPARENT
+SUMMARY:Order: Investigation 6 — Cellular Respiration (lab May 7)
+DESCRIPTION:21 calendar days before 2027-05-07.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P6DT15H
+DESCRIPTION:Order: Investigation 6 — Cellular Respiration (lab May 7)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-8-order@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+TRANSP:TRANSPARENT
+SUMMARY:Order: Investigation 8 — Biotechnology: Bacterial Transformatio
+ n (lab May 14)
+DESCRIPTION:28 calendar days before 2027-05-14.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P6DT15H
+DESCRIPTION:Order: Investigation 8 — Biotechnology: Bacterial Transform
+ ation (lab May 14)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-7-order@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+TRANSP:TRANSPARENT
+SUMMARY:Order: Investigation 7 — Cell Division: Mitosis and Meiosis (la
+ b May 11)
+DESCRIPTION:21 calendar days before 2027-05-11.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P6DT15H
+DESCRIPTION:Order: Investigation 7 — Cell Division: Mitosis and Meiosis
+  (lab May 11)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-5-corn-order@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+TRANSP:TRANSPARENT
+SUMMARY:Order: Chi-square corn genetics — monohybrid and dihybrid ear c
+ ounts (lab May 13)
+DESCRIPTION:21 calendar days before 2027-05-13.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P6DT15H
+DESCRIPTION:Order: Chi-square corn genetics — monohybrid and dihybrid e
+ ar counts (lab May 13)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-6-arrive@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+TRANSP:TRANSPARENT
+SUMMARY:Arrives: Investigation 6 — Cellular Respiration (lab May 7)
+DESCRIPTION:14 calendar days before 2027-05-07.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P2DT15H
+DESCRIPTION:Arrives: Investigation 6 — Cellular Respiration (lab May 7)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-13b-order@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+TRANSP:TRANSPARENT
+SUMMARY:Order: Investigation 13\, day 2 — enzyme activity: temperature 
+ or pH (lab May 4)
+DESCRIPTION:7 calendar days before 2027-05-04.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P6DT15H
+DESCRIPTION:Order: Investigation 13\, day 2 — enzyme activity: temperat
+ ure or pH (lab May 4)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-7-arrive@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270427
+DTEND;VALUE=DATE:20270428
+TRANSP:TRANSPARENT
+SUMMARY:Arrives: Investigation 7 — Cell Division: Mitosis and Meiosis (
+ lab May 11)
+DESCRIPTION:14 calendar days before 2027-05-11.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P2DT15H
+DESCRIPTION:Arrives: Investigation 7 — Cell Division: Mitosis and Meios
+ is (lab May 11)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-13b-arrive@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+TRANSP:TRANSPARENT
+SUMMARY:Arrives: Investigation 13\, day 2 — enzyme activity: temperatur
+ e or pH (lab May 4)
+DESCRIPTION:4 calendar days before 2027-05-04.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P2DT15H
+DESCRIPTION:Arrives: Investigation 13\, day 2 — enzyme activity: temper
+ ature or pH (lab May 4)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-5-arrive@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+TRANSP:TRANSPARENT
+SUMMARY:Arrives: Investigation 5 — Photosynthesis (lab May 5)
+DESCRIPTION:3 calendar days before 2027-05-05. Moved back 2 day(s) from 2
+ 027-05-02 to land on a school day.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P2DT15H
+DESCRIPTION:Arrives: Investigation 5 — Photosynthesis (lab May 5)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-13b-bench@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+TRANSP:TRANSPARENT
+SUMMARY:Prep starts: Investigation 13\, day 2 — enzyme activity: temper
+ ature or pH (lab May 4)
+DESCRIPTION:2 school days before 2027-05-04.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Prep starts: Investigation 13\, day 2 — enzyme activity: te
+ mperature or pH (lab May 4)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-6-bench@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+TRANSP:TRANSPARENT
+SUMMARY:Prep starts: Investigation 6 — Cellular Respiration (lab May 7)
+DESCRIPTION:5 school days before 2027-05-07.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Prep starts: Investigation 6 — Cellular Respiration (lab Ma
+ y 7)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-12-order@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+TRANSP:TRANSPARENT
+SUMMARY:Order: Investigation 12 — Animal Behavior (pillbug choice chamb
+ ers) (lab May 18)
+DESCRIPTION:14 calendar days before 2027-05-18.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P6DT15H
+DESCRIPTION:Order: Investigation 12 — Animal Behavior (pillbug choice c
+ hambers) (lab May 18)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-5-bench@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+TRANSP:TRANSPARENT
+SUMMARY:Prep starts: Investigation 5 — Photosynthesis (lab May 5)
+DESCRIPTION:1 school days before 2027-05-05.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Prep starts: Investigation 5 — Photosynthesis (lab May 5)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-7-bench@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+TRANSP:TRANSPARENT
+SUMMARY:Prep starts: Investigation 7 — Cell Division: Mitosis and Meios
+ is (lab May 11)
+DESCRIPTION:5 school days before 2027-05-11.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Prep starts: Investigation 7 — Cell Division: Mitosis and M
+ eiosis (lab May 11)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-5-corn-arrive@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+TRANSP:TRANSPARENT
+SUMMARY:Arrives: Chi-square corn genetics — monohybrid and dihybrid ear
+  counts (lab May 13)
+DESCRIPTION:7 calendar days before 2027-05-13.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P2DT15H
+DESCRIPTION:Arrives: Chi-square corn genetics — monohybrid and dihybrid
+  ear counts (lab May 13)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-8-arrive@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+TRANSP:TRANSPARENT
+SUMMARY:Arrives: Investigation 8 — Biotechnology: Bacterial Transformat
+ ion (lab May 14)
+DESCRIPTION:7 calendar days before 2027-05-14.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P2DT15H
+DESCRIPTION:Arrives: Investigation 8 — Biotechnology: Bacterial Transfo
+ rmation (lab May 14)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-inv-8-bench@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+TRANSP:TRANSPARENT
+SUMMARY:Prep starts: Investigation 8 — Biotechnology: Bacterial Transfo
+ rmation (lab May 14)
+DESCRIPTION:3 school days before 2027-05-14.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Prep starts: Investigation 8 — Biotechnology: Bacterial Tra
+ nsformation (lab May 14)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:prep-5-corn-bench@apbio-2026-27
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+TRANSP:TRANSPARENT
+SUMMARY:Prep starts: Chi-square corn genetics — monohybrid and dihybrid
+  ear counts (lab May 13)
+DESCRIPTION:1 school days before 2027-05-13.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15H
+DESCRIPTION:Prep starts: Chi-square corn genetics — monohybrid and dihy
+ brid ear counts (lab May 13)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-inv-12-arrive@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20270305
-DTEND;VALUE=DATE:20270306
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270515
 TRANSP:TRANSPARENT
 SUMMARY:Arrives: Investigation 12 — Animal Behavior (pillbug choice cha
- mbers) (lab Mar 9)
-DESCRIPTION:3 calendar days before 2027-03-09. Moved back 1 day(s) from 2
- 027-03-06 to land on a school day.
+ mbers) (lab May 18)
+DESCRIPTION:3 calendar days before 2027-05-18. Moved back 1 day(s) from 2
+ 027-05-15 to land on a school day.
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P2DT15H
 DESCRIPTION:Arrives: Investigation 12 — Animal Behavior (pillbug choice
-  chambers) (lab Mar 9)
+  chambers) (lab May 18)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:prep-inv-12-bench@apbio-2026-27
-DTSTAMP:20261007T172910Z
-DTSTART;VALUE=DATE:20270308
-DTEND;VALUE=DATE:20270309
+DTSTAMP:20261012T144414Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270518
 TRANSP:TRANSPARENT
 SUMMARY:Prep starts: Investigation 12 — Animal Behavior (pillbug choice
-  chambers) (lab Mar 9)
-DESCRIPTION:1 school days before 2027-03-09.
+  chambers) (lab May 18)
+DESCRIPTION:1 school days before 2027-05-18.
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT15H
 DESCRIPTION:Prep starts: Investigation 12 — Animal Behavior (pillbug ch
- oice chambers) (lab Mar 9)
+ oice chambers) (lab May 18)
 END:VALARM
 END:VEVENT
 END:VCALENDAR

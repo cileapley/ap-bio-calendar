@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07 10:29",
+  "generated": "2026-10-12 07:44",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,14 +133,14 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 122,
-    "lab_periods_scheduled": 15,
+    "content_periods": 125,
+    "lab_periods_scheduled": 19,
     "flex_periods": 4,
     "lab_periods_required": 40,
-    "review_periods": 14,
+    "review_periods": 17,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 92
+    "published_entries": 96
   },
   "blocks": [
     {
@@ -634,8 +634,8 @@
         16
       ],
       "start": "2026-10-12",
-      "end": "2026-11-05",
-      "periods": 19,
+      "end": "2026-11-03",
+      "periods": 17,
       "entries": [
         {
           "id": "3.1",
@@ -686,14 +686,13 @@
           "title": "Investigation 13 — Enzyme Activity",
           "kind": "lab",
           "skill": null,
-          "notes": "Big Idea 4: System Interactions. DIY floating-disk catalase (yeast and hydrogen peroxide), not a vendor kit (ruled 2026-09-23) — see supplies.json inv-13-diy-online and inv-13-diy-groceries.",
+          "notes": "Big Idea 4: System Interactions. One day: the five-concentration floating-disk series (the temperature/pH day runs after the AP exam). DIY floating-disk catalase (yeast and hydrogen peroxide), not a vendor kit (ruled 2026-09-23) — see supplies.json inv-13-diy-online and inv-13-diy-groceries.",
           "link": null,
-          "periods": 2,
+          "periods": 1,
           "start": "2026-10-19",
-          "end": "2026-10-20",
+          "end": "2026-10-19",
           "dates": [
-            "2026-10-19",
-            "2026-10-20"
+            "2026-10-19"
           ]
         },
         {
@@ -701,16 +700,16 @@
           "title": "Photosynthesis",
           "kind": "topic",
           "skill": "6.B",
-          "notes": null,
+          "notes": "EK Quiz 1 (3.1-3.3) at the bell of day one; the preview goes home the class before.",
           "link": null,
           "periods": 4,
-          "start": "2026-10-21",
-          "end": "2026-10-26",
+          "start": "2026-10-20",
+          "end": "2026-10-23",
           "dates": [
+            "2026-10-20",
             "2026-10-21",
             "2026-10-22",
-            "2026-10-23",
-            "2026-10-26"
+            "2026-10-23"
           ]
         },
         {
@@ -721,13 +720,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-27",
-          "end": "2026-10-30",
+          "start": "2026-10-26",
+          "end": "2026-10-29",
           "dates": [
+            "2026-10-26",
             "2026-10-27",
             "2026-10-28",
-            "2026-10-29",
-            "2026-10-30"
+            "2026-10-29"
           ]
         },
         {
@@ -735,27 +734,13 @@
           "title": "Unit 3 Review",
           "kind": "topic",
           "skill": "1.A",
-          "notes": "Review day before the lab and the two-day test. Progress Check 3 is take-home, due before the MCQ.",
+          "notes": "EK Quiz 2 (3.4-3.5) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 3 is take-home, due before the MCQ.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-02",
-          "end": "2026-11-02",
+          "start": "2026-10-30",
+          "end": "2026-10-30",
           "dates": [
-            "2026-11-02"
-          ]
-        },
-        {
-          "id": "INV-6",
-          "title": "Investigation 6 — Cellular Respiration",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 2: Energetics. Single-period run (ruled 2026-10-07; the second day funds the 10/9 retake day).",
-          "link": null,
-          "periods": 1,
-          "start": "2026-11-03",
-          "end": "2026-11-03",
-          "dates": [
-            "2026-11-03"
+            "2026-10-30"
           ]
         },
         {
@@ -766,11 +751,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 3 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-04",
-          "end": "2026-11-05",
+          "start": "2026-11-02",
+          "end": "2026-11-03",
           "dates": [
-            "2026-11-04",
-            "2026-11-05"
+            "2026-11-02",
+            "2026-11-03"
           ]
         }
       ]
@@ -783,8 +768,8 @@
         10,
         15
       ],
-      "start": "2026-11-06",
-      "end": "2026-12-01",
+      "start": "2026-11-04",
+      "end": "2026-11-20",
       "periods": 12,
       "entries": [
         {
@@ -795,10 +780,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-06",
-          "end": "2026-11-06",
+          "start": "2026-11-04",
+          "end": "2026-11-04",
           "dates": [
-            "2026-11-06"
+            "2026-11-04"
           ]
         },
         {
@@ -809,12 +794,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-09",
-          "end": "2026-11-12",
+          "start": "2026-11-05",
+          "end": "2026-11-09",
           "dates": [
-            "2026-11-09",
-            "2026-11-10",
-            "2026-11-12"
+            "2026-11-05",
+            "2026-11-06",
+            "2026-11-09"
           ]
         },
         {
@@ -822,6 +807,21 @@
           "title": "Feedback",
           "kind": "topic",
           "skill": "6.E",
+          "notes": "EK Quiz 1 (4.1-4.3) at the bell of day one; the preview goes home the class before.",
+          "link": null,
+          "periods": 2,
+          "start": "2026-11-10",
+          "end": "2026-11-12",
+          "dates": [
+            "2026-11-10",
+            "2026-11-12"
+          ]
+        },
+        {
+          "id": "4.5",
+          "title": "Cell Cycle",
+          "kind": "topic",
+          "skill": "4.B, 5.A",
           "notes": null,
           "link": null,
           "periods": 2,
@@ -833,35 +833,6 @@
           ]
         },
         {
-          "id": "4.5",
-          "title": "Cell Cycle",
-          "kind": "topic",
-          "skill": "4.B, 5.A",
-          "notes": null,
-          "link": null,
-          "periods": 2,
-          "start": "2026-11-17",
-          "end": "2026-11-18",
-          "dates": [
-            "2026-11-17",
-            "2026-11-18"
-          ]
-        },
-        {
-          "id": "INV-7",
-          "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 3: Information Storage and Transmission. Single-period run (ruled 2026-10-06, kept 2026-10-07).",
-          "link": null,
-          "periods": 1,
-          "start": "2026-11-19",
-          "end": "2026-11-19",
-          "dates": [
-            "2026-11-19"
-          ]
-        },
-        {
           "id": "4.6",
           "title": "Regulation of Cell Cycle",
           "kind": "topic",
@@ -869,10 +840,24 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-20",
-          "end": "2026-11-20",
+          "start": "2026-11-17",
+          "end": "2026-11-17",
           "dates": [
-            "2026-11-20"
+            "2026-11-17"
+          ]
+        },
+        {
+          "id": "4.REVIEW",
+          "title": "Unit 4 Review",
+          "kind": "topic",
+          "skill": "1.A",
+          "notes": "EK Quiz 2 (4.4-4.6) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 4 is take-home, due before the MCQ.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-18",
+          "end": "2026-11-18",
+          "dates": [
+            "2026-11-18"
           ]
         },
         {
@@ -883,11 +868,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 4 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-30",
-          "end": "2026-12-01",
+          "start": "2026-11-19",
+          "end": "2026-11-20",
           "dates": [
-            "2026-11-30",
-            "2026-12-01"
+            "2026-11-19",
+            "2026-11-20"
           ]
         }
       ]
@@ -900,9 +885,9 @@
         8,
         11
       ],
-      "start": "2026-12-02",
-      "end": "2026-12-14",
-      "periods": 9,
+      "start": "2026-11-30",
+      "end": "2026-12-11",
+      "periods": 10,
       "entries": [
         {
           "id": "5.1+5.2",
@@ -912,10 +897,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-02",
-          "end": "2026-12-02",
+          "start": "2026-11-30",
+          "end": "2026-11-30",
           "dates": [
-            "2026-12-02"
+            "2026-11-30"
           ]
         },
         {
@@ -926,26 +911,12 @@
           "notes": "Includes chi-square analysis.",
           "link": null,
           "periods": 3,
-          "start": "2026-12-03",
-          "end": "2026-12-07",
+          "start": "2026-12-01",
+          "end": "2026-12-03",
           "dates": [
-            "2026-12-03",
-            "2026-12-04",
-            "2026-12-07"
-          ]
-        },
-        {
-          "id": "5.CORN",
-          "title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 3: Information Storage and Transmission. Substitute inquiry lab — counts toward the 25% inquiry-time line, not the per-big-idea minimum.",
-          "link": null,
-          "periods": 1,
-          "start": "2026-12-08",
-          "end": "2026-12-08",
-          "dates": [
-            "2026-12-08"
+            "2026-12-01",
+            "2026-12-02",
+            "2026-12-03"
           ]
         },
         {
@@ -953,14 +924,14 @@
           "title": "Non-Mendelian Genetics",
           "kind": "topic",
           "skill": "5.A, 5.C",
-          "notes": null,
+          "notes": "EK Quiz 1 (5.1-5.3) at the bell of day one; the preview goes home the class before.",
           "link": null,
           "periods": 2,
-          "start": "2026-12-09",
-          "end": "2026-12-10",
+          "start": "2026-12-04",
+          "end": "2026-12-07",
           "dates": [
-            "2026-12-09",
-            "2026-12-10"
+            "2026-12-04",
+            "2026-12-07"
           ]
         },
         {
@@ -971,10 +942,24 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-11",
-          "end": "2026-12-11",
+          "start": "2026-12-08",
+          "end": "2026-12-08",
           "dates": [
-            "2026-12-11"
+            "2026-12-08"
+          ]
+        },
+        {
+          "id": "5.REVIEW",
+          "title": "Unit 5 Review",
+          "kind": "topic",
+          "skill": "1.A",
+          "notes": "EK Quiz 2 (5.4-5.5) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 5 is take-home, due before the MCQ.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-09",
+          "end": "2026-12-09",
+          "dates": [
+            "2026-12-09"
           ]
         },
         {
@@ -982,13 +967,14 @@
           "title": "Unit 5 Assessment",
           "kind": "assessment",
           "skill": null,
-          "notes": "One day (ruled 2026-09-24, review row 11: the second day went back to Unit 3 as flex). Progress Check 5 is take-home, due before the test. [check: the one-day shape, MCQ only or MCQ plus a short FRQ, is decided at the Unit 5 spine]",
+          "notes": "Two days: multiple choice, then free response. Progress Check 5 is take-home, due before day one.",
           "link": null,
-          "periods": 1,
-          "start": "2026-12-14",
-          "end": "2026-12-14",
+          "periods": 2,
+          "start": "2026-12-10",
+          "end": "2026-12-11",
           "dates": [
-            "2026-12-14"
+            "2026-12-10",
+            "2026-12-11"
           ]
         }
       ]
@@ -998,9 +984,9 @@
       "unit": null,
       "title": "Semester 1 Review",
       "weight": null,
-      "start": "2026-12-15",
+      "start": "2026-12-14",
       "end": "2026-12-15",
-      "periods": 1,
+      "periods": 2,
       "entries": [
         {
           "id": null,
@@ -1009,10 +995,11 @@
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 1,
-          "start": "2026-12-15",
+          "periods": 2,
+          "start": "2026-12-14",
           "end": "2026-12-15",
           "dates": [
+            "2026-12-14",
             "2026-12-15"
           ]
         }
@@ -1054,8 +1041,8 @@
         16
       ],
       "start": "2027-01-04",
-      "end": "2027-02-02",
-      "periods": 20,
+      "end": "2027-01-29",
+      "periods": 18,
       "entries": [
         {
           "id": "EK.RESIT-S2",
@@ -1190,21 +1177,6 @@
           ]
         },
         {
-          "id": "INV-8",
-          "title": "Investigation 8 — Biotechnology: Bacterial Transformation",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 3: Information Storage and Transmission.",
-          "link": null,
-          "periods": 2,
-          "start": "2027-01-27",
-          "end": "2027-01-28",
-          "dates": [
-            "2027-01-27",
-            "2027-01-28"
-          ]
-        },
-        {
           "id": "6.FLEX",
           "title": "Flex day — catch-up, reteach, or lab overflow",
           "kind": "flex",
@@ -1212,10 +1184,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-01-29",
-          "end": "2027-01-29",
+          "start": "2027-01-27",
+          "end": "2027-01-27",
           "dates": [
-            "2027-01-29"
+            "2027-01-27"
           ]
         },
         {
@@ -1226,11 +1198,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 6 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2027-02-01",
-          "end": "2027-02-02",
+          "start": "2027-01-28",
+          "end": "2027-01-29",
           "dates": [
-            "2027-02-01",
-            "2027-02-02"
+            "2027-01-28",
+            "2027-01-29"
           ]
         }
       ]
@@ -1243,8 +1215,8 @@
         13,
         20
       ],
-      "start": "2027-02-03",
-      "end": "2027-03-05",
+      "start": "2027-02-01",
+      "end": "2027-03-03",
       "periods": 21,
       "entries": [
         {
@@ -1255,11 +1227,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-02-03",
-          "end": "2027-02-04",
+          "start": "2027-02-01",
+          "end": "2027-02-02",
           "dates": [
-            "2027-02-03",
-            "2027-02-04"
+            "2027-02-01",
+            "2027-02-02"
           ]
         },
         {
@@ -1270,10 +1242,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-02-05",
-          "end": "2027-02-05",
+          "start": "2027-02-03",
+          "end": "2027-02-03",
           "dates": [
-            "2027-02-05"
+            "2027-02-03"
           ]
         },
         {
@@ -1284,10 +1256,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-02-09",
-          "end": "2027-02-09",
+          "start": "2027-02-04",
+          "end": "2027-02-04",
           "dates": [
-            "2027-02-09"
+            "2027-02-04"
           ]
         },
         {
@@ -1298,12 +1270,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2027-02-10",
-          "end": "2027-02-12",
+          "start": "2027-02-05",
+          "end": "2027-02-10",
           "dates": [
-            "2027-02-10",
-            "2027-02-11",
-            "2027-02-12"
+            "2027-02-05",
+            "2027-02-09",
+            "2027-02-10"
           ]
         },
         {
@@ -1314,11 +1286,11 @@
           "notes": "Big Idea 1: Evolution.",
           "link": null,
           "periods": 2,
-          "start": "2027-02-16",
-          "end": "2027-02-17",
+          "start": "2027-02-11",
+          "end": "2027-02-12",
           "dates": [
-            "2027-02-16",
-            "2027-02-17"
+            "2027-02-11",
+            "2027-02-12"
           ]
         },
         {
@@ -1329,10 +1301,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-02-18",
-          "end": "2027-02-18",
+          "start": "2027-02-16",
+          "end": "2027-02-16",
           "dates": [
-            "2027-02-18"
+            "2027-02-16"
           ]
         },
         {
@@ -1343,10 +1315,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-02-19",
-          "end": "2027-02-19",
+          "start": "2027-02-17",
+          "end": "2027-02-17",
           "dates": [
-            "2027-02-19"
+            "2027-02-17"
           ]
         },
         {
@@ -1357,12 +1329,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2027-02-22",
-          "end": "2027-02-24",
+          "start": "2027-02-18",
+          "end": "2027-02-22",
           "dates": [
-            "2027-02-22",
-            "2027-02-23",
-            "2027-02-24"
+            "2027-02-18",
+            "2027-02-19",
+            "2027-02-22"
           ]
         },
         {
@@ -1373,11 +1345,11 @@
           "notes": "Big Idea 1: Evolution. Computer-based, no consumables.",
           "link": null,
           "periods": 2,
-          "start": "2027-02-25",
-          "end": "2027-02-26",
+          "start": "2027-02-23",
+          "end": "2027-02-24",
           "dates": [
-            "2027-02-25",
-            "2027-02-26"
+            "2027-02-23",
+            "2027-02-24"
           ]
         },
         {
@@ -1388,10 +1360,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-03-01",
-          "end": "2027-03-01",
+          "start": "2027-02-25",
+          "end": "2027-02-25",
           "dates": [
-            "2027-03-01"
+            "2027-02-25"
           ]
         },
         {
@@ -1402,10 +1374,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-03-02",
-          "end": "2027-03-02",
+          "start": "2027-02-26",
+          "end": "2027-02-26",
           "dates": [
-            "2027-03-02"
+            "2027-02-26"
           ]
         },
         {
@@ -1416,10 +1388,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-03-03",
-          "end": "2027-03-03",
+          "start": "2027-03-01",
+          "end": "2027-03-01",
           "dates": [
-            "2027-03-03"
+            "2027-03-01"
           ]
         },
         {
@@ -1430,11 +1402,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 7 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2027-03-04",
-          "end": "2027-03-05",
+          "start": "2027-03-02",
+          "end": "2027-03-03",
           "dates": [
-            "2027-03-04",
-            "2027-03-05"
+            "2027-03-02",
+            "2027-03-03"
           ]
         }
       ]
@@ -1447,9 +1419,9 @@
         10,
         15
       ],
-      "start": "2027-03-08",
-      "end": "2027-04-09",
-      "periods": 19,
+      "start": "2027-03-04",
+      "end": "2027-04-06",
+      "periods": 18,
       "entries": [
         {
           "id": "8.1",
@@ -1459,24 +1431,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-03-08",
-          "end": "2027-03-08",
+          "start": "2027-03-04",
+          "end": "2027-03-04",
           "dates": [
-            "2027-03-08"
-          ]
-        },
-        {
-          "id": "INV-12",
-          "title": "Investigation 12 — Animal Behavior (pillbug choice chambers)",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 4: System Interactions. Brings Big Idea 4 to the 2-lab minimum.",
-          "link": null,
-          "periods": 1,
-          "start": "2027-03-09",
-          "end": "2027-03-09",
-          "dates": [
-            "2027-03-09"
+            "2027-03-04"
           ]
         },
         {
@@ -1487,13 +1445,13 @@
           "notes": "Biogeochemical cycles were added here in the 2025 CED.",
           "link": null,
           "periods": 4,
-          "start": "2027-03-10",
-          "end": "2027-03-15",
+          "start": "2027-03-05",
+          "end": "2027-03-10",
           "dates": [
-            "2027-03-10",
-            "2027-03-11",
-            "2027-03-12",
-            "2027-03-15"
+            "2027-03-05",
+            "2027-03-08",
+            "2027-03-09",
+            "2027-03-10"
           ]
         },
         {
@@ -1504,11 +1462,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-03-16",
-          "end": "2027-03-17",
+          "start": "2027-03-11",
+          "end": "2027-03-12",
           "dates": [
-            "2027-03-16",
-            "2027-03-17"
+            "2027-03-11",
+            "2027-03-12"
           ]
         },
         {
@@ -1519,11 +1477,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-03-18",
-          "end": "2027-03-19",
+          "start": "2027-03-15",
+          "end": "2027-03-16",
           "dates": [
-            "2027-03-18",
-            "2027-03-19"
+            "2027-03-15",
+            "2027-03-16"
           ]
         },
         {
@@ -1534,12 +1492,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2027-03-30",
-          "end": "2027-04-01",
+          "start": "2027-03-17",
+          "end": "2027-03-19",
           "dates": [
-            "2027-03-30",
-            "2027-03-31",
-            "2027-04-01"
+            "2027-03-17",
+            "2027-03-18",
+            "2027-03-19"
           ]
         },
         {
@@ -1550,11 +1508,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-04-02",
-          "end": "2027-04-05",
+          "start": "2027-03-30",
+          "end": "2027-03-31",
           "dates": [
-            "2027-04-02",
-            "2027-04-05"
+            "2027-03-30",
+            "2027-03-31"
           ]
         },
         {
@@ -1565,10 +1523,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-04-06",
-          "end": "2027-04-06",
+          "start": "2027-04-01",
+          "end": "2027-04-01",
           "dates": [
-            "2027-04-06"
+            "2027-04-01"
           ]
         },
         {
@@ -1579,10 +1537,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-04-07",
-          "end": "2027-04-07",
+          "start": "2027-04-02",
+          "end": "2027-04-02",
           "dates": [
-            "2027-04-07"
+            "2027-04-02"
           ]
         },
         {
@@ -1593,11 +1551,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 8 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2027-04-08",
-          "end": "2027-04-09",
+          "start": "2027-04-05",
+          "end": "2027-04-06",
           "dates": [
-            "2027-04-08",
-            "2027-04-09"
+            "2027-04-05",
+            "2027-04-06"
           ]
         }
       ]
@@ -1607,9 +1565,9 @@
       "unit": null,
       "title": "AP Exam Review",
       "weight": null,
-      "start": "2027-04-12",
+      "start": "2027-04-07",
       "end": "2027-04-30",
-      "periods": 15,
+      "periods": 18,
       "entries": [
         {
           "id": "EK.RESIT-REVIEW",
@@ -1619,10 +1577,10 @@
           "notes": "Mandatory for everyone (ruled 2026-09-09; calendared 2026-09-24, review row 6). Separate Canvas assignments; highest score stands inside this sitting. Its tallies steer the review days that follow (formative loop).",
           "link": null,
           "periods": 1,
-          "start": "2027-04-12",
-          "end": "2027-04-12",
+          "start": "2027-04-07",
+          "end": "2027-04-07",
           "dates": [
-            "2027-04-12"
+            "2027-04-07"
           ]
         },
         {
@@ -1632,10 +1590,13 @@
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 14,
-          "start": "2027-04-13",
+          "periods": 17,
+          "start": "2027-04-08",
           "end": "2027-04-30",
           "dates": [
+            "2027-04-08",
+            "2027-04-09",
+            "2027-04-12",
             "2027-04-13",
             "2027-04-14",
             "2027-04-15",
@@ -1664,27 +1625,118 @@
       "periods": 18,
       "entries": [
         {
+          "id": "INV-13B",
+          "title": "Investigation 13, day 2 — enzyme activity: temperature or pH",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 4: System Interactions. The group-chosen condition from the 3A pages; Day 1 ran 10/19.",
+          "link": null,
+          "periods": 1,
+          "start": "2027-05-04",
+          "end": "2027-05-04",
+          "dates": [
+            "2027-05-04"
+          ]
+        },
+        {
+          "id": "INV-5",
+          "title": "Investigation 5 — Photosynthesis",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 2: Energetics. Leaf-disk lab; the house insert and decks 12-13 are built.",
+          "link": null,
+          "periods": 2,
+          "start": "2027-05-05",
+          "end": "2027-05-06",
+          "dates": [
+            "2027-05-05",
+            "2027-05-06"
+          ]
+        },
+        {
+          "id": "INV-6",
+          "title": "Investigation 6 — Cellular Respiration",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 2: Energetics.",
+          "link": null,
+          "periods": 2,
+          "start": "2027-05-07",
+          "end": "2027-05-10",
+          "dates": [
+            "2027-05-07",
+            "2027-05-10"
+          ]
+        },
+        {
+          "id": "INV-7",
+          "title": "Investigation 7 — Cell Division: Mitosis and Meiosis",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 3: Information Storage and Transmission.",
+          "link": null,
+          "periods": 2,
+          "start": "2027-05-11",
+          "end": "2027-05-12",
+          "dates": [
+            "2027-05-11",
+            "2027-05-12"
+          ]
+        },
+        {
+          "id": "5.CORN",
+          "title": "Chi-square corn genetics — monohybrid and dihybrid ear counts",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 3: Information Storage and Transmission. Substitute inquiry lab.",
+          "link": null,
+          "periods": 1,
+          "start": "2027-05-13",
+          "end": "2027-05-13",
+          "dates": [
+            "2027-05-13"
+          ]
+        },
+        {
+          "id": "INV-8",
+          "title": "Investigation 8 — Biotechnology: Bacterial Transformation",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 3: Information Storage and Transmission.",
+          "link": null,
+          "periods": 2,
+          "start": "2027-05-14",
+          "end": "2027-05-17",
+          "dates": [
+            "2027-05-14",
+            "2027-05-17"
+          ]
+        },
+        {
+          "id": "INV-12",
+          "title": "Investigation 12 — Animal Behavior (pillbug choice chambers)",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 4: System Interactions.",
+          "link": null,
+          "periods": 1,
+          "start": "2027-05-18",
+          "end": "2027-05-18",
+          "dates": [
+            "2027-05-18"
+          ]
+        },
+        {
           "id": null,
           "title": "Post-exam project",
           "kind": "review",
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 18,
-          "start": "2027-05-04",
+          "periods": 7,
+          "start": "2027-05-19",
           "end": "2027-05-27",
           "dates": [
-            "2027-05-04",
-            "2027-05-05",
-            "2027-05-06",
-            "2027-05-07",
-            "2027-05-10",
-            "2027-05-11",
-            "2027-05-12",
-            "2027-05-13",
-            "2027-05-14",
-            "2027-05-17",
-            "2027-05-18",
             "2027-05-19",
             "2027-05-20",
             "2027-05-21",
