@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12 07:44",
+  "generated": "2026-10-18 21:46",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,14 +133,14 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 125,
+    "content_periods": 126,
     "lab_periods_scheduled": 19,
     "flex_periods": 4,
     "lab_periods_required": 40,
     "review_periods": 17,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 96
+    "published_entries": 95
   },
   "blocks": [
     {
@@ -634,8 +634,8 @@
         16
       ],
       "start": "2026-10-12",
-      "end": "2026-11-03",
-      "periods": 17,
+      "end": "2026-11-05",
+      "periods": 19,
       "entries": [
         {
           "id": "3.1",
@@ -682,17 +682,32 @@
           ]
         },
         {
-          "id": "INV-13",
-          "title": "Investigation 13 — Enzyme Activity",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 4: System Interactions. One day: the five-concentration floating-disk series (the temperature/pH day runs after the AP exam). DIY floating-disk catalase (yeast and hydrogen peroxide), not a vendor kit (ruled 2026-09-23) — see supplies.json inv-13-diy-online and inv-13-diy-groceries.",
+          "id": "3.FRQ",
+          "title": "FRQ practice — graphing and data",
+          "kind": "topic",
+          "skill": "4.A, 4.B",
+          "notes": "One period: three or four released graphing and data items from the FRQ Skills Practice packet, on Kami or paper, turned in on Canvas for completion.",
           "link": null,
           "periods": 1,
           "start": "2026-10-19",
           "end": "2026-10-19",
           "dates": [
             "2026-10-19"
+          ]
+        },
+        {
+          "id": "INV-13",
+          "title": "Investigation 13 — Enzyme Activity",
+          "kind": "lab",
+          "skill": null,
+          "notes": "Big Idea 4: System Interactions. Two wet days. Day 6: catalase floating disks in five peroxide concentrations, three trials each, groups of four with rotating jobs, onto 3A pp. 13-15; class means and 2 SEM in Live Pool. Day 7: temperature and pH on pp. 16-17. Goggles both days.",
+          "link": null,
+          "periods": 2,
+          "start": "2026-10-20",
+          "end": "2026-10-21",
+          "dates": [
+            "2026-10-20",
+            "2026-10-21"
           ]
         },
         {
@@ -703,13 +718,13 @@
           "notes": "EK Quiz 1 (3.1-3.3) at the bell of day one; the preview goes home the class before.",
           "link": null,
           "periods": 4,
-          "start": "2026-10-20",
-          "end": "2026-10-23",
+          "start": "2026-10-22",
+          "end": "2026-10-27",
           "dates": [
-            "2026-10-20",
-            "2026-10-21",
             "2026-10-22",
-            "2026-10-23"
+            "2026-10-23",
+            "2026-10-26",
+            "2026-10-27"
           ]
         },
         {
@@ -720,13 +735,13 @@
           "notes": null,
           "link": null,
           "periods": 4,
-          "start": "2026-10-26",
-          "end": "2026-10-29",
+          "start": "2026-10-28",
+          "end": "2026-11-02",
           "dates": [
-            "2026-10-26",
-            "2026-10-27",
             "2026-10-28",
-            "2026-10-29"
+            "2026-10-29",
+            "2026-10-30",
+            "2026-11-02"
           ]
         },
         {
@@ -737,10 +752,10 @@
           "notes": "EK Quiz 2 (3.4-3.5) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 3 is take-home, due before the MCQ.",
           "link": null,
           "periods": 1,
-          "start": "2026-10-30",
-          "end": "2026-10-30",
+          "start": "2026-11-03",
+          "end": "2026-11-03",
           "dates": [
-            "2026-10-30"
+            "2026-11-03"
           ]
         },
         {
@@ -751,11 +766,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 3 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-02",
-          "end": "2026-11-03",
+          "start": "2026-11-04",
+          "end": "2026-11-05",
           "dates": [
-            "2026-11-02",
-            "2026-11-03"
+            "2026-11-04",
+            "2026-11-05"
           ]
         }
       ]
@@ -768,8 +783,8 @@
         10,
         15
       ],
-      "start": "2026-11-04",
-      "end": "2026-11-20",
+      "start": "2026-11-06",
+      "end": "2026-12-01",
       "periods": 12,
       "entries": [
         {
@@ -780,10 +795,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-04",
-          "end": "2026-11-04",
+          "start": "2026-11-06",
+          "end": "2026-11-06",
           "dates": [
-            "2026-11-04"
+            "2026-11-06"
           ]
         },
         {
@@ -794,12 +809,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-05",
-          "end": "2026-11-09",
+          "start": "2026-11-09",
+          "end": "2026-11-12",
           "dates": [
-            "2026-11-05",
-            "2026-11-06",
-            "2026-11-09"
+            "2026-11-09",
+            "2026-11-10",
+            "2026-11-12"
           ]
         },
         {
@@ -810,11 +825,11 @@
           "notes": "EK Quiz 1 (4.1-4.3) at the bell of day one; the preview goes home the class before.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-10",
-          "end": "2026-11-12",
+          "start": "2026-11-13",
+          "end": "2026-11-16",
           "dates": [
-            "2026-11-10",
-            "2026-11-12"
+            "2026-11-13",
+            "2026-11-16"
           ]
         },
         {
@@ -825,11 +840,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-13",
-          "end": "2026-11-16",
+          "start": "2026-11-17",
+          "end": "2026-11-18",
           "dates": [
-            "2026-11-13",
-            "2026-11-16"
+            "2026-11-17",
+            "2026-11-18"
           ]
         },
         {
@@ -840,10 +855,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-17",
-          "end": "2026-11-17",
+          "start": "2026-11-19",
+          "end": "2026-11-19",
           "dates": [
-            "2026-11-17"
+            "2026-11-19"
           ]
         },
         {
@@ -854,10 +869,10 @@
           "notes": "EK Quiz 2 (4.4-4.6) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 4 is take-home, due before the MCQ.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-18",
-          "end": "2026-11-18",
+          "start": "2026-11-20",
+          "end": "2026-11-20",
           "dates": [
-            "2026-11-18"
+            "2026-11-20"
           ]
         },
         {
@@ -868,11 +883,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 4 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-19",
-          "end": "2026-11-20",
+          "start": "2026-11-30",
+          "end": "2026-12-01",
           "dates": [
-            "2026-11-19",
-            "2026-11-20"
+            "2026-11-30",
+            "2026-12-01"
           ]
         }
       ]
@@ -885,8 +900,8 @@
         8,
         11
       ],
-      "start": "2026-11-30",
-      "end": "2026-12-11",
+      "start": "2026-12-02",
+      "end": "2026-12-15",
       "periods": 10,
       "entries": [
         {
@@ -897,10 +912,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-30",
-          "end": "2026-11-30",
+          "start": "2026-12-02",
+          "end": "2026-12-02",
           "dates": [
-            "2026-11-30"
+            "2026-12-02"
           ]
         },
         {
@@ -911,12 +926,12 @@
           "notes": "Includes chi-square analysis.",
           "link": null,
           "periods": 3,
-          "start": "2026-12-01",
-          "end": "2026-12-03",
+          "start": "2026-12-03",
+          "end": "2026-12-07",
           "dates": [
-            "2026-12-01",
-            "2026-12-02",
-            "2026-12-03"
+            "2026-12-03",
+            "2026-12-04",
+            "2026-12-07"
           ]
         },
         {
@@ -927,11 +942,11 @@
           "notes": "EK Quiz 1 (5.1-5.3) at the bell of day one; the preview goes home the class before.",
           "link": null,
           "periods": 2,
-          "start": "2026-12-04",
-          "end": "2026-12-07",
+          "start": "2026-12-08",
+          "end": "2026-12-09",
           "dates": [
-            "2026-12-04",
-            "2026-12-07"
+            "2026-12-08",
+            "2026-12-09"
           ]
         },
         {
@@ -942,10 +957,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-08",
-          "end": "2026-12-08",
+          "start": "2026-12-10",
+          "end": "2026-12-10",
           "dates": [
-            "2026-12-08"
+            "2026-12-10"
           ]
         },
         {
@@ -956,10 +971,10 @@
           "notes": "EK Quiz 2 (5.4-5.5) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 5 is take-home, due before the MCQ.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-09",
-          "end": "2026-12-09",
+          "start": "2026-12-11",
+          "end": "2026-12-11",
           "dates": [
-            "2026-12-09"
+            "2026-12-11"
           ]
         },
         {
@@ -968,32 +983,6 @@
           "kind": "assessment",
           "skill": null,
           "notes": "Two days: multiple choice, then free response. Progress Check 5 is take-home, due before day one.",
-          "link": null,
-          "periods": 2,
-          "start": "2026-12-10",
-          "end": "2026-12-11",
-          "dates": [
-            "2026-12-10",
-            "2026-12-11"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "semester-1-review",
-      "unit": null,
-      "title": "Semester 1 Review",
-      "weight": null,
-      "start": "2026-12-14",
-      "end": "2026-12-15",
-      "periods": 2,
-      "entries": [
-        {
-          "id": null,
-          "title": "Semester 1 review — cumulative practice before finals",
-          "kind": "review",
-          "skill": null,
-          "notes": null,
           "link": null,
           "periods": 2,
           "start": "2026-12-14",
@@ -1625,20 +1614,6 @@
       "periods": 18,
       "entries": [
         {
-          "id": "INV-13B",
-          "title": "Investigation 13, day 2 — enzyme activity: temperature or pH",
-          "kind": "lab",
-          "skill": null,
-          "notes": "Big Idea 4: System Interactions. The group-chosen condition from the 3A pages; Day 1 ran 10/19.",
-          "link": null,
-          "periods": 1,
-          "start": "2027-05-04",
-          "end": "2027-05-04",
-          "dates": [
-            "2027-05-04"
-          ]
-        },
-        {
           "id": "INV-5",
           "title": "Investigation 5 — Photosynthesis",
           "kind": "lab",
@@ -1646,11 +1621,11 @@
           "notes": "Big Idea 2: Energetics. Leaf-disk lab; the house insert and decks 12-13 are built.",
           "link": null,
           "periods": 2,
-          "start": "2027-05-05",
-          "end": "2027-05-06",
+          "start": "2027-05-04",
+          "end": "2027-05-05",
           "dates": [
-            "2027-05-05",
-            "2027-05-06"
+            "2027-05-04",
+            "2027-05-05"
           ]
         },
         {
@@ -1661,11 +1636,11 @@
           "notes": "Big Idea 2: Energetics.",
           "link": null,
           "periods": 2,
-          "start": "2027-05-07",
-          "end": "2027-05-10",
+          "start": "2027-05-06",
+          "end": "2027-05-07",
           "dates": [
-            "2027-05-07",
-            "2027-05-10"
+            "2027-05-06",
+            "2027-05-07"
           ]
         },
         {
@@ -1676,11 +1651,11 @@
           "notes": "Big Idea 3: Information Storage and Transmission.",
           "link": null,
           "periods": 2,
-          "start": "2027-05-11",
-          "end": "2027-05-12",
+          "start": "2027-05-10",
+          "end": "2027-05-11",
           "dates": [
-            "2027-05-11",
-            "2027-05-12"
+            "2027-05-10",
+            "2027-05-11"
           ]
         },
         {
@@ -1691,10 +1666,10 @@
           "notes": "Big Idea 3: Information Storage and Transmission. Substitute inquiry lab.",
           "link": null,
           "periods": 1,
-          "start": "2027-05-13",
-          "end": "2027-05-13",
+          "start": "2027-05-12",
+          "end": "2027-05-12",
           "dates": [
-            "2027-05-13"
+            "2027-05-12"
           ]
         },
         {
@@ -1705,11 +1680,11 @@
           "notes": "Big Idea 3: Information Storage and Transmission.",
           "link": null,
           "periods": 2,
-          "start": "2027-05-14",
-          "end": "2027-05-17",
+          "start": "2027-05-13",
+          "end": "2027-05-14",
           "dates": [
-            "2027-05-14",
-            "2027-05-17"
+            "2027-05-13",
+            "2027-05-14"
           ]
         },
         {
@@ -1720,10 +1695,10 @@
           "notes": "Big Idea 4: System Interactions.",
           "link": null,
           "periods": 1,
-          "start": "2027-05-18",
-          "end": "2027-05-18",
+          "start": "2027-05-17",
+          "end": "2027-05-17",
           "dates": [
-            "2027-05-18"
+            "2027-05-17"
           ]
         },
         {
@@ -1733,10 +1708,11 @@
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 7,
-          "start": "2027-05-19",
+          "periods": 8,
+          "start": "2027-05-18",
           "end": "2027-05-27",
           "dates": [
+            "2027-05-18",
             "2027-05-19",
             "2027-05-20",
             "2027-05-21",
