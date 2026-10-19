@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19 10:03",
+  "generated": "2026-10-19 11:10",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -1051,7 +1051,7 @@
           "title": "EK quiz re-sit — semester 2 (Units 0–5, fresh grade)",
           "kind": "assessment",
           "skill": null,
-          "notes": "Mandatory for everyone (ruled 2026-09-09; calendared 2026-09-24, review row 6). Separate Canvas assignments from the fall sittings; highest score stands inside this sitting. [check: how the fall EK quizzes fit one period is the Unit 6 spine's call]",
+          "notes": "Mandatory for everyone. One 20-question online sitting covering Units 0 to 5: two questions from each fall EK quiz, one taken from that quiz's preview paper (you already have it) and one new. A separate Canvas grade from the fall quizzes.",
           "link": null,
           "periods": 1,
           "start": "2027-01-04",
@@ -1605,7 +1605,7 @@
           "title": "EK quiz re-sit — review month (all units, fresh grade)",
           "kind": "assessment",
           "skill": null,
-          "notes": "Mandatory for everyone (ruled 2026-09-09; calendared 2026-09-24, review row 6). Separate Canvas assignments; highest score stands inside this sitting. Its tallies steer the review days that follow (formative loop).",
+          "notes": "Mandatory for everyone. One online sitting covering every unit: two questions from each EK quiz of the year, one taken from that quiz's preview paper and one new. A separate Canvas grade. The results steer the review days that follow.",
           "link": null,
           "periods": 1,
           "start": "2027-04-12",
