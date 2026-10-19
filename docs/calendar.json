@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18 21:46",
+  "generated": "2026-10-18 23:48",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -686,7 +686,7 @@
           "title": "FRQ practice — graphing and data",
           "kind": "topic",
           "skill": "4.A, 4.B",
-          "notes": "One period: three or four released graphing and data items from the FRQ Skills Practice packet, on Kami or paper, turned in on Canvas for completion.",
+          "notes": "One period: three or four released graphing and data items from the FRQ Skills Practice packet, on paper packet or paper, turned in on Canvas for completion.",
           "link": null,
           "periods": 1,
           "start": "2026-10-19",
