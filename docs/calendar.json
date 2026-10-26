@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19 11:10",
+  "generated": "2026-10-26 06:07",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -88,7 +88,7 @@
         "term": "fall",
         "start": "2026-08-12",
         "end": "2026-12-18",
-        "instructional_days": 86,
+        "instructional_days": 85,
         "quarters": [
           {
             "quarter": "Q1",
@@ -100,7 +100,7 @@
             "quarter": "Q2",
             "start": "2026-10-12",
             "end": "2026-12-18",
-            "instructional_days": 44
+            "instructional_days": 43
           }
         ]
       },
@@ -127,13 +127,13 @@
     ]
   },
   "summary": {
-    "instructional_days_total": 180,
-    "instructional_days_to_exam": 161,
+    "instructional_days_total": 179,
+    "instructional_days_to_exam": 160,
     "instructional_days_after_exam": 18,
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 125,
+    "content_periods": 124,
     "lab_periods_scheduled": 20,
     "flex_periods": 4,
     "lab_periods_required": 40,
@@ -634,7 +634,7 @@
         16
       ],
       "start": "2026-10-12",
-      "end": "2026-11-05",
+      "end": "2026-11-06",
       "periods": 19,
       "entries": [
         {
@@ -719,12 +719,12 @@
           "link": null,
           "periods": 4,
           "start": "2026-10-22",
-          "end": "2026-10-27",
+          "end": "2026-10-28",
           "dates": [
             "2026-10-22",
-            "2026-10-23",
             "2026-10-26",
-            "2026-10-27"
+            "2026-10-27",
+            "2026-10-28"
           ]
         },
         {
@@ -735,13 +735,13 @@
           "notes": "Day 3 is Investigation 6, Cellular Respiration: a wet lab measuring respiration rate. Goggles.",
           "link": null,
           "periods": 4,
-          "start": "2026-10-28",
-          "end": "2026-11-02",
+          "start": "2026-10-29",
+          "end": "2026-11-03",
           "dates": [
-            "2026-10-28",
             "2026-10-29",
             "2026-10-30",
-            "2026-11-02"
+            "2026-11-02",
+            "2026-11-03"
           ]
         },
         {
@@ -752,10 +752,10 @@
           "notes": "EK Quiz 2 (3.4-3.5) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 3 is take-home, due before the MCQ.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-03",
-          "end": "2026-11-03",
+          "start": "2026-11-04",
+          "end": "2026-11-04",
           "dates": [
-            "2026-11-03"
+            "2026-11-04"
           ]
         },
         {
@@ -766,11 +766,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 3 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-04",
-          "end": "2026-11-05",
+          "start": "2026-11-05",
+          "end": "2026-11-06",
           "dates": [
-            "2026-11-04",
-            "2026-11-05"
+            "2026-11-05",
+            "2026-11-06"
           ]
         }
       ]
@@ -783,8 +783,8 @@
         10,
         15
       ],
-      "start": "2026-11-06",
-      "end": "2026-12-02",
+      "start": "2026-11-09",
+      "end": "2026-12-03",
       "periods": 13,
       "entries": [
         {
@@ -795,10 +795,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-06",
-          "end": "2026-11-06",
+          "start": "2026-11-09",
+          "end": "2026-11-09",
           "dates": [
-            "2026-11-06"
+            "2026-11-09"
           ]
         },
         {
@@ -809,12 +809,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-09",
-          "end": "2026-11-12",
+          "start": "2026-11-10",
+          "end": "2026-11-13",
           "dates": [
-            "2026-11-09",
             "2026-11-10",
-            "2026-11-12"
+            "2026-11-12",
+            "2026-11-13"
           ]
         },
         {
@@ -825,11 +825,11 @@
           "notes": "EK Quiz 1 (4.1-4.3) at the bell of day one; the preview goes home the class before.",
           "link": null,
           "periods": 2,
-          "start": "2026-11-13",
-          "end": "2026-11-16",
+          "start": "2026-11-16",
+          "end": "2026-11-17",
           "dates": [
-            "2026-11-13",
-            "2026-11-16"
+            "2026-11-16",
+            "2026-11-17"
           ]
         },
         {
@@ -840,11 +840,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-17",
-          "end": "2026-11-18",
+          "start": "2026-11-18",
+          "end": "2026-11-19",
           "dates": [
-            "2026-11-17",
-            "2026-11-18"
+            "2026-11-18",
+            "2026-11-19"
           ]
         },
         {
@@ -855,10 +855,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-19",
-          "end": "2026-11-19",
+          "start": "2026-11-20",
+          "end": "2026-11-20",
           "dates": [
-            "2026-11-19"
+            "2026-11-20"
           ]
         },
         {
@@ -869,10 +869,10 @@
           "notes": "Big Idea 3: Information Storage and Transmission.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-20",
-          "end": "2026-11-20",
+          "start": "2026-11-30",
+          "end": "2026-11-30",
           "dates": [
-            "2026-11-20"
+            "2026-11-30"
           ]
         },
         {
@@ -883,10 +883,10 @@
           "notes": "EK Quiz 2 (4.4-4.6) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 4 is take-home, due before the MCQ.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-30",
-          "end": "2026-11-30",
+          "start": "2026-12-01",
+          "end": "2026-12-01",
           "dates": [
-            "2026-11-30"
+            "2026-12-01"
           ]
         },
         {
@@ -897,11 +897,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 4 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-12-01",
-          "end": "2026-12-02",
+          "start": "2026-12-02",
+          "end": "2026-12-03",
           "dates": [
-            "2026-12-01",
-            "2026-12-02"
+            "2026-12-02",
+            "2026-12-03"
           ]
         }
       ]
@@ -914,9 +914,9 @@
         8,
         11
       ],
-      "start": "2026-12-03",
+      "start": "2026-12-04",
       "end": "2026-12-15",
-      "periods": 9,
+      "periods": 8,
       "entries": [
         {
           "id": "5.1+5.2",
@@ -926,10 +926,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-03",
-          "end": "2026-12-03",
+          "start": "2026-12-04",
+          "end": "2026-12-04",
           "dates": [
-            "2026-12-03"
+            "2026-12-04"
           ]
         },
         {
@@ -940,11 +940,11 @@
           "notes": "Includes chi-square analysis.",
           "link": null,
           "periods": 2,
-          "start": "2026-12-04",
-          "end": "2026-12-07",
+          "start": "2026-12-07",
+          "end": "2026-12-08",
           "dates": [
-            "2026-12-04",
-            "2026-12-07"
+            "2026-12-07",
+            "2026-12-08"
           ]
         },
         {
@@ -955,11 +955,11 @@
           "notes": "EK Quiz 1 (5.1-5.3) at the bell of day one; the preview goes home the class before.",
           "link": null,
           "periods": 2,
-          "start": "2026-12-08",
-          "end": "2026-12-09",
+          "start": "2026-12-09",
+          "end": "2026-12-10",
           "dates": [
-            "2026-12-08",
-            "2026-12-09"
+            "2026-12-09",
+            "2026-12-10"
           ]
         },
         {
@@ -970,10 +970,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-12-10",
-          "end": "2026-12-10",
+          "start": "2026-12-11",
+          "end": "2026-12-11",
           "dates": [
-            "2026-12-10"
+            "2026-12-11"
           ]
         },
         {
@@ -984,10 +984,10 @@
           "notes": "EK Quiz 2 (5.4-5.5) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 5 is take-home, due before the MCQ.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-11",
-          "end": "2026-12-11",
+          "start": "2026-12-14",
+          "end": "2026-12-14",
           "dates": [
-            "2026-12-11"
+            "2026-12-14"
           ]
         },
         {
@@ -997,11 +997,10 @@
           "skill": null,
           "notes": "Two days: multiple choice, then free response. Progress Check 5 is take-home, due before day one.",
           "link": null,
-          "periods": 2,
-          "start": "2026-12-14",
+          "periods": 1,
+          "start": "2026-12-15",
           "end": "2026-12-15",
           "dates": [
-            "2026-12-14",
             "2026-12-15"
           ]
         }
