@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30 13:44",
+  "generated": "2026-10-31 17:34",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,14 +133,14 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 121,
+    "content_periods": 122,
     "lab_periods_scheduled": 21,
-    "flex_periods": 6,
+    "flex_periods": 5,
     "lab_periods_required": 40,
     "review_periods": 14,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 99
+    "published_entries": 100
   },
   "blocks": [
     {
@@ -634,8 +634,8 @@
         16
       ],
       "start": "2026-10-12",
-      "end": "2026-11-05",
-      "periods": 18,
+      "end": "2026-11-09",
+      "periods": 20,
       "entries": [
         {
           "id": "3.1",
@@ -749,13 +749,27 @@
           "title": "Unit 3 Review",
           "kind": "topic",
           "skill": "1.A",
-          "notes": "EK Quiz 2 (3.4-3.5) at the bell, self-scored, then the repair page and the one-page rebuild. Progress Check 3 is take-home, due before the MCQ.",
+          "notes": "A long practice FRQ across the whole unit, worked together at the front of the room, plus the repair page and the one-page rebuild. The EK Quiz 2 preview goes home tonight. Progress Check 3 is take-home, due before the test.",
           "link": null,
           "periods": 1,
           "start": "2026-11-04",
           "end": "2026-11-04",
           "dates": [
             "2026-11-04"
+          ]
+        },
+        {
+          "id": "3.EK2",
+          "title": "EK Quiz 2 and FRQ Practice",
+          "kind": "topic",
+          "skill": "1.A, 4.A",
+          "notes": "EK Quiz 2 (3.4-3.5) at the bell, self-scored, then FRQ practice in the shape of Friday's test.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-05",
+          "end": "2026-11-05",
+          "dates": [
+            "2026-11-05"
           ]
         },
         {
@@ -766,10 +780,24 @@
           "notes": "One day: multiple choice, then free response, about 26 minutes each. Progress Check 3 is take-home, due before the test.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-05",
-          "end": "2026-11-05",
+          "start": "2026-11-06",
+          "end": "2026-11-06",
           "dates": [
-            "2026-11-05"
+            "2026-11-06"
+          ]
+        },
+        {
+          "id": "3.RETURN",
+          "title": "Unit 3 Test Return",
+          "kind": "topic",
+          "skill": "1.A",
+          "notes": "The misconception segment, then the test return and self-score. No new notes.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-09",
+          "end": "2026-11-09",
+          "dates": [
+            "2026-11-09"
           ]
         }
       ]
@@ -782,9 +810,9 @@
         10,
         15
       ],
-      "start": "2026-11-06",
+      "start": "2026-11-10",
       "end": "2026-12-02",
-      "periods": 13,
+      "periods": 11,
       "entries": [
         {
           "id": "4.1+4.2",
@@ -794,10 +822,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-06",
-          "end": "2026-11-06",
+          "start": "2026-11-10",
+          "end": "2026-11-10",
           "dates": [
-            "2026-11-06"
+            "2026-11-10"
           ]
         },
         {
@@ -808,12 +836,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-09",
-          "end": "2026-11-12",
+          "start": "2026-11-12",
+          "end": "2026-11-16",
           "dates": [
-            "2026-11-09",
-            "2026-11-10",
-            "2026-11-12"
+            "2026-11-12",
+            "2026-11-13",
+            "2026-11-16"
           ]
         },
         {
@@ -824,11 +852,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-13",
-          "end": "2026-11-16",
+          "start": "2026-11-17",
+          "end": "2026-11-18",
           "dates": [
-            "2026-11-13",
-            "2026-11-16"
+            "2026-11-17",
+            "2026-11-18"
           ]
         },
         {
@@ -839,10 +867,10 @@
           "notes": "EK Quiz 1 (4.1-4.3) at the bell; the preview goes home the class before.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-17",
-          "end": "2026-11-17",
+          "start": "2026-11-19",
+          "end": "2026-11-19",
           "dates": [
-            "2026-11-17"
+            "2026-11-19"
           ]
         },
         {
@@ -853,10 +881,10 @@
           "notes": "Big Idea 3: Information Storage and Transmission. On screen: count cells in each phase from onion root tip photomicrographs and find the mitotic index.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-18",
-          "end": "2026-11-18",
+          "start": "2026-11-20",
+          "end": "2026-11-20",
           "dates": [
-            "2026-11-18"
+            "2026-11-20"
           ]
         },
         {
@@ -867,24 +895,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-19",
-          "end": "2026-11-19",
+          "start": "2026-11-30",
+          "end": "2026-11-30",
           "dates": [
-            "2026-11-19"
-          ]
-        },
-        {
-          "id": "4.FLEX",
-          "title": "Flex day — 4.6 practice, catch-up, or reteach",
-          "kind": "flex",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2026-11-20",
-          "end": "2026-11-20",
-          "dates": [
-            "2026-11-20"
+            "2026-11-30"
           ]
         },
         {
@@ -892,13 +906,12 @@
           "title": "Unit 4 Review",
           "kind": "topic",
           "skill": "1.A",
-          "notes": "Day one: EK Quiz 2 (4.4-4.6) at the bell, self-scored, then the misconception segment. Day two: a long practice FRQ across the whole unit, worked together at the front of the room. Progress Check 4 is take-home, due before the test.",
+          "notes": "EK Quiz 2 (4.4-4.6) at the bell, self-scored, then a long practice FRQ across the whole unit, worked together at the front of the room. Progress Check 4 is take-home, due before the test.",
           "link": null,
-          "periods": 2,
-          "start": "2026-11-30",
+          "periods": 1,
+          "start": "2026-12-01",
           "end": "2026-12-01",
           "dates": [
-            "2026-11-30",
             "2026-12-01"
           ]
         },
