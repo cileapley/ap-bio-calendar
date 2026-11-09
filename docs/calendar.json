@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31 17:34",
+  "generated": "2026-11-08 19:34",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,9 +133,9 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 122,
+    "content_periods": 121,
     "lab_periods_scheduled": 21,
-    "flex_periods": 5,
+    "flex_periods": 6,
     "lab_periods_required": 40,
     "review_periods": 14,
     "conversion_factor": 0.83,
@@ -634,8 +634,8 @@
         16
       ],
       "start": "2026-10-12",
-      "end": "2026-11-09",
-      "periods": 20,
+      "end": "2026-11-06",
+      "periods": 19,
       "entries": [
         {
           "id": "3.1",
@@ -785,20 +785,6 @@
           "dates": [
             "2026-11-06"
           ]
-        },
-        {
-          "id": "3.RETURN",
-          "title": "Unit 3 Test Return",
-          "kind": "topic",
-          "skill": "1.A",
-          "notes": "The misconception segment, then the test return and self-score. No new notes.",
-          "link": null,
-          "periods": 1,
-          "start": "2026-11-09",
-          "end": "2026-11-09",
-          "dates": [
-            "2026-11-09"
-          ]
         }
       ]
     },
@@ -810,9 +796,9 @@
         10,
         15
       ],
-      "start": "2026-11-10",
+      "start": "2026-11-09",
       "end": "2026-12-02",
-      "periods": 11,
+      "periods": 12,
       "entries": [
         {
           "id": "4.1+4.2",
@@ -822,10 +808,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2026-11-10",
-          "end": "2026-11-10",
+          "start": "2026-11-09",
+          "end": "2026-11-09",
           "dates": [
-            "2026-11-10"
+            "2026-11-09"
           ]
         },
         {
@@ -836,12 +822,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2026-11-12",
-          "end": "2026-11-16",
+          "start": "2026-11-10",
+          "end": "2026-11-13",
           "dates": [
+            "2026-11-10",
             "2026-11-12",
-            "2026-11-13",
-            "2026-11-16"
+            "2026-11-13"
           ]
         },
         {
@@ -852,11 +838,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2026-11-17",
-          "end": "2026-11-18",
+          "start": "2026-11-16",
+          "end": "2026-11-17",
           "dates": [
-            "2026-11-17",
-            "2026-11-18"
+            "2026-11-16",
+            "2026-11-17"
           ]
         },
         {
@@ -867,10 +853,10 @@
           "notes": "EK Quiz 1 (4.1-4.3) at the bell; the preview goes home the class before.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-19",
-          "end": "2026-11-19",
+          "start": "2026-11-18",
+          "end": "2026-11-18",
           "dates": [
-            "2026-11-19"
+            "2026-11-18"
           ]
         },
         {
@@ -881,10 +867,10 @@
           "notes": "Big Idea 3: Information Storage and Transmission. On screen: count cells in each phase from onion root tip photomicrographs and find the mitotic index.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-20",
-          "end": "2026-11-20",
+          "start": "2026-11-19",
+          "end": "2026-11-19",
           "dates": [
-            "2026-11-20"
+            "2026-11-19"
           ]
         },
         {
@@ -892,6 +878,20 @@
           "title": "Regulation of Cell Cycle",
           "kind": "topic",
           "skill": "6.E",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-20",
+          "end": "2026-11-20",
+          "dates": [
+            "2026-11-20"
+          ]
+        },
+        {
+          "id": "4.FLEX",
+          "title": "Spare day: Unit 4 catch-up or review",
+          "kind": "flex",
+          "skill": null,
           "notes": null,
           "link": null,
           "periods": 1,
