@@ -1,0 +1,979 @@
+{
+ "fetched_at": "2026-11-01T00:37:04+00:00",
+ "course_id": 342945,
+ "assignments": [
+  {
+   "name": "KHSD Lab Safety Mastery Paths Test ",
+   "due_at": "2026-08-14T22:53:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13601417"
+  },
+  {
+   "name": "Safety Agreement Signed",
+   "due_at": "2026-08-18T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13657106"
+  },
+  {
+   "name": "Biology Review Notes",
+   "due_at": "2026-08-19T19:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700456"
+  },
+  {
+   "name": "Practice and Putting It All Together",
+   "due_at": "2026-08-20T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700465"
+  },
+  {
+   "name": "DYOE: Planning and Pre-Lab",
+   "due_at": "2026-08-20T19:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700460"
+  },
+  {
+   "name": "DYOE: Data Chart and Observations",
+   "due_at": "2026-08-21T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700458"
+  },
+  {
+   "name": "AP Biology Diagnostic",
+   "due_at": "2026-08-22T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700453"
+  },
+  {
+   "name": "Upload Practice: Multiple Pages",
+   "due_at": "2026-08-22T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13728930"
+  },
+  {
+   "name": "Upload Practice: One Page",
+   "due_at": "2026-08-22T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13728929"
+  },
+  {
+   "name": "Intro. to Statistics Notes Pt. 1",
+   "due_at": "2026-08-24T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700462"
+  },
+  {
+   "name": "DYOE: Post-Lab and Conclusion",
+   "due_at": "2026-08-25T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13739844"
+  },
+  {
+   "name": "Intro. to Statistics Notes Pt. 2",
+   "due_at": "2026-08-25T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13743915"
+  },
+  {
+   "name": "Statistics Practice Problems Pt. 1",
+   "due_at": "2026-08-25T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700467"
+  },
+  {
+   "name": "Oreo Lab",
+   "due_at": "2026-08-26T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700463"
+  },
+  {
+   "name": "Statistics Practice Problems Pt. 2",
+   "due_at": "2026-08-27T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700469"
+  },
+  {
+   "name": "Unit 0 Flash Cards",
+   "due_at": "2026-08-27T16:00:00Z",
+   "points": 30.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13700470"
+  },
+  {
+   "name": "NotebookLM setup and first quiz",
+   "due_at": "2026-08-29T06:59:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13778803"
+  },
+  {
+   "name": "Statistics Essential Knowledge Quiz",
+   "due_at": "2026-08-31T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13741055"
+  },
+  {
+   "name": "Unit 0 AP Test MCQ",
+   "due_at": "2026-08-31T06:59:59Z",
+   "points": 20.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13741058"
+  },
+  {
+   "name": "Notes: Lesson 01 Elements and Water",
+   "due_at": "2026-09-01T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13790978"
+  },
+  {
+   "name": "Notes: Lesson 04 Proteins",
+   "due_at": "2026-09-04T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13799912"
+  },
+  {
+   "name": "Notes: Lesson 02 Macromolecules and Carbohydrates",
+   "due_at": "2026-09-05T06:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13790979"
+  },
+  {
+   "name": "Notes: Lesson 03 Lipids and Nucleic Acids",
+   "due_at": "2026-09-05T06:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13790981"
+  },
+  {
+   "name": "One-Pager A: Water and Macromolecules",
+   "due_at": "2026-09-08T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13796567"
+  },
+  {
+   "name": "Protein Folding Lab",
+   "due_at": "2026-09-08T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13808359"
+  },
+  {
+   "name": "Unit 1 Essential Knowledge Quiz",
+   "due_at": "2026-09-10T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13799920"
+  },
+  {
+   "name": "AP Classroom: Unit 1 Progress Check",
+   "due_at": "2026-09-10T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13799919"
+  },
+  {
+   "name": "One-Pager B: The Four Macromolecules",
+   "due_at": "2026-09-10T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13799922"
+  },
+  {
+   "name": "Unit 1 AP Test MCQ",
+   "due_at": "2026-09-11T06:59:59Z",
+   "points": 30.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13822915"
+  },
+  {
+   "name": "Unit 1 AP Test FRQ",
+   "due_at": "2026-09-12T06:59:59Z",
+   "points": 30.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13826539"
+  },
+  {
+   "name": "Warmup and Exit Sheet: Week of September 8",
+   "due_at": "2026-09-12T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13799921"
+  },
+  {
+   "name": "Hook: Lesson 01 Cell Structure and Function",
+   "due_at": "2026-09-15T13:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13826635"
+  },
+  {
+   "name": "Notes: Lesson 01 Cell Structure and Function",
+   "due_at": "2026-09-15T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13827704"
+  },
+  {
+   "name": "Hook: Lesson 02 Organelles",
+   "due_at": "2026-09-16T13:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13827188"
+  },
+  {
+   "name": "Notes: Lesson 02 Organelles",
+   "due_at": "2026-09-16T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13827705"
+  },
+  {
+   "name": "Hook: Lesson 04 Cell Size",
+   "due_at": "2026-09-17T13:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13827191"
+  },
+  {
+   "name": "Worksheet: Lesson 02 Organelles",
+   "due_at": "2026-09-17T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13839683"
+  },
+  {
+   "name": "Workspace: Lesson 03 Cell Structure, practice day",
+   "due_at": "2026-09-17T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13839684"
+  },
+  {
+   "name": "Notes: Lesson 04 Cell Size",
+   "due_at": "2026-09-18T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13827706"
+  },
+  {
+   "name": "Warmup and Exit Sheet: Week of September 14",
+   "due_at": "2026-09-19T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13827708"
+  },
+  {
+   "name": "Hook: Lesson 06 The Plasma Membrane",
+   "due_at": "2026-09-21T13:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13850924"
+  },
+  {
+   "name": "Hook: Lesson 07 Membrane Transport",
+   "due_at": "2026-09-22T13:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13851577"
+  },
+  {
+   "name": "Agar Cube Lab",
+   "due_at": "2026-09-22T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13827707"
+  },
+  {
+   "name": "Notes: Lesson 06 The Plasma Membrane",
+   "due_at": "2026-09-23T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13849542"
+  },
+  {
+   "name": "Notes: Lesson 07 Membrane Transport",
+   "due_at": "2026-09-23T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13849543"
+  },
+  {
+   "name": "Hook: Lesson 09 Tonicity",
+   "due_at": "2026-09-24T13:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852529"
+  },
+  {
+   "name": "Simulation record: Lesson 08 Membrane Transport",
+   "due_at": "2026-09-24T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852528"
+  },
+  {
+   "name": "Five a Night — week of Sep 18",
+   "due_at": "2026-09-25T06:59:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13873330"
+  },
+  {
+   "name": "Hook, due Fri 6:30 AM: Water Potential",
+   "due_at": "2026-09-25T13:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852531"
+  },
+  {
+   "name": "Notes: Lesson 09 Tonicity",
+   "due_at": "2026-09-25T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852530"
+  },
+  {
+   "name": "Warmup and Exit Sheet: Week of September 21",
+   "due_at": "2026-09-26T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852533"
+  },
+  {
+   "name": "L10 Water Potential Practice",
+   "due_at": "2026-09-29T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13868251"
+  },
+  {
+   "name": "Notes: Lesson 10 Water Potential",
+   "due_at": "2026-09-29T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852532"
+  },
+  {
+   "name": "Unit 2 EK Quiz 1: Cells and Organelles",
+   "due_at": "2026-09-30T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852535"
+  },
+  {
+   "name": "Record sheet: Lesson 11 Tonicity, practice day",
+   "due_at": "2026-09-30T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852534"
+  },
+  {
+   "name": "Guided FRQ Practice (Sub Day, Sept 30)",
+   "due_at": "2026-10-01T06:59:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13871087"
+  },
+  {
+   "name": "Hook, due Thu 6:30 AM: Mechanisms of Transport",
+   "due_at": "2026-10-01T13:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852537"
+  },
+  {
+   "name": "Investigation 4: Diffusion and Osmosis",
+   "due_at": "2026-10-01T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852536"
+  },
+  {
+   "name": "Five a Night — week of Sep 25",
+   "due_at": "2026-10-02T06:59:00Z",
+   "points": 20.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13891283"
+  },
+  {
+   "name": "Hook, due Fri 6:30 AM: Compartmentalization",
+   "due_at": "2026-10-02T13:30:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852539"
+  },
+  {
+   "name": "Warmup and Exit Sheet: Week of September 28",
+   "due_at": "2026-10-03T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852543"
+  },
+  {
+   "name": "Error Hunt: Transport and Water Potential",
+   "due_at": "2026-10-05T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13869132"
+  },
+  {
+   "name": "Notes: Lesson 13 Mechanisms of Transport",
+   "due_at": "2026-10-05T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852538"
+  },
+  {
+   "name": "Unit 2 EK Quiz 2: Membranes, Transport, Tonicity",
+   "due_at": "2026-10-06T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852541"
+  },
+  {
+   "name": "AP Classroom: Unit 2 Progress Check",
+   "due_at": "2026-10-06T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13827710"
+  },
+  {
+   "name": "Notes: Lesson 14 Compartmentalization",
+   "due_at": "2026-10-06T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13852540"
+  },
+  {
+   "name": "One-Pager C: The Cell as a System",
+   "due_at": "2026-10-06T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13827709"
+  },
+  {
+   "name": "One-Pager D: Membranes and Transport",
+   "due_at": "2026-10-06T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13865192"
+  },
+  {
+   "name": "Unit 2 AP Test MCQ",
+   "due_at": "2026-10-07T06:59:59Z",
+   "points": 30.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13881134"
+  },
+  {
+   "name": "Unit 2 AP Test FRQ",
+   "due_at": "2026-10-08T06:59:59Z",
+   "points": 30.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13881135"
+  },
+  {
+   "name": "Five a Night — week of Oct 2",
+   "due_at": "2026-10-09T06:59:00Z",
+   "points": 20.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13915265"
+  },
+  {
+   "name": "Retake: Unit 0 EK Quiz (online)",
+   "due_at": "2026-10-10T06:59:59Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13894225"
+  },
+  {
+   "name": "Retake: Unit 0 MCQ (open to everyone)",
+   "due_at": "2026-10-10T06:59:59Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13894222"
+  },
+  {
+   "name": "Retake: Unit 1 EK Quiz (online)",
+   "due_at": "2026-10-10T06:59:59Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13894226"
+  },
+  {
+   "name": "Retake: Unit 1 MCQ (needs the Unit 1 guide)",
+   "due_at": "2026-10-10T06:59:59Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13894223"
+  },
+  {
+   "name": "Retake: Unit 2 EK Quiz 1 (online)",
+   "due_at": "2026-10-10T06:59:59Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13894227"
+  },
+  {
+   "name": "Retake: Unit 2 EK Quiz 2 (online)",
+   "due_at": "2026-10-10T06:59:59Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13894228"
+  },
+  {
+   "name": "Retake: Unit 2 MCQ (needs the Unit 2 guide)",
+   "due_at": "2026-10-10T06:59:59Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13894224"
+  },
+  {
+   "name": "Hook: Enzymes: active site and activation energy",
+   "due_at": "2026-10-13T13:30:00Z",
+   "points": null,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864143"
+  },
+  {
+   "name": "Hook: What an enzyme does",
+   "due_at": "2026-10-13T13:30:00Z",
+   "points": null,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13914618"
+  },
+  {
+   "name": "Notes: Day 1 Enzymes",
+   "due_at": "2026-10-14T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864286"
+  },
+  {
+   "name": "Hook: Environmental impacts on enzyme function",
+   "due_at": "2026-10-15T13:30:00Z",
+   "points": null,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864144"
+  },
+  {
+   "name": "Notes: Day 2 Enzymes",
+   "due_at": "2026-10-15T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864287"
+  },
+  {
+   "name": "Five a Night — week of Oct 9",
+   "due_at": "2026-10-16T06:59:00Z",
+   "points": 30.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13949456"
+  },
+  {
+   "name": "Hooks: week of Oct 9",
+   "due_at": "2026-10-16T06:59:00Z",
+   "points": 9.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13949457"
+  },
+  {
+   "name": "Hook: Cellular energy",
+   "due_at": "2026-10-16T13:30:00Z",
+   "points": null,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864145"
+  },
+  {
+   "name": "Record sheet: Day 3 Enzymes",
+   "due_at": "2026-10-16T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864288"
+  },
+  {
+   "name": "Warmup and Exit Sheet: Week of October 12",
+   "due_at": "2026-10-17T06:59:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864298"
+  },
+  {
+   "name": "Record sheet: Day 4 Enzymes and Environment",
+   "due_at": "2026-10-19T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864290"
+  },
+  {
+   "name": "Notes: Day 5 Cellular Energy",
+   "due_at": "2026-10-20T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864291"
+  },
+  {
+   "name": "Hook: Photosynthesis: capturing light",
+   "due_at": "2026-10-22T13:30:00Z",
+   "points": null,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864146"
+  },
+  {
+   "name": "Five a Night — week of Oct 16",
+   "due_at": "2026-10-23T06:59:00Z",
+   "points": 30.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13954955"
+  },
+  {
+   "name": "Hooks: week of Oct 16",
+   "due_at": "2026-10-23T06:59:00Z",
+   "points": 6.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13954956"
+  },
+  {
+   "name": "FRQ Practice — Graphing (upload your PDF)",
+   "due_at": "2026-10-23T06:59:59Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13944297"
+  },
+  {
+   "name": "Hook: Photosynthesis: making ATP",
+   "due_at": "2026-10-23T13:30:00Z",
+   "points": null,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13949876"
+  },
+  {
+   "name": "Investigation 13: Enzyme Activity",
+   "due_at": "2026-10-23T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864292"
+  },
+  {
+   "name": "Unit 3 EK Quiz 1: Enzymes and Cellular Energy",
+   "due_at": "2026-10-24T06:59:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864296"
+  },
+  {
+   "name": "Warmup and Exit Sheet: Week of October 19",
+   "due_at": "2026-10-24T06:59:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13918764"
+  },
+  {
+   "name": "Notes: Day 8 Photosynthesis",
+   "due_at": "2026-10-26T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13866286"
+  },
+  {
+   "name": "Hook: Photosynthesis: building sugar",
+   "due_at": "2026-10-27T13:30:00Z",
+   "points": null,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864147"
+  },
+  {
+   "name": "Record sheet: Day 9 Photosynthesis",
+   "due_at": "2026-10-28T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13866287"
+  },
+  {
+   "name": "Notes: Day 10 Photosynthesis",
+   "due_at": "2026-10-29T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13866288"
+  },
+  {
+   "name": "Hook: Cellular respiration: who respires?",
+   "due_at": "2026-10-29T23:00:00Z",
+   "points": null,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864149"
+  },
+  {
+   "name": "Five a Night — week of Oct 23",
+   "due_at": "2026-10-30T06:59:00Z",
+   "points": 30.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13966646"
+  },
+  {
+   "name": "Hooks: week of Oct 23",
+   "due_at": "2026-10-30T06:59:00Z",
+   "points": 9.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13966647"
+  },
+  {
+   "name": "Hook: Cellular respiration: glucose to ATP",
+   "due_at": "2026-10-30T16:00:00Z",
+   "points": null,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864150"
+  },
+  {
+   "name": "Record sheet: Day 11 Photosynthesis",
+   "due_at": "2026-10-30T16:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13866289"
+  },
+  {
+   "name": "Warmup and Exit Sheet: Week of October 26",
+   "due_at": "2026-10-31T06:59:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13918765"
+  },
+  {
+   "name": "Notes: Day 14 Cellular Respiration",
+   "due_at": "2026-11-02T17:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13918793"
+  },
+  {
+   "name": "Notes: Day 15 Cellular Respiration",
+   "due_at": "2026-11-03T17:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13918794"
+  },
+  {
+   "name": "Notes: Day 16 Cellular Respiration",
+   "due_at": "2026-11-04T17:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13918795"
+  },
+  {
+   "name": "Record sheet: Day 17 Cellular Respiration",
+   "due_at": "2026-11-04T17:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13918796"
+  },
+  {
+   "name": "Investigation 6: data and analysis",
+   "due_at": "2026-11-05T07:59:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13951507"
+  },
+  {
+   "name": "One-Pager E: Enzymes and Energy",
+   "due_at": "2026-11-05T17:00:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13864533"
+  },
+  {
+   "name": "Unit 3 EK Quiz 2: Photosynthesis and Respiration",
+   "due_at": "2026-11-06T07:59:00Z",
+   "points": 10.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13918797"
+  },
+  {
+   "name": "Unit 3 AP Test FRQ",
+   "due_at": "2026-11-07T07:59:00Z",
+   "points": 30.0,
+   "published": false,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13918799"
+  },
+  {
+   "name": "Unit 3 AP Test MCQ",
+   "due_at": "2026-11-07T07:59:00Z",
+   "points": 30.0,
+   "published": false,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13918798"
+  },
+  {
+   "name": "Extra credit: 3A Self-check, pages 18-19",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938528"
+  },
+  {
+   "name": "Extra credit: 3B Self-check, pages 11-12",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938545"
+  },
+  {
+   "name": "Extra credit: 3C Self-check, pages 11-12",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938554"
+  },
+  {
+   "name": "Extra credit: Reading 3A part 1 (after Day 1)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938522"
+  },
+  {
+   "name": "Extra credit: Reading 3A part 2 (after Day 2)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938523"
+  },
+  {
+   "name": "Extra credit: Reading 3A part 3 (after Day 4)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938524"
+  },
+  {
+   "name": "Extra credit: Reading 3A part 4 (after Day 5)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938525"
+  },
+  {
+   "name": "Extra credit: Reading 3A part 5 (after Day 5)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938526"
+  },
+  {
+   "name": "Extra credit: Reading 3A, the four questions",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938527"
+  },
+  {
+   "name": "Extra credit: Reading 3B part 1 (after Day 8)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938539"
+  },
+  {
+   "name": "Extra credit: Reading 3B part 2 (after Day 8)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938540"
+  },
+  {
+   "name": "Extra credit: Reading 3B part 3 (after Day 9)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938541"
+  },
+  {
+   "name": "Extra credit: Reading 3B part 4 (after Day 10)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938542"
+  },
+  {
+   "name": "Extra credit: Reading 3B part 5 (after Day 11)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938543"
+  },
+  {
+   "name": "Extra credit: Reading 3B, the four questions",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938544"
+  },
+  {
+   "name": "Extra credit: Reading 3C part 1 (after Day 14)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938546"
+  },
+  {
+   "name": "Extra credit: Reading 3C part 2 (after Day 15)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938547"
+  },
+  {
+   "name": "Extra credit: Reading 3C part 3 (after Day 16)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938548"
+  },
+  {
+   "name": "Extra credit: Reading 3C part 4 (after Day 16)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938549"
+  },
+  {
+   "name": "Extra credit: Reading 3C part 5 (after Day 17)",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938551"
+  },
+  {
+   "name": "Extra credit: Reading 3C, the four questions",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13938553"
+  },
+  {
+   "name": "Unit 3 Extra credit",
+   "due_at": "2026-12-16T07:59:00Z",
+   "points": 0.0,
+   "published": true,
+   "url": "https://kernhigh.instructure.com/courses/342945/assignments/13949764"
+  }
+ ]
+}
