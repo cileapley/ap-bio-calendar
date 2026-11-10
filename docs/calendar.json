@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09 08:36",
+  "generated": "2026-11-09 22:38",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,8 +133,8 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 122,
-    "lab_periods_scheduled": 21,
+    "content_periods": 123,
+    "lab_periods_scheduled": 20,
     "flex_periods": 5,
     "lab_periods_required": 40,
     "review_periods": 14,
@@ -874,11 +874,11 @@
           ]
         },
         {
-          "id": "INV-7",
-          "title": "Investigation 7, part 1 — Mitosis (mitotic index)",
-          "kind": "lab",
+          "id": "REASSESS-U1-3",
+          "title": "Reassessment day — Units 1 to 3",
+          "kind": "assessment",
           "skill": null,
-          "notes": "Big Idea 3: Information Storage and Transmission. On screen: count cells in each phase from onion root tip photomicrographs and find the mitotic index.",
+          "notes": "Earn it, then sit it, in the retake engine from AP Bio Home. First half: meter work. Second half: a 26-minute retake for anyone whose meter is open, any Units 1 to 3 MCQ, FRQ or EK quiz. Higher scores stand.",
           "link": null,
           "periods": 1,
           "start": "2026-11-20",
@@ -948,7 +948,7 @@
           "title": "Meiosis · Meiosis and Genetic Diversity",
           "kind": "topic",
           "skill": "1.B, 3.A",
-          "notes": null,
+          "notes": "First ten minutes: self-score the Unit 4 FRQ together, the teacher walking the scoring guideline (grill 2026-11-09 Q7).",
           "link": null,
           "periods": 1,
           "start": "2026-12-03",
