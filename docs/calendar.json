@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09 22:38",
+  "generated": "2026-11-11 13:20",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -833,7 +833,7 @@
           "title": "Signal Transduction Pathways",
           "kind": "topic",
           "skill": "6.C",
-          "notes": null,
+          "notes": "Day 3: build a pathway in modeling clay with your group, block one part, and predict what happens.",
           "link": null,
           "periods": 3,
           "start": "2026-11-12",
@@ -849,7 +849,7 @@
           "title": "Feedback",
           "kind": "topic",
           "skill": "6.E",
-          "notes": null,
+          "notes": "Day 2 opens with EK Quiz 1 (4.1-4.3), 18 minutes on Chromebooks. The preview paper goes home on day 1.",
           "link": null,
           "periods": 2,
           "start": "2026-11-17",
@@ -860,11 +860,11 @@
           ]
         },
         {
-          "id": "4.5",
-          "title": "Cell Cycle",
-          "kind": "topic",
-          "skill": "4.B, 5.A",
-          "notes": "EK Quiz 1 (4.1-4.3) at the bell; the preview goes home the class before.",
+          "id": "REASSESS-U1-3",
+          "title": "Reassessment day — Units 1 to 3",
+          "kind": "assessment",
+          "skill": null,
+          "notes": "Earn it, then sit it, in the retake engine from AP Bio Home. First half: meter work. Second half: a 26-minute retake for anyone whose meter is open, any Units 1 to 3 MCQ, FRQ or EK quiz. Higher scores stand.",
           "link": null,
           "periods": 1,
           "start": "2026-11-19",
@@ -874,11 +874,11 @@
           ]
         },
         {
-          "id": "REASSESS-U1-3",
-          "title": "Reassessment day — Units 1 to 3",
-          "kind": "assessment",
-          "skill": null,
-          "notes": "Earn it, then sit it, in the retake engine from AP Bio Home. First half: meter work. Second half: a 26-minute retake for anyone whose meter is open, any Units 1 to 3 MCQ, FRQ or EK quiz. Higher scores stand.",
+          "id": "4.5",
+          "title": "Cell Cycle",
+          "kind": "topic",
+          "skill": "4.B, 5.A",
+          "notes": "A 37-minute day (2-hour early out): the cell cycle film with its cue sheet. No quiz.",
           "link": null,
           "periods": 1,
           "start": "2026-11-20",
