@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12 10:32",
+  "generated": "2026-11-12 10:46",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,8 +133,8 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 125,
-    "lab_periods_scheduled": 22,
+    "content_periods": 126,
+    "lab_periods_scheduled": 21,
     "flex_periods": 1,
     "lab_periods_required": 40,
     "review_periods": 12,
@@ -902,11 +902,11 @@
           ]
         },
         {
-          "id": "4.6-GEL",
-          "title": "Regulation of Cell Cycle: inherited cancer risk on a gel",
-          "kind": "lab",
+          "id": "4.6-CASES",
+          "title": "Two cases, one class: a leukemia drug and the elephant puzzle",
+          "kind": "topic",
           "skill": "6.E",
-          "notes": "Lynch syndrome on a gel: loss of cell cycle control, tumor suppressors and proto-oncogenes.",
+          "notes": "Half the tables work the Gleevec leukemia case (an accelerator stuck on), half an elephant p53 data card (extra brakes), then the tables teach each other: tumor suppressors and proto-oncogenes, loss of control and cancer.",
           "link": null,
           "periods": 1,
           "start": "2026-12-01",
