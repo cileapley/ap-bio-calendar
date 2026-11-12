@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11 13:20",
+  "generated": "2026-11-12 10:32",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,14 +133,14 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 123,
-    "lab_periods_scheduled": 20,
-    "flex_periods": 5,
+    "content_periods": 125,
+    "lab_periods_scheduled": 22,
+    "flex_periods": 1,
     "lab_periods_required": 40,
-    "review_periods": 14,
+    "review_periods": 12,
     "conversion_factor": 0.83,
     "labs_additive": true,
-    "published_entries": 100
+    "published_entries": 101
   },
   "blocks": [
     {
@@ -797,8 +797,8 @@
         15
       ],
       "start": "2026-11-09",
-      "end": "2026-12-02",
-      "periods": 12,
+      "end": "2026-12-04",
+      "periods": 14,
       "entries": [
         {
           "id": "4.VIDEO",
@@ -892,13 +892,41 @@
           "title": "Regulation of Cell Cycle",
           "kind": "topic",
           "skill": "6.E",
-          "notes": null,
+          "notes": "Case day: Who Killed Yew? Checkpoints, cyclins and cyclin-dependent kinases, apoptosis.",
           "link": null,
           "periods": 1,
           "start": "2026-11-30",
           "end": "2026-11-30",
           "dates": [
             "2026-11-30"
+          ]
+        },
+        {
+          "id": "4.6-GEL",
+          "title": "Regulation of Cell Cycle: inherited cancer risk on a gel",
+          "kind": "lab",
+          "skill": "6.E",
+          "notes": "Lynch syndrome on a gel: loss of cell cycle control, tumor suppressors and proto-oncogenes.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-01",
+          "end": "2026-12-01",
+          "dates": [
+            "2026-12-01"
+          ]
+        },
+        {
+          "id": "4.3-TASTE",
+          "title": "Taste-receptor lab",
+          "kind": "lab",
+          "skill": "6.C",
+          "notes": "Signal transduction returned to: reception, transduction, response, and a blocked step.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-12-02",
+          "end": "2026-12-02",
+          "dates": [
+            "2026-12-02"
           ]
         },
         {
@@ -909,10 +937,10 @@
           "notes": "EK Quiz 2 (4.4-4.6) at the bell, self-scored, then a long practice FRQ across the whole unit, worked together at the front of the room. Progress Check 4 is take-home, due before the test.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-01",
-          "end": "2026-12-01",
+          "start": "2026-12-03",
+          "end": "2026-12-03",
           "dates": [
-            "2026-12-01"
+            "2026-12-03"
           ]
         },
         {
@@ -923,10 +951,10 @@
           "notes": "One day: multiple choice, then free response, about 26 minutes each. Progress Check 4 is take-home, due before the test.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-02",
-          "end": "2026-12-02",
+          "start": "2026-12-04",
+          "end": "2026-12-04",
           "dates": [
-            "2026-12-02"
+            "2026-12-04"
           ]
         }
       ]
@@ -939,9 +967,9 @@
         8,
         11
       ],
-      "start": "2026-12-03",
-      "end": "2026-12-15",
-      "periods": 9,
+      "start": "2026-12-07",
+      "end": "2026-12-11",
+      "periods": 5,
       "entries": [
         {
           "id": "5.1+5.2",
@@ -951,10 +979,10 @@
           "notes": "First ten minutes: self-score the Unit 4 FRQ together, the teacher walking the scoring guideline (grill 2026-11-09 Q7).",
           "link": null,
           "periods": 1,
-          "start": "2026-12-03",
-          "end": "2026-12-03",
+          "start": "2026-12-07",
+          "end": "2026-12-07",
           "dates": [
-            "2026-12-03"
+            "2026-12-07"
           ]
         },
         {
@@ -965,10 +993,10 @@
           "notes": "Big Idea 3: Information Storage and Transmission. Microscopes and prepared Sordaria slides: count asci to estimate crossing over.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-04",
-          "end": "2026-12-04",
+          "start": "2026-12-08",
+          "end": "2026-12-08",
           "dates": [
-            "2026-12-04"
+            "2026-12-08"
           ]
         },
         {
@@ -979,47 +1007,19 @@
           "notes": "Includes chi-square analysis.",
           "link": null,
           "periods": 2,
-          "start": "2026-12-07",
-          "end": "2026-12-08",
-          "dates": [
-            "2026-12-07",
-            "2026-12-08"
-          ]
-        },
-        {
-          "id": "5.4",
-          "title": "Non-Mendelian Genetics",
-          "kind": "topic",
-          "skill": "5.A, 5.C",
-          "notes": "EK Quiz 1 (5.1-5.3) at the bell; the preview goes home the class before.",
-          "link": null,
-          "periods": 1,
           "start": "2026-12-09",
-          "end": "2026-12-09",
-          "dates": [
-            "2026-12-09"
-          ]
-        },
-        {
-          "id": "5.4+5.5",
-          "title": "Non-Mendelian Genetics practice · Environmental Effects on Phenotype",
-          "kind": "topic",
-          "skill": "5.C, 1.C",
-          "notes": "Practice on non-Mendelian crosses, then case studies of how the environment changes a phenotype.",
-          "link": null,
-          "periods": 1,
-          "start": "2026-12-10",
           "end": "2026-12-10",
           "dates": [
+            "2026-12-09",
             "2026-12-10"
           ]
         },
         {
-          "id": "5.REVIEW",
-          "title": "Unit 5 Review",
+          "id": "5.EK1",
+          "title": "EK Quiz 1 and practice",
           "kind": "topic",
           "skill": "1.A",
-          "notes": "EK Quiz 2 (5.4-5.5) at the bell, self-scored, then a long practice FRQ across the whole unit, worked together at the front of the room. Progress Check 5 is take-home, due before the MCQ.",
+          "notes": "EK Quiz 1 (5.1-5.3) at the bell, self-scored, then practice. The preview goes home the class before.",
           "link": null,
           "periods": 1,
           "start": "2026-12-11",
@@ -1027,32 +1027,30 @@
           "dates": [
             "2026-12-11"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "semester-1-review",
+      "unit": null,
+      "title": "Semester 1 Review",
+      "weight": null,
+      "start": "2026-12-14",
+      "end": "2026-12-15",
+      "periods": 2,
+      "entries": [
         {
-          "id": "5.FLEX",
-          "title": "Spare day — Semester 1 review, or absorbs a lost fall day",
-          "kind": "flex",
+          "id": null,
+          "title": "Semester 1 review — cumulative practice before finals",
+          "kind": "review",
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 1,
+          "periods": 2,
           "start": "2026-12-14",
-          "end": "2026-12-14",
-          "dates": [
-            "2026-12-14"
-          ]
-        },
-        {
-          "id": "5.TEST",
-          "title": "Unit 5 Assessment",
-          "kind": "assessment",
-          "skill": null,
-          "notes": "One day: multiple choice, then free response, about 26 minutes each. Progress Check 5 is take-home, due before the test.",
-          "link": null,
-          "periods": 1,
-          "start": "2026-12-15",
           "end": "2026-12-15",
           "dates": [
+            "2026-12-14",
             "2026-12-15"
           ]
         }
@@ -1086,23 +1084,20 @@
       ]
     },
     {
-      "id": "unit-6",
-      "unit": 6,
-      "title": "Gene Expression and Regulation",
-      "weight": [
-        12,
-        16
-      ],
+      "id": "unit-5-return",
+      "unit": 5,
+      "title": "Heredity (after the break)",
+      "weight": null,
       "start": "2027-01-04",
-      "end": "2027-02-02",
-      "periods": 20,
+      "end": "2027-01-08",
+      "periods": 5,
       "entries": [
         {
-          "id": "EK.RESIT-S2",
-          "title": "EK quiz re-sit — semester 2 (Units 0–5, fresh grade)",
-          "kind": "assessment",
-          "skill": null,
-          "notes": "Mandatory for everyone. One 20-question online sitting covering Units 0 to 5: two questions from each fall EK quiz, one taken from that quiz's preview paper (you already have it) and one new. A separate Canvas grade from the fall quizzes.",
+          "id": "5.RETURN",
+          "title": "Unit 5 return: review of 5.1 to 5.3",
+          "kind": "topic",
+          "skill": "1.A",
+          "notes": "The review day back from the break: meiosis, the Sordaria lab and Mendelian crosses before the rest of the unit.",
           "link": null,
           "periods": 1,
           "start": "2027-01-04",
@@ -1112,10 +1107,10 @@
           ]
         },
         {
-          "id": "6.1",
-          "title": "DNA and RNA Structure",
+          "id": "5.4",
+          "title": "Non-Mendelian Genetics",
           "kind": "topic",
-          "skill": "1.C",
+          "skill": "5.A, 5.C",
           "notes": null,
           "link": null,
           "periods": 1,
@@ -1126,6 +1121,90 @@
           ]
         },
         {
+          "id": "5.4+5.5",
+          "title": "Non-Mendelian Genetics practice · Environmental Effects on Phenotype",
+          "kind": "topic",
+          "skill": "5.C, 1.C",
+          "notes": "Practice on non-Mendelian crosses, then case studies of how the environment changes a phenotype.",
+          "link": null,
+          "periods": 1,
+          "start": "2027-01-06",
+          "end": "2027-01-06",
+          "dates": [
+            "2027-01-06"
+          ]
+        },
+        {
+          "id": "5.REVIEW",
+          "title": "Unit 5 Review",
+          "kind": "topic",
+          "skill": "1.A",
+          "notes": "EK Quiz 2 (5.4-5.5) at the bell, self-scored, then a long practice FRQ across the whole unit, worked together at the front of the room. Progress Check 5 is take-home, due before the test.",
+          "link": null,
+          "periods": 1,
+          "start": "2027-01-07",
+          "end": "2027-01-07",
+          "dates": [
+            "2027-01-07"
+          ]
+        },
+        {
+          "id": "5.TEST",
+          "title": "Unit 5 Assessment",
+          "kind": "assessment",
+          "skill": null,
+          "notes": "One day: multiple choice, then free response, about 26 minutes each. Progress Check 5 is take-home, due before the test.",
+          "link": null,
+          "periods": 1,
+          "start": "2027-01-08",
+          "end": "2027-01-08",
+          "dates": [
+            "2027-01-08"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-6",
+      "unit": 6,
+      "title": "Gene Expression and Regulation",
+      "weight": [
+        12,
+        16
+      ],
+      "start": "2027-01-11",
+      "end": "2027-02-09",
+      "periods": 19,
+      "entries": [
+        {
+          "id": "EK.RESIT-S2",
+          "title": "EK quiz re-sit — semester 2 (Units 0–5, fresh grade)",
+          "kind": "assessment",
+          "skill": null,
+          "notes": "Mandatory for everyone. One 20-question online sitting covering Units 0 to 5: two questions from each fall EK quiz, one taken from that quiz's preview paper (you already have it) and one new. A separate Canvas grade from the fall quizzes.",
+          "link": null,
+          "periods": 1,
+          "start": "2027-01-11",
+          "end": "2027-01-11",
+          "dates": [
+            "2027-01-11"
+          ]
+        },
+        {
+          "id": "6.1",
+          "title": "DNA and RNA Structure",
+          "kind": "topic",
+          "skill": "1.C",
+          "notes": null,
+          "link": null,
+          "periods": 1,
+          "start": "2027-01-12",
+          "end": "2027-01-12",
+          "dates": [
+            "2027-01-12"
+          ]
+        },
+        {
           "id": "6.2",
           "title": "DNA Replication",
           "kind": "topic",
@@ -1133,11 +1212,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-01-06",
-          "end": "2027-01-07",
+          "start": "2027-01-13",
+          "end": "2027-01-14",
           "dates": [
-            "2027-01-06",
-            "2027-01-07"
+            "2027-01-13",
+            "2027-01-14"
           ]
         },
         {
@@ -1145,37 +1224,6 @@
           "title": "Transcription and RNA Processing",
           "kind": "topic",
           "skill": "2.B",
-          "notes": null,
-          "link": null,
-          "periods": 2,
-          "start": "2027-01-08",
-          "end": "2027-01-11",
-          "dates": [
-            "2027-01-08",
-            "2027-01-11"
-          ]
-        },
-        {
-          "id": "6.4",
-          "title": "Translation",
-          "kind": "topic",
-          "skill": "2.D, 6.E",
-          "notes": null,
-          "link": null,
-          "periods": 3,
-          "start": "2027-01-12",
-          "end": "2027-01-14",
-          "dates": [
-            "2027-01-12",
-            "2027-01-13",
-            "2027-01-14"
-          ]
-        },
-        {
-          "id": "6.5",
-          "title": "Regulation of Gene Expression",
-          "kind": "topic",
-          "skill": "6.A",
           "notes": null,
           "link": null,
           "periods": 2,
@@ -1187,6 +1235,37 @@
           ]
         },
         {
+          "id": "6.4",
+          "title": "Translation",
+          "kind": "topic",
+          "skill": "2.D, 6.E",
+          "notes": null,
+          "link": null,
+          "periods": 3,
+          "start": "2027-01-20",
+          "end": "2027-01-25",
+          "dates": [
+            "2027-01-20",
+            "2027-01-21",
+            "2027-01-25"
+          ]
+        },
+        {
+          "id": "6.5",
+          "title": "Regulation of Gene Expression",
+          "kind": "topic",
+          "skill": "6.A",
+          "notes": null,
+          "link": null,
+          "periods": 2,
+          "start": "2027-01-26",
+          "end": "2027-01-27",
+          "dates": [
+            "2027-01-26",
+            "2027-01-27"
+          ]
+        },
+        {
           "id": "6.6",
           "title": "Gene Expression and Cell Specialization",
           "kind": "topic",
@@ -1194,10 +1273,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-01-20",
-          "end": "2027-01-20",
+          "start": "2027-01-28",
+          "end": "2027-01-28",
           "dates": [
-            "2027-01-20"
+            "2027-01-28"
           ]
         },
         {
@@ -1208,10 +1287,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-01-21",
-          "end": "2027-01-21",
+          "start": "2027-01-29",
+          "end": "2027-01-29",
           "dates": [
-            "2027-01-21"
+            "2027-01-29"
           ]
         },
         {
@@ -1222,11 +1301,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-01-25",
-          "end": "2027-01-26",
+          "start": "2027-02-01",
+          "end": "2027-02-02",
           "dates": [
-            "2027-01-25",
-            "2027-01-26"
+            "2027-02-01",
+            "2027-02-02"
           ]
         },
         {
@@ -1237,25 +1316,11 @@
           "notes": "Big Idea 3: Information Storage and Transmission.",
           "link": null,
           "periods": 2,
-          "start": "2027-01-27",
-          "end": "2027-01-28",
+          "start": "2027-02-03",
+          "end": "2027-02-04",
           "dates": [
-            "2027-01-27",
-            "2027-01-28"
-          ]
-        },
-        {
-          "id": "6.FLEX",
-          "title": "Flex day — catch-up, reteach, or lab overflow",
-          "kind": "flex",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2027-01-29",
-          "end": "2027-01-29",
-          "dates": [
-            "2027-01-29"
+            "2027-02-03",
+            "2027-02-04"
           ]
         },
         {
@@ -1266,11 +1331,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 6 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2027-02-01",
-          "end": "2027-02-02",
+          "start": "2027-02-05",
+          "end": "2027-02-09",
           "dates": [
-            "2027-02-01",
-            "2027-02-02"
+            "2027-02-05",
+            "2027-02-09"
           ]
         }
       ]
@@ -1283,9 +1348,9 @@
         13,
         20
       ],
-      "start": "2027-02-03",
-      "end": "2027-03-05",
-      "periods": 21,
+      "start": "2027-02-10",
+      "end": "2027-03-10",
+      "periods": 20,
       "entries": [
         {
           "id": "7.1+7.2",
@@ -1295,11 +1360,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-02-03",
-          "end": "2027-02-04",
+          "start": "2027-02-10",
+          "end": "2027-02-11",
           "dates": [
-            "2027-02-03",
-            "2027-02-04"
+            "2027-02-10",
+            "2027-02-11"
           ]
         },
         {
@@ -1310,10 +1375,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-02-05",
-          "end": "2027-02-05",
+          "start": "2027-02-12",
+          "end": "2027-02-12",
           "dates": [
-            "2027-02-05"
+            "2027-02-12"
           ]
         },
         {
@@ -1324,10 +1389,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-02-09",
-          "end": "2027-02-09",
+          "start": "2027-02-16",
+          "end": "2027-02-16",
           "dates": [
-            "2027-02-09"
+            "2027-02-16"
           ]
         },
         {
@@ -1338,12 +1403,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2027-02-10",
-          "end": "2027-02-12",
+          "start": "2027-02-17",
+          "end": "2027-02-19",
           "dates": [
-            "2027-02-10",
-            "2027-02-11",
-            "2027-02-12"
+            "2027-02-17",
+            "2027-02-18",
+            "2027-02-19"
           ]
         },
         {
@@ -1354,11 +1419,11 @@
           "notes": "Big Idea 1: Evolution.",
           "link": null,
           "periods": 2,
-          "start": "2027-02-16",
-          "end": "2027-02-17",
+          "start": "2027-02-22",
+          "end": "2027-02-23",
           "dates": [
-            "2027-02-16",
-            "2027-02-17"
+            "2027-02-22",
+            "2027-02-23"
           ]
         },
         {
@@ -1369,10 +1434,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-02-18",
-          "end": "2027-02-18",
+          "start": "2027-02-24",
+          "end": "2027-02-24",
           "dates": [
-            "2027-02-18"
+            "2027-02-24"
           ]
         },
         {
@@ -1383,10 +1448,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-02-19",
-          "end": "2027-02-19",
+          "start": "2027-02-25",
+          "end": "2027-02-25",
           "dates": [
-            "2027-02-19"
+            "2027-02-25"
           ]
         },
         {
@@ -1397,12 +1462,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2027-02-22",
-          "end": "2027-02-24",
+          "start": "2027-02-26",
+          "end": "2027-03-02",
           "dates": [
-            "2027-02-22",
-            "2027-02-23",
-            "2027-02-24"
+            "2027-02-26",
+            "2027-03-01",
+            "2027-03-02"
           ]
         },
         {
@@ -1413,11 +1478,11 @@
           "notes": "Big Idea 1: Evolution. Computer-based, no consumables.",
           "link": null,
           "periods": 2,
-          "start": "2027-02-25",
-          "end": "2027-02-26",
+          "start": "2027-03-03",
+          "end": "2027-03-04",
           "dates": [
-            "2027-02-25",
-            "2027-02-26"
+            "2027-03-03",
+            "2027-03-04"
           ]
         },
         {
@@ -1428,10 +1493,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-03-01",
-          "end": "2027-03-01",
+          "start": "2027-03-05",
+          "end": "2027-03-05",
           "dates": [
-            "2027-03-01"
+            "2027-03-05"
           ]
         },
         {
@@ -1442,24 +1507,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-03-02",
-          "end": "2027-03-02",
+          "start": "2027-03-08",
+          "end": "2027-03-08",
           "dates": [
-            "2027-03-02"
-          ]
-        },
-        {
-          "id": "7.FLEX",
-          "title": "Flex day — catch-up, reteach, or lab overflow",
-          "kind": "flex",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2027-03-03",
-          "end": "2027-03-03",
-          "dates": [
-            "2027-03-03"
+            "2027-03-08"
           ]
         },
         {
@@ -1470,11 +1521,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 7 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2027-03-04",
-          "end": "2027-03-05",
+          "start": "2027-03-09",
+          "end": "2027-03-10",
           "dates": [
-            "2027-03-04",
-            "2027-03-05"
+            "2027-03-09",
+            "2027-03-10"
           ]
         }
       ]
@@ -1487,9 +1538,9 @@
         10,
         15
       ],
-      "start": "2027-03-08",
-      "end": "2027-04-09",
-      "periods": 19,
+      "start": "2027-03-11",
+      "end": "2027-04-13",
+      "periods": 18,
       "entries": [
         {
           "id": "8.1",
@@ -1499,10 +1550,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-03-08",
-          "end": "2027-03-08",
+          "start": "2027-03-11",
+          "end": "2027-03-11",
           "dates": [
-            "2027-03-08"
+            "2027-03-11"
           ]
         },
         {
@@ -1513,10 +1564,10 @@
           "notes": "Big Idea 4: System Interactions.",
           "link": null,
           "periods": 1,
-          "start": "2027-03-09",
-          "end": "2027-03-09",
+          "start": "2027-03-12",
+          "end": "2027-03-12",
           "dates": [
-            "2027-03-09"
+            "2027-03-12"
           ]
         },
         {
@@ -1527,13 +1578,13 @@
           "notes": "Biogeochemical cycles were added here in the 2025 CED.",
           "link": null,
           "periods": 4,
-          "start": "2027-03-10",
-          "end": "2027-03-15",
+          "start": "2027-03-15",
+          "end": "2027-03-18",
           "dates": [
-            "2027-03-10",
-            "2027-03-11",
-            "2027-03-12",
-            "2027-03-15"
+            "2027-03-15",
+            "2027-03-16",
+            "2027-03-17",
+            "2027-03-18"
           ]
         },
         {
@@ -1544,11 +1595,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-03-16",
-          "end": "2027-03-17",
+          "start": "2027-03-19",
+          "end": "2027-03-30",
           "dates": [
-            "2027-03-16",
-            "2027-03-17"
+            "2027-03-19",
+            "2027-03-30"
           ]
         },
         {
@@ -1559,11 +1610,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-03-18",
-          "end": "2027-03-19",
+          "start": "2027-03-31",
+          "end": "2027-04-01",
           "dates": [
-            "2027-03-18",
-            "2027-03-19"
+            "2027-03-31",
+            "2027-04-01"
           ]
         },
         {
@@ -1574,12 +1625,12 @@
           "notes": null,
           "link": null,
           "periods": 3,
-          "start": "2027-03-30",
-          "end": "2027-04-01",
+          "start": "2027-04-02",
+          "end": "2027-04-06",
           "dates": [
-            "2027-03-30",
-            "2027-03-31",
-            "2027-04-01"
+            "2027-04-02",
+            "2027-04-05",
+            "2027-04-06"
           ]
         },
         {
@@ -1590,11 +1641,11 @@
           "notes": null,
           "link": null,
           "periods": 2,
-          "start": "2027-04-02",
-          "end": "2027-04-05",
+          "start": "2027-04-07",
+          "end": "2027-04-08",
           "dates": [
-            "2027-04-02",
-            "2027-04-05"
+            "2027-04-07",
+            "2027-04-08"
           ]
         },
         {
@@ -1605,24 +1656,10 @@
           "notes": null,
           "link": null,
           "periods": 1,
-          "start": "2027-04-06",
-          "end": "2027-04-06",
+          "start": "2027-04-09",
+          "end": "2027-04-09",
           "dates": [
-            "2027-04-06"
-          ]
-        },
-        {
-          "id": "8.FLEX",
-          "title": "Flex day — catch-up, reteach, or lab overflow",
-          "kind": "flex",
-          "skill": null,
-          "notes": null,
-          "link": null,
-          "periods": 1,
-          "start": "2027-04-07",
-          "end": "2027-04-07",
-          "dates": [
-            "2027-04-07"
+            "2027-04-09"
           ]
         },
         {
@@ -1633,11 +1670,11 @@
           "notes": "Two days: multiple choice, then free response. Progress Check 8 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2027-04-08",
-          "end": "2027-04-09",
+          "start": "2027-04-12",
+          "end": "2027-04-13",
           "dates": [
-            "2027-04-08",
-            "2027-04-09"
+            "2027-04-12",
+            "2027-04-13"
           ]
         }
       ]
@@ -1647,9 +1684,9 @@
       "unit": null,
       "title": "AP Exam Review",
       "weight": null,
-      "start": "2027-04-12",
+      "start": "2027-04-14",
       "end": "2027-04-30",
-      "periods": 15,
+      "periods": 13,
       "entries": [
         {
           "id": "EK.RESIT-REVIEW",
@@ -1659,10 +1696,10 @@
           "notes": "Mandatory for everyone. One online sitting covering every unit: two questions from each EK quiz of the year, one taken from that quiz's preview paper and one new. A separate Canvas grade. The results steer the review days that follow.",
           "link": null,
           "periods": 1,
-          "start": "2027-04-12",
-          "end": "2027-04-12",
+          "start": "2027-04-14",
+          "end": "2027-04-14",
           "dates": [
-            "2027-04-12"
+            "2027-04-14"
           ]
         },
         {
@@ -1672,12 +1709,10 @@
           "skill": null,
           "notes": null,
           "link": null,
-          "periods": 14,
-          "start": "2027-04-13",
+          "periods": 12,
+          "start": "2027-04-15",
           "end": "2027-04-30",
           "dates": [
-            "2027-04-13",
-            "2027-04-14",
             "2027-04-15",
             "2027-04-16",
             "2027-04-19",
