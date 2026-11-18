@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16 09:16",
+  "generated": "2026-11-18 08:22",
   "source": "calendar.yaml",
   "course": {
     "title": "AP Biology",
@@ -133,7 +133,7 @@
     "first_instructional_day": "2026-08-12",
     "last_instructional_day": "2027-05-27",
     "exam_date": "2027-05-03",
-    "content_periods": 128,
+    "content_periods": 129,
     "lab_periods_scheduled": 21,
     "flex_periods": 1,
     "lab_periods_required": 40,
@@ -797,8 +797,8 @@
         15
       ],
       "start": "2026-11-09",
-      "end": "2026-12-08",
-      "periods": 16,
+      "end": "2026-12-09",
+      "periods": 17,
       "entries": [
         {
           "id": "4.VIDEO",
@@ -904,13 +904,27 @@
           "title": "Feedback",
           "kind": "topic",
           "skill": "6.E",
-          "notes": "A 37-minute day (2-hour early out): build the blood glucose loop, meet positive feedback, then count your own pulse after exercise.",
+          "notes": "A 37-minute day (2-hour early out): count your own pulse after exercise, build the loop behind it, then predict what one blocked part does.",
           "link": null,
           "periods": 1,
           "start": "2026-11-20",
           "end": "2026-11-20",
           "dates": [
             "2026-11-20"
+          ]
+        },
+        {
+          "id": "4.4-BREAKS",
+          "title": "Feedback",
+          "kind": "topic",
+          "skill": "6.E",
+          "notes": "Four more broken loops to predict, then a free-response graph from a data table. The EK Quiz 2 preview goes home.",
+          "link": null,
+          "periods": 1,
+          "start": "2026-11-30",
+          "end": "2026-11-30",
+          "dates": [
+            "2026-11-30"
           ]
         },
         {
@@ -921,10 +935,10 @@
           "notes": "The cell cycle film with its cue sheet. No quiz.",
           "link": null,
           "periods": 1,
-          "start": "2026-11-30",
-          "end": "2026-11-30",
+          "start": "2026-12-01",
+          "end": "2026-12-01",
           "dates": [
-            "2026-11-30"
+            "2026-12-01"
           ]
         },
         {
@@ -935,10 +949,10 @@
           "notes": "The borrowed signal: three cell-fusion experiments predicted alone, then at tables, before each reveal; then a graph of one protein's level across three cycles, and only then the names cyclin and Cdk. Checkpoints, cyclins and cyclin-dependent kinases, apoptosis.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-01",
-          "end": "2026-12-01",
+          "start": "2026-12-02",
+          "end": "2026-12-02",
           "dates": [
-            "2026-12-01"
+            "2026-12-02"
           ]
         },
         {
@@ -949,10 +963,10 @@
           "notes": "A dice lab with pooled class data: each table is a patch of 20 cells, half start with one brake copy already crossed out, a cell divides out of control only when both copies are gone, and the class pools the first-tumor round and graphs both groups. Then one rule changes: an accelerator gene, where one hit is enough. Tumor suppressors and proto-oncogenes, loss of control and cancer.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-02",
-          "end": "2026-12-02",
+          "start": "2026-12-03",
+          "end": "2026-12-03",
           "dates": [
-            "2026-12-02"
+            "2026-12-03"
           ]
         },
         {
@@ -963,10 +977,10 @@
           "notes": "The tea lab: tasters rate six samples, swish a Gymnema tea for thirty seconds, predict which will change and mark the blocked step on a printed pathway, then taste again. Signal transduction returned to: reception, transduction, response, and a blocked step.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-03",
-          "end": "2026-12-03",
+          "start": "2026-12-04",
+          "end": "2026-12-04",
           "dates": [
-            "2026-12-03"
+            "2026-12-04"
           ]
         },
         {
@@ -977,10 +991,10 @@
           "notes": "EK Quiz 2 (4.4-4.6) at the bell, self-scored, then a long practice FRQ across the whole unit: before each part the table agrees an answer on a mini-whiteboard, then the teacher works one board at the front. Progress Check 4 is take-home, due before the test.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-04",
-          "end": "2026-12-04",
+          "start": "2026-12-07",
+          "end": "2026-12-07",
           "dates": [
-            "2026-12-04"
+            "2026-12-07"
           ]
         },
         {
@@ -991,11 +1005,11 @@
           "notes": "Two days: multiple choice on day one, free response on day two. Progress Check 4 is take-home, due before day one.",
           "link": null,
           "periods": 2,
-          "start": "2026-12-07",
-          "end": "2026-12-08",
+          "start": "2026-12-08",
+          "end": "2026-12-09",
           "dates": [
-            "2026-12-07",
-            "2026-12-08"
+            "2026-12-08",
+            "2026-12-09"
           ]
         }
       ]
@@ -1008,8 +1022,8 @@
         8,
         11
       ],
-      "start": "2026-12-09",
-      "end": "2026-12-14",
+      "start": "2026-12-10",
+      "end": "2026-12-15",
       "periods": 4,
       "entries": [
         {
@@ -1020,10 +1034,10 @@
           "notes": "First ten minutes: self-score the Unit 4 FRQ together, the teacher walking the scoring guideline (grill 2026-11-09 Q7); the first class after the free-response day.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-09",
-          "end": "2026-12-09",
+          "start": "2026-12-10",
+          "end": "2026-12-10",
           "dates": [
-            "2026-12-09"
+            "2026-12-10"
           ]
         },
         {
@@ -1034,10 +1048,10 @@
           "notes": "Big Idea 3: Information Storage and Transmission. Microscopes and prepared Sordaria slides: count asci to estimate crossing over.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-10",
-          "end": "2026-12-10",
+          "start": "2026-12-11",
+          "end": "2026-12-11",
           "dates": [
-            "2026-12-10"
+            "2026-12-11"
           ]
         },
         {
@@ -1048,10 +1062,10 @@
           "notes": "Mendelian crosses, day 1. Chi-square analysis is taught after the break.",
           "link": null,
           "periods": 1,
-          "start": "2026-12-11",
-          "end": "2026-12-11",
+          "start": "2026-12-14",
+          "end": "2026-12-14",
           "dates": [
-            "2026-12-11"
+            "2026-12-14"
           ]
         },
         {
@@ -1060,31 +1074,6 @@
           "kind": "topic",
           "skill": "1.A",
           "notes": "EK Quiz 1 (5.1-5.3) at the bell, self-scored, then cumulative review for the final. The preview goes home the class before.",
-          "link": null,
-          "periods": 1,
-          "start": "2026-12-14",
-          "end": "2026-12-14",
-          "dates": [
-            "2026-12-14"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "semester-1-review",
-      "unit": null,
-      "title": "Semester 1 Review",
-      "weight": null,
-      "start": "2026-12-15",
-      "end": "2026-12-15",
-      "periods": 1,
-      "entries": [
-        {
-          "id": null,
-          "title": "Semester 1 review — cumulative practice before finals",
-          "kind": "review",
-          "skill": null,
-          "notes": null,
           "link": null,
           "periods": 1,
           "start": "2026-12-15",
